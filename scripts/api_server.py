@@ -31,7 +31,7 @@ import urllib.parse
 
 BASE = Path(__file__).parent.parent
 PUBLISHED = BASE / "output-buffer" / "published"
-PORT = 8899
+PORT = int(os.environ.get("PORT", 8899))
 
 
 def load_all_recs():
