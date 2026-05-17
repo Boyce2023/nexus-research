@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexus Research System — Portfolio</title>
+<style>
+:root { --bg: #0d1117; --card: #161b22; --border: #30363d; --text: #c9d1d9; --accent: #58a6ff; --green: #3fb950; --red: #f85149; --yellow: #d29922; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+.container { max-width: 1200px; margin: 0 auto; }
+header.site-header { text-align: center; margin-bottom: 3rem; padding: 2rem; border-bottom: 1px solid var(--border); }
+header.site-header h1 { font-size: 2rem; color: #fff; margin-bottom: 0.5rem; }
+header.site-header p { color: #8b949e; font-size: 0.9rem; }
+.stats { display: flex; gap: 2rem; justify-content: center; margin-top: 1.5rem; }
+.stat { text-align: center; }
+.stat .num { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+.stat .label { font-size: 0.75rem; color: #8b949e; text-transform: uppercase; }
+.methodology { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; }
+.methodology h2 { font-size: 1.1rem; margin-bottom: 0.8rem; color: #fff; }
+.methodology p { font-size: 0.85rem; color: #8b949e; }
+.rec-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.rec-card.long { border-left: 3px solid var(--green); }
+.rec-card.short { border-left: 3px solid var(--red); }
+.rec-card.avoid { border-left: 3px solid var(--yellow); }
+.rec-card header h2 { font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem; }
+.meta { display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.8rem; }
+.meta span { padding: 2px 8px; border-radius: 4px; background: var(--bg); }
+.direction.long { color: var(--green); }
+.direction.short { color: var(--red); }
+.direction.avoid { color: var(--yellow); }
+.ticker { color: var(--accent); font-weight: 700; }
+section { margin-top: 1rem; }
+section h3 { font-size: 0.9rem; color: #8b949e; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+.one-liner { font-style: italic; color: var(--accent); margin-bottom: 0.5rem; }
+.summary p { font-size: 0.95rem; }
+ul { padding-left: 1.2rem; }
+li { margin-bottom: 0.3rem; font-size: 0.9rem; }
+table { width: 100%; font-size: 0.85rem; border-collapse: collapse; }
+th, td { padding: 0.4rem 0.8rem; text-align: left; border-bottom: 1px solid var(--border); }
+th { color: #8b949e; font-weight: 600; }
+.kill { color: var(--red); font-size: 0.85rem; margin-top: 0.5rem; }
+.check-grid { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.check { font-size: 0.75rem; padding: 2px 6px; border-radius: 3px; }
+.check.pass { background: #1b3d2a; color: var(--green); }
+.check.fail { background: #3d1b1b; color: var(--red); }
+footer { margin-top: 1rem; padding-top: 0.8rem; border-top: 1px solid var(--border); display: flex; gap: 1.5rem; font-size: 0.75rem; color: #8b949e; }
+.empty { text-align: center; padding: 4rem; color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="site-header">
+    <h1>Nexus Research System</h1>
+    <p>系统化股票研究 — 先淘汰再推荐 | 每条推荐含Bear Case硬门验证</p>
+    <div class="stats">
+      <div class="stat"><div class="num">7</div><div class="label">活跃推荐</div></div>
+      <div class="stat"><div class="num">6L / 1S</div><div class="label">多空</div></div>
+      <div class="stat"><div class="num">+29.2%</div><div class="label">平均预期</div></div>
+    </div>
+  </header>
+
+  <div class="methodology">
+    <h2>方法论</h2>
+    <p>10步标准化流程 | 16个分析框架 | 4级规则执法 | 22条自动触发检查<br>
+    核心原则: Bear Case下行 &gt;20% = 不推荐建仓 (硬规则, 无例外) | 供给侧约束优先 | 先淘汰再推荐</p>
+  </div>
+
+  
+    <article class="rec-card long" id="rec-20260518-SPUT-001">
+      <header>
+        <h2>铀现货信托SPUT：结构性供需缺口的最纯敞口</h2>
+        <div class="meta">
+          <span class="ticker">$SPUT (U.U/SRUUF)</span>
+          <span class="direction long">做多</span>
+          <span class="conviction">确信度: 高</span>
+          <span class="target">目标 $24.5 (+24.5%)</span>
+        </div>
+      </header>
+      <section class="summary">
+        <p>全球铀供给156 Mlbs vs需求180 Mlbs，结构性deficit将在2027-2028爆发。SPUT直接持有实物铀，NAV有底$16，比矿商更纯粹受益铀价上涨。Goldman刚上修铀需求+17%，NXE动工是历史铀价飞涨信号。目标$24.5，上行25%，概率加权下行仅-12%。</p>
+      </section>
+      <section class="thesis">
+        <h3>核心逻辑</h3>
+        <p class="one-liner">"铀是否处于结构性供需缺口的早期阶段——SPUT是最纯的铀价直接敞口？"</p>
+        <ul><li>Goldman 05/17上修铀需求+17%（SMR 46GW by 2045），DOE $94M加速SMR → 需求侧叙事强化</li><li>2024年供给156.5 Mlbs vs需求180 Mlbs，结构性deficit将在2027-2028集中爆发</li><li>SPUT直接持有实物铀，NAV有底~$16，比矿商（CCJ/NXE）更纯粹地受益于铀价上涨</li></ul>
+      </section>
+      <section class="bear-case">
+        <h3>Bear Case (概率加权: -11.75%)</h3>
+        <table><tr><th>情景</th><th>概率</th><th>下行</th></tr><tr><td>铀价均值回归至$30-40/lb，全球核电重启不及预期</td><td>15%</td><td>-50%</td></tr><tr><td>核事故（类Fukushima）导致全球核电政策逆转</td><td>5%</td><td>-70%</td></tr><tr><td>Kazatomprom超预期增产+二手铀库存释放，短期压制铀价至$60-65</td><td>25%</td><td>-15%</td></tr></table>
+        <p class="kill">止损: 铀价连续6个月低于$60/lb，或全球核电在建项目取消数>3个/年</p>
+      </section>
+      <section class="catalysts">
+        <h3>催化剂</h3>
+        <ul><li><strong>2026年夏</strong> — NXE Arrow矿正式动工 (high)</li><li><strong>2026-Q2/Q3</strong> — Goldman Nuclear Nuggets报告后续研究覆盖跟进 (medium)</li><li><strong>2026-H2</strong> — DOE后续拨款/HALEU政策推进 (medium)</li></ul>
+      </section>
+      <section class="checks">
+        <h3>系统验证</h3>
+        <div class="check-grid"><span class="check pass">✓ Bear Case Gate</span><span class="check pass">✓ Consensus Check</span><span class="check pass">✓ Source Verified</span><span class="check pass">✓ Catalyst Dated</span></div>
+      </section>
+      <footer>
+        <span>数据截止: 2026-05-17</span>
+        <span>Review: 2026-07-18</span>
+        <span>框架: F1, F2, F16</span>
+      </footer>
+    </article>
+
+    <article class="rec-card long" id="rec-20260518-NVDA-001">
+      <header>
+        <h2>NVIDIA：AI算力平台垄断的长期底���</h2>
+        <div class="meta">
+          <span class="ticker">$NVDA</span>
+          <span class="direction long">做多</span>
+          <span class="conviction">确信度: 高</span>
+          <span class="target">目标 $180.0 (+33.3%)</span>
+        </div>
+      </header>
+      <section class="summary">
+        <p>CUDA生态锁定+CoWoS/HBM供给约束构成双重护城河。DeepSeek效应是Jevons悖论——效率提升反而扩大需求。作为AI基础设施底仓长期持有，不做波段。Q1财报(05/20)和GTC Taipei(06/01)是近期关注点。</p>
+      </section>
+      <section class="thesis">
+        <h3>核心逻辑</h3>
+        <p class="one-liner">"NVIDIA的CUDA生态锁定是否构成不可逾越的平台垄断——AI算力需求是否遵循Jevons悖论持续扩大？"</p>
+        <ul><li>AI芯片平台垄断+CUDA软件护城河，竞争者（AMD/Intel/ASIC）短期无法撼动生态锁定</li><li>B200/GB200 NVL72功耗132kW/架(vs传统10-15kW)，DC电力需求被物理性拉动</li><li>DeepSeek复盘框架(F7)：算法效率提升→Jevons悖论→硬件需求反而扩大而非缩小</li></ul>
+      </section>
+      <section class="bear-case">
+        <h3>Bear Case (概率加权: -9.5%)</h3>
+        <table><tr><th>情景</th><th>概率</th><th>下行</th></tr><tr><td>算法效率提升(DeepSeek效应)持续压低硬件需求，Jevons悖论不成立</td><td>10%</td><td>-35%</td></tr><tr><td>中国出口管制升级，失去中国市场收入(~25%)</td><td>15%</td><td>-20%</td></tr><tr><td>ASIC定制芯片(Google TPU/Amazon Trainium)份额超预期蚕食</td><td>20%</td><td>-15%</td></tr></table>
+        <p class="kill">止损: 连续两季数据中心收入环比下降，或CUDA生态出现可替代方案大规模迁移</p>
+      </section>
+      <section class="catalysts">
+        <h3>催化剂</h3>
+        <ul><li><strong>2026-05-20</strong> — Q1 FY27财报 (high)</li><li><strong>2026-06-01</strong> — Jensen Huang GTC Taipei / COMPUTEX (medium)</li></ul>
+      </section>
+      <section class="checks">
+        <h3>系统验证</h3>
+        <div class="check-grid"><span class="check pass">✓ Bear Case Gate</span><span class="check pass">✓ Consensus Check</span><span class="check pass">✓ Source Verified</span><span class="check pass">✓ Catalyst Dated</span></div>
+      </section>
+      <footer>
+        <span>数据截止: 2026-05-16</span>
+        <span>Review: 2026-08-18</span>
+        <span>框架: F2, F7</span>
+      </footer>
+    </article>
+
+    <article class="rec-card long" id="rec-20260518-MRVL-001">
+      <header>
+        <h2>Marvell：AI ASIC催化剂交易（05/27财报）</h2>
+        <div class="meta">
+          <span class="ticker">$MRVL</span>
+          <span class="direction long">做多</span>
+          <span class="conviction">确信度: 中</span>
+          <span class="target">目标 $195.0 (+74.1%)</span>
+        </div>
+      </header>
+      <section class="summary">
+        <p>AI定制芯片最纯受益者，BofA/RBC/UBS密集升级至$195-200。Q1财报(05/27)是催化剂窗口。事件驱动交易：beat→持有，miss→当日走。pre-earnings动量setup clean，短期R/R有利。</p>
+      </section>
+      <section class="thesis">
+        <h3>核心逻辑</h3>
+        <p class="one-liner">"Marvell是否是AI ASIC定制芯片赛道最纯粹的受益者——Amazon/Google订单驱动能否维持高增长？"</p>
+        <ul><li>AI ASIC定制芯片最纯受益者，Amazon Trainium/Google TPU核心设计合作伙伴</li><li>密集升级潮：BofA $200 / RBC $200 / UBS $195，共识快速上修</li><li>Q1 FY27财报(05/27)前动量setup最clean，pre-earnings催化剂窗口</li></ul>
+      </section>
+      <section class="bear-case">
+        <h3>Bear Case (概率加权: -9.25%)</h3>
+        <table><tr><th>情景</th><th>概率</th><th>下行</th></tr><tr><td>Q1财报后sell the news（预期已被升级打满）</td><td>30%</td><td>-15%</td></tr><tr><td>ASIC需求增速不及GPU（大厂回归NVIDIA方案）</td><td>15%</td><td>-25%</td></tr><tr><td>Broadcom竞争加剧抢走大客户</td><td>10%</td><td>-20%</td></tr></table>
+        <p class="kill">止损: Q1财报AI ASIC收入环比下降，或大客户(Amazon/Google)减少订单</p>
+      </section>
+      <section class="catalysts">
+        <h3>催化剂</h3>
+        <ul><li><strong>2026-05-27</strong> — Q1 FY27财报 (high)</li></ul>
+      </section>
+      <section class="checks">
+        <h3>系统验证</h3>
+        <div class="check-grid"><span class="check pass">✓ Bear Case Gate</span><span class="check pass">✓ Consensus Check</span><span class="check pass">✓ Source Verified</span><span class="check pass">✓ Catalyst Dated</span></div>
+      </section>
+      <footer>
+        <span>数据截止: 2026-05-18</span>
+        <span>Review: 2026-05-28</span>
+        <span>框架: F2</span>
+      </footer>
+    </article>
+
+    <article class="rec-card long" id="rec-20260518-HSAI-001">
+      <header>
+        <h2>禾赛科技：被错误定价的LiDAR平台公司</h2>
+        <div class="meta">
+          <span class="ticker">$HSAI</span>
+          <span class="direction long">做多</span>
+          <span class="conviction">确信度: 高</span>
+          <span class="target">目标 $41.8 (+46.7%)</span>
+        </div>
+      </header>
+      <section class="summary">
+        <p>市场把禾赛当硬件周期股给15x PE，忽略了其芯片自研+制造能力构成的可得性护城河。机器人业务从零到3000台/季验证平台属性，三层估值拆分显示即使后两层归零仍有安全边际。目标价$41.8，上行47%，bear case概率加权下行仅-14%。</p>
+      </section>
+      <section class="thesis">
+        <h3>核心逻辑</h3>
+        <p class="one-liner">"禾赛是否是LiDAR行业的'苹果ISP'——平台基础设施而非硬件周期股？"</p>
+        <ul><li>6D产业链7层瓶颈中禾赛占据最紧约束节点（芯片+制造），3年内无人能复制交付能力</li><li>机器人业务从0→3000台/季（2026Q1），打开第二增长曲线验证平台属性</li><li>AT128量产良率和成本曲线领先竞争对手2年，可得性护城河（F13）决定份额而非价格</li></ul>
+      </section>
+      <section class="bear-case">
+        <h3>Bear Case (概率加权: -14.25%)</h3>
+        <table><tr><th>情景</th><th>概率</th><th>下行</th></tr><tr><td>纯视觉方案（Tesla FSD模式）在L3+场景证明足够，OEM大规模砍LiDAR配置</td><td>15%</td><td>-45%</td></tr><tr><td>中美脱钩升级，HSAI被列入实体清单或强制退市</td><td>10%</td><td>-60%</td></tr><tr><td>机器人业务增长不及预期，Q2-Q3出货量环比下降</td><td>25%</td><td>-20%</td></tr></table>
+        <p class="kill">止损: 连续两个季度ADAS出货量同比下降，或机器人业务连续两季零增长</p>
+      </section>
+      <section class="catalysts">
+        <h3>催化剂</h3>
+        <ul><li><strong>2026-05-19</strong> — Q1 2026财报发布 (high)</li><li><strong>2026-H2</strong> — 下一代纯固态LiDAR量产公告 (medium)</li></ul>
+      </section>
+      <section class="checks">
+        <h3>系统验证</h3>
+        <div class="check-grid"><span class="check pass">✓ Bear Case Gate</span><span class="check pass">✓ Consensus Check</span><span class="check pass">✓ Source Verified</span><span class="check pass">✓ Catalyst Dated</span></div>
+      </section>
+      <footer>
+        <span>数据截止: 2026-05-17</span>
+        <span>Review: 2026-06-19</span>
+        <span>框架: F2, F5, F11, F12, F13</span>
+      </footer>
+    </article>
+
+    <article class="rec-card long" id="rec-20260518-GEV-001">
+      <header>
+        <h2>GE Vernova：DC电力链条中最不可替代的燃气轮机垄断</h2>
+        <div class="meta">
+          <span class="ticker">$GEV</span>
+          <span class="direction long">做多</span>
+          <span class="conviction">确信度: 中</span>
+          <span class="target">目标 $1250.0 (+19.2%)</span>
+        </div>
+      </header>
+      <section class="summary">
+        <p>AI数据中心电力需求爆发，短期靠BTM天然气发电填补(占DC方案>40%)。GEV燃气轮机近垄断，$150B积压售罄至2020s末。PJM容量拍卖价+833%是需求验证。当前$1049，目标$1250，等回调或催化剂确认后入场。</p>
+      </section>
+      <section class="thesis">
+        <h3>核心逻辑</h3>
+        <p class="one-liner">"GE Vernova是否是DC电力需求爆发中最不可替代的基础设施——燃气轮机近垄断+$150B积压？"</p>
+        <ul><li>燃气轮机全球近垄断，积压$150B售罄至2020s末，客户没有替代选择</li><li>PJM容量市场拍卖价+833%(2027/28 vs 2024/25)，直接利好天然气发电装机</li><li>BTM gas占DC电力方案>40%（短期最可靠解决方案），GEV是设备瓶颈节点</li></ul>
+      </section>
+      <section class="bear-case">
+        <h3>Bear Case (概率加权: -10.75%)</h3>
+        <table><tr><th>情景</th><th>概率</th><th>下行</th></tr><tr><td>天然气价格暴涨+碳税政策使gas方案经济性恶化</td><td>15%</td><td>-25%</td></tr><tr><td>Siemens Energy大幅扩产打破近垄断格局</td><td>10%</td><td>-20%</td></tr><tr><td>DC电力需求增长不及预期（AI投资周期放缓）</td><td>15%</td><td>-30%</td></tr></table>
+        <p class="kill">止损: 积压订单连续两季环比下降，或BTM gas方案被政策禁止</p>
+      </section>
+      <section class="catalysts">
+        <h3>催化剂</h3>
+        <ul><li><strong>2026-Q2</strong> — PJM 2027/28容量拍卖结果公布 (high)</li><li><strong>2026-07</strong> — Q2 2026财报（积压订单更新） (medium)</li></ul>
+      </section>
+      <section class="checks">
+        <h3>系统验证</h3>
+        <div class="check-grid"><span class="check pass">✓ Bear Case Gate</span><span class="check pass">✓ Consensus Check</span><span class="check pass">✓ Source Verified</span><span class="check pass">✓ Catalyst Dated</span></div>
+      </section>
+      <footer>
+        <span>数据截止: 2026-05-16</span>
+        <span>Review: 2026-07-18</span>
+        <span>框架: F2, F4, F13</span>
+      </footer>
+    </article>
+
+    <article class="rec-card short" id="rec-20260518-600089-001">
+      <header>
+        <h2>特变电工：多晶硅巨亏拖累的Pair Trade Short端</h2>
+        <div class="meta">
+          <span class="ticker">$600089.SH</span>
+          <span class="direction short">做空</span>
+          <span class="conviction">确信度: 高</span>
+          <span class="target">目标 $22.0 (-12.0%)</span>
+        </div>
+      </header>
+      <section class="summary">
+        <p>新特能源FY2024亏39亿，多晶硅仍在成本线下运行。海外占比仅12-20%，在电力设备全球需求爆发中处于劣势。作为思源电气Long端的对冲Short，构成市场中性Pair Trade。目标下行-12%，pair整体R/R 2.8x。</p>
+      </section>
+      <section class="thesis">
+        <h3>核心逻辑</h3>
+        <p class="one-liner">"特变电工的多晶硅巨亏是否会拖累整体估值——相比思源电气是否系统性高估？"</p>
+        <ul><li>新特能源FY2024亏损RMB 39亿，多晶硅价格RMB 40-48/kg vs总成本RMB 48-55/kg，仍在亏损区间</li><li>海外收入占比仅12-20%（vs思源34%），在全球电力设备需求爆发中处于劣势</li><li>估值高于共识目标20%，无期权价值（不存在被低估的隐藏业务线）</li></ul>
+      </section>
+      <section class="bear-case">
+        <h3>Bear Case (概率加权: -7.5%)</h3>
+        <table><tr><th>情景</th><th>概率</th><th>下行</th></tr><tr><td>多晶硅价格快速修复至RMB 55+/kg（产能出清加速）</td><td>20%</td><td>20%</td></tr><tr><td>政策补贴/多晶硅战略储备支撑价格</td><td>10%</td><td>15%</td></tr><tr><td>A股电力设备板块集体拉升（beta压制short端）</td><td>30%</td><td>10%</td></tr></table>
+        <p class="kill">止损: 多晶硅价格连续3个月>RMB 55/kg，或新特能源季度转正</p>
+      </section>
+      <section class="catalysts">
+        <h3>催化剂</h3>
+        <ul><li><strong>2026-Q2/Q3</strong> — 新特能源减值/亏损公告 (high)</li><li><strong>持续</strong> — 多晶硅行业价格动向（月度跟踪） (medium)</li></ul>
+      </section>
+      <section class="checks">
+        <h3>系统验证</h3>
+        <div class="check-grid"><span class="check pass">✓ Bear Case Gate</span><span class="check pass">✓ Consensus Check</span><span class="check pass">✓ Source Verified</span><span class="check pass">✓ Catalyst Dated</span></div>
+      </section>
+      <footer>
+        <span>数据截止: 2026-05-16</span>
+        <span>Review: 2026-07-15</span>
+        <span>框架: F2, F9</span>
+      </footer>
+    </article>
+
+    <article class="rec-card long" id="rec-20260518-002028-001">
+      <header>
+        <h2>思源电气：9个月交付碾压ABB的可得性护城河</h2>
+        <div class="meta">
+          <span class="ticker">$002028.SZ</span>
+          <span class="direction long">做多</span>
+          <span class="conviction">确信度: 高</span>
+          <span class="target">目标 $72.0 (+18.4%)</span>
+        </div>
+      </header>
+      <section class="summary">
+        <p>全球电力设备供应链紧缺，ABB/西门子交期24-36个月，思源仅9个月。海外收入2026E增长+69%，750kV GIS份额从0到20%。这不是价格竞争，是能交货就赢。配合特变电工Short端构成Pair Trade，目标P/L +18.6%，R/R 2.8x。</p>
+      </section>
+      <section class="thesis">
+        <h3>核心逻辑</h3>
+        <p class="one-liner">"思源电气能否凭借9个月交付周期（vs ABB 24-36月）在全球电力设备紧缺中持续获取超额份额？"</p>
+        <ul><li>可得性护城河（F13）：9个月交付 vs ABB/西门子24-36个月，客户不是选品牌而是选能交货的</li><li>海外收入增长+69%(2026E)，罗马尼亚EUR 400M MOU + CATL 50GWh MOU锁定增量</li><li>750kV GIS份额从0→20%（两年），打入此前完全由外资垄断的超高压市场</li></ul>
+      </section>
+      <section class="bear-case">
+        <h3>Bear Case (概率加权: -10.25%)</h3>
+        <table><tr><th>情景</th><th>概率</th><th>下行</th></tr><tr><td>海外需求急跌（全球经济衰退/DC投资暂停）</td><td>15%</td><td>-25%</td></tr><tr><td>GPM不达33.8%预期（成本上涨/竞价激烈）</td><td>20%</td><td>-15%</td></tr><tr><td>750kV GIS份额停滞（技术/认证障碍）</td><td>15%</td><td>-10%</td></tr></table>
+        <p class="kill">止损: 连续两季海外收入同比增速<20%，或GPM连续两季<31%</p>
+      </section>
+      <section class="catalysts">
+        <h3>催化剂</h3>
+        <ul><li><strong>2026-07</strong> — H1 2026业绩快报 (high)</li><li><strong>2026-Q2/Q3</strong> — 750kV GIS中标公告 (medium)</li><li><strong>2026-H1</strong> — 罗马尼亚EUR 400M MOU推进/CATL 50GWh MOU落实 (medium)</li></ul>
+      </section>
+      <section class="checks">
+        <h3>系统验证</h3>
+        <div class="check-grid"><span class="check pass">✓ Bear Case Gate</span><span class="check pass">✓ Consensus Check</span><span class="check pass">✓ Source Verified</span><span class="check pass">✓ Catalyst Dated</span></div>
+      </section>
+      <footer>
+        <span>数据截止: 2026-05-16</span>
+        <span>Review: 2026-07-15</span>
+        <span>框架: F2, F13, F14</span>
+      </footer>
+    </article>
+</div>
+<script>
+document.querySelectorAll('.rec-card header').forEach(h => {
+  h.style.cursor = 'pointer';
+  h.addEventListener('click', () => {
+    const card = h.closest('.rec-card');
+    card.querySelectorAll('section').forEach(s => {
+      s.style.display = s.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
