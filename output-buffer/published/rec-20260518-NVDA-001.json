@@ -1,0 +1,104 @@
+{
+  "id": "rec-20260518-NVDA-001",
+  "ticker": "NVDA",
+  "name": "英伟达",
+  "market": "US",
+  "direction": "long",
+  "conviction": "high",
+  "thesis": {
+    "one_liner": "NVIDIA的CUDA生态锁定是否构成不可逾越的平台垄断——AI算力需求是否遵循Jevons悖论持续扩大？",
+    "core_arguments": [
+      "AI芯片平台垄断+CUDA软件护城河，竞争者（AMD/Intel/ASIC）短期无法撼动生态锁定",
+      "B200/GB200 NVL72功耗132kW/架(vs传统10-15kW)，DC电力需求被物理性拉动",
+      "DeepSeek复盘框架(F7)：算法效率提升→Jevons悖论→硬件需求反而扩大而非缩小"
+    ],
+    "supply_side_logic": "GPU设计→TSMC代工→CoWoS封装→HBM(SK Hynix)→NVL72组装。全链条产能紧张，特别是CoWoS封装和HBM3e是最紧约束。即使算法效率提升100x（DeepSeek效应），推理总量的Jevons效应使GPU需求持续增长。",
+    "consensus_check": {
+      "sell_side_consensus": "绝大多数看多（高度共识）",
+      "edge_statement": "不追求个股alpha，作为AI基础设施底仓长期持有。Edge来自理解Jevons悖论——市场对'效率提升替代硬件'的恐慌是误读"
+    }
+  },
+  "bear_case": {
+    "scenarios": [
+      {
+        "description": "算法效率提升(DeepSeek效应)持续压低硬件需求，Jevons悖论不成立",
+        "probability": 0.10,
+        "downside_pct": -35,
+        "severity": 8
+      },
+      {
+        "description": "中国出口管制升级，失去中国市场收入(~25%)",
+        "probability": 0.15,
+        "downside_pct": -20,
+        "severity": 6
+      },
+      {
+        "description": "ASIC定制芯片(Google TPU/Amazon Trainium)份额超预期蚕食",
+        "probability": 0.20,
+        "downside_pct": -15,
+        "severity": 5
+      }
+    ],
+    "max_downside_pct": -18.0,
+    "probability_weighted_downside": -9.5,
+    "kill_condition": "连续两季数据中心收入环比下降，或CUDA生态出现可替代方案大规模迁移"
+  },
+  "valuation": {
+    "methodology": "comps",
+    "target_price": 180.0,
+    "current_price": 135.0,
+    "upside_pct": 33.3,
+    "key_assumptions": [
+      "FY27E收入$130B+（共识$113B偏保守）",
+      "数据中心毛利率维持75%+",
+      "给30-35x forward PE（平台垄断溢价）"
+    ],
+    "frameworks_used": ["F2", "F7"]
+  },
+  "catalysts": [
+    {
+      "event": "Q1 FY27财报",
+      "expected_date": "2026-05-20",
+      "impact": "high",
+      "if_positive": "Blackwell稼动率+guidance上修→持有",
+      "if_negative": "Guidance miss或供应链问题→不卖（底仓），但暂停加仓"
+    },
+    {
+      "event": "Jensen Huang GTC Taipei / COMPUTEX",
+      "expected_date": "2026-06-01",
+      "impact": "medium",
+      "if_positive": "GB300系列路线图清晰→强化长期thesis",
+      "if_negative": "无新产品信息→中性"
+    }
+  ],
+  "position_sizing": {
+    "suggested_weight": "5-8% (底仓，不交易)",
+    "entry_strategy": "12股@$230.64已建仓，长期持有不波段",
+    "stop_loss": "无价格止损——仅kill_condition触发时退出"
+  },
+  "metadata": {
+    "created_at": "2026-05-18T12:00:00+08:00",
+    "analyst": "Nexus Research System",
+    "review_date": "2026-08-18",
+    "data_freshness": "2026-05-16",
+    "confidence_sources": [
+      "NVIDIA FY26 10-K (SEC EDGAR)",
+      "Q4 FY26 Earnings Call Transcript",
+      "TSMC CoWoS产能数据(行业调研)",
+      "DeepSeek R1技术报告(arxiv)"
+    ],
+    "frameworks_applied": ["F2", "F7"],
+    "system_checks_passed": {
+      "bear_case_gate": true,
+      "consensus_check": true,
+      "source_verified": true,
+      "catalyst_dated": true
+    }
+  },
+  "display": {
+    "headline": "NVIDIA：AI算力平台垄断的长期底���",
+    "summary_cn": "CUDA生态锁定+CoWoS/HBM供给约束构成双重护城河。DeepSeek效应是Jevons悖论——效率提升反而扩大需求。作为AI基础设施底仓长期持有，不做波段。Q1财报(05/20)和GTC Taipei(06/01)是近期关注点。",
+    "tags": ["AI", "半导体", "平台垄断", "美股", "底仓"],
+    "risk_level": "moderate"
+  }
+}

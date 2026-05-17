@@ -1,0 +1,112 @@
+{
+  "id": "rec-20260518-002028-001",
+  "ticker": "002028.SZ",
+  "name": "思源电气",
+  "market": "A-share",
+  "direction": "long",
+  "conviction": "high",
+  "thesis": {
+    "one_liner": "思源电气能否凭借9个月交付周期（vs ABB 24-36月）在全球电力设备紧缺中持续获取超额份额？",
+    "core_arguments": [
+      "可得性护城河（F13）：9个月交付 vs ABB/西门子24-36个月，客户不是选品牌而是选能交货的",
+      "海外收入增长+69%(2026E)，罗马尼亚EUR 400M MOU + CATL 50GWh MOU锁定增量",
+      "750kV GIS份额从0→20%（两年），打入此前完全由外资垄断的超高压市场"
+    ],
+    "supply_side_logic": "全球电力设备供应链紧缺（DC电力需求+电网老化+新能源并网），ABB/西门子/日立产能满载，交期拉长到2-3年。思源凭借国内产能弹性+快速交付（9个月），正在全球范围抢占份额。这是供给约束驱动的份额转移，不是价格竞争。",
+    "consensus_check": {
+      "sell_side_consensus": "国内券商覆盖为主，共识看多但多数低估海外增速",
+      "edge_statement": "市场关注国内电网投资周期，低估海外交付能力差异化带来的份额爆发。历史类比系统化（F14）六案例显示可得性护城河标的应享GPM溢价"
+    }
+  },
+  "bear_case": {
+    "scenarios": [
+      {
+        "description": "海外需求急跌（全球经济衰退/DC投资暂停）",
+        "probability": 0.15,
+        "downside_pct": -25,
+        "severity": 7
+      },
+      {
+        "description": "GPM不达33.8%预期（成本上涨/竞价激烈）",
+        "probability": 0.20,
+        "downside_pct": -15,
+        "severity": 5
+      },
+      {
+        "description": "750kV GIS份额停滞（技术/认证障碍）",
+        "probability": 0.15,
+        "downside_pct": -10,
+        "severity": 4
+      }
+    ],
+    "max_downside_pct": -17.0,
+    "probability_weighted_downside": -10.25,
+    "kill_condition": "连续两季海外收入同比增速<20%，或GPM连续两季<31%"
+  },
+  "valuation": {
+    "methodology": "comps",
+    "target_price": 72.0,
+    "current_price": 60.8,
+    "upside_pct": 18.4,
+    "key_assumptions": [
+      "2026E收入增长25-30%（海外+69%驱动）",
+      "GPM 33.8%（vs共识32-33%，高端产品占比提升）",
+      "目标PE 25-28x（可得性护城河溢价 per F14六案例）",
+      "6个月窗口(2026年4-9月)为最佳持有期"
+    ],
+    "frameworks_used": ["F2", "F13", "F14"]
+  },
+  "catalysts": [
+    {
+      "event": "H1 2026业绩快报",
+      "expected_date": "2026-07",
+      "impact": "high",
+      "if_positive": "GPM≥33.8%验证thesis，持有至目标",
+      "if_negative": "GPM<32%→减仓50%重新评估"
+    },
+    {
+      "event": "750kV GIS中标公告",
+      "expected_date": "2026-Q2/Q3",
+      "impact": "medium",
+      "if_positive": "份额从0→20%确认，估值上修",
+      "if_negative": "延迟不影响核心thesis（海外增长独立于此）"
+    },
+    {
+      "event": "罗马尼亚EUR 400M MOU推进/CATL 50GWh MOU落实",
+      "expected_date": "2026-H1",
+      "impact": "medium",
+      "if_positive": "海外大单确认，强化交付能力叙事",
+      "if_negative": "MOU不落实→海外增速下修"
+    }
+  ],
+  "position_sizing": {
+    "suggested_weight": "8-12% (pair trade long leg, 60%权重)",
+    "entry_strategy": "已建仓，持有期6个月(2026年4-9月)",
+    "stop_loss": "kill_condition触发，或pair trade short leg(特变电工)反转"
+  },
+  "metadata": {
+    "created_at": "2026-05-18T12:00:00+08:00",
+    "analyst": "Nexus Research System",
+    "review_date": "2026-07-15",
+    "data_freshness": "2026-05-16",
+    "confidence_sources": [
+      "思源电气2025年报 + 2026Q1业绩快报",
+      "BAM Deck研究(15篇Markdown深度分析)",
+      "罗马尼亚MOU公告(公司公告)",
+      "ABB/西门子交期数据(行业调研)"
+    ],
+    "frameworks_applied": ["F2", "F13", "F14"],
+    "system_checks_passed": {
+      "bear_case_gate": true,
+      "consensus_check": true,
+      "source_verified": true,
+      "catalyst_dated": true
+    }
+  },
+  "display": {
+    "headline": "思源电气：9个月交付碾压ABB的可得性护城河",
+    "summary_cn": "全球电力设备供应链紧缺，ABB/西门子交期24-36个月，思源仅9个月。海外收入2026E增长+69%，750kV GIS份额从0到20%。这不是价格竞争，是能交货就赢。配合特变电工Short端构成Pair Trade，目标P/L +18.6%，R/R 2.8x。",
+    "tags": ["A股", "电力设备", "供给约束", "Pair Trade", "可得性护城河"],
+    "risk_level": "moderate"
+  }
+}

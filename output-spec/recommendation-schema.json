@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nexus Recommendation Output",
+  "description": "标准化推荐输出格式 — 系统产出的每条投资建议遵循此schema，可直接接入雪球/分发平台",
+  "version": "1.0.0",
+  "type": "object",
+  "required": ["id", "ticker", "direction", "conviction", "thesis", "bear_case", "catalysts", "metadata"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "唯一ID: rec-{YYYYMMDD}-{ticker}-{序号}",
+      "pattern": "^rec-\\d{8}-.+-\\d{3}$"
+    },
+    "ticker": {
+      "type": "string",
+      "description": "标的代码 (e.g., HSAI, 002028.SZ, SPUT.TO)"
+    },
+    "name": {
+      "type": "string",
+      "description": "公司中文名"
+    },
+    "market": {
+      "type": "string",
+      "enum": ["US", "HK", "A-share", "CA", "other"],
+      "description": "上市市场"
+    },
+    "direction": {
+      "type": "string",
+      "enum": ["long", "short", "avoid"],
+      "description": "方向: 做多/做空/回避"
+    },
+    "conviction": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "确信度 — high=核心仓位级, medium=观察仓, low=watchlist"
+    },
+    "thesis": {
+      "type": "object",
+      "required": ["one_liner", "core_arguments", "supply_side_logic"],
+      "properties": {
+        "one_liner": {
+          "type": "string",
+          "description": "一句话核心问题 (10步流程Step 1)",
+          "maxLength": 100
+        },
+        "core_arguments": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 2,
+          "maxItems": 5,
+          "description": "核心论点 (2-5条)"
+        },
+        "supply_side_logic": {
+          "type": "string",
+          "description": "供给侧约束分析 (F2框架输出)"
+        },
+        "consensus_check": {
+          "type": "object",
+          "properties": {
+            "sell_side_consensus": {"type": "string", "description": "卖方共识状态 (e.g., '12/15看多')"},
+            "edge_statement": {"type": "string", "description": "我的edge在哪 — 市场没看到什么"}
+          }
+        }
+      }
+    },
+    "bear_case": {
+      "type": "object",
+      "required": ["scenarios", "max_downside_pct", "probability_weighted_downside"],
+      "properties": {
+        "scenarios": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["description", "probability", "downside_pct"],
+            "properties": {
+              "description": {"type": "string"},
+              "probability": {"type": "number", "minimum": 0, "maximum": 1},
+              "downside_pct": {"type": "number", "description": "下行百分比 (负数)"},
+              "severity": {"type": "integer", "minimum": 1, "maximum": 10}
+            }
+          }
+        },
+        "max_downside_pct": {
+          "type": "number",
+          "description": "最大下行风险% — 超过-20%则系统自动标记为avoid"
+        },
+        "probability_weighted_downside": {
+          "type": "number",
+          "description": "概率加权下行"
+        },
+        "kill_condition": {
+          "type": "string",
+          "description": "什么条件出现时thesis被证伪，必须退出"
+        }
+      }
+    },
+    "valuation": {
+      "type": "object",
+      "properties": {
+        "methodology": {
+          "type": "string",
+          "enum": ["DCF", "comps", "sum_of_parts", "asset_value", "hybrid"],
+          "description": "估值方法"
+        },
+        "target_price": {"type": "number"},
+        "current_price": {"type": "number"},
+        "upside_pct": {"type": "number"},
+        "key_assumptions": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "关键假设 (每条可验证/可证伪)"
+        },
+        "frameworks_used": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "使用的分析框架编号 (F1-F16)"
+        }
+      }
+    },
+    "catalysts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["event", "expected_date", "impact"],
+        "properties": {
+          "event": {"type": "string"},
+          "expected_date": {"type": "string", "description": "日期或日期范围"},
+          "impact": {"type": "string", "enum": ["high", "medium", "low"]},
+          "if_positive": {"type": "string", "description": "催化剂兑现时的行动"},
+          "if_negative": {"type": "string", "description": "催化剂失败时的行动"}
+        }
+      }
+    },
+    "position_sizing": {
+      "type": "object",
+      "properties": {
+        "suggested_weight": {"type": "string", "description": "建议仓位占比范围 (e.g., '3-5%')"},
+        "entry_strategy": {"type": "string", "description": "入场策略"},
+        "stop_loss": {"type": "string", "description": "止损条件（非纯价格，含逻辑条件）"}
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["created_at", "analyst", "data_freshness", "confidence_sources"],
+      "properties": {
+        "created_at": {"type": "string", "format": "date-time"},
+        "updated_at": {"type": "string", "format": "date-time"},
+        "analyst": {"type": "string", "description": "分析师标识"},
+        "review_date": {"type": "string", "format": "date", "description": "下次review日期"},
+        "data_freshness": {
+          "type": "string",
+          "description": "数据截止日期 (最旧的关键数据点日期)"
+        },
+        "confidence_sources": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "支撑confidence级别的一手来源列表"
+        },
+        "frameworks_applied": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "本次分析使用的F1-F16框架"
+        },
+        "system_checks_passed": {
+          "type": "object",
+          "properties": {
+            "bear_case_gate": {"type": "boolean", "description": "bear case <20% downside"},
+            "consensus_check": {"type": "boolean", "description": "非15/15共识"},
+            "source_verified": {"type": "boolean", "description": "所有数字有一手来源"},
+            "catalyst_dated": {"type": "boolean", "description": "至少一个催化剂有具体日期"}
+          }
+        }
+      }
+    },
+    "display": {
+      "type": "object",
+      "description": "前端展示用字段",
+      "properties": {
+        "headline": {"type": "string", "maxLength": 60, "description": "标题 (雪球帖子标题)"},
+        "summary_cn": {"type": "string", "maxLength": 500, "description": "中文摘要 (雪球正文开头)"},
+        "tags": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "标签 (e.g., ['核能', 'SMR', '供给约束', '美股'])"
+        },
+        "risk_level": {
+          "type": "string",
+          "enum": ["conservative", "moderate", "aggressive"],
+          "description": "风险等级标签"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

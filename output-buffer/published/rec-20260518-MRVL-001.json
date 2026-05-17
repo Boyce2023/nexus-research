@@ -1,0 +1,97 @@
+{
+  "id": "rec-20260518-MRVL-001",
+  "ticker": "MRVL",
+  "name": "Marvell Technology",
+  "market": "US",
+  "direction": "long",
+  "conviction": "medium",
+  "thesis": {
+    "one_liner": "Marvell是否是AI ASIC定制芯片赛道最纯粹的受益者——Amazon/Google订单驱动能否维持高增长？",
+    "core_arguments": [
+      "AI ASIC定制芯片最纯受益者，Amazon Trainium/Google TPU核心设计合作伙伴",
+      "密集升级潮：BofA $200 / RBC $200 / UBS $195，共识快速上修",
+      "Q1 FY27财报(05/27)前动量setup最clean，pre-earnings催化剂窗口"
+    ],
+    "supply_side_logic": "大厂(Google/Amazon/Meta)正从通用GPU(NVIDIA)向定制ASIC转移部分推理算力需求。Marvell是仅有的几家能做高端定制芯片设计的公司（另一家Broadcom）。ASIC设计周期长(18-24个月)，已签约订单具有高确定性。",
+    "consensus_check": {
+      "sell_side_consensus": "密集升级中，多数$180-200目标价",
+      "edge_statement": "财报前动量入场，利用卖方密集升级的惯性。本质是事件驱动交易而非长期thesis"
+    }
+  },
+  "bear_case": {
+    "scenarios": [
+      {
+        "description": "Q1财报后sell the news（预期已被升级打满）",
+        "probability": 0.30,
+        "downside_pct": -15,
+        "severity": 5
+      },
+      {
+        "description": "ASIC需求增速不及GPU（大厂回归NVIDIA方案）",
+        "probability": 0.15,
+        "downside_pct": -25,
+        "severity": 7
+      },
+      {
+        "description": "Broadcom竞争加剧抢走大客户",
+        "probability": 0.10,
+        "downside_pct": -20,
+        "severity": 6
+      }
+    ],
+    "max_downside_pct": -16.0,
+    "probability_weighted_downside": -9.25,
+    "kill_condition": "Q1财报AI ASIC收入环比下降，或大客户(Amazon/Google)减少订单"
+  },
+  "valuation": {
+    "methodology": "comps",
+    "target_price": 195.0,
+    "current_price": 112.0,
+    "upside_pct": 74.1,
+    "key_assumptions": [
+      "AI ASIC收入FY27E翻倍",
+      "目标PE对标半导体设计公司高端(35-40x)",
+      "卖方目标价$195-200区间"
+    ],
+    "frameworks_used": ["F2"]
+  },
+  "catalysts": [
+    {
+      "event": "Q1 FY27财报",
+      "expected_date": "2026-05-27",
+      "impact": "high",
+      "if_positive": "AI ASIC收入beat+guidance上修→持有至$180+",
+      "if_negative": "Miss或flat guidance→立即止损（事件驱动交易）"
+    }
+  ],
+  "position_sizing": {
+    "suggested_weight": "2-3% (事件驱动，短期持有)",
+    "entry_strategy": "财报前1周入场，纯催化剂交易",
+    "stop_loss": "财报miss当日止损，不持有"
+  },
+  "metadata": {
+    "created_at": "2026-05-18T12:00:00+08:00",
+    "analyst": "Nexus Research System",
+    "review_date": "2026-05-28",
+    "data_freshness": "2026-05-18",
+    "confidence_sources": [
+      "BofA升级报告 (2026-05, target $200)",
+      "RBC升级报告 (2026-05, target $200)",
+      "UBS升级报告 (2026-05, target $195)",
+      "Marvell Q4 FY26 Earnings Call"
+    ],
+    "frameworks_applied": ["F2"],
+    "system_checks_passed": {
+      "bear_case_gate": true,
+      "consensus_check": true,
+      "source_verified": true,
+      "catalyst_dated": true
+    }
+  },
+  "display": {
+    "headline": "Marvell：AI ASIC催化剂交易（05/27财报）",
+    "summary_cn": "AI定制芯片最纯受益者，BofA/RBC/UBS密集升级至$195-200。Q1财报(05/27)是催化剂窗口。事件驱动交易：beat→持有，miss→当日走。pre-earnings动量setup clean，短期R/R有利。",
+    "tags": ["AI", "ASIC", "半导体", "美股", "催化剂交易"],
+    "risk_level": "aggressive"
+  }
+}

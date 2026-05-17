@@ -1,0 +1,104 @@
+{
+  "id": "rec-20260518-GEV-001",
+  "ticker": "GEV",
+  "name": "GE Vernova",
+  "market": "US",
+  "direction": "long",
+  "conviction": "medium",
+  "thesis": {
+    "one_liner": "GE Vernova是否是DC电力需求爆发中最不可替代的基础设施——燃气轮机近垄断+$150B积压？",
+    "core_arguments": [
+      "燃气轮机全球近垄断，积压$150B售罄至2020s末，客户没有替代选择",
+      "PJM容量市场拍卖价+833%(2027/28 vs 2024/25)，直接利好天然气发电装机",
+      "BTM gas占DC电力方案>40%（短期最可靠解决方案），GEV是设备瓶颈节点"
+    ],
+    "supply_side_logic": "DC电力需求爆发(AI训练/推理)→短期核电不够→BTM天然气发电填补→GEV燃气轮机是唯一大规模可交付设备。Siemens Energy产能有限，三菱重工市场份额小。Gas turbine供应链比核电运营商更确定。",
+    "consensus_check": {
+      "sell_side_consensus": "覆盖广泛，多数看多但估值分歧大",
+      "edge_statement": "市场关注核电叙事忽略了BTM gas的实际落地速度。GEV的积压订单是已签约收入，不是预测"
+    }
+  },
+  "bear_case": {
+    "scenarios": [
+      {
+        "description": "天然气价格暴涨+碳税政策使gas方案经济性恶化",
+        "probability": 0.15,
+        "downside_pct": -25,
+        "severity": 6
+      },
+      {
+        "description": "Siemens Energy大幅扩产打破近垄断格局",
+        "probability": 0.10,
+        "downside_pct": -20,
+        "severity": 5
+      },
+      {
+        "description": "DC电力需求增长不及预期（AI投资周期放缓）",
+        "probability": 0.15,
+        "downside_pct": -30,
+        "severity": 7
+      }
+    ],
+    "max_downside_pct": -18.25,
+    "probability_weighted_downside": -10.75,
+    "kill_condition": "积压订单连续两季环比下降，或BTM gas方案被政策禁止"
+  },
+  "valuation": {
+    "methodology": "DCF",
+    "target_price": 1250.0,
+    "current_price": 1049.0,
+    "upside_pct": 19.2,
+    "key_assumptions": [
+      "积压$150B按5-7年确认收入",
+      "Power segment margin扩张至15%+",
+      "新增订单维持当前run rate"
+    ],
+    "frameworks_used": ["F2", "F4", "F13"]
+  },
+  "catalysts": [
+    {
+      "event": "PJM 2027/28容量拍卖结果公布",
+      "expected_date": "2026-Q2",
+      "impact": "high",
+      "if_positive": "拍卖价维持高位→gas发电装机确认→持有",
+      "if_negative": "拍卖价回落→DC电力需求预期下修→减仓"
+    },
+    {
+      "event": "Q2 2026财报（积压订单更新）",
+      "expected_date": "2026-07",
+      "impact": "medium",
+      "if_positive": "积压维持/增长→thesis确认",
+      "if_negative": "积压下降→flag for review"
+    }
+  ],
+  "position_sizing": {
+    "suggested_weight": "2-4% (监控仓位，未建仓)",
+    "entry_strategy": "等待回调至$950-1000区间建仓，或PJM催化剂确认后追入",
+    "stop_loss": "kill_condition触发"
+  },
+  "metadata": {
+    "created_at": "2026-05-18T12:00:00+08:00",
+    "analyst": "Nexus Research System",
+    "review_date": "2026-07-18",
+    "data_freshness": "2026-05-16",
+    "confidence_sources": [
+      "GE Vernova 2025 10-K (SEC EDGAR)",
+      "PJM容量市场拍卖结果(PJM Data Miner)",
+      "DC电力研究HTML报告(E_DC电力方案全景对比.html)",
+      "全系统LCOE框架分析(F4)"
+    ],
+    "frameworks_applied": ["F2", "F4", "F13"],
+    "system_checks_passed": {
+      "bear_case_gate": true,
+      "consensus_check": true,
+      "source_verified": true,
+      "catalyst_dated": true
+    }
+  },
+  "display": {
+    "headline": "GE Vernova：DC电力链条中最不可替代的燃气轮机垄断",
+    "summary_cn": "AI数据中心电力需求爆发，短期靠BTM天然气发电填补(占DC方案>40%)。GEV燃气轮机近垄断，$150B积压售罄至2020s末。PJM容量拍卖价+833%是需求验证。当前$1049，目标$1250，等回调或催化剂确认后入场。",
+    "tags": ["DC电力", "基础设施", "垄断", "美股", "供给约束"],
+    "risk_level": "moderate"
+  }
+}

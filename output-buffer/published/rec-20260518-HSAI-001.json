@@ -1,0 +1,104 @@
+{
+  "id": "rec-20260518-HSAI-001",
+  "ticker": "HSAI",
+  "name": "禾赛科技",
+  "market": "US",
+  "direction": "long",
+  "conviction": "high",
+  "thesis": {
+    "one_liner": "禾赛是否是LiDAR行业的'苹果ISP'——平台基础设施而非硬件周期股？",
+    "core_arguments": [
+      "6D产业链7层瓶颈中禾赛占据最紧约束节点（芯片+制造），3年内无人能复制交付能力",
+      "机器人业务从0→3000台/季（2026Q1），打开第二增长曲线验证平台属性",
+      "AT128量产良率和成本曲线领先竞争对手2年，可得性护城河（F13）决定份额而非价格"
+    ],
+    "supply_side_logic": "LiDAR芯片从流片到量产需24-36个月，禾赛已有3代自研芯片量产。竞争对手（速腾/图达通）仍用FPGA或外购芯片，成本结构劣势约40%。交付时间差=真实护城河。",
+    "consensus_check": {
+      "sell_side_consensus": "8/12看多，4/12中性",
+      "edge_statement": "市场把禾赛当硬件周期股给15x PE，没有price in机器人业务和平台转型价值。三层估值拆分（F12）显示即使第二三层归零，当前价格仍有安全边际。"
+    }
+  },
+  "bear_case": {
+    "scenarios": [
+      {
+        "description": "纯视觉方案（Tesla FSD模式）在L3+场景证明足够，OEM大规模砍LiDAR配置",
+        "probability": 0.15,
+        "downside_pct": -45,
+        "severity": 8
+      },
+      {
+        "description": "中美脱钩升级，HSAI被列入实体清单或强制退市",
+        "probability": 0.10,
+        "downside_pct": -60,
+        "severity": 9
+      },
+      {
+        "description": "机器人业务增长不及预期，Q2-Q3出货量环比下降",
+        "probability": 0.25,
+        "downside_pct": -20,
+        "severity": 5
+      }
+    ],
+    "max_downside_pct": -18.75,
+    "probability_weighted_downside": -14.25,
+    "kill_condition": "连续两个季度ADAS出货量同比下降，或机器人业务连续两季零增长"
+  },
+  "valuation": {
+    "methodology": "sum_of_parts",
+    "target_price": 41.8,
+    "current_price": 28.5,
+    "upside_pct": 46.7,
+    "key_assumptions": [
+      "ADAS业务2026E收入$380M，给20x PE（苹果ISP类比有效部分）",
+      "机器人业务2026E收入$45M，给5x PS（早期高增长）",
+      "第三层（智慧城市/工业）归零处理"
+    ],
+    "frameworks_used": ["F5", "F11", "F12", "F13"]
+  },
+  "catalysts": [
+    {
+      "event": "Q1 2026财报发布",
+      "expected_date": "2026-05-19",
+      "impact": "high",
+      "if_positive": "机器人出货量>2500台确认增长轨迹，加仓至目标权重",
+      "if_negative": "机器人<1500台或ADAS guidance下调，减仓50%并重新评估thesis"
+    },
+    {
+      "event": "下一代纯固态LiDAR量产公告",
+      "expected_date": "2026-H2",
+      "impact": "medium",
+      "if_positive": "确认技术代际领先，估值上修",
+      "if_negative": "延期不影响当前thesis（已排除出base case per F11 ImageNet类比）"
+    }
+  ],
+  "position_sizing": {
+    "suggested_weight": "5-8%",
+    "entry_strategy": "Q1财报后确认方向，分2批建仓（60%/40%）",
+    "stop_loss": "kill_condition触发，或股价跌破$20（-30%）先到者执行"
+  },
+  "metadata": {
+    "created_at": "2026-05-18T10:00:00+08:00",
+    "analyst": "Nexus Research System",
+    "review_date": "2026-06-19",
+    "data_freshness": "2026-05-17",
+    "confidence_sources": [
+      "HSAI 2025 20-F (SEC EDGAR)",
+      "HSAI Q4 2025 Earnings Call Transcript",
+      "禾赛投资者日2026-03演示文稿",
+      "Yole LiDAR & Sensing 2026 Report"
+    ],
+    "frameworks_applied": ["F2", "F5", "F11", "F12", "F13"],
+    "system_checks_passed": {
+      "bear_case_gate": true,
+      "consensus_check": true,
+      "source_verified": true,
+      "catalyst_dated": true
+    }
+  },
+  "display": {
+    "headline": "禾赛科技：被错误定价的LiDAR平台公司",
+    "summary_cn": "市场把禾赛当硬件周期股给15x PE，忽略了其芯片自研+制造能力构成的可得性护城河。机器人业务从零到3000台/季验证平台属性，三层估值拆分显示即使后两层归零仍有安全边际。目标价$41.8，上行47%，bear case概率加权下行仅-14%。",
+    "tags": ["LiDAR", "机器人", "平台公司", "美股", "供给约束"],
+    "risk_level": "moderate"
+  }
+}

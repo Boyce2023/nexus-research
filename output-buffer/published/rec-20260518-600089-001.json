@@ -1,0 +1,104 @@
+{
+  "id": "rec-20260518-600089-001",
+  "ticker": "600089.SH",
+  "name": "特变电工",
+  "market": "A-share",
+  "direction": "short",
+  "conviction": "high",
+  "thesis": {
+    "one_liner": "特变电工的多晶硅巨亏是否会拖累整体估值——相比思源电气是否系统性高估？",
+    "core_arguments": [
+      "新特能源FY2024亏损RMB 39亿，多晶硅价格RMB 40-48/kg vs总成本RMB 48-55/kg，仍在亏损区间",
+      "海外收入占比仅12-20%（vs思源34%），在全球电力设备需求爆发中处于劣势",
+      "估值高于共识目标20%，无期权价值（不存在被低估的隐藏业务线）"
+    ],
+    "supply_side_logic": "多晶硅行业产能严重过剩，价格从2022年高点RMB 300/kg跌至40-48/kg，全行业亏损。特变的电力设备主业（变压器/输变电）虽稳健，但多晶硅拖累使整体利润不如纯电力设备公司（思源）。市场给的估值隐含多晶硅反弹预期，但供给出清至少需要12-18个月。",
+    "consensus_check": {
+      "sell_side_consensus": "多数券商看平/中性，少数仍看多（押注多晶硅反弹）",
+      "edge_statement": "作为思源电气Pair Trade的Short端，对冲A股电力设备板块beta。不是独立做空，是相对价值交易"
+    }
+  },
+  "bear_case": {
+    "scenarios": [
+      {
+        "description": "多晶硅价格快速修复至RMB 55+/kg（产能出清加速）",
+        "probability": 0.20,
+        "downside_pct": 20,
+        "severity": 6
+      },
+      {
+        "description": "政策补贴/多晶硅战略储备支撑价格",
+        "probability": 0.10,
+        "downside_pct": 15,
+        "severity": 5
+      },
+      {
+        "description": "A股电力设备板块集体拉升（beta压制short端）",
+        "probability": 0.30,
+        "downside_pct": 10,
+        "severity": 4
+      }
+    ],
+    "max_downside_pct": -12.0,
+    "probability_weighted_downside": -7.5,
+    "kill_condition": "多晶硅价格连续3个月>RMB 55/kg，或新特能源季度转正"
+  },
+  "valuation": {
+    "methodology": "comps",
+    "target_price": 22.0,
+    "current_price": 25.0,
+    "upside_pct": -12.0,
+    "key_assumptions": [
+      "多晶硅持续亏损至少到2026-H2",
+      "电力设备主业估值对标行业均值（不给溢价）",
+      "无期权价值（多晶硅反弹非base case）"
+    ],
+    "frameworks_used": ["F2", "F9"]
+  },
+  "catalysts": [
+    {
+      "event": "新特能源减值/亏损公告",
+      "expected_date": "2026-Q2/Q3",
+      "impact": "high",
+      "if_positive": "减值确认→股价下修验证short thesis",
+      "if_negative": "意外扭亏→立即平仓short"
+    },
+    {
+      "event": "多晶硅行业价格动向（月度跟踪）",
+      "expected_date": "持续",
+      "impact": "medium",
+      "if_positive": "价格持续<RMB 50/kg→维持short",
+      "if_negative": "价格>RMB 55/kg连续3月→平仓"
+    }
+  ],
+  "position_sizing": {
+    "suggested_weight": "5-8% (pair trade short leg, 40%权重)",
+    "entry_strategy": "已建仓，配合思源Long端形成市场中性pair",
+    "stop_loss": "kill_condition触发，或pair spread逆向扩大>15%"
+  },
+  "metadata": {
+    "created_at": "2026-05-18T12:00:00+08:00",
+    "analyst": "Nexus Research System",
+    "review_date": "2026-07-15",
+    "data_freshness": "2026-05-16",
+    "confidence_sources": [
+      "特变电工2025年报",
+      "新特能源FY2024财报（亏RMB 39亿）",
+      "多晶硅行业协会月度价格数据",
+      "思源电气BAM Deck对比分析"
+    ],
+    "frameworks_applied": ["F2", "F9"],
+    "system_checks_passed": {
+      "bear_case_gate": true,
+      "consensus_check": true,
+      "source_verified": true,
+      "catalyst_dated": true
+    }
+  },
+  "display": {
+    "headline": "特变电工：多晶硅巨亏拖累的Pair Trade Short端",
+    "summary_cn": "新特能源FY2024亏39亿，多晶硅仍在成本线下运行。海外占比仅12-20%，在电力设备全球需求爆发中处于劣势。作为思源电气Long端的对冲Short，构成市场中性Pair Trade。目标下行-12%，pair整体R/R 2.8x。",
+    "tags": ["A股", "电力设备", "做空", "Pair Trade", "多晶硅"],
+    "risk_level": "moderate"
+  }
+}
