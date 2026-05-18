@@ -116,7 +116,6 @@ def get_live_portfolio():
                 "market_value": round(market_value, 2),
                 "pnl": round(pnl, 2),
                 "pnl_pct": round(pnl_pct, 2),
-                "thesis": pos["thesis_short"],
                 "entry_date": pos["entry_date"]
             })
 
@@ -271,10 +270,12 @@ def make_performance_widget():
     if "error" in portfolio:
         return "<p>Portfolio not available</p>"
 
+    sim = load_sim_portfolio()
     a_acct = portfolio["accounts"].get("a_share", {})
     us_acct = portfolio["accounts"].get("us", {})
     combined = portfolio["combined"]
     snapshots = portfolio.get("daily_snapshots", [])
+    trade_log = sim.get("trade_log", []) if sim else []
 
     snapshot_dates = json.dumps([s["date"] for s in snapshots])
     snapshot_a = json.dumps([s.get("a_share", {}).get("return_pct", 0) for s in snapshots])
@@ -299,11 +300,25 @@ def make_performance_widget():
 <td style="color:{color};font-weight:700">{p['pnl_pct']:+.2f}%</td>
 <td style="color:{color}">${p['pnl']:,.0f}</td></tr>"""
 
+    trade_rows = ""
+    for t in reversed(trade_log):
+        acct_label = "A股" if t["account"] == "a_share" else "美股"
+        action_cn = {"buy": "买入", "sell": "卖出", "short": "做空", "cover": "平空"}.get(t["action"], t["action"])
+        action_color = {"buy": "#3fb950", "sell": "#f85149", "short": "#f85149", "cover": "#3fb950"}.get(t["action"], "#c9d1d9")
+        currency = "¥" if t["account"] == "a_share" else "$"
+        value = t["shares"] * t["price"]
+        trade_rows += f"""<tr>
+<td>{t['date']}</td><td>{acct_label}</td>
+<td style="color:{action_color};font-weight:600">{action_cn}</td>
+<td>{t['ticker']}</td><td>{t['shares']}</td>
+<td>{currency}{t['price']:.2f}</td><td>{currency}{value:,.0f}</td></tr>"""
+
     a_return = a_acct.get("return_pct", 0)
     us_return = us_acct.get("return_pct", 0)
     a_color = "#3fb950" if a_return >= 0 else "#f85149"
     us_color = "#3fb950" if us_return >= 0 else "#f85149"
     c_color = "#3fb950" if combined["combined_return_pct"] >= 0 else "#f85149"
+    pos_count = len(a_acct.get("positions", [])) + len(us_acct.get("positions", []))
 
     return f"""<!DOCTYPE html>
 <html><head><meta charset="UTF-8">
@@ -314,8 +329,8 @@ body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgro
 .container{{max-width:900px;margin:0 auto}}
 h1{{color:#fff;font-size:20px;margin-bottom:4px}}
 .subtitle{{color:#8b949e;font-size:12px;margin-bottom:20px}}
-.stats-bar{{display:flex;gap:24px;margin-bottom:24px;padding:16px;background:#161b22;border:1px solid #30363d;border-radius:8px}}
-.stat{{text-align:center}}
+.stats-bar{{display:flex;gap:24px;margin-bottom:24px;padding:16px;background:#161b22;border:1px solid #30363d;border-radius:8px;flex-wrap:wrap}}
+.stat{{text-align:center;min-width:80px}}
 .stat-val{{font-size:24px;font-weight:700}}
 .stat-lbl{{font-size:11px;color:#8b949e;margin-top:2px}}
 .chart-box{{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:16px;margin-bottom:24px}}
@@ -330,14 +345,15 @@ td{{padding:8px 6px;border-bottom:1px solid #21262d}}
 </style></head><body>
 <div class="container">
 <h1>Nexus AI 模拟组合</h1>
-<div class="subtitle">Claude AI独立管理 · 2026-05-18→ 06-18 · 实时数据</div>
-<div class="updated">更新: {portfolio['updated_at'][:19]} {'(✅ yfinance实时)' if portfolio['yfinance_available'] else '(⚠️ 成本价)'}</div>
+<div class="subtitle">Claude AI独立管理 · 2026-05-18 → 06-18 · 实时数据</div>
+<div class="updated">更新: {portfolio['updated_at'][:19]} {'(yfinance实时)' if portfolio['yfinance_available'] else '(成本价)'}</div>
 
 <div class="stats-bar">
 <div class="stat"><div class="stat-val" style="color:{a_color}">{a_return:+.2f}%</div><div class="stat-lbl">A股 (¥{a_acct.get('total_assets',0):,.0f})</div></div>
 <div class="stat"><div class="stat-val" style="color:{us_color}">{us_return:+.2f}%</div><div class="stat-lbl">美股 (${us_acct.get('total_assets',0):,.0f})</div></div>
 <div class="stat"><div class="stat-val" style="color:{c_color}">{combined['combined_return_pct']:+.2f}%</div><div class="stat-lbl">综合收益率</div></div>
-<div class="stat"><div class="stat-val" style="color:#58a6ff">11</div><div class="stat-lbl">持仓标的</div></div>
+<div class="stat"><div class="stat-val" style="color:#58a6ff">{pos_count}</div><div class="stat-lbl">持仓标的</div></div>
+<div class="stat"><div class="stat-val" style="color:#8b949e">{len(trade_log)}</div><div class="stat-lbl">总交易笔数</div></div>
 </div>
 
 <div class="chart-box">
@@ -346,7 +362,7 @@ td{{padding:8px 6px;border-bottom:1px solid #21262d}}
 </div>
 
 <div class="section">
-<h2>🇨🇳 A股持仓 (初始¥1,000,000)</h2>
+<h2>A股持仓 (初始 ¥1,000,000)</h2>
 <table>
 <tr><th>代码</th><th>名称</th><th>股数</th><th>成本</th><th>现价</th><th>涨跌</th><th>盈亏</th></tr>
 {a_rows}
@@ -354,14 +370,22 @@ td{{padding:8px 6px;border-bottom:1px solid #21262d}}
 </div>
 
 <div class="section">
-<h2>🇺🇸 美股持仓 (初始$150,000)</h2>
+<h2>美股持仓 (初始 $150,000)</h2>
 <table>
 <tr><th>代码</th><th>名称</th><th>股数</th><th>成本</th><th>现价</th><th>涨跌</th><th>盈亏</th></tr>
 {us_rows}
 </table>
 </div>
 
-<div class="disclaimer">⚠️ 此为AI系统模拟投资组合，仅用于研究验证。不构成投资建议。<br>Nexus Research System · Powered by Claude AI</div>
+<div class="section">
+<h2>交易明细</h2>
+<table>
+<tr><th>日期</th><th>账户</th><th>操作</th><th>标的</th><th>股数</th><th>价格</th><th>金额</th></tr>
+{trade_rows}
+</table>
+</div>
+
+<div class="disclaimer">此为AI系统模拟投资组合，仅用于研究验证。不构成投资建议。<br>Nexus Research System · Powered by Claude AI</div>
 </div>
 
 <script>
