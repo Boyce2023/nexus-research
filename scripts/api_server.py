@@ -266,16 +266,23 @@ def make_portfolio_widget(recs):
 
 
 def make_performance_widget():
-    portfolio = get_live_portfolio()
-    if "error" in portfolio:
+    sim = load_sim_portfolio()
+    if not sim:
         return "<p>Portfolio not available</p>"
 
-    sim = load_sim_portfolio()
-    a_acct = portfolio["accounts"].get("a_share", {})
-    us_acct = portfolio["accounts"].get("us", {})
-    combined = portfolio["combined"]
-    snapshots = portfolio.get("daily_snapshots", [])
-    trade_log = sim.get("trade_log", []) if sim else []
+    a_acct = sim["accounts"].get("a_share", {})
+    us_acct = sim["accounts"].get("us", {})
+    snapshots = sim.get("daily_snapshots", [])
+    trade_log = sim.get("trade_log", [])
+    last_updated = sim["meta"].get("last_updated", "")
+
+    a_return = a_acct.get("return_pct", 0)
+    us_return = us_acct.get("return_pct", 0)
+    a_initial = a_acct.get("initial_capital", 1000000)
+    us_initial = us_acct.get("initial_capital", 150000)
+    a_total = a_acct.get("total_assets", a_initial)
+    us_total = us_acct.get("total_assets", us_initial)
+    combined_return = round(a_return * 0.87 + us_return * 0.13, 2)
 
     snapshot_dates = json.dumps([s["date"] for s in snapshots])
     snapshot_a = json.dumps([s.get("a_share", {}).get("return_pct", 0) for s in snapshots])
@@ -284,40 +291,44 @@ def make_performance_widget():
 
     a_rows = ""
     for p in a_acct.get("positions", []):
-        color = "#3fb950" if p["pnl"] >= 0 else "#f85149"
+        pnl_pct = p.get("unrealized_pnl_pct", 0)
+        cost_basis = p["shares"] * p["avg_cost"]
+        pnl = p.get("market_value", cost_basis) - cost_basis
+        color = "#3fb950" if pnl >= 0 else "#f85149"
         a_rows += f"""<tr>
-<td>{p['ticker']}</td><td>{p['name']}</td><td>{p['shares']}</td>
-<td>¥{p['avg_cost']:.2f}</td><td>¥{p['current_price']:.2f}</td>
-<td style="color:{color};font-weight:700">{p['pnl_pct']:+.2f}%</td>
-<td style="color:{color}">¥{p['pnl']:,.0f}</td></tr>"""
+<td>{p['ticker']}</td><td>{p.get('name','')}</td><td>{p['shares']}</td>
+<td>¥{p['avg_cost']:.2f}</td><td>¥{p.get('current_price', p['avg_cost']):.2f}</td>
+<td style="color:{color};font-weight:700">{pnl_pct:+.2f}%</td>
+<td style="color:{color}">¥{pnl:,.0f}</td></tr>"""
 
     us_rows = ""
     for p in us_acct.get("positions", []):
-        color = "#3fb950" if p["pnl"] >= 0 else "#f85149"
+        pnl_pct = p.get("unrealized_pnl_pct", 0)
+        cost_basis = p["shares"] * p["avg_cost"]
+        pnl = p.get("market_value", cost_basis) - cost_basis
+        color = "#3fb950" if pnl >= 0 else "#f85149"
         us_rows += f"""<tr>
-<td>{p['ticker']}</td><td>{p['name']}</td><td>{p['shares']}</td>
-<td>${p['avg_cost']:.2f}</td><td>${p['current_price']:.2f}</td>
-<td style="color:{color};font-weight:700">{p['pnl_pct']:+.2f}%</td>
-<td style="color:{color}">${p['pnl']:,.0f}</td></tr>"""
+<td>{p['ticker']}</td><td>{p.get('name','')}</td><td>{p['shares']}</td>
+<td>${p['avg_cost']:.2f}</td><td>${p.get('current_price', p['avg_cost']):.2f}</td>
+<td style="color:{color};font-weight:700">{pnl_pct:+.2f}%</td>
+<td style="color:{color}">${pnl:,.0f}</td></tr>"""
 
     trade_rows = ""
     for t in reversed(trade_log):
-        acct_label = "A股" if t["account"] == "a_share" else "美股"
-        action_cn = {"buy": "买入", "sell": "卖出", "short": "做空", "cover": "平空"}.get(t["action"], t["action"])
-        action_color = {"buy": "#3fb950", "sell": "#f85149", "short": "#f85149", "cover": "#3fb950"}.get(t["action"], "#c9d1d9")
-        currency = "¥" if t["account"] == "a_share" else "$"
-        value = t["shares"] * t["price"]
+        acct_label = "A股" if t.get("account") == "a_share" else "美股"
+        action_cn = {"buy": "买入", "sell": "卖出", "short": "做空", "cover": "平空"}.get(t.get("action", ""), t.get("action", ""))
+        action_color = {"buy": "#3fb950", "sell": "#f85149", "short": "#f85149", "cover": "#3fb950"}.get(t.get("action", ""), "#c9d1d9")
+        currency = "¥" if t.get("account") == "a_share" else "$"
+        value = t.get("shares", 0) * t.get("price", 0)
         trade_rows += f"""<tr>
-<td>{t['date']}</td><td>{acct_label}</td>
+<td>{t.get('date','')}</td><td>{acct_label}</td>
 <td style="color:{action_color};font-weight:600">{action_cn}</td>
-<td>{t['ticker']}</td><td>{t['shares']}</td>
-<td>{currency}{t['price']:.2f}</td><td>{currency}{value:,.0f}</td></tr>"""
+<td>{t.get('ticker','')}</td><td>{t.get('shares',0)}</td>
+<td>{currency}{t.get('price',0):.2f}</td><td>{currency}{value:,.0f}</td></tr>"""
 
-    a_return = a_acct.get("return_pct", 0)
-    us_return = us_acct.get("return_pct", 0)
     a_color = "#3fb950" if a_return >= 0 else "#f85149"
     us_color = "#3fb950" if us_return >= 0 else "#f85149"
-    c_color = "#3fb950" if combined["combined_return_pct"] >= 0 else "#f85149"
+    c_color = "#3fb950" if combined_return >= 0 else "#f85149"
     pos_count = len(a_acct.get("positions", [])) + len(us_acct.get("positions", []))
 
     return f"""<!DOCTYPE html>
@@ -345,13 +356,13 @@ td{{padding:8px 6px;border-bottom:1px solid #21262d}}
 </style></head><body>
 <div class="container">
 <h1>Nexus AI 模拟组合</h1>
-<div class="subtitle">Claude AI独立管理 · 2026-05-18 → 06-18 · 实时数据</div>
-<div class="updated">更新: {portfolio['updated_at'][:19]} {'(yfinance实时)' if portfolio['yfinance_available'] else '(成本价)'}</div>
+<div class="subtitle">Claude AI独立管理 · 2026-05-18 → 06-18 · 同步数据</div>
+<div class="updated">数据同步: {last_updated[:19]}</div>
 
 <div class="stats-bar">
-<div class="stat"><div class="stat-val" style="color:{a_color}">{a_return:+.2f}%</div><div class="stat-lbl">A股 (¥{a_acct.get('total_assets',0):,.0f})</div></div>
-<div class="stat"><div class="stat-val" style="color:{us_color}">{us_return:+.2f}%</div><div class="stat-lbl">美股 (${us_acct.get('total_assets',0):,.0f})</div></div>
-<div class="stat"><div class="stat-val" style="color:{c_color}">{combined['combined_return_pct']:+.2f}%</div><div class="stat-lbl">综合收益率</div></div>
+<div class="stat"><div class="stat-val" style="color:{a_color}">{a_return:+.2f}%</div><div class="stat-lbl">A股 (¥{a_total:,.0f})</div></div>
+<div class="stat"><div class="stat-val" style="color:{us_color}">{us_return:+.2f}%</div><div class="stat-lbl">美股 (${us_total:,.0f})</div></div>
+<div class="stat"><div class="stat-val" style="color:{c_color}">{combined_return:+.2f}%</div><div class="stat-lbl">综合收益率</div></div>
 <div class="stat"><div class="stat-val" style="color:#58a6ff">{pos_count}</div><div class="stat-lbl">持仓标的</div></div>
 <div class="stat"><div class="stat-val" style="color:#8b949e">{len(trade_log)}</div><div class="stat-lbl">总交易笔数</div></div>
 </div>
