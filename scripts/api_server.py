@@ -528,7 +528,10 @@ class APIHandler(BaseHTTPRequestHandler):
         elif path == "/api/v1/feed/rss":
             self._xml(make_rss(recs))
 
-        elif path == "/" or path == "/docs":
+        elif path == "/":
+            self._html(make_performance_widget())
+
+        elif path == "/docs":
             self._html("""<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Nexus API</title>
 <style>body{font-family:monospace;background:#0d1117;color:#c9d1d9;padding:40px;max-width:800px;margin:0 auto}
 h1{color:#fff}a{color:#58a6ff}code{background:#161b22;padding:2px 6px;border-radius:3px}
