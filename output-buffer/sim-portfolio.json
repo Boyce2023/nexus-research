@@ -1,100 +1,148 @@
 {
   "meta": {
     "type": "sim_portfolio",
-    "description": "Claude AI独立管理模拟盘 — 不是投资建议",
+    "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "benchmark": {"a_share": "沪深300", "us": "SPY"},
-    "disclaimer": "此为AI系统模拟投资组合，仅用于研究验证。不构成投资建议。"
+    "last_updated": "2026-05-20T13:46:12+08:00",
+    "benchmark": {
+      "a_share": "CSI300",
+      "us": "SPY"
+    },
+    "disclaimer": "模拟盘，非真实交易。仅供研究参考。"
   },
   "accounts": {
     "a_share": {
       "currency": "CNY",
       "initial_capital": 1000000,
+      "total_assets": 1022290.0,
+      "cash": 651129.0,
+      "realized_pnl": 6870.0,
+      "return_pct": 2.23,
       "positions": [
         {
           "ticker": "002028.SZ",
           "name": "思源电气",
           "shares": 700,
-          "avg_cost": 190.00,
+          "avg_cost": 190.0,
+          "current_price": 201.0,
+          "market_value": 140700.0,
+          "unrealized_pnl_pct": 5.79,
+          "portfolio_pct": 0.138,
           "entry_date": "2026-05-18",
           "type": "core_position",
           "sector": "电力设备"
-        },
-        {
-          "ticker": "300433.SZ",
-          "name": "蓝思科技",
-          "shares": 3000,
-          "avg_cost": 34.21,
-          "entry_date": "2026-05-18",
-          "type": "catalyst_position",
-          "sector": "苹果供应链"
         },
         {
           "ticker": "603005.SS",
           "name": "晶方科技",
           "shares": 2000,
           "avg_cost": 32.94,
+          "current_price": 36.8,
+          "market_value": 73600.0,
+          "unrealized_pnl_pct": 11.72,
+          "portfolio_pct": 0.072,
           "entry_date": "2026-05-18",
           "type": "scout_position",
           "sector": "半导体封装"
+        },
+        {
+          "ticker": "002938.SZ",
+          "name": "鹏鼎控股",
+          "shares": 900,
+          "avg_cost": 87.75,
+          "current_price": 87.75,
+          "market_value": 78975.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.077,
+          "entry_date": "2026-05-20",
+          "type": "catalyst_position",
+          "sector": "PCB/苹果链"
+        },
+        {
+          "ticker": "002472.SZ",
+          "name": "双环传动",
+          "shares": 1800,
+          "avg_cost": 43.27,
+          "current_price": 43.27,
+          "market_value": 77886.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.076,
+          "entry_date": "2026-05-20",
+          "type": "catalyst_position",
+          "sector": "机器人/精密齿轮"
         }
       ]
     },
     "us": {
       "currency": "USD",
       "initial_capital": 150000,
+      "total_assets": 148189.71,
+      "cash": 64696.3,
+      "realized_pnl": -757.1,
+      "return_pct": -1.21,
       "positions": [
         {
           "ticker": "NVDA",
           "name": "NVIDIA Corporation",
           "shares": 80,
-          "avg_cost": 225.00,
+          "avg_cost": 225.0,
+          "current_price": 220.61,
+          "market_value": 17648.8,
+          "unrealized_pnl_pct": -1.95,
+          "portfolio_pct": 0.119,
           "entry_date": "2026-05-18",
           "type": "base_position",
-          "sector": "AI半导体"
-        },
-        {
-          "ticker": "HSAI",
-          "name": "禾赛科技",
-          "shares": 335,
-          "avg_cost": 22.44,
-          "entry_date": "2026-05-18",
-          "type": "trading_position",
-          "sector": "自动驾驶"
+          "sector": "AI芯片/半导体"
         },
         {
           "ticker": "AAPL",
           "name": "Apple Inc.",
           "shares": 50,
-          "avg_cost": 299.90,
+          "avg_cost": 299.9,
+          "current_price": 298.97,
+          "market_value": 14948.5,
+          "unrealized_pnl_pct": -0.31,
+          "portfolio_pct": 0.101,
           "entry_date": "2026-05-18",
           "type": "base_position",
-          "sector": "消费电子"
+          "sector": "消费科技/硬件"
         },
         {
           "ticker": "GOOGL",
           "name": "Alphabet Inc.",
           "shares": 30,
-          "avg_cost": 396.00,
+          "avg_cost": 396.0,
+          "current_price": 387.66,
+          "market_value": 11629.8,
+          "unrealized_pnl_pct": -2.11,
+          "portfolio_pct": 0.078,
           "entry_date": "2026-05-18",
           "type": "base_position",
-          "sector": "互联网"
+          "sector": "AI搜索/云计算"
         },
         {
           "ticker": "ADBE",
           "name": "Adobe Inc.",
           "shares": 48,
           "avg_cost": 245.99,
+          "current_price": 254.99,
+          "market_value": 12239.52,
+          "unrealized_pnl_pct": 3.66,
+          "portfolio_pct": 0.083,
           "entry_date": "2026-05-18",
           "type": "trading_position",
-          "sector": "软件"
+          "sector": "软件/SaaS"
         },
         {
-          "ticker": "SRUUF",
-          "name": "Sprott Uranium Trust",
+          "ticker": "SPUT",
+          "name": "Sprott Uranium Trust (SRUUF)",
           "shares": 609,
           "avg_cost": 19.68,
+          "current_price": 19.71,
+          "market_value": 12003.39,
+          "unrealized_pnl_pct": 0.15,
+          "portfolio_pct": 0.081,
           "entry_date": "2026-05-18",
           "type": "trading_position",
           "sector": "铀/核能"
@@ -103,16 +151,24 @@
           "ticker": "GEV",
           "name": "GE Vernova",
           "shares": 8,
-          "avg_cost": 1049.00,
+          "avg_cost": 1049.0,
+          "current_price": 1011.8,
+          "market_value": 8094.4,
+          "unrealized_pnl_pct": -3.55,
+          "portfolio_pct": 0.055,
           "entry_date": "2026-05-18",
           "type": "trading_position",
-          "sector": "电力设备"
+          "sector": "电力设备/燃气轮机"
         },
         {
           "ticker": "LEU",
-          "name": "Centrus Energy",
+          "name": "Centrus Energy Corp",
           "shares": 41,
-          "avg_cost": 182.60,
+          "avg_cost": 182.6,
+          "current_price": 169.0,
+          "market_value": 6929.0,
+          "unrealized_pnl_pct": -7.45,
+          "portfolio_pct": 0.047,
           "entry_date": "2026-05-18",
           "type": "trading_position",
           "sector": "铀/核能"
@@ -123,23 +179,137 @@
   "daily_snapshots": [
     {
       "date": "2026-05-18",
-      "a_share": {"total_assets": 1015882, "return_pct": 1.59},
-      "us": {"total_assets": 150000, "return_pct": 0},
-      "combined_return_pct": 0.97,
-      "note": "Day1 A股: 蓝思+13.5%驱动, 美股尚未开盘"
+      "a_share": {
+        "total_assets": 1015882,
+        "return_pct": 1.59
+      },
+      "us": {
+        "total_assets": 149701,
+        "return_pct": -0.2
+      },
+      "combined_return_pct": 1.36
+    },
+    {
+      "date": "2026-05-19",
+      "a_share": {
+        "total_assets": 1015763.0,
+        "return_pct": 1.58
+      },
+      "us": {
+        "total_assets": 149260.77,
+        "return_pct": -0.49
+      },
+      "combined_return_pct": 1.31
+    },
+    {
+      "date": "2026-05-20",
+      "a_share": {
+        "total_assets": 1022290.0,
+        "return_pct": 2.23
+      },
+      "us": {
+        "total_assets": 148189.71,
+        "return_pct": -1.21
+      },
+      "combined_return_pct": 1.78
     }
   ],
   "trade_log": [
-    {"date": "2026-05-18", "account": "a_share", "action": "buy", "ticker": "002028.SZ", "shares": 700, "price": 190.00},
-    {"date": "2026-05-18", "account": "a_share", "action": "buy", "ticker": "300433.SZ", "shares": 3000, "price": 34.21},
-    {"date": "2026-05-18", "account": "a_share", "action": "buy", "ticker": "603005.SS", "shares": 2000, "price": 32.94},
-    {"date": "2026-05-18", "account": "us", "action": "buy", "ticker": "NVDA", "shares": 80, "price": 225.00},
-    {"date": "2026-05-18", "account": "us", "action": "buy", "ticker": "HSAI", "shares": 335, "price": 22.44},
-    {"date": "2026-05-18", "account": "us", "action": "buy", "ticker": "AAPL", "shares": 50, "price": 299.90},
-    {"date": "2026-05-18", "account": "us", "action": "buy", "ticker": "GOOGL", "shares": 30, "price": 396.00},
-    {"date": "2026-05-18", "account": "us", "action": "buy", "ticker": "ADBE", "shares": 48, "price": 245.99},
-    {"date": "2026-05-18", "account": "us", "action": "buy", "ticker": "SRUUF", "shares": 609, "price": 19.68},
-    {"date": "2026-05-18", "account": "us", "action": "buy", "ticker": "GEV", "shares": 8, "price": 1049.00},
-    {"date": "2026-05-18", "account": "us", "action": "buy", "ticker": "LEU", "shares": 41, "price": 182.60}
+    {
+      "date": "2026-05-18",
+      "account": "us",
+      "action": "buy",
+      "ticker": "NVDA",
+      "shares": 80,
+      "price": 225.0
+    },
+    {
+      "date": "2026-05-18",
+      "account": "us",
+      "action": "buy",
+      "ticker": "HSAI",
+      "shares": 335,
+      "price": 22.44
+    },
+    {
+      "date": "2026-05-18",
+      "account": "us",
+      "action": "buy",
+      "ticker": "AAPL",
+      "shares": 50,
+      "price": 299.9
+    },
+    {
+      "date": "2026-05-18",
+      "account": "us",
+      "action": "buy",
+      "ticker": "GOOGL",
+      "shares": 30,
+      "price": 396.0
+    },
+    {
+      "date": "2026-05-18",
+      "account": "us",
+      "action": "buy",
+      "ticker": "ADBE",
+      "shares": 48,
+      "price": 245.99
+    },
+    {
+      "date": "2026-05-18",
+      "account": "us",
+      "action": "buy",
+      "ticker": "SPUT",
+      "shares": 609,
+      "price": 19.68
+    },
+    {
+      "date": "2026-05-18",
+      "account": "us",
+      "action": "buy",
+      "ticker": "GEV",
+      "shares": 8,
+      "price": 1049.0
+    },
+    {
+      "date": "2026-05-18",
+      "account": "us",
+      "action": "buy",
+      "ticker": "LEU",
+      "shares": 41,
+      "price": 182.6
+    },
+    {
+      "date": "2026-05-20",
+      "account": "us",
+      "action": "sell",
+      "ticker": "HSAI",
+      "shares": 335,
+      "price": 20.18
+    },
+    {
+      "date": "2026-05-20",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "300433",
+      "shares": 3000,
+      "price": 36.5
+    },
+    {
+      "date": "2026-05-20",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "002938",
+      "shares": 900,
+      "price": 87.75
+    },
+    {
+      "date": "2026-05-20",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "002472",
+      "shares": 1800,
+      "price": 43.27
+    }
   ]
 }
