@@ -385,14 +385,19 @@ def make_performance_widget():
         action_cn = {"buy": "买入", "sell": "卖出", "short": "做空", "cover": "平空"}.get(t.get("action", ""), t.get("action", ""))
         action_color = {"buy": "#3fb950", "sell": "#f85149", "short": "#f85149", "cover": "#3fb950"}.get(t.get("action", ""), "#c9d1d9")
         currency = "¥" if t.get("account") == "a_share" else "$"
-        value = t.get("shares", 0) * t.get("price", 0)
         ticker = t.get('ticker', '')
         name = name_map.get(ticker, '')
+        rpnl = t.get("realized_pnl")
+        if rpnl is not None:
+            pnl_color = "#3fb950" if rpnl >= 0 else "#f85149"
+            pnl_cell = f'<td style="color:{pnl_color};font-weight:700">{currency}{rpnl:+,.0f}</td>'
+        else:
+            pnl_cell = '<td style="color:#8b949e">—</td>'
         trade_rows += f"""<tr>
 <td>{t.get('date','')}</td><td>{acct_label}</td>
 <td style="color:{action_color};font-weight:600">{action_cn}</td>
 <td>{ticker}</td><td>{name}</td><td>{t.get('shares',0)}</td>
-<td>{currency}{t.get('price',0):.2f}</td><td>{currency}{value:,.0f}</td></tr>"""
+<td>{currency}{t.get('price',0):.2f}</td>{pnl_cell}</tr>"""
 
     a_color = "#3fb950" if a_return >= 0 else "#f85149"
     us_color = "#3fb950" if us_return >= 0 else "#f85149"
@@ -485,7 +490,7 @@ td{{padding:8px 6px;border-bottom:1px solid #21262d}}
 <div class="section">
 <h2>交易明细</h2>
 <div class="table-wrap"><table>
-<tr><th>日期</th><th>账户</th><th>操作</th><th>标的</th><th>名称</th><th>股数</th><th>价格</th><th>金额</th></tr>
+<tr><th>日期</th><th>账户</th><th>操作</th><th>标的</th><th>名称</th><th>股数</th><th>价格</th><th>盈亏</th></tr>
 {trade_rows}
 </table></div>
 </div>
