@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-21T00:00:44.427605+08:00",
+    "last_updated": "2026-05-21T12:33:43+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -15,10 +15,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 1000000,
-      "total_assets": 1027181.0,
-      "cash": 651129.0,
-      "realized_pnl": 6870.0,
-      "return_pct": 2.72,
+      "total_assets": 1009714.0,
+      "cash": 731859.0,
+      "realized_pnl": 9714.0,
+      "return_pct": 0.97,
       "positions": [
         {
           "ticker": "002028.SZ",
@@ -58,27 +58,14 @@
           "entry_date": "2026-05-20",
           "type": "catalyst_position",
           "sector": "PCB/苹果链"
-        },
-        {
-          "ticker": "002472.SZ",
-          "name": "双环传动",
-          "shares": 1800,
-          "avg_cost": 43.27,
-          "current_price": 43.08,
-          "market_value": 77544.0,
-          "unrealized_pnl_pct": -0.44,
-          "portfolio_pct": 0.076,
-          "entry_date": "2026-05-20",
-          "type": "catalyst_position",
-          "sector": "机器人/精密齿轮"
         }
       ]
     },
     "us": {
       "currency": "USD",
       "initial_capital": 150000,
-      "total_assets": 148498.38,
-      "cash": 60658.18,
+      "total_assets": 148497.58,
+      "cash": 57083.78,
       "realized_pnl": -757.1,
       "return_pct": -1.0,
       "positions": [
@@ -172,6 +159,19 @@
           "entry_date": "2026-05-18",
           "type": "trading_position",
           "sector": "铀/核能"
+        },
+        {
+          "ticker": "FPS",
+          "name": "Forgent Power Solutions",
+          "shares": 80,
+          "avg_cost": 44.68,
+          "current_price": 44.67,
+          "market_value": 3573.6,
+          "unrealized_pnl_pct": -0.02,
+          "portfolio_pct": 0.024,
+          "entry_date": "2026-05-21",
+          "type": "catalyst_position",
+          "sector": "数据中心电气配电"
         }
       ]
     }
@@ -330,6 +330,22 @@
       "ticker": "NVDA",
       "shares": 18,
       "price": 224.34
+    },
+    {
+      "date": "2026-05-21",
+      "account": "us",
+      "action": "buy",
+      "ticker": "FPS",
+      "shares": 80,
+      "price": 44.68
+    },
+    {
+      "date": "2026-05-21",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "002472",
+      "shares": 1800,
+      "price": 44.85
     }
   ]
 }
