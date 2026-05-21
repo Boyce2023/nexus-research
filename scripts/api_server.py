@@ -35,6 +35,7 @@ except ImportError:
 _price_cache = {}
 _cache_lock = threading.Lock()
 CACHE_TTL = 300
+YF_TICKER_MAP = {"SPUT": "SRUUF"}
 
 
 def get_price(ticker):
@@ -94,7 +95,8 @@ def get_live_portfolio():
             avg_cost = pos["avg_cost"]
             cost_basis = shares * avg_cost
 
-            live_price = get_price(ticker)
+            yf_ticker = YF_TICKER_MAP.get(ticker, ticker)
+            live_price = get_price(yf_ticker)
             if live_price is None:
                 live_price = avg_cost
 
@@ -119,8 +121,8 @@ def get_live_portfolio():
                 "entry_date": pos["entry_date"]
             })
 
-        cash = initial - total_cost + (invested_value - total_cost)
-        total_assets = initial + (invested_value - total_cost)
+        cash = acct.get("cash", initial - total_cost)
+        total_assets = cash + invested_value
         return_pct = ((total_assets - initial) / initial * 100)
 
         accounts[acct_key] = {
@@ -270,48 +272,80 @@ def make_performance_widget():
     if not sim:
         return "<p>Portfolio not available</p>"
 
-    a_acct = sim["accounts"].get("a_share", {})
-    us_acct = sim["accounts"].get("us", {})
+    live = get_live_portfolio()
+    use_live = "error" not in live
     snapshots = sim.get("daily_snapshots", [])
     trade_log = sim.get("trade_log", [])
-    last_updated = sim["meta"].get("last_updated", "")
+    last_updated = datetime.now().isoformat()[:19] if use_live else sim["meta"].get("last_updated", "")
 
-    a_return = a_acct.get("return_pct", 0)
-    us_return = us_acct.get("return_pct", 0)
-    a_initial = a_acct.get("initial_capital", 1000000)
-    us_initial = us_acct.get("initial_capital", 150000)
-    a_total = a_acct.get("total_assets", a_initial)
-    us_total = us_acct.get("total_assets", us_initial)
-    combined_return = round(a_return * 0.87 + us_return * 0.13, 2)
+    if use_live:
+        a_data = live["accounts"]["a_share"]
+        us_data = live["accounts"]["us"]
+        a_return = a_data["return_pct"]
+        us_return = us_data["return_pct"]
+        a_total = a_data["total_assets"]
+        us_total = us_data["total_assets"]
+        combined_return = live["combined"]["combined_return_pct"]
+    else:
+        a_return = sim["accounts"].get("a_share", {}).get("return_pct", 0)
+        us_return = sim["accounts"].get("us", {}).get("return_pct", 0)
+        a_total = sim["accounts"].get("a_share", {}).get("total_assets", 1000000)
+        us_total = sim["accounts"].get("us", {}).get("total_assets", 150000)
+        combined_return = round(a_return * 0.87 + us_return * 0.13, 2)
 
     snapshot_dates = json.dumps([s["date"] for s in snapshots])
     snapshot_a = json.dumps([s.get("a_share", {}).get("return_pct", 0) for s in snapshots])
     snapshot_us = json.dumps([s.get("us", {}).get("return_pct", 0) for s in snapshots])
     snapshot_combined = json.dumps([s.get("combined_return_pct", 0) for s in snapshots])
 
+    a_positions = live["accounts"]["a_share"]["positions"] if use_live else sim["accounts"].get("a_share", {}).get("positions", [])
+    us_positions = live["accounts"]["us"]["positions"] if use_live else sim["accounts"].get("us", {}).get("positions", [])
+    a_cash = live["accounts"]["a_share"]["cash"] if use_live else sim["accounts"].get("a_share", {}).get("cash", 0)
+    us_cash = live["accounts"]["us"]["cash"] if use_live else sim["accounts"].get("us", {}).get("cash", 0)
+
     a_rows = ""
-    for p in a_acct.get("positions", []):
-        pnl_pct = p.get("unrealized_pnl_pct", 0)
-        cost_basis = p["shares"] * p["avg_cost"]
-        pnl = p.get("market_value", cost_basis) - cost_basis
+    for p in a_positions:
+        pnl_pct = p.get("pnl_pct", p.get("unrealized_pnl_pct", 0))
+        pnl = p.get("pnl", p.get("market_value", p["shares"] * p["avg_cost"]) - p["shares"] * p["avg_cost"])
+        current_price = p.get("current_price", p["avg_cost"])
+        mv = p.get("market_value", p["shares"] * current_price)
+        weight = (mv / a_total * 100) if a_total > 0 else 0
         color = "#3fb950" if pnl >= 0 else "#f85149"
         a_rows += f"""<tr>
 <td>{p['ticker']}</td><td>{p.get('name','')}</td><td>{p['shares']}</td>
-<td>¥{p['avg_cost']:.2f}</td><td>¥{p.get('current_price', p['avg_cost']):.2f}</td>
+<td>¥{p['avg_cost']:.2f}</td><td>¥{current_price:.2f}</td>
 <td style="color:{color};font-weight:700">{pnl_pct:+.2f}%</td>
-<td style="color:{color}">¥{pnl:,.0f}</td></tr>"""
+<td style="color:{color}">¥{pnl:,.0f}</td><td>{weight:.1f}%</td></tr>"""
+    a_cash_weight = (a_cash / a_total * 100) if a_total > 0 else 0
+    a_rows += f"""<tr style="color:#8b949e;font-style:italic">
+<td colspan="2">现金</td><td></td><td></td><td></td><td></td>
+<td>¥{a_cash:,.0f}</td><td>{a_cash_weight:.1f}%</td></tr>"""
 
     us_rows = ""
-    for p in us_acct.get("positions", []):
-        pnl_pct = p.get("unrealized_pnl_pct", 0)
-        cost_basis = p["shares"] * p["avg_cost"]
-        pnl = p.get("market_value", cost_basis) - cost_basis
+    for p in us_positions:
+        pnl_pct = p.get("pnl_pct", p.get("unrealized_pnl_pct", 0))
+        pnl = p.get("pnl", p.get("market_value", p["shares"] * p["avg_cost"]) - p["shares"] * p["avg_cost"])
+        current_price = p.get("current_price", p["avg_cost"])
+        mv = p.get("market_value", p["shares"] * current_price)
+        weight = (mv / us_total * 100) if us_total > 0 else 0
         color = "#3fb950" if pnl >= 0 else "#f85149"
         us_rows += f"""<tr>
 <td>{p['ticker']}</td><td>{p.get('name','')}</td><td>{p['shares']}</td>
-<td>${p['avg_cost']:.2f}</td><td>${p.get('current_price', p['avg_cost']):.2f}</td>
+<td>${p['avg_cost']:.2f}</td><td>${current_price:.2f}</td>
 <td style="color:{color};font-weight:700">{pnl_pct:+.2f}%</td>
-<td style="color:{color}">${pnl:,.0f}</td></tr>"""
+<td style="color:{color}">${pnl:,.0f}</td><td>{weight:.1f}%</td></tr>"""
+    us_cash_weight = (us_cash / us_total * 100) if us_total > 0 else 0
+    us_rows += f"""<tr style="color:#8b949e;font-style:italic">
+<td colspan="2">现金</td><td></td><td></td><td></td><td></td>
+<td>${us_cash:,.0f}</td><td>{us_cash_weight:.1f}%</td></tr>"""
+
+    name_map = {}
+    for p in sim["accounts"].get("a_share", {}).get("positions", []):
+        name_map[p["ticker"]] = p.get("name", "")
+        raw_ticker = p["ticker"].split(".")[0] if "." in p["ticker"] else p["ticker"]
+        name_map[raw_ticker] = p.get("name", "")
+    for p in sim["accounts"].get("us", {}).get("positions", []):
+        name_map[p["ticker"]] = p.get("name", "")
 
     trade_rows = ""
     for t in reversed(trade_log):
@@ -320,19 +354,24 @@ def make_performance_widget():
         action_color = {"buy": "#3fb950", "sell": "#f85149", "short": "#f85149", "cover": "#3fb950"}.get(t.get("action", ""), "#c9d1d9")
         currency = "¥" if t.get("account") == "a_share" else "$"
         value = t.get("shares", 0) * t.get("price", 0)
+        ticker = t.get('ticker', '')
+        name = name_map.get(ticker, '')
         trade_rows += f"""<tr>
 <td>{t.get('date','')}</td><td>{acct_label}</td>
 <td style="color:{action_color};font-weight:600">{action_cn}</td>
-<td>{t.get('ticker','')}</td><td>{t.get('shares',0)}</td>
+<td>{ticker}</td><td>{name}</td><td>{t.get('shares',0)}</td>
 <td>{currency}{t.get('price',0):.2f}</td><td>{currency}{value:,.0f}</td></tr>"""
 
     a_color = "#3fb950" if a_return >= 0 else "#f85149"
     us_color = "#3fb950" if us_return >= 0 else "#f85149"
     c_color = "#3fb950" if combined_return >= 0 else "#f85149"
-    pos_count = len(a_acct.get("positions", [])) + len(us_acct.get("positions", []))
+    pos_count = len(a_positions) + len(us_positions)
+
+    data_source = '实时数据' if use_live else '同步数据'
 
     return f"""<!DOCTYPE html>
 <html><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
 *{{margin:0;padding:0;box-sizing:border-box}}
@@ -340,24 +379,35 @@ body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgro
 .container{{max-width:900px;margin:0 auto}}
 h1{{color:#fff;font-size:20px;margin-bottom:4px}}
 .subtitle{{color:#8b949e;font-size:12px;margin-bottom:20px}}
-.stats-bar{{display:flex;gap:24px;margin-bottom:24px;padding:16px;background:#161b22;border:1px solid #30363d;border-radius:8px;flex-wrap:wrap}}
-.stat{{text-align:center;min-width:80px}}
+.stats-bar{{display:flex;gap:16px;margin-bottom:24px;padding:16px;background:#161b22;border:1px solid #30363d;border-radius:8px;flex-wrap:wrap;justify-content:center}}
+.stat{{text-align:center;min-width:70px}}
 .stat-val{{font-size:24px;font-weight:700}}
 .stat-lbl{{font-size:11px;color:#8b949e;margin-top:2px}}
 .chart-box{{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:16px;margin-bottom:24px}}
 .chart-box h3{{color:#fff;font-size:14px;margin-bottom:12px}}
 .section{{margin-bottom:24px}}
 .section h2{{color:#fff;font-size:16px;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #30363d}}
-table{{width:100%;border-collapse:collapse;font-size:13px}}
+.table-wrap{{overflow-x:auto;-webkit-overflow-scrolling:touch}}
+table{{width:100%;border-collapse:collapse;font-size:13px;white-space:nowrap}}
 th{{text-align:left;color:#8b949e;font-weight:500;padding:8px 6px;border-bottom:1px solid #30363d}}
 td{{padding:8px 6px;border-bottom:1px solid #21262d}}
 .disclaimer{{font-size:11px;color:#484f58;text-align:center;margin-top:24px;padding-top:16px;border-top:1px solid #21262d}}
 .updated{{font-size:11px;color:#484f58;text-align:right;margin-bottom:8px}}
+@media(max-width:640px){{
+  body{{padding:10px}}
+  h1{{font-size:17px}}
+  .stats-bar{{gap:8px;padding:12px}}
+  .stat-val{{font-size:18px}}
+  .stat-lbl{{font-size:10px}}
+  table{{font-size:12px}}
+  th,td{{padding:6px 4px}}
+  .section h2{{font-size:14px}}
+}}
 </style></head><body>
 <div class="container">
 <h1>Nexus AI 模拟组合</h1>
-<div class="subtitle">Claude AI独立管理 · 2026-05-18 → 06-18 · 同步数据</div>
-<div class="updated">数据同步: {last_updated[:19]}</div>
+<div class="subtitle">Claude AI独立管理 · 2026-05-18 → 06-18 · {data_source}</div>
+<div class="updated">更新时间: {last_updated[:19]}</div>
 
 <div class="stats-bar">
 <div class="stat"><div class="stat-val" style="color:{a_color}">{a_return:+.2f}%</div><div class="stat-lbl">A股 (¥{a_total:,.0f})</div></div>
@@ -374,26 +424,26 @@ td{{padding:8px 6px;border-bottom:1px solid #21262d}}
 
 <div class="section">
 <h2>A股持仓 (初始 ¥1,000,000)</h2>
-<table>
-<tr><th>代码</th><th>名称</th><th>股数</th><th>成本</th><th>现价</th><th>涨跌</th><th>盈亏</th></tr>
+<div class="table-wrap"><table>
+<tr><th>代码</th><th>名称</th><th>股数</th><th>成本</th><th>现价</th><th>涨跌</th><th>盈亏</th><th>占比</th></tr>
 {a_rows}
-</table>
+</table></div>
 </div>
 
 <div class="section">
 <h2>美股持仓 (初始 $150,000)</h2>
-<table>
-<tr><th>代码</th><th>名称</th><th>股数</th><th>成本</th><th>现价</th><th>涨跌</th><th>盈亏</th></tr>
+<div class="table-wrap"><table>
+<tr><th>代码</th><th>名称</th><th>股数</th><th>成本</th><th>现价</th><th>涨跌</th><th>盈亏</th><th>占比</th></tr>
 {us_rows}
-</table>
+</table></div>
 </div>
 
 <div class="section">
 <h2>交易明细</h2>
-<table>
-<tr><th>日期</th><th>账户</th><th>操作</th><th>标的</th><th>股数</th><th>价格</th><th>金额</th></tr>
+<div class="table-wrap"><table>
+<tr><th>日期</th><th>账户</th><th>操作</th><th>标的</th><th>名称</th><th>股数</th><th>价格</th><th>金额</th></tr>
 {trade_rows}
-</table>
+</table></div>
 </div>
 
 <div class="disclaimer">此为AI系统模拟投资组合，仅用于研究验证。不构成投资建议。<br>Nexus Research System · Powered by Claude AI</div>
