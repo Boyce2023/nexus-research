@@ -36,6 +36,36 @@ _price_cache = {}
 _cache_lock = threading.Lock()
 CACHE_TTL = 300
 YF_TICKER_MAP = {"SPUT": "SRUUF"}
+_benchmark_cache = {}
+
+
+def get_benchmark_returns(yf_ticker, snapshot_dates):
+    if not HAS_YF or not snapshot_dates:
+        return [0] * len(snapshot_dates)
+    now = time.time()
+    cache_key = f"bench_{yf_ticker}"
+    with _cache_lock:
+        if cache_key in _benchmark_cache and now - _benchmark_cache[cache_key]["t"] < CACHE_TTL:
+            return _benchmark_cache[cache_key]["data"]
+    try:
+        t = yf.Ticker(yf_ticker)
+        hist = t.history(start=snapshot_dates[0], period="1mo")
+        if hist.empty:
+            return [0] * len(snapshot_dates)
+        base_price = float(hist['Close'].iloc[0])
+        results = []
+        for d in snapshot_dates:
+            filtered = hist[hist.index.strftime('%Y-%m-%d') <= d]
+            if len(filtered) > 0:
+                price = float(filtered['Close'].iloc[-1])
+                results.append(round((price / base_price - 1) * 100, 2))
+            else:
+                results.append(0)
+        with _cache_lock:
+            _benchmark_cache[cache_key] = {"data": results, "t": now}
+        return results
+    except Exception:
+        return [0] * len(snapshot_dates)
 
 
 def get_price(ticker):
@@ -293,10 +323,12 @@ def make_performance_widget():
         us_total = sim["accounts"].get("us", {}).get("total_assets", 150000)
         combined_return = round(a_return * 0.87 + us_return * 0.13, 2)
 
-    snapshot_dates = json.dumps([s["date"] for s in snapshots])
+    dates_list = [s["date"] for s in snapshots]
+    snapshot_dates = json.dumps(dates_list)
     snapshot_a = json.dumps([s.get("a_share", {}).get("return_pct", 0) for s in snapshots])
     snapshot_us = json.dumps([s.get("us", {}).get("return_pct", 0) for s in snapshots])
-    snapshot_combined = json.dumps([s.get("combined_return_pct", 0) for s in snapshots])
+    snapshot_csi300 = json.dumps(get_benchmark_returns("000300.SS", dates_list))
+    snapshot_spy = json.dumps(get_benchmark_returns("SPY", dates_list))
 
     a_positions = live["accounts"]["a_share"]["positions"] if use_live else sim["accounts"].get("a_share", {}).get("positions", [])
     us_positions = live["accounts"]["us"]["positions"] if use_live else sim["accounts"].get("us", {}).get("positions", [])
@@ -417,9 +449,15 @@ td{{padding:8px 6px;border-bottom:1px solid #21262d}}
 <div class="stat"><div class="stat-val" style="color:#8b949e">{len(trade_log)}</div><div class="stat-lbl">总交易笔数</div></div>
 </div>
 
-<div class="chart-box">
-<h3>收益率走势</h3>
-<canvas id="perfChart" height="200"></canvas>
+<div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px">
+<div class="chart-box" style="flex:1;min-width:280px">
+<h3>A股 vs 沪深300</h3>
+<canvas id="aChart" height="180"></canvas>
+</div>
+<div class="chart-box" style="flex:1;min-width:280px">
+<h3>美股 vs SPY</h3>
+<canvas id="usChart" height="180"></canvas>
+</div>
 </div>
 
 <div class="section">
@@ -453,30 +491,43 @@ td{{padding:8px 6px;border-bottom:1px solid #21262d}}
 const dates = {snapshot_dates};
 const aReturns = {snapshot_a};
 const usReturns = {snapshot_us};
-const combinedReturns = {snapshot_combined};
-
+const csi300Returns = {snapshot_csi300};
+const spyReturns = {snapshot_spy};
+const chartOpts = {{
+    responsive: true,
+    plugins: {{legend: {{labels: {{color: '#c9d1d9', font: {{size: 11}}}}}}}},
+    scales: {{
+        x: {{ticks: {{color: '#8b949e', font: {{size: 10}}}}, grid: {{color: '#21262d'}}}},
+        y: {{ticks: {{color: '#8b949e', font: {{size: 10}}, callback: v => v+'%'}}, grid: {{color: '#21262d'}}}}
+    }}
+}};
 if (dates.length > 0) {{
-    new Chart(document.getElementById('perfChart'), {{
+    new Chart(document.getElementById('aChart'), {{
         type: 'line',
         data: {{
             labels: dates,
             datasets: [
-                {{label: 'A股', data: aReturns, borderColor: '#f97316', borderWidth: 2, pointRadius: 3, tension: 0.3}},
-                {{label: '美股', data: usReturns, borderColor: '#3b82f6', borderWidth: 2, pointRadius: 3, tension: 0.3}},
-                {{label: '综合', data: combinedReturns, borderColor: '#3fb950', borderWidth: 2.5, pointRadius: 3, tension: 0.3}}
+                {{label: 'A股组合', data: aReturns, borderColor: '#f97316', borderWidth: 2, pointRadius: 3, tension: 0.3}},
+                {{label: '沪深300', data: csi300Returns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3]}}
             ]
         }},
-        options: {{
-            responsive: true,
-            plugins: {{legend: {{labels: {{color: '#c9d1d9'}}}}}},
-            scales: {{
-                x: {{ticks: {{color: '#8b949e'}}, grid: {{color: '#21262d'}}}},
-                y: {{ticks: {{color: '#8b949e', callback: v => v+'%'}}, grid: {{color: '#21262d'}}}}
-            }}
-        }}
+        options: chartOpts
+    }});
+    new Chart(document.getElementById('usChart'), {{
+        type: 'line',
+        data: {{
+            labels: dates,
+            datasets: [
+                {{label: '美股组合', data: usReturns, borderColor: '#3b82f6', borderWidth: 2, pointRadius: 3, tension: 0.3}},
+                {{label: 'SPY', data: spyReturns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3]}}
+            ]
+        }},
+        options: chartOpts
     }});
 }} else {{
-    document.getElementById('perfChart').parentElement.innerHTML = '<h3>收益率走势</h3><p style="color:#8b949e;text-align:center;padding:40px">模拟盘刚启动，数据积累中...</p>';
+    document.querySelectorAll('.chart-box').forEach(el => {{
+        el.innerHTML = '<h3>' + el.querySelector('h3').textContent + '</h3><p style="color:#8b949e;text-align:center;padding:40px">数据积累中...</p>';
+    }});
 }}
 </script>
 </body></html>"""
