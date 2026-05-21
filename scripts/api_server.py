@@ -389,8 +389,10 @@ def make_performance_widget():
         name = name_map.get(ticker, '')
         rpnl = t.get("realized_pnl")
         if rpnl is not None:
+            cost_basis = t.get("shares", 0) * t.get("price", 0) - rpnl
+            rpnl_pct = (rpnl / cost_basis * 100) if cost_basis > 0 else 0
             pnl_color = "#3fb950" if rpnl >= 0 else "#f85149"
-            pnl_cell = f'<td style="color:{pnl_color};font-weight:700">{currency}{rpnl:+,.0f}</td>'
+            pnl_cell = f'<td style="color:{pnl_color};font-weight:700">{rpnl_pct:+.1f}%</td>'
         else:
             pnl_cell = '<td style="color:#8b949e">—</td>'
         trade_rows += f"""<tr>
