@@ -130,7 +130,7 @@ def get_live_portfolio():
             "initial_capital": initial,
             "total_assets": round(total_assets, 2),
             "invested_value": round(invested_value, 2),
-            "cash": round(initial - total_cost, 2),
+            "cash": round(cash, 2),
             "return_pct": round(return_pct, 2),
             "unrealized_pnl": round(invested_value - total_cost, 2),
             "positions": sorted(positions, key=lambda x: abs(x["pnl"]), reverse=True)
