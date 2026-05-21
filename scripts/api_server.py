@@ -505,7 +505,7 @@ const chartOpts = {{
     plugins: {{legend: {{labels: {{color: '#c9d1d9', font: {{size: 11}}}}}}}},
     scales: {{
         x: {{ticks: {{color: '#8b949e', font: {{size: 10}}}}, grid: {{color: '#21262d'}}}},
-        y: {{ticks: {{color: '#8b949e', font: {{size: 10}}, callback: v => v+'%'}}, grid: {{color: '#21262d'}}}}
+        y: {{ticks: {{color: '#8b949e', font: {{size: 10}}, callback: v => parseFloat(v.toFixed(2))+'%'}}, grid: {{color: '#21262d'}}}}
     }}
 }};
 if (dates.length > 0) {{
