@@ -310,7 +310,8 @@
       "action": "sell",
       "ticker": "HSAI",
       "shares": 335,
-      "price": 20.18
+      "price": 20.18,
+      "realized_pnl": -757.1
     },
     {
       "date": "2026-05-20",
@@ -318,7 +319,8 @@
       "action": "sell",
       "ticker": "300433",
       "shares": 3000,
-      "price": 36.5
+      "price": 36.5,
+      "realized_pnl": 6870.0
     },
     {
       "date": "2026-05-20",
@@ -358,7 +360,8 @@
       "action": "sell",
       "ticker": "002472",
       "shares": 1800,
-      "price": 44.85
+      "price": 44.85,
+      "realized_pnl": 2844.0
     },
     {
       "date": "2026-05-21",
