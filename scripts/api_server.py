@@ -415,6 +415,8 @@ h1{{color:#fff;font-size:20px;margin-bottom:4px}}
 .stat{{text-align:center;min-width:70px}}
 .stat-val{{font-size:24px;font-weight:700}}
 .stat-lbl{{font-size:11px;color:#8b949e;margin-top:2px}}
+.charts-row{{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}}
+.charts-row .chart-box{{flex:1;min-width:280px;margin-bottom:0}}
 .chart-box{{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:16px;margin-bottom:24px}}
 .chart-box h3{{color:#fff;font-size:14px;margin-bottom:12px}}
 .section{{margin-bottom:24px}}
@@ -449,14 +451,18 @@ td{{padding:8px 6px;border-bottom:1px solid #21262d}}
 <div class="stat"><div class="stat-val" style="color:#8b949e">{len(trade_log)}</div><div class="stat-lbl">总交易笔数</div></div>
 </div>
 
-<div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px">
-<div class="chart-box" style="flex:1;min-width:280px">
+<div class="charts-row">
+<div class="chart-box">
 <h3>A股 vs 沪深300</h3>
-<canvas id="aChart" height="180"></canvas>
+<div style="position:relative;width:100%;height:200px">
+<canvas id="aChart"></canvas>
 </div>
-<div class="chart-box" style="flex:1;min-width:280px">
+</div>
+<div class="chart-box">
 <h3>美股 vs SPY</h3>
-<canvas id="usChart" height="180"></canvas>
+<div style="position:relative;width:100%;height:200px">
+<canvas id="usChart"></canvas>
+</div>
 </div>
 </div>
 
@@ -495,6 +501,7 @@ const csi300Returns = {snapshot_csi300};
 const spyReturns = {snapshot_spy};
 const chartOpts = {{
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {{legend: {{labels: {{color: '#c9d1d9', font: {{size: 11}}}}}}}},
     scales: {{
         x: {{ticks: {{color: '#8b949e', font: {{size: 10}}}}, grid: {{color: '#21262d'}}}},
