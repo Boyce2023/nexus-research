@@ -339,7 +339,7 @@ def make_performance_widget():
 <td colspan="2">现金</td><td></td><td></td><td></td><td></td>
 <td>${us_cash:,.0f}</td><td>{us_cash_weight:.1f}%</td></tr>"""
 
-    name_map = {}
+    name_map = {"HSAI": "Hesai Group", "300433": "蓝思科技", "002472": "双环传动"}
     for p in sim["accounts"].get("a_share", {}).get("positions", []):
         name_map[p["ticker"]] = p.get("name", "")
         raw_ticker = p["ticker"].split(".")[0] if "." in p["ticker"] else p["ticker"]
