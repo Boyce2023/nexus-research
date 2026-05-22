@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-23T02:07:18+08:00",
+    "last_updated": "2026-05-23T02:54:18+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -15,20 +15,20 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 1000000,
-      "total_assets": 1033434.0,
+      "total_assets": 1039913.0,
       "cash": 368309.0,
       "realized_pnl": 9714.0,
-      "return_pct": 3.34,
+      "return_pct": 3.99,
       "positions": [
         {
           "ticker": "002028.SZ",
           "name": "思源电气",
           "shares": 1000,
           "avg_cost": 194.203,
-          "current_price": 199.5,
-          "market_value": 199500.0,
-          "unrealized_pnl_pct": 2.73,
-          "portfolio_pct": 0.138,
+          "current_price": 197.14,
+          "market_value": 197140.0,
+          "unrealized_pnl_pct": 1.51,
+          "portfolio_pct": 0.19,
           "entry_date": "2026-05-18",
           "type": "core_position",
           "sector": "电力设备"
@@ -38,10 +38,10 @@
           "name": "晶方科技",
           "shares": 2000,
           "avg_cost": 32.94,
-          "current_price": 36.07,
-          "market_value": 72140.0,
-          "unrealized_pnl_pct": 9.5,
-          "portfolio_pct": 0.072,
+          "current_price": 39.14,
+          "market_value": 78280.0,
+          "unrealized_pnl_pct": 18.82,
+          "portfolio_pct": 0.075,
           "entry_date": "2026-05-18",
           "type": "scout_position",
           "sector": "半导体封装"
@@ -54,7 +54,7 @@
           "current_price": 103.93,
           "market_value": 93537.0,
           "unrealized_pnl_pct": 18.44,
-          "portfolio_pct": 0.077,
+          "portfolio_pct": 0.09,
           "entry_date": "2026-05-20",
           "type": "catalyst_position",
           "sector": "PCB/苹果链"
@@ -64,10 +64,10 @@
           "name": "安集科技",
           "shares": 500,
           "avg_cost": 313.99,
-          "current_price": 308.0,
-          "market_value": 154000.0,
-          "unrealized_pnl_pct": -1.91,
-          "portfolio_pct": 0.149,
+          "current_price": 311.19,
+          "market_value": 155595.0,
+          "unrealized_pnl_pct": -0.89,
+          "portfolio_pct": 0.15,
           "entry_date": "2026-05-21T13:10:15+08:00",
           "type": "core_position",
           "sector": "半导体材料"
@@ -77,10 +77,10 @@
           "name": "恒瑞医药",
           "shares": 1600,
           "avg_cost": 51.02,
-          "current_price": 51.1,
-          "market_value": 81760.0,
-          "unrealized_pnl_pct": 0.16,
-          "portfolio_pct": 0.079,
+          "current_price": 50.47,
+          "market_value": 80752.0,
+          "unrealized_pnl_pct": -1.08,
+          "portfolio_pct": 0.078,
           "entry_date": "2026-05-22T09:50:29+08:00",
           "type": "catalyst_position",
           "sector": "创新药"
@@ -90,10 +90,10 @@
           "name": "德赛西威",
           "shares": 600,
           "avg_cost": 106.2,
-          "current_price": 106.98,
-          "market_value": 64188.0,
-          "unrealized_pnl_pct": 0.73,
-          "portfolio_pct": 0.062,
+          "current_price": 110.5,
+          "market_value": 66300.0,
+          "unrealized_pnl_pct": 4.05,
+          "portfolio_pct": 0.064,
           "entry_date": "2026-05-22T09:50:41+08:00",
           "type": "catalyst_position",
           "sector": "智能驾驶"
@@ -103,20 +103,20 @@
     "us": {
       "currency": "USD",
       "initial_capital": 150000,
-      "total_assets": 149276.925,
+      "total_assets": 134267.0749,
       "cash": 72488.875,
-      "realized_pnl": -789.61,
-      "return_pct": -0.48,
+      "realized_pnl": -789.1,
+      "return_pct": -10.49,
       "positions": [
         {
           "ticker": "NVDA",
           "name": "NVIDIA Corporation",
           "shares": 98,
           "avg_cost": 224.878776,
-          "current_price": 219.51,
-          "market_value": 21511.98,
-          "unrealized_pnl_pct": -2.39,
-          "portfolio_pct": 0.119,
+          "current_price": 216.155,
+          "market_value": 21183.19,
+          "unrealized_pnl_pct": -3.88,
+          "portfolio_pct": 0.142,
           "entry_date": "2026-05-18",
           "type": "base_position",
           "sector": "AI芯片/半导体"
@@ -126,10 +126,10 @@
           "name": "Apple Inc.",
           "shares": 50,
           "avg_cost": 299.9,
-          "current_price": 304.99,
-          "market_value": 15249.5,
-          "unrealized_pnl_pct": 1.7,
-          "portfolio_pct": 0.101,
+          "current_price": 309.03,
+          "market_value": 15451.5,
+          "unrealized_pnl_pct": 3.04,
+          "portfolio_pct": 0.104,
           "entry_date": "2026-05-18",
           "type": "base_position",
           "sector": "消费科技/硬件"
@@ -139,10 +139,10 @@
           "name": "Adobe Inc.",
           "shares": 48,
           "avg_cost": 245.99,
-          "current_price": 244.1,
-          "market_value": 11716.8,
-          "unrealized_pnl_pct": -0.77,
-          "portfolio_pct": 0.083,
+          "current_price": 244.2667,
+          "market_value": 11724.8,
+          "unrealized_pnl_pct": -0.7,
+          "portfolio_pct": 0.079,
           "entry_date": "2026-05-18",
           "type": "trading_position",
           "sector": "软件/SaaS"
@@ -152,10 +152,10 @@
           "name": "Sprott Uranium Trust (SRUUF)",
           "shares": 609,
           "avg_cost": 19.68,
-          "current_price": 19.56,
-          "market_value": 11912.04,
-          "unrealized_pnl_pct": -0.61,
-          "portfolio_pct": 0.081,
+          "current_price": 19.57,
+          "market_value": 11918.13,
+          "unrealized_pnl_pct": -0.56,
+          "portfolio_pct": 0.08,
           "entry_date": "2026-05-18",
           "type": "trading_position",
           "sector": "铀/核能"
@@ -165,10 +165,10 @@
           "name": "GE Vernova",
           "shares": 8,
           "avg_cost": 1049.0,
-          "current_price": 1043.82,
-          "market_value": 8350.56,
-          "unrealized_pnl_pct": -0.49,
-          "portfolio_pct": 0.055,
+          "current_price": 1050.5,
+          "market_value": 8404.0,
+          "unrealized_pnl_pct": 0.14,
+          "portfolio_pct": 0.057,
           "entry_date": "2026-05-18",
           "type": "trading_position",
           "sector": "电力设备/燃气轮机"
@@ -178,13 +178,39 @@
           "name": "Salesforce",
           "shares": 42,
           "avg_cost": 178.652262,
-          "current_price": 176.31,
-          "market_value": 2997.27,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.02,
+          "current_price": 180.245,
+          "market_value": 7570.29,
+          "unrealized_pnl_pct": 0.89,
+          "portfolio_pct": 0.051,
           "entry_date": "2026-05-22T09:50:55+08:00",
           "type": "trading_position",
           "sector": "SaaS/AI Agent"
+        },
+        {
+          "ticker": "RIVN",
+          "name": "Rivian Automotive",
+          "shares": -525,
+          "avg_cost": 14.235,
+          "current_price": 14.235,
+          "market_value": -7473.38,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.05,
+          "entry_date": "2026-05-23T02:06:46+08:00",
+          "type": "short_position",
+          "sector": "EV/汽车"
+        },
+        {
+          "ticker": "UPST",
+          "name": "Upstart Holdings",
+          "shares": -262,
+          "avg_cost": 28.59,
+          "current_price": 28.59,
+          "market_value": -7490.58,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.05,
+          "entry_date": "2026-05-23T02:07:01+08:00",
+          "type": "short_position",
+          "sector": "AI Lending/Fintech"
         }
       ]
     }
@@ -241,14 +267,14 @@
     {
       "date": "2026-05-22",
       "a_share": {
-        "total_assets": 1033434.0,
-        "return_pct": 3.34
+        "total_assets": 1039913.0,
+        "return_pct": 3.99
       },
       "us": {
-        "total_assets": 148599.21,
-        "return_pct": -0.93
+        "total_assets": 148740.79,
+        "return_pct": -0.84
       },
-      "combined_return_pct": 2.78
+      "combined_return_pct": 3.36
     }
   ],
   "trade_log": [
@@ -507,6 +533,14 @@
       "ticker": "CRM",
       "shares": 25,
       "price": 180.245
+    },
+    {
+      "date": "2026-05-23",
+      "account": "us",
+      "action": "short",
+      "ticker": "RIVN",
+      "shares": 3,
+      "price": 14.215
     }
   ]
 }
