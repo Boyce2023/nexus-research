@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-23T02:54:18+08:00",
+    "last_updated": "2026-05-23T02:54:25+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -103,10 +103,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 150000,
-      "total_assets": 134267.0749,
+      "total_assets": 134183.195,
       "cash": 72488.875,
       "realized_pnl": -789.1,
-      "return_pct": -10.49,
+      "return_pct": -10.54,
       "positions": [
         {
           "ticker": "NVDA",
@@ -541,6 +541,14 @@
       "ticker": "RIVN",
       "shares": 3,
       "price": 14.215
+    },
+    {
+      "date": "2026-05-23",
+      "account": "us",
+      "action": "short",
+      "ticker": "UPST",
+      "shares": 1,
+      "price": 28.71
     }
   ]
 }
