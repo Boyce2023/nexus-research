@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-23T02:07:01+08:00",
+    "last_updated": "2026-05-23T02:07:18+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -103,10 +103,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 150000,
-      "total_assets": 149210.03,
-      "cash": 76995.0,
+      "total_assets": 149276.925,
+      "cash": 72488.875,
       "realized_pnl": -789.61,
-      "return_pct": -0.53,
+      "return_pct": -0.48,
       "positions": [
         {
           "ticker": "NVDA",
@@ -176,8 +176,8 @@
         {
           "ticker": "CRM",
           "name": "Salesforce",
-          "shares": 17,
-          "avg_cost": 176.31,
+          "shares": 42,
+          "avg_cost": 178.652262,
           "current_price": 176.31,
           "market_value": 2997.27,
           "unrealized_pnl_pct": 0.0,
@@ -499,6 +499,14 @@
       "ticker": "UPST",
       "shares": 262,
       "price": 28.59
+    },
+    {
+      "date": "2026-05-23",
+      "account": "us",
+      "action": "buy",
+      "ticker": "CRM",
+      "shares": 25,
+      "price": 180.245
     }
   ]
 }
