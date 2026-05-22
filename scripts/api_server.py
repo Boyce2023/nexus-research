@@ -114,28 +114,32 @@ def get_live_portfolio():
         acct = sim["accounts"][acct_key]
         currency = acct["currency"]
         initial = acct["initial_capital"]
-        total_initial_acct = initial
         positions = []
-        invested_value = 0
-        total_cost = 0
+        long_mv = 0
+        short_pnl = 0
 
         for pos in acct["positions"]:
             ticker = pos["ticker"]
             shares = pos["shares"]
             avg_cost = pos["avg_cost"]
-            cost_basis = shares * avg_cost
+            abs_shares = abs(shares)
+            is_short = shares < 0
 
             yf_ticker = YF_TICKER_MAP.get(ticker, ticker)
             live_price = get_price(yf_ticker)
             if live_price is None:
                 live_price = avg_cost
 
-            market_value = shares * live_price
-            pnl = market_value - cost_basis
-            pnl_pct = (pnl / cost_basis * 100) if cost_basis > 0 else 0
-
-            invested_value += market_value
-            total_cost += cost_basis
+            if is_short:
+                market_value = -(abs_shares * live_price)
+                pnl = (avg_cost - live_price) * abs_shares
+                pnl_pct = (avg_cost - live_price) / avg_cost * 100 if avg_cost else 0
+                short_pnl += pnl
+            else:
+                market_value = shares * live_price
+                pnl = (live_price - avg_cost) * shares
+                pnl_pct = (live_price - avg_cost) / avg_cost * 100 if avg_cost else 0
+                long_mv += market_value
 
             positions.append({
                 "ticker": ticker,
@@ -144,25 +148,27 @@ def get_live_portfolio():
                 "shares": shares,
                 "avg_cost": round(avg_cost, 2),
                 "current_price": round(live_price, 2),
-                "cost_basis": round(cost_basis, 2),
+                "cost_basis": round(avg_cost * abs_shares, 2),
                 "market_value": round(market_value, 2),
                 "pnl": round(pnl, 2),
                 "pnl_pct": round(pnl_pct, 2),
                 "entry_date": pos["entry_date"]
             })
 
-        cash = acct.get("cash", initial - total_cost)
-        total_assets = cash + invested_value
+        cash = acct.get("cash", initial)
+        total_assets = cash + long_mv + short_pnl
         return_pct = ((total_assets - initial) / initial * 100)
 
+        unrealized_pnl = sum(p["pnl"] for p in positions)
         accounts[acct_key] = {
             "currency": currency,
             "initial_capital": initial,
             "total_assets": round(total_assets, 2),
-            "invested_value": round(invested_value, 2),
+            "long_exposure": round(long_mv, 2),
+            "short_pnl": round(short_pnl, 2),
             "cash": round(cash, 2),
             "return_pct": round(return_pct, 2),
-            "unrealized_pnl": round(invested_value - total_cost, 2),
+            "unrealized_pnl": round(unrealized_pnl, 2),
             "positions": sorted(positions, key=lambda x: abs(x["pnl"]), reverse=True)
         }
 
@@ -356,13 +362,16 @@ def make_performance_widget():
     us_rows = ""
     for p in us_positions:
         pnl_pct = p.get("pnl_pct", p.get("unrealized_pnl_pct", 0))
-        pnl = p.get("pnl", p.get("market_value", p["shares"] * p["avg_cost"]) - p["shares"] * p["avg_cost"])
+        pnl = p.get("pnl", 0)
         current_price = p.get("current_price", p["avg_cost"])
-        mv = p.get("market_value", p["shares"] * current_price)
-        weight = (mv / us_total * 100) if us_total > 0 else 0
+        shares = p["shares"]
+        is_short = shares < 0
+        abs_mv = abs(shares) * current_price
+        weight = (abs_mv / us_total * 100) if us_total > 0 else 0
         color = "#3fb950" if pnl >= 0 else "#f85149"
+        direction = " [空]" if is_short else ""
         us_rows += f"""<tr>
-<td>{p['ticker']}</td><td>{p.get('name','')}</td><td>{p['shares']}</td>
+<td>{p['ticker']}</td><td>{p.get('name','')}{direction}</td><td>{abs(shares)}</td>
 <td>${p['avg_cost']:.2f}</td><td>${current_price:.2f}</td>
 <td style="color:{color};font-weight:700">{pnl_pct:+.2f}%</td>
 <td style="color:{color}">${pnl:,.0f}</td><td>{weight:.1f}%</td></tr>"""
