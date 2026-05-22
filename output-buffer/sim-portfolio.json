@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-22T00:00:49.915118+08:00",
+    "last_updated": "2026-05-22T09:50:29+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -15,10 +15,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 1000000,
-      "total_assets": 1022068.0,
-      "cash": 513661.0,
+      "total_assets": 1009714.0,
+      "cash": 432029.0,
       "realized_pnl": 9714.0,
-      "return_pct": 2.21,
+      "return_pct": 0.97,
       "positions": [
         {
           "ticker": "002028.SZ",
@@ -71,6 +71,19 @@
           "entry_date": "2026-05-21T13:10:15+08:00",
           "type": "core_position",
           "sector": "半导体材料"
+        },
+        {
+          "ticker": "600276.SS",
+          "name": "",
+          "shares": 1600,
+          "avg_cost": 51.02,
+          "current_price": 51.02,
+          "market_value": 81632.0,
+          "unrealized_pnl_pct": 0,
+          "portfolio_pct": 0,
+          "entry_date": "2026-05-22T09:50:29+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     },
@@ -390,6 +403,14 @@
       "ticker": "002028",
       "shares": 300,
       "price": 204.01
+    },
+    {
+      "date": "2026-05-22",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600276",
+      "shares": 1600,
+      "price": 51.02
     }
   ]
 }
