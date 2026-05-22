@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-23T02:05:42+08:00",
+    "last_updated": "2026-05-23T02:06:00+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -103,10 +103,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 150000,
-      "total_assets": 148894.84,
-      "cash": 56775.81,
-      "realized_pnl": -1104.8,
-      "return_pct": -0.74,
+      "total_assets": 148825.55,
+      "cash": 64193.12,
+      "realized_pnl": -1174.09,
+      "return_pct": -0.78,
       "positions": [
         {
           "ticker": "NVDA",
@@ -172,19 +172,6 @@
           "entry_date": "2026-05-18",
           "type": "trading_position",
           "sector": "电力设备/燃气轮机"
-        },
-        {
-          "ticker": "LEU",
-          "name": "Centrus Energy Corp",
-          "shares": 41,
-          "avg_cost": 182.6,
-          "current_price": 177.15,
-          "market_value": 7263.15,
-          "unrealized_pnl_pct": -2.98,
-          "portfolio_pct": 0.047,
-          "entry_date": "2026-05-18",
-          "type": "trading_position",
-          "sector": "铀/核能"
         },
         {
           "ticker": "FPS",
@@ -499,6 +486,15 @@
       "shares": 30,
       "price": 384.41,
       "realized_pnl": -347.7
+    },
+    {
+      "date": "2026-05-23",
+      "account": "us",
+      "action": "sell",
+      "ticker": "LEU",
+      "shares": 41,
+      "price": 180.91,
+      "realized_pnl": -69.29
     }
   ]
 }
