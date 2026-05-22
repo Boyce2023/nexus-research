@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-23T02:06:23+08:00",
+    "last_updated": "2026-05-23T02:06:30+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -103,10 +103,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 150000,
-      "total_assets": 149191.13,
-      "cash": 73987.38,
-      "realized_pnl": -808.51,
-      "return_pct": -0.54,
+      "total_assets": 149210.03,
+      "cash": 76995.0,
+      "realized_pnl": -789.61,
+      "return_pct": -0.53,
       "positions": [
         {
           "ticker": "NVDA",
@@ -185,19 +185,6 @@
           "entry_date": "2026-05-22T09:50:55+08:00",
           "type": "trading_position",
           "sector": "SaaS/AI Agent"
-        },
-        {
-          "ticker": "COPX",
-          "name": "Global X Copper Miners ETF",
-          "shares": 36,
-          "avg_cost": 83.02,
-          "current_price": 83.02,
-          "market_value": 2988.72,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.02,
-          "entry_date": "2026-05-22T09:51:30+08:00",
-          "type": "trading_position",
-          "sector": "铜矿/大宗商品"
         }
       ]
     }
@@ -487,6 +474,15 @@
       "shares": 28,
       "price": 105.67,
       "realized_pnl": 15.68
+    },
+    {
+      "date": "2026-05-23",
+      "account": "us",
+      "action": "sell",
+      "ticker": "COPX",
+      "shares": 36,
+      "price": 83.545,
+      "realized_pnl": 18.9
     }
   ]
 }
