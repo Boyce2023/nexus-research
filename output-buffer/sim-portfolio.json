@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-23T02:06:30+08:00",
+    "last_updated": "2026-05-23T02:06:46+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -483,6 +483,14 @@
       "shares": 36,
       "price": 83.545,
       "realized_pnl": 18.9
+    },
+    {
+      "date": "2026-05-23",
+      "account": "us",
+      "action": "short",
+      "ticker": "RIVN",
+      "shares": 525,
+      "price": 14.235
     }
   ]
 }
