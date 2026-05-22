@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-22T09:51:06+08:00",
+    "last_updated": "2026-05-22T09:51:18+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -103,10 +103,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 150000,
-      "total_assets": 149242.54,
-      "cash": 51143.43,
+      "total_assets": 149549.74,
+      "cash": 48232.23,
       "realized_pnl": -757.1,
-      "return_pct": -0.5,
+      "return_pct": -0.3,
       "positions": [
         {
           "ticker": "NVDA",
@@ -202,8 +202,8 @@
         {
           "ticker": "FPS",
           "name": "Forgent Power Solutions",
-          "shares": 80,
-          "avg_cost": 44.68,
+          "shares": 140,
+          "avg_cost": 46.325714,
           "current_price": 46.48,
           "market_value": 3718.4,
           "unrealized_pnl_pct": 4.03,
@@ -474,6 +474,14 @@
       "ticker": "DG",
       "shares": 28,
       "price": 105.11
+    },
+    {
+      "date": "2026-05-22",
+      "account": "us",
+      "action": "buy",
+      "ticker": "FPS",
+      "shares": 60,
+      "price": 48.52
     }
   ]
 }
