@@ -86,6 +86,24 @@ def get_price(ticker):
         return None
 
 
+def _calc_total_from_positions(acct, initial):
+    """Calculate total_assets and return from raw position data. Never trust pre-computed."""
+    cash = acct.get("cash", 0)
+    long_mv = 0
+    short_pnl = 0
+    for pos in acct.get("positions", []):
+        shares = pos.get("shares", 0)
+        avg_cost = pos.get("avg_cost", 0)
+        price = pos.get("current_price", avg_cost)
+        if shares < 0:
+            short_pnl += (avg_cost - price) * abs(shares)
+        else:
+            long_mv += shares * price
+    total = cash + long_mv + short_pnl
+    ret = ((total - initial) / initial * 100) if initial else 0
+    return round(total, 2), round(ret, 2)
+
+
 def load_all_recs():
     recs = []
     for f in sorted(PUBLISHED.glob("*.json"), reverse=True):
@@ -106,9 +124,13 @@ def get_live_portfolio():
     if not sim:
         return {"error": "sim portfolio not found"}
 
+    if not HAS_YF:
+        return {"error": "yfinance not available, using static data"}
+
     accounts = {}
     total_initial = 0
     total_current = 0
+    price_failures = 0
 
     for acct_key in ["a_share", "us"]:
         acct = sim["accounts"][acct_key]
@@ -128,7 +150,8 @@ def get_live_portfolio():
             yf_ticker = YF_TICKER_MAP.get(ticker, ticker)
             live_price = get_price(yf_ticker)
             if live_price is None:
-                live_price = avg_cost
+                live_price = pos.get("current_price", avg_cost)
+                price_failures += 1
 
             if is_short:
                 market_value = -(abs_shares * live_price)
@@ -323,11 +346,15 @@ def make_performance_widget():
         us_total = us_data["total_assets"]
         combined_return = live["combined"]["combined_return_pct"]
     else:
-        a_return = sim["accounts"].get("a_share", {}).get("return_pct", 0)
-        us_return = sim["accounts"].get("us", {}).get("return_pct", 0)
-        a_total = sim["accounts"].get("a_share", {}).get("total_assets", 1000000)
-        us_total = sim["accounts"].get("us", {}).get("total_assets", 150000)
-        combined_return = round(a_return * 0.87 + us_return * 0.13, 2)
+        a_acct = sim["accounts"].get("a_share", {})
+        us_acct = sim["accounts"].get("us", {})
+        a_initial = a_acct.get("initial_capital", 1000000)
+        us_initial = us_acct.get("initial_capital", 150000)
+        a_total, a_return = _calc_total_from_positions(a_acct, a_initial)
+        us_total, us_return = _calc_total_from_positions(us_acct, us_initial)
+        total_init_usd = a_initial / 7.2 + us_initial
+        total_curr_usd = a_total / 7.2 + us_total
+        combined_return = round((total_curr_usd / total_init_usd - 1) * 100, 2) if total_init_usd else 0
 
     dates_list = [s["date"] for s in snapshots]
     snapshot_dates = json.dumps(dates_list)
@@ -380,13 +407,15 @@ def make_performance_widget():
 <td colspan="2">现金</td><td></td><td></td><td></td><td></td>
 <td>${us_cash:,.0f}</td><td>{us_cash_weight:.1f}%</td></tr>"""
 
-    name_map = {"HSAI": "Hesai Group", "300433": "蓝思科技", "002472": "双环传动"}
-    for p in sim["accounts"].get("a_share", {}).get("positions", []):
-        name_map[p["ticker"]] = p.get("name", "")
-        raw_ticker = p["ticker"].split(".")[0] if "." in p["ticker"] else p["ticker"]
-        name_map[raw_ticker] = p.get("name", "")
-    for p in sim["accounts"].get("us", {}).get("positions", []):
-        name_map[p["ticker"]] = p.get("name", "")
+    name_map = {}
+    for acct_key in ["a_share", "us"]:
+        for p in sim["accounts"].get(acct_key, {}).get("positions", []):
+            name_map[p["ticker"]] = p.get("name", "")
+            raw_ticker = p["ticker"].split(".")[0] if "." in p["ticker"] else p["ticker"]
+            name_map[raw_ticker] = p.get("name", "")
+    for t in trade_log:
+        if t.get("ticker") not in name_map:
+            name_map[t["ticker"]] = ""
 
     trade_rows = ""
     for t in reversed(trade_log):
