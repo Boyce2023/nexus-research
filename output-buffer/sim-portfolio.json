@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-25T09:05:36.203737+08:00",
+    "last_updated": "2026-05-25T10:26:54+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -15,10 +15,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 1000000,
-      "total_assets": 1039913.0,
-      "cash": 368309.0,
+      "total_assets": 940834.0,
+      "cash": 299429.0,
       "realized_pnl": 9714.0,
-      "return_pct": 3.99,
+      "return_pct": -5.92,
       "positions": [
         {
           "ticker": "002028.SZ",
@@ -561,6 +561,14 @@
       "ticker": "UPST",
       "shares": 1,
       "price": 28.71
+    },
+    {
+      "date": "2026-05-25",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "601138",
+      "shares": 1000,
+      "price": 68.88
     }
   ]
 }
