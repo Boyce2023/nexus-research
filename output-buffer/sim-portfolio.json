@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-26T21:34:29+08:00",
+    "last_updated": "2026-05-26T21:34:47+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -116,10 +116,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 150000,
-      "total_assets": 140961.22,
-      "cash": 80010.11,
-      "realized_pnl": -783.8802,
-      "return_pct": -6.03,
+      "total_assets": 147794.2,
+      "cash": 87190.25,
+      "realized_pnl": -1123.0303,
+      "return_pct": -1.47,
       "positions": [
         {
           "ticker": "NVDA",
@@ -217,7 +217,7 @@
           "name": "Upstart Holdings",
           "shares": -263,
           "avg_cost": 28.5905,
-          "current_price": 28.56,
+          "current_price": 29.88,
           "market_value": -7511.28,
           "unrealized_pnl_pct": -0.11,
           "portfolio_pct": 0.051,
@@ -688,6 +688,15 @@
       "shares": 528,
       "price": 14.225,
       "realized_pnl": 5.2198
+    },
+    {
+      "date": "2026-05-26",
+      "account": "us",
+      "action": "cover",
+      "ticker": "UPST",
+      "shares": 263,
+      "price": 29.88,
+      "realized_pnl": -339.1501
     }
   ]
 }
