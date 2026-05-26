@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-26T15:00:48+08:00",
+    "last_updated": "2026-05-26T15:01:06+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -15,17 +15,17 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 1000000,
-      "total_assets": 1079344.0,
-      "cash": 369846.0,
-      "realized_pnl": 46223.5,
-      "return_pct": 7.93,
+      "total_assets": 1079364.0,
+      "cash": 408738.0,
+      "realized_pnl": 46274.9,
+      "return_pct": 7.94,
       "positions": [
         {
           "ticker": "002028.SZ",
           "name": "思源电气",
-          "shares": 1000,
+          "shares": 800,
           "avg_cost": 194.203,
-          "current_price": 194.44,
+          "current_price": 194.46,
           "market_value": 194440.0,
           "unrealized_pnl_pct": 0.12,
           "portfolio_pct": 0.18,
@@ -637,6 +637,15 @@
       "shares": 2000,
       "price": 45.05,
       "realized_pnl": 24220.0
+    },
+    {
+      "date": "2026-05-26",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "002028",
+      "shares": 200,
+      "price": 194.46,
+      "realized_pnl": 51.4
     }
   ]
 }
