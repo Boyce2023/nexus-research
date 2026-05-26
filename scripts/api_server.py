@@ -398,9 +398,13 @@ def make_performance_widget():
     name_map = {}
     for acct_key in ["a_share", "us"]:
         for p in sim["accounts"].get(acct_key, {}).get("positions", []):
-            name_map[p["ticker"]] = p.get("name", "")
-            raw_ticker = p["ticker"].split(".")[0] if "." in p["ticker"] else p["ticker"]
-            name_map[raw_ticker] = p.get("name", "")
+            if p.get("name"):
+                name_map[p["ticker"]] = p["name"]
+                raw_ticker = p["ticker"].split(".")[0] if "." in p["ticker"] else p["ticker"]
+                name_map[raw_ticker] = p["name"]
+        for p in sim["accounts"].get(acct_key, {}).get("short_positions", []):
+            if p.get("name"):
+                name_map[p["ticker"]] = p["name"]
     for t in trade_log:
         if t.get("name"):
             name_map.setdefault(t["ticker"], t["name"])
