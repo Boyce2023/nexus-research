@@ -459,6 +459,11 @@ table{{width:100%;border-collapse:collapse;font-size:13px;white-space:nowrap}}
 th{{text-align:left;color:#8b949e;font-weight:500;padding:8px 6px;border-bottom:1px solid #30363d}}
 td{{padding:8px 6px;border-bottom:1px solid #21262d}}
 .disclaimer{{font-size:11px;color:#484f58;text-align:center;margin-top:24px;padding-top:16px;border-top:1px solid #21262d}}
+details.section{{margin-bottom:24px}}
+details.section summary{{color:#fff;font-size:16px;font-weight:600;cursor:pointer;padding-bottom:8px;border-bottom:1px solid #30363d;list-style:none;display:flex;align-items:center;gap:8px}}
+details.section summary::-webkit-details-marker{{display:none}}
+details.section summary::before{{content:'▶';font-size:11px;color:#8b949e;transition:transform .2s}}
+details.section[open] summary::before{{transform:rotate(90deg)}}
 .updated{{font-size:11px;color:#484f58;text-align:right;margin-bottom:8px}}
 @media(max-width:640px){{
   body{{padding:10px}}
@@ -515,13 +520,13 @@ td{{padding:8px 6px;border-bottom:1px solid #21262d}}
 </table></div>
 </div>
 
-<div class="section">
-<h2>交易明细</h2>
-<div class="table-wrap"><table>
+<details class="section">
+<summary>交易明细 ({len(trade_log)}笔)</summary>
+<div class="table-wrap" style="margin-top:12px"><table>
 <tr><th>日期</th><th>账户</th><th>操作</th><th>标的</th><th>名称</th><th>股数</th><th>价格</th><th>盈亏</th></tr>
 {trade_rows}
 </table></div>
-</div>
+</details>
 
 <div class="disclaimer">此为AI系统模拟投资组合，仅用于研究验证。不构成投资建议。<br>Nexus Research System · Powered by Claude AI</div>
 </div>
