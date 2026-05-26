@@ -402,8 +402,8 @@ def make_performance_widget():
             raw_ticker = p["ticker"].split(".")[0] if "." in p["ticker"] else p["ticker"]
             name_map[raw_ticker] = p.get("name", "")
     for t in trade_log:
-        if t.get("ticker") not in name_map:
-            name_map[t["ticker"]] = ""
+        if t.get("name"):
+            name_map.setdefault(t["ticker"], t["name"])
 
     trade_rows = ""
     for t in reversed(trade_log):
