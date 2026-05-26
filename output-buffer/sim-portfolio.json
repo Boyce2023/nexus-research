@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-26T11:03:25.678852+08:00",
+    "last_updated": "2026-05-26T15:00:48+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -15,46 +15,33 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 1000000,
-      "total_assets": 1066690.5,
-      "cash": 279746.0,
-      "realized_pnl": 22003.5,
-      "return_pct": 6.67,
+      "total_assets": 1079344.0,
+      "cash": 369846.0,
+      "realized_pnl": 46223.5,
+      "return_pct": 7.93,
       "positions": [
         {
           "ticker": "002028.SZ",
           "name": "思源电气",
           "shares": 1000,
           "avg_cost": 194.203,
-          "current_price": 195.25,
-          "market_value": 195250.0,
-          "unrealized_pnl_pct": 0.54,
-          "portfolio_pct": 0.183,
+          "current_price": 194.44,
+          "market_value": 194440.0,
+          "unrealized_pnl_pct": 0.12,
+          "portfolio_pct": 0.18,
           "entry_date": "2026-05-18",
           "type": "core_position",
           "sector": "电力设备"
-        },
-        {
-          "ticker": "603005.SS",
-          "name": "晶方科技",
-          "shares": 2000,
-          "avg_cost": 32.94,
-          "current_price": 42.58,
-          "market_value": 85160.0,
-          "unrealized_pnl_pct": 29.27,
-          "portfolio_pct": 0.08,
-          "entry_date": "2026-05-18",
-          "type": "scout_position",
-          "sector": "半导体封装"
         },
         {
           "ticker": "002938.SZ",
           "name": "鹏鼎控股",
           "shares": 450,
           "avg_cost": 87.75,
-          "current_price": 117.99,
-          "market_value": 53095.5,
-          "unrealized_pnl_pct": 34.46,
-          "portfolio_pct": 0.05,
+          "current_price": 115.2,
+          "market_value": 51840.0,
+          "unrealized_pnl_pct": 31.28,
+          "portfolio_pct": 0.048,
           "entry_date": "2026-05-20",
           "type": "catalyst_position",
           "sector": "PCB/苹果链"
@@ -64,10 +51,10 @@
           "name": "安集科技",
           "shares": 500,
           "avg_cost": 313.99,
-          "current_price": 322.89,
-          "market_value": 161445.0,
-          "unrealized_pnl_pct": 2.83,
-          "portfolio_pct": 0.151,
+          "current_price": 336.0,
+          "market_value": 168000.0,
+          "unrealized_pnl_pct": 7.01,
+          "portfolio_pct": 0.156,
           "entry_date": "2026-05-21T13:10:15+08:00",
           "type": "core_position",
           "sector": "半导体材料"
@@ -77,10 +64,10 @@
           "name": "恒瑞医药",
           "shares": 1600,
           "avg_cost": 51.02,
-          "current_price": 49.51,
-          "market_value": 79216.0,
-          "unrealized_pnl_pct": -2.96,
-          "portfolio_pct": 0.074,
+          "current_price": 49.22,
+          "market_value": 78752.0,
+          "unrealized_pnl_pct": -3.53,
+          "portfolio_pct": 0.073,
           "entry_date": "2026-05-22T09:50:29+08:00",
           "type": "catalyst_position",
           "sector": "创新药"
@@ -90,10 +77,10 @@
           "name": "德赛西威",
           "shares": 600,
           "avg_cost": 106.2,
-          "current_price": 109.49,
-          "market_value": 65694.0,
-          "unrealized_pnl_pct": 3.1,
-          "portfolio_pct": 0.062,
+          "current_price": 109.72,
+          "market_value": 65832.0,
+          "unrealized_pnl_pct": 3.31,
+          "portfolio_pct": 0.061,
           "entry_date": "2026-05-22T09:50:41+08:00",
           "type": "catalyst_position",
           "sector": "智能驾驶"
@@ -103,10 +90,10 @@
           "name": "沪电股份",
           "shares": 600,
           "avg_cost": 120.18,
-          "current_price": 131.03,
-          "market_value": 78618.0,
-          "unrealized_pnl_pct": 9.03,
-          "portfolio_pct": 0.074,
+          "current_price": 134.19,
+          "market_value": 80514.0,
+          "unrealized_pnl_pct": 11.66,
+          "portfolio_pct": 0.075,
           "entry_date": "2026-05-25T10:27:14+08:00",
           "type": "catalyst_position",
           "sector": "PCB/AI服务器"
@@ -116,10 +103,10 @@
           "name": "新易盛",
           "shares": 100,
           "avg_cost": 682.32,
-          "current_price": 684.66,
-          "market_value": 68466.0,
-          "unrealized_pnl_pct": 0.34,
-          "portfolio_pct": 0.064,
+          "current_price": 701.2,
+          "market_value": 70120.0,
+          "unrealized_pnl_pct": 2.77,
+          "portfolio_pct": 0.065,
           "entry_date": "2026-05-26T10:02:34+08:00",
           "type": "catalyst_position",
           "sector": "光模块/AI物理层"
@@ -219,7 +206,7 @@
           "avg_cost": 14.2349,
           "current_price": 14.22,
           "market_value": -7508.16,
-          "unrealized_pnl_pct": 0.1,
+          "unrealized_pnl_pct": -0.1,
           "portfolio_pct": 0.051,
           "entry_date": "2026-05-23T02:06:46+08:00",
           "type": "short_position",
@@ -232,7 +219,7 @@
           "avg_cost": 28.5905,
           "current_price": 28.56,
           "market_value": -7511.28,
-          "unrealized_pnl_pct": 0.11,
+          "unrealized_pnl_pct": -0.11,
           "portfolio_pct": 0.051,
           "entry_date": "2026-05-23T02:07:01+08:00",
           "type": "short_position",
@@ -252,7 +239,7 @@
         "total_assets": 149701,
         "return_pct": -0.2
       },
-      "combined_return_pct": 0.66
+      "combined_return_pct": 1.36
     },
     {
       "date": "2026-05-19",
@@ -264,7 +251,7 @@
         "total_assets": 149260.77,
         "return_pct": -0.49
       },
-      "combined_return_pct": 0.51
+      "combined_return_pct": 1.31
     },
     {
       "date": "2026-05-20",
@@ -276,7 +263,7 @@
         "total_assets": 148189.71,
         "return_pct": -1.21
       },
-      "combined_return_pct": 0.44
+      "combined_return_pct": 1.78
     },
     {
       "date": "2026-05-21",
@@ -288,7 +275,7 @@
         "total_assets": 148498.38,
         "return_pct": -1.0
       },
-      "combined_return_pct": 0.79
+      "combined_return_pct": 2.24
     },
     {
       "date": "2026-05-22",
@@ -300,7 +287,7 @@
         "total_assets": 148719.87,
         "return_pct": -0.85
       },
-      "combined_return_pct": 1.48
+      "combined_return_pct": 3.36
     },
     {
       "date": "2026-05-25",
@@ -312,7 +299,7 @@
         "total_assets": 148719.87,
         "return_pct": -0.85
       },
-      "combined_return_pct": 2.64
+      "combined_return_pct": 5.47
     },
     {
       "date": "2026-05-26",
@@ -324,7 +311,7 @@
         "total_assets": 148477.95,
         "return_pct": -1.01
       },
-      "combined_return_pct": 3.23
+      "combined_return_pct": 6.65
     }
   ],
   "trade_log": [
@@ -641,6 +628,15 @@
       "ticker": "300502",
       "shares": 100,
       "price": 682.32
+    },
+    {
+      "date": "2026-05-26",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "603005",
+      "shares": 2000,
+      "price": 45.05,
+      "realized_pnl": 24220.0
     }
   ]
 }
