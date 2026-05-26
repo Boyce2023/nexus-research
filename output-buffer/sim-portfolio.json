@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-26T21:37:12+08:00",
+    "last_updated": "2026-05-26T21:37:20+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -117,7 +117,7 @@
       "currency": "USD",
       "initial_capital": 150000,
       "total_assets": 147749.175,
-      "cash": 74853.125,
+      "cash": 59989.725,
       "realized_pnl": -2162.8753,
       "return_pct": -1.5,
       "positions": [
@@ -224,6 +224,19 @@
           "entry_date": "2026-05-26T21:37:12+08:00",
           "type": "trading_position",
           "sector": "DC HVAC/建筑设备"
+        },
+        {
+          "ticker": "CLS",
+          "name": "Celestica Inc",
+          "shares": 40,
+          "avg_cost": 371.585,
+          "current_price": 371.585,
+          "market_value": 14863.4,
+          "unrealized_pnl_pct": 0,
+          "portfolio_pct": 0,
+          "entry_date": "2026-05-26T21:37:20+08:00",
+          "type": "trading_position",
+          "sector": "AI制造/EMS"
         }
       ]
     }
@@ -731,6 +744,14 @@
       "ticker": "AAON",
       "shares": 120,
       "price": 139.941
+    },
+    {
+      "date": "2026-05-26",
+      "account": "us",
+      "action": "buy",
+      "ticker": "CLS",
+      "shares": 40,
+      "price": 371.585
     }
   ]
 }
