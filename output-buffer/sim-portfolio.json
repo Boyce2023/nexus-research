@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-26T21:35:04+08:00",
+    "last_updated": "2026-05-26T21:35:13+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -116,10 +116,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 150000,
-      "total_assets": 147881.175,
-      "cash": 108379.565,
-      "realized_pnl": -1971.8353,
-      "return_pct": -1.41,
+      "total_assets": 147749.175,
+      "cash": 119996.045,
+      "realized_pnl": -2162.8753,
+      "return_pct": -1.5,
       "positions": [
         {
           "ticker": "AAPL",
@@ -133,19 +133,6 @@
           "entry_date": "2026-05-18",
           "type": "base_position",
           "sector": "消费科技/硬件"
-        },
-        {
-          "ticker": "ADBE",
-          "name": "Adobe Inc.",
-          "shares": 48,
-          "avg_cost": 245.99,
-          "current_price": 244.76,
-          "market_value": 11748.48,
-          "unrealized_pnl_pct": -0.5,
-          "portfolio_pct": 0.079,
-          "entry_date": "2026-05-18",
-          "type": "trading_position",
-          "sector": "软件/SaaS"
         },
         {
           "ticker": "SPUT",
@@ -693,6 +680,15 @@
       "shares": 98,
       "price": 216.2175,
       "realized_pnl": -848.805
+    },
+    {
+      "date": "2026-05-26",
+      "account": "us",
+      "action": "sell",
+      "ticker": "ADBE",
+      "shares": 48,
+      "price": 242.01,
+      "realized_pnl": -191.04
     }
   ]
 }
