@@ -49,7 +49,7 @@ def get_benchmark_returns(yf_ticker, snapshot_dates):
             return _benchmark_cache[cache_key]["data"]
     try:
         t = yf.Ticker(yf_ticker)
-        hist = t.history(start=snapshot_dates[0], period="1mo")
+        hist = t.history(start=snapshot_dates[0])
         if hist.empty:
             return [0] * len(snapshot_dates)
         base_price = float(hist['Close'].iloc[0])
@@ -85,23 +85,6 @@ def get_price(ticker):
     except Exception:
         return None
 
-
-def _calc_total_from_positions(acct, initial):
-    """Calculate total_assets and return from raw position data. Never trust pre-computed."""
-    cash = acct.get("cash", 0)
-    long_mv = 0
-    short_pnl = 0
-    for pos in acct.get("positions", []):
-        shares = pos.get("shares", 0)
-        avg_cost = pos.get("avg_cost", 0)
-        price = pos.get("current_price", avg_cost)
-        if shares < 0:
-            short_pnl += (avg_cost - price) * abs(shares)
-        else:
-            long_mv += shares * price
-    total = cash + long_mv + short_pnl
-    ret = ((total - initial) / initial * 100) if initial else 0
-    return round(total, 2), round(ret, 2)
 
 
 def load_all_recs():
@@ -179,7 +162,10 @@ def get_live_portfolio():
             })
 
         cash = acct.get("cash", initial)
-        total_assets = cash + long_mv + short_pnl
+        if acct_key == "a_share":
+            total_assets = cash + long_mv
+        else:
+            total_assets = cash + long_mv + short_pnl
         return_pct = ((total_assets - initial) / initial * 100)
 
         unrealized_pnl = sum(p["pnl"] for p in positions)
@@ -361,10 +347,16 @@ def make_performance_widget():
 
     a_rows = ""
     for p in a_positions:
-        pnl_pct = p.get("pnl_pct", p.get("unrealized_pnl_pct", 0))
-        pnl = p.get("pnl", p.get("market_value", p["shares"] * p["avg_cost"]) - p["shares"] * p["avg_cost"])
-        current_price = p.get("current_price", p["avg_cost"])
-        mv = p.get("market_value", p["shares"] * current_price)
+        shares = p["shares"]
+        avg_cost = p["avg_cost"]
+        current_price = p.get("current_price", avg_cost)
+        if shares < 0:
+            pnl = (avg_cost - current_price) * abs(shares)
+            pnl_pct = (avg_cost - current_price) / avg_cost * 100 if avg_cost else 0
+        else:
+            pnl = (current_price - avg_cost) * shares
+            pnl_pct = (current_price - avg_cost) / avg_cost * 100 if avg_cost else 0
+        mv = p.get("market_value", shares * current_price)
         weight = (mv / a_total * 100) if a_total > 0 else 0
         color = "#3fb950" if pnl >= 0 else "#f85149"
         a_rows += f"""<tr>
@@ -379,11 +371,16 @@ def make_performance_widget():
 
     us_rows = ""
     for p in us_positions:
-        pnl_pct = p.get("pnl_pct", p.get("unrealized_pnl_pct", 0))
-        pnl = p.get("pnl", 0)
-        current_price = p.get("current_price", p["avg_cost"])
         shares = p["shares"]
+        avg_cost = p["avg_cost"]
+        current_price = p.get("current_price", avg_cost)
         is_short = shares < 0
+        if is_short:
+            pnl = (avg_cost - current_price) * abs(shares)
+            pnl_pct = (avg_cost - current_price) / avg_cost * 100 if avg_cost else 0
+        else:
+            pnl = (current_price - avg_cost) * shares
+            pnl_pct = (current_price - avg_cost) / avg_cost * 100 if avg_cost else 0
         abs_mv = abs(shares) * current_price
         weight = (abs_mv / us_total * 100) if us_total > 0 else 0
         color = "#3fb950" if pnl >= 0 else "#f85149"
