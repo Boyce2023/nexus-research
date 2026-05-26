@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-26T06:01:02.525385+08:00",
+    "last_updated": "2026-05-26T10:02:04+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -15,10 +15,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 1000000,
-      "total_assets": 1072183.0,
-      "cash": 227321.0,
-      "realized_pnl": 9714.0,
-      "return_pct": 7.22,
+      "total_assets": 1009894.0,
+      "cash": 296381.0,
+      "realized_pnl": 9894.0,
+      "return_pct": 0.99,
       "positions": [
         {
           "ticker": "002028.SZ",
@@ -97,19 +97,6 @@
           "entry_date": "2026-05-22T09:50:41+08:00",
           "type": "catalyst_position",
           "sector": "智能驾驶"
-        },
-        {
-          "ticker": "601138.SS",
-          "name": "工业富联",
-          "shares": 1000,
-          "avg_cost": 68.88,
-          "current_price": 70.3,
-          "market_value": 70300.0,
-          "unrealized_pnl_pct": 2.06,
-          "portfolio_pct": 0.065,
-          "entry_date": "2026-05-25T10:26:54+08:00",
-          "type": "catalyst_position",
-          "sector": "AI服务器/ODM"
         },
         {
           "ticker": "002463.SZ",
@@ -615,6 +602,15 @@
       "ticker": "002463",
       "shares": 600,
       "price": 120.18
+    },
+    {
+      "date": "2026-05-26",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "601138",
+      "shares": 1000,
+      "price": 69.06,
+      "realized_pnl": 180.0
     }
   ]
 }
