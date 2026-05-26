@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-26T16:19:36+08:00",
+    "last_updated": "2026-05-26T16:21:20+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -16,7 +16,7 @@
       "currency": "CNY",
       "initial_capital": 1000000,
       "total_assets": 1079081.5,
-      "cash": 215485.0,
+      "cash": 298414.0,
       "realized_pnl": 46274.9,
       "return_pct": 7.91,
       "positions": [
@@ -110,19 +110,6 @@
           "entry_date": "2026-05-26T10:02:34+08:00",
           "type": "catalyst_position",
           "sector": "光模块/AI物理层"
-        },
-        {
-          "ticker": "002156.SZ",
-          "name": "",
-          "shares": 1100,
-          "avg_cost": 75.39,
-          "current_price": 75.39,
-          "market_value": 82929.0,
-          "unrealized_pnl_pct": 0,
-          "portfolio_pct": 0,
-          "entry_date": "2026-05-26T16:19:36+08:00",
-          "type": "",
-          "sector": ""
         }
       ]
     },
@@ -683,6 +670,15 @@
       "ticker": "002156",
       "shares": 1100,
       "price": 75.39
+    },
+    {
+      "date": "2026-05-26",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "002156",
+      "shares": 1100,
+      "price": 75.39,
+      "realized_pnl": 0.0
     }
   ]
 }
