@@ -107,10 +107,11 @@ def build_trade_log(ssot):
     trades = []
     for t in ssot.get("trade_log", []):
         entry = {
-            "date": t.get("timestamp", t.get("date", ""))[:10],
+            "date": t.get("date", t.get("timestamp", "")[:10]),
             "account": t.get("account", ""),
             "action": t.get("action", ""),
             "ticker": t.get("ticker", ""),
+            "name": t.get("name", ""),
             "shares": t.get("shares", 0),
             "price": t.get("price", 0),
         }
