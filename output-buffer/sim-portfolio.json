@@ -320,6 +320,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "NVDA",
+      "name": "NVIDIA",
       "shares": 80,
       "price": 225.0
     },
@@ -328,6 +329,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "HSAI",
+      "name": "Hesai Group",
       "shares": 335,
       "price": 22.44
     },
@@ -336,6 +338,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "AAPL",
+      "name": "Apple",
       "shares": 50,
       "price": 299.9
     },
@@ -344,6 +347,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "GOOGL",
+      "name": "Alphabet",
       "shares": 30,
       "price": 396.0
     },
@@ -352,6 +356,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "ADBE",
+      "name": "Adobe",
       "shares": 48,
       "price": 245.99
     },
@@ -360,6 +365,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "SPUT",
+      "name": "Sprott Uranium Trust",
       "shares": 609,
       "price": 19.68
     },
@@ -368,6 +374,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "GEV",
+      "name": "GE Vernova",
       "shares": 8,
       "price": 1049.0
     },
@@ -376,6 +383,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "LEU",
+      "name": "Centrus Energy",
       "shares": 41,
       "price": 182.6
     },
@@ -384,6 +392,7 @@
       "account": "us",
       "action": "sell",
       "ticker": "HSAI",
+      "name": "Hesai Group",
       "shares": 335,
       "price": 20.18,
       "realized_pnl": -757.1
@@ -393,6 +402,7 @@
       "account": "a_share",
       "action": "sell",
       "ticker": "300433",
+      "name": "蓝思科技",
       "shares": 3000,
       "price": 36.5,
       "realized_pnl": 6870.0
@@ -402,6 +412,7 @@
       "account": "a_share",
       "action": "buy",
       "ticker": "002938",
+      "name": "鹏鼎控股",
       "shares": 900,
       "price": 87.75
     },
@@ -410,6 +421,7 @@
       "account": "a_share",
       "action": "buy",
       "ticker": "002472",
+      "name": "双环传动",
       "shares": 1800,
       "price": 43.27
     },
@@ -418,6 +430,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "NVDA",
+      "name": "NVIDIA",
       "shares": 18,
       "price": 224.34
     },
@@ -426,6 +439,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "FPS",
+      "name": "Forgent Power",
       "shares": 80,
       "price": 44.68
     },
@@ -434,6 +448,7 @@
       "account": "a_share",
       "action": "sell",
       "ticker": "002472",
+      "name": "双环传动",
       "shares": 1800,
       "price": 44.85,
       "realized_pnl": 2844.0
@@ -443,6 +458,7 @@
       "account": "a_share",
       "action": "buy",
       "ticker": "688019",
+      "name": "安集科技",
       "shares": 500,
       "price": 313.99
     },
@@ -451,6 +467,7 @@
       "account": "a_share",
       "action": "buy",
       "ticker": "002028",
+      "name": "思源电气",
       "shares": 300,
       "price": 204.01
     },
@@ -459,6 +476,7 @@
       "account": "a_share",
       "action": "buy",
       "ticker": "600276",
+      "name": "恒瑞医药",
       "shares": 1600,
       "price": 51.02
     },
@@ -467,6 +485,7 @@
       "account": "a_share",
       "action": "buy",
       "ticker": "002920",
+      "name": "德赛西威",
       "shares": 600,
       "price": 106.2
     },
@@ -475,6 +494,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "CRM",
+      "name": "Salesforce",
       "shares": 17,
       "price": 176.31
     },
@@ -483,6 +503,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "DG",
+      "name": "Dollar General",
       "shares": 28,
       "price": 105.11
     },
@@ -491,6 +512,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "FPS",
+      "name": "Forgent Power",
       "shares": 60,
       "price": 48.52
     },
@@ -499,6 +521,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "COPX",
+      "name": "Global X Copper Miners",
       "shares": 36,
       "price": 83.02
     },
@@ -507,6 +530,7 @@
       "account": "us",
       "action": "sell",
       "ticker": "GOOGL",
+      "name": "Alphabet",
       "shares": 30,
       "price": 384.41,
       "realized_pnl": -347.7
@@ -516,6 +540,7 @@
       "account": "us",
       "action": "sell",
       "ticker": "LEU",
+      "name": "Centrus Energy",
       "shares": 41,
       "price": 180.91,
       "realized_pnl": -69.29
@@ -525,6 +550,7 @@
       "account": "us",
       "action": "sell",
       "ticker": "FPS",
+      "name": "Forgent Power Solutions",
       "shares": 140,
       "price": 48.825,
       "realized_pnl": 349.9
@@ -534,6 +560,7 @@
       "account": "us",
       "action": "sell",
       "ticker": "DG",
+      "name": "Dollar General",
       "shares": 28,
       "price": 105.67,
       "realized_pnl": 15.68
@@ -543,6 +570,7 @@
       "account": "us",
       "action": "sell",
       "ticker": "COPX",
+      "name": "Global X Copper Miners ETF",
       "shares": 36,
       "price": 83.545,
       "realized_pnl": 18.9
@@ -552,6 +580,7 @@
       "account": "us",
       "action": "short",
       "ticker": "RIVN",
+      "name": "Rivian Automotive",
       "shares": 525,
       "price": 14.235
     },
@@ -560,6 +589,7 @@
       "account": "us",
       "action": "short",
       "ticker": "UPST",
+      "name": "Upstart Holdings",
       "shares": 262,
       "price": 28.59
     },
@@ -568,6 +598,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "CRM",
+      "name": "Salesforce",
       "shares": 25,
       "price": 180.245
     },
@@ -576,6 +607,7 @@
       "account": "us",
       "action": "short",
       "ticker": "RIVN",
+      "name": "Rivian Automotive",
       "shares": 3,
       "price": 14.215
     },
@@ -584,6 +616,7 @@
       "account": "us",
       "action": "short",
       "ticker": "UPST",
+      "name": "Upstart Holdings",
       "shares": 1,
       "price": 28.71
     },
@@ -592,6 +625,7 @@
       "account": "a_share",
       "action": "buy",
       "ticker": "601138",
+      "name": "工业富联",
       "shares": 1000,
       "price": 68.88
     },
@@ -600,6 +634,7 @@
       "account": "a_share",
       "action": "buy",
       "ticker": "002463",
+      "name": "沪电股份",
       "shares": 600,
       "price": 120.18
     },
@@ -608,6 +643,7 @@
       "account": "a_share",
       "action": "sell",
       "ticker": "601138",
+      "name": "工业富联",
       "shares": 1000,
       "price": 69.06,
       "realized_pnl": 180.0
@@ -617,6 +653,7 @@
       "account": "a_share",
       "action": "sell",
       "ticker": "002938",
+      "name": "鹏鼎控股",
       "shares": 450,
       "price": 114.66,
       "realized_pnl": 12109.5
@@ -626,6 +663,7 @@
       "account": "a_share",
       "action": "buy",
       "ticker": "300502",
+      "name": "新易盛",
       "shares": 100,
       "price": 682.32
     },
@@ -634,6 +672,7 @@
       "account": "a_share",
       "action": "sell",
       "ticker": "603005",
+      "name": "晶方科技",
       "shares": 2000,
       "price": 45.05,
       "realized_pnl": 24220.0
@@ -643,6 +682,7 @@
       "account": "a_share",
       "action": "sell",
       "ticker": "002028",
+      "name": "思源电气",
       "shares": 200,
       "price": 194.46,
       "realized_pnl": 51.4
@@ -652,6 +692,7 @@
       "account": "a_share",
       "action": "buy",
       "ticker": "002463",
+      "name": "沪电股份",
       "shares": 300,
       "price": 133.92
     },
@@ -660,6 +701,7 @@
       "account": "a_share",
       "action": "buy",
       "ticker": "300502",
+      "name": "新易盛",
       "shares": 100,
       "price": 701.48
     },
@@ -668,6 +710,7 @@
       "account": "a_share",
       "action": "buy",
       "ticker": "002156",
+      "name": "通富微电",
       "shares": 1100,
       "price": 75.39
     },
@@ -676,6 +719,7 @@
       "account": "a_share",
       "action": "sell",
       "ticker": "002156",
+      "name": "通富微电",
       "shares": 1100,
       "price": 75.39,
       "realized_pnl": 0.0
@@ -685,6 +729,7 @@
       "account": "us",
       "action": "cover",
       "ticker": "RIVN",
+      "name": "Rivian Automotive",
       "shares": 528,
       "price": 14.225,
       "realized_pnl": 5.2198
@@ -694,6 +739,7 @@
       "account": "us",
       "action": "cover",
       "ticker": "UPST",
+      "name": "Upstart Holdings",
       "shares": 263,
       "price": 29.88,
       "realized_pnl": -339.1501
@@ -703,6 +749,7 @@
       "account": "us",
       "action": "sell",
       "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
       "shares": 98,
       "price": 216.2175,
       "realized_pnl": -848.805
@@ -712,6 +759,7 @@
       "account": "us",
       "action": "sell",
       "ticker": "ADBE",
+      "name": "Adobe",
       "shares": 48,
       "price": 242.01,
       "realized_pnl": -191.04
@@ -721,6 +769,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "VST",
+      "name": "Vistra Corp",
       "shares": 175,
       "price": 162.0
     },
@@ -729,6 +778,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "AAON",
+      "name": "AAON Inc",
       "shares": 120,
       "price": 139.941
     },
@@ -737,6 +787,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "CLS",
+      "name": "Celestica Inc",
       "shares": 40,
       "price": 371.585
     },
@@ -745,6 +796,7 @@
       "account": "us",
       "action": "buy",
       "ticker": "INOD",
+      "name": "Innodata Inc",
       "shares": 100,
       "price": 96.745
     },
@@ -753,6 +805,7 @@
       "account": "us",
       "action": "short",
       "ticker": "MSTR",
+      "name": "Strategy Inc",
       "shares": 50,
       "price": 163.6911
     }
