@@ -532,13 +532,16 @@ const aReturns = {snapshot_a};
 const usReturns = {snapshot_us};
 const csi300Returns = {snapshot_csi300};
 const spyReturns = {snapshot_spy};
+const allValues = [...aReturns, ...usReturns, ...csi300Returns, ...spyReturns].filter(v => v !== null && v !== undefined);
+const globalMin = Math.floor(Math.min(...allValues) - 1);
+const globalMax = Math.ceil(Math.max(...allValues) + 1);
 const chartOpts = {{
     responsive: true,
     maintainAspectRatio: false,
     plugins: {{legend: {{labels: {{color: '#c9d1d9', font: {{size: 11}}}}}}}},
     scales: {{
         x: {{ticks: {{color: '#8b949e', font: {{size: 10}}}}, grid: {{color: '#21262d'}}}},
-        y: {{ticks: {{color: '#8b949e', font: {{size: 10}}, callback: v => parseFloat(v.toFixed(2))+'%'}}, grid: {{color: '#21262d'}}}}
+        y: {{min: globalMin, max: globalMax, ticks: {{color: '#8b949e', font: {{size: 10}}, callback: v => parseFloat(v.toFixed(2))+'%'}}, grid: {{color: '#21262d'}}}}
     }}
 }};
 if (dates.length > 0) {{
