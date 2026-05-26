@@ -331,30 +331,21 @@ def make_performance_widget():
     if not sim:
         return "<p>Portfolio not available</p>"
 
-    live = get_live_portfolio()
-    use_live = "error" not in live
     snapshots = sim.get("daily_snapshots", [])
     trade_log = sim.get("trade_log", [])
-    last_updated = datetime.now().isoformat()[:19] if use_live else sim["meta"].get("last_updated", "")
+    last_updated = sim["meta"].get("last_updated", "")[:19]
 
-    if use_live:
-        a_data = live["accounts"]["a_share"]
-        us_data = live["accounts"]["us"]
-        a_return = a_data["return_pct"]
-        us_return = us_data["return_pct"]
-        a_total = a_data["total_assets"]
-        us_total = us_data["total_assets"]
-        combined_return = live["combined"]["combined_return_pct"]
-    else:
-        a_acct = sim["accounts"].get("a_share", {})
-        us_acct = sim["accounts"].get("us", {})
-        a_initial = a_acct.get("initial_capital", 1000000)
-        us_initial = us_acct.get("initial_capital", 150000)
-        a_total, a_return = _calc_total_from_positions(a_acct, a_initial)
-        us_total, us_return = _calc_total_from_positions(us_acct, us_initial)
-        total_init_usd = a_initial / 7.2 + us_initial
-        total_curr_usd = a_total / 7.2 + us_total
-        combined_return = round((total_curr_usd / total_init_usd - 1) * 100, 2) if total_init_usd else 0
+    a_acct = sim["accounts"]["a_share"]
+    us_acct = sim["accounts"]["us"]
+    a_total = a_acct["total_assets"]
+    us_total = us_acct["total_assets"]
+    a_return = a_acct["return_pct"]
+    us_return = us_acct["return_pct"]
+    a_initial = a_acct["initial_capital"]
+    us_initial = us_acct["initial_capital"]
+    total_init_usd = a_initial / 7.2 + us_initial
+    total_curr_usd = a_total / 7.2 + us_total
+    combined_return = round((total_curr_usd / total_init_usd - 1) * 100, 2) if total_init_usd else 0
 
     dates_list = [s["date"] for s in snapshots]
     snapshot_dates = json.dumps(dates_list)
@@ -363,10 +354,10 @@ def make_performance_widget():
     snapshot_csi300 = json.dumps(get_benchmark_returns("000300.SS", dates_list))
     snapshot_spy = json.dumps(get_benchmark_returns("SPY", dates_list))
 
-    a_positions = live["accounts"]["a_share"]["positions"] if use_live else sim["accounts"].get("a_share", {}).get("positions", [])
-    us_positions = live["accounts"]["us"]["positions"] if use_live else sim["accounts"].get("us", {}).get("positions", [])
-    a_cash = live["accounts"]["a_share"]["cash"] if use_live else sim["accounts"].get("a_share", {}).get("cash", 0)
-    us_cash = live["accounts"]["us"]["cash"] if use_live else sim["accounts"].get("us", {}).get("cash", 0)
+    a_positions = a_acct.get("positions", [])
+    us_positions = us_acct.get("positions", [])
+    a_cash = a_acct.get("cash", 0)
+    us_cash = us_acct.get("cash", 0)
 
     a_rows = ""
     for p in a_positions:
@@ -444,7 +435,7 @@ def make_performance_widget():
     c_color = "#3fb950" if combined_return >= 0 else "#f85149"
     pos_count = len(a_positions) + len(us_positions)
 
-    data_source = '实时数据' if use_live else '同步数据'
+    data_source = '同步数据'
 
     return f"""<!DOCTYPE html>
 <html><head><meta charset="UTF-8">
