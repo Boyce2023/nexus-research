@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-26T10:02:04+08:00",
+    "last_updated": "2026-05-26T10:02:18+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -15,10 +15,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 1000000,
-      "total_assets": 1009894.0,
-      "cash": 296381.0,
-      "realized_pnl": 9894.0,
-      "return_pct": 0.99,
+      "total_assets": 1034113.0,
+      "cash": 347978.0,
+      "realized_pnl": 22003.5,
+      "return_pct": 3.41,
       "positions": [
         {
           "ticker": "002028.SZ",
@@ -49,7 +49,7 @@
         {
           "ticker": "002938.SZ",
           "name": "鹏鼎控股",
-          "shares": 900,
+          "shares": 450,
           "avg_cost": 87.75,
           "current_price": 114.32,
           "market_value": 102888.0,
@@ -611,6 +611,15 @@
       "shares": 1000,
       "price": 69.06,
       "realized_pnl": 180.0
+    },
+    {
+      "date": "2026-05-26",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "002938",
+      "shares": 450,
+      "price": 114.66,
+      "realized_pnl": 12109.5
     }
   ]
 }
