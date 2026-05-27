@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-27T21:40:55.057957+08:00",
+    "last_updated": "2026-05-27T22:13:33.050236+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -30,7 +30,7 @@
           "unrealized_pnl_pct": 1.86,
           "portfolio_pct": 0.149,
           "entry_date": "2026-05-18",
-          "type": "core_position",
+          "type": "trading_position",
           "sector": "电力设备"
         },
         {
@@ -43,7 +43,7 @@
           "unrealized_pnl_pct": 7.72,
           "portfolio_pct": 0.085,
           "entry_date": "2026-05-20",
-          "type": "catalyst_position",
+          "type": "trading_position",
           "sector": "PCB/苹果链"
         },
         {
@@ -56,7 +56,7 @@
           "unrealized_pnl_pct": -0.35,
           "portfolio_pct": 0.147,
           "entry_date": "2026-05-21T13:10:15+08:00",
-          "type": "core_position",
+          "type": "trading_position",
           "sector": "半导体材料"
         },
         {
@@ -69,7 +69,7 @@
           "unrealized_pnl_pct": -1.27,
           "portfolio_pct": 0.076,
           "entry_date": "2026-05-22T09:50:29+08:00",
-          "type": "catalyst_position",
+          "type": "trading_position",
           "sector": "创新药"
         },
         {
@@ -82,7 +82,7 @@
           "unrealized_pnl_pct": 2.83,
           "portfolio_pct": 0.109,
           "entry_date": "2026-05-25T10:27:14+08:00",
-          "type": "catalyst_position",
+          "type": "trading_position",
           "sector": "PCB/AI服务器"
         },
         {
@@ -95,7 +95,7 @@
           "unrealized_pnl_pct": 0.45,
           "portfolio_pct": 0.121,
           "entry_date": "2026-05-26T10:02:34+08:00",
-          "type": "catalyst_position",
+          "type": "trading_position",
           "sector": "光模块/AI物理层"
         }
       ]
@@ -103,21 +103,21 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1407886.9,
-      "cash": 519787.5,
-      "realized_pnl": -15149.903,
-      "return_pct": -6.14,
+      "total_assets": 1481714.95,
+      "cash": 513439.75,
+      "realized_pnl": -19667.9,
+      "return_pct": -1.22,
       "positions": [
         {
           "ticker": "GEV",
           "name": "GE Vernova",
           "shares": 140,
-          "avg_cost": 1058.201429,
-          "current_price": 1070.47,
-          "market_value": 149865.8,
-          "unrealized_pnl_pct": 1.16,
-          "portfolio_pct": 0.1,
-          "entry_date": "2026-05-18",
+          "avg_cost": 1046.1286,
+          "current_price": 1042.3,
+          "market_value": 145922.0,
+          "unrealized_pnl_pct": -0.37,
+          "portfolio_pct": null,
+          "entry_date": "2026-05-26",
           "type": "trading_position",
           "sector": "电力设备/燃气轮机"
         },
@@ -126,11 +126,11 @@
           "name": "Vistra Corp",
           "shares": 800,
           "avg_cost": 162.0,
-          "current_price": 164.56,
-          "market_value": 131648.0,
-          "unrealized_pnl_pct": 1.58,
-          "portfolio_pct": 0.088,
-          "entry_date": "2026-05-26T21:36:56+08:00",
+          "current_price": 160.06,
+          "market_value": 128048.0,
+          "unrealized_pnl_pct": -1.2,
+          "portfolio_pct": null,
+          "entry_date": "2026-05-26",
           "type": "trading_position",
           "sector": "DC电力/独立发电"
         },
@@ -139,11 +139,11 @@
           "name": "AAON Inc",
           "shares": 1200,
           "avg_cost": 139.941,
-          "current_price": 141.12,
-          "market_value": 169344.0,
-          "unrealized_pnl_pct": 0.84,
-          "portfolio_pct": 0.114,
-          "entry_date": "2026-05-26T21:37:12+08:00",
+          "current_price": 143.01,
+          "market_value": 171612.0,
+          "unrealized_pnl_pct": 2.19,
+          "portfolio_pct": null,
+          "entry_date": "2026-05-26",
           "type": "trading_position",
           "sector": "DC HVAC/建筑设备"
         },
@@ -152,11 +152,11 @@
           "name": "Celestica Inc",
           "shares": 400,
           "avg_cost": 371.585,
-          "current_price": 370.84,
-          "market_value": 148336.0,
-          "unrealized_pnl_pct": -0.2,
-          "portfolio_pct": 0.099,
-          "entry_date": "2026-05-26T21:37:20+08:00",
+          "current_price": 362.56,
+          "market_value": 145024.0,
+          "unrealized_pnl_pct": -2.43,
+          "portfolio_pct": null,
+          "entry_date": "2026-05-26",
           "type": "trading_position",
           "sector": "AI制造/EMS"
         },
@@ -164,27 +164,39 @@
           "ticker": "MU",
           "name": "Micron Technology",
           "shares": 160,
-          "avg_cost": 895.88,
-          "current_price": 895.88,
-          "market_value": 143340.8,
+          "avg_cost": 932.0,
+          "current_price": 932.0,
+          "market_value": 149120.0,
           "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.096,
-          "entry_date": "2026-05-27T20:35:32+08:00",
+          "portfolio_pct": null,
+          "entry_date": "2026-05-26",
           "type": "trading_position",
-          "sector": "Memory/HBM (Pod I AI Semi)"
+          "sector": "Memory/HBM"
         },
         {
           "ticker": "AMAT",
           "name": "Applied Materials",
           "shares": 320,
-          "avg_cost": 454.89,
-          "current_price": 454.89,
-          "market_value": 145564.8,
+          "avg_cost": 447.83,
+          "current_price": 447.83,
+          "market_value": 143305.6,
           "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.098,
-          "entry_date": "2026-05-27T20:35:40+08:00",
+          "portfolio_pct": null,
+          "entry_date": "2026-05-26",
           "type": "trading_position",
-          "sector": "半导体设备 (Pod I Semi Equipment)"
+          "sector": "半导体设备"
+        },
+        {
+          "ticker": "MSTR",
+          "name": "Strategy Inc",
+          "shares": -500,
+          "avg_cost": 163.6911,
+          "current_price": 156.895,
+          "market_value": -78447.5,
+          "unrealized_pnl_pct": 4.15,
+          "entry_date": "2026-05-26",
+          "type": "short_position",
+          "sector": "BTC Leveraged Proxy"
         }
       ]
     }
@@ -290,6 +302,30 @@
   "trade_log": [
     {
       "date": "2026-05-18",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "002028",
+      "shares": 7000,
+      "price": 190.0
+    },
+    {
+      "date": "2026-05-18",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "300433",
+      "shares": 30000,
+      "price": 34.21
+    },
+    {
+      "date": "2026-05-18",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "603005",
+      "shares": 20000,
+      "price": 32.94
+    },
+    {
+      "date": "2026-05-18",
       "account": "us",
       "action": "buy",
       "ticker": "NVDA",
@@ -351,30 +387,6 @@
       "ticker": "LEU",
       "shares": 410,
       "price": 182.6
-    },
-    {
-      "date": "2026-05-18",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "002028",
-      "shares": 7000,
-      "price": 190.0
-    },
-    {
-      "date": "2026-05-18",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "300433",
-      "shares": 30000,
-      "price": 34.21
-    },
-    {
-      "date": "2026-05-18",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "603005",
-      "shares": 20000,
-      "price": 32.94
     },
     {
       "date": "2026-05-20",
@@ -784,8 +796,8 @@
       "action": "sell",
       "ticker": "AAPL",
       "shares": 500,
-      "price": 308.33,
-      "realized_pnl": 421.5
+      "price": 312.18,
+      "realized_pnl": 6140.0
     },
     {
       "date": "2026-05-27",
@@ -793,8 +805,8 @@
       "action": "sell",
       "ticker": "CRM",
       "shares": 420,
-      "price": 179.08,
-      "realized_pnl": 17.965
+      "price": 181.98,
+      "realized_pnl": 1397.65
     },
     {
       "date": "2026-05-27",
@@ -802,8 +814,8 @@
       "action": "sell",
       "ticker": "INOD",
       "shares": 1000,
-      "price": 95.91,
-      "realized_pnl": -83.5
+      "price": 92.59,
+      "realized_pnl": -4155.0
     },
     {
       "date": "2026-05-27",
@@ -811,8 +823,8 @@
       "action": "sell",
       "ticker": "VST",
       "shares": 950,
-      "price": 164.56,
-      "realized_pnl": 243.2
+      "price": 160.06,
+      "realized_pnl": -1843.0
     },
     {
       "date": "2026-05-27",
@@ -820,8 +832,8 @@
       "action": "sell",
       "ticker": "SPUT",
       "shares": 6090,
-      "price": 19.76,
-      "realized_pnl": 48.72
+      "price": 19.75,
+      "realized_pnl": 426.3
     },
     {
       "date": "2026-05-27",
@@ -829,7 +841,7 @@
       "action": "buy",
       "ticker": "GEV",
       "shares": 60,
-      "price": 1070.47
+      "price": 1042.3
     },
     {
       "date": "2026-05-27",
@@ -837,7 +849,7 @@
       "action": "buy",
       "ticker": "MU",
       "shares": 160,
-      "price": 895.88
+      "price": 932.0
     },
     {
       "date": "2026-05-27",
@@ -845,7 +857,7 @@
       "action": "buy",
       "ticker": "AMAT",
       "shares": 320,
-      "price": 454.89
+      "price": 447.83
     }
   ]
 }
