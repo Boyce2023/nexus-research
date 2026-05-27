@@ -121,6 +121,7 @@ def get_live_portfolio():
         initial = acct["initial_capital"]
         positions = []
         long_mv = 0
+        short_margin = 0
         short_pnl = 0
 
         for pos in acct["positions"]:
@@ -140,6 +141,7 @@ def get_live_portfolio():
                 market_value = -(abs_shares * live_price)
                 pnl = (avg_cost - live_price) * abs_shares
                 pnl_pct = (avg_cost - live_price) / avg_cost * 100 if avg_cost else 0
+                short_margin += avg_cost * abs_shares
                 short_pnl += pnl
             else:
                 market_value = shares * live_price
@@ -162,10 +164,7 @@ def get_live_portfolio():
             })
 
         cash = acct.get("cash", initial)
-        if acct_key == "a_share":
-            total_assets = cash + long_mv
-        else:
-            total_assets = cash + long_mv + short_pnl
+        total_assets = cash + long_mv + short_margin + short_pnl
         return_pct = ((total_assets - initial) / initial * 100)
 
         unrealized_pnl = sum(p["pnl"] for p in positions)
