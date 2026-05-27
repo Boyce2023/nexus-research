@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-27T10:25:33.820513+08:00",
+    "last_updated": "2026-05-27T15:21:08.599657+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -15,19 +15,19 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 1000000,
-      "total_assets": 1087647.3,
+      "total_assets": 1061506.6,
       "cash": 331862.15,
       "realized_pnl": 49708.55,
-      "return_pct": 8.76,
+      "return_pct": 6.15,
       "positions": [
         {
           "ticker": "002028.SZ",
           "name": "思源电气",
           "shares": 800,
           "avg_cost": 194.203,
-          "current_price": 202.08,
-          "market_value": 161664.0,
-          "unrealized_pnl_pct": 4.06,
+          "current_price": 197.85,
+          "market_value": 158280.0,
+          "unrealized_pnl_pct": 1.88,
           "portfolio_pct": 0.149,
           "entry_date": "2026-05-18",
           "type": "core_position",
@@ -37,11 +37,11 @@
           "ticker": "002938.SZ",
           "name": "鹏鼎控股",
           "shares": 850,
-          "avg_cost": 98.3194,
-          "current_price": 112.21,
-          "market_value": 95378.5,
-          "unrealized_pnl_pct": 14.13,
-          "portfolio_pct": 0.088,
+          "avg_cost": 98.319412,
+          "current_price": 106.4,
+          "market_value": 90440.0,
+          "unrealized_pnl_pct": 8.22,
+          "portfolio_pct": 0.085,
           "entry_date": "2026-05-20",
           "type": "catalyst_position",
           "sector": "PCB/苹果链"
@@ -51,10 +51,10 @@
           "name": "安集科技",
           "shares": 500,
           "avg_cost": 313.99,
-          "current_price": 340.7,
-          "market_value": 170350.0,
-          "unrealized_pnl_pct": 8.51,
-          "portfolio_pct": 0.157,
+          "current_price": 313.3,
+          "market_value": 156650.0,
+          "unrealized_pnl_pct": -0.22,
+          "portfolio_pct": 0.148,
           "entry_date": "2026-05-21T13:10:15+08:00",
           "type": "core_position",
           "sector": "半导体材料"
@@ -64,10 +64,10 @@
           "name": "恒瑞医药",
           "shares": 1600,
           "avg_cost": 51.02,
-          "current_price": 49.33,
-          "market_value": 78928.0,
-          "unrealized_pnl_pct": -3.31,
-          "portfolio_pct": 0.073,
+          "current_price": 50.45,
+          "market_value": 80720.0,
+          "unrealized_pnl_pct": -1.12,
+          "portfolio_pct": 0.076,
           "entry_date": "2026-05-22T09:50:29+08:00",
           "type": "catalyst_position",
           "sector": "创新药"
@@ -77,10 +77,10 @@
           "name": "沪电股份",
           "shares": 900,
           "avg_cost": 124.76,
-          "current_price": 133.44,
-          "market_value": 120096.0,
-          "unrealized_pnl_pct": 6.96,
-          "portfolio_pct": 0.11,
+          "current_price": 128.46,
+          "market_value": 115614.0,
+          "unrealized_pnl_pct": 2.97,
+          "portfolio_pct": 0.109,
           "entry_date": "2026-05-25T10:27:14+08:00",
           "type": "catalyst_position",
           "sector": "PCB/AI服务器"
@@ -90,10 +90,10 @@
           "name": "新易盛",
           "shares": 185,
           "avg_cost": 691.9,
-          "current_price": 699.29,
-          "market_value": 129368.65,
-          "unrealized_pnl_pct": 1.07,
-          "portfolio_pct": 0.119,
+          "current_price": 691.57,
+          "market_value": 127940.45,
+          "unrealized_pnl_pct": -0.05,
+          "portfolio_pct": 0.121,
           "entry_date": "2026-05-26T10:02:34+08:00",
           "type": "catalyst_position",
           "sector": "光模块/AI物理层"
@@ -151,7 +151,7 @@
           "ticker": "CRM",
           "name": "Salesforce",
           "shares": 42,
-          "avg_cost": 178.6523,
+          "avg_cost": 178.652262,
           "current_price": 179.08,
           "market_value": 7521.36,
           "unrealized_pnl_pct": 0.24,
@@ -214,7 +214,7 @@
         },
         {
           "ticker": "MSTR",
-          "name": "",
+          "name": "Strategy Inc",
           "shares": -50,
           "avg_cost": 163.6911,
           "current_price": 159.93,
@@ -223,7 +223,7 @@
           "portfolio_pct": 0,
           "entry_date": "2026-05-26T21:43:01+08:00",
           "type": "short",
-          "sector": ""
+          "sector": "BTC杠杆代理"
         }
       ]
     }
@@ -316,14 +316,14 @@
     {
       "date": "2026-05-27",
       "a_share": {
-        "total_assets": 1087647.3,
-        "return_pct": 8.76
+        "total_assets": 1061506.6,
+        "return_pct": 6.15
       },
       "us": {
         "total_assets": 149161.3,
         "return_pct": -0.56
       },
-      "combined_return_pct": 7.55
+      "combined_return_pct": 2.67
     }
   ],
   "trade_log": [
