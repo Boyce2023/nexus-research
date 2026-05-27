@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-27T20:35:24+08:00",
+    "last_updated": "2026-05-27T20:35:33+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -104,7 +104,7 @@
       "currency": "USD",
       "initial_capital": 150000,
       "total_assets": 149161.3,
-      "cash": 80869.31,
+      "cash": 66535.23,
       "realized_pnl": -1514.99,
       "return_pct": -0.56,
       "positions": [
@@ -159,6 +159,19 @@
           "entry_date": "2026-05-26T21:37:20+08:00",
           "type": "trading_position",
           "sector": "AI制造/EMS"
+        },
+        {
+          "ticker": "MU",
+          "name": "",
+          "shares": 16,
+          "avg_cost": 895.88,
+          "current_price": 895.88,
+          "market_value": 14334.08,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.0,
+          "entry_date": "2026-05-27T20:35:32+08:00",
+          "type": "",
+          "sector": ""
         },
         {
           "ticker": "MSTR",
@@ -883,6 +896,15 @@
       "name": "GE Vernova",
       "shares": 6,
       "price": 1070.47
+    },
+    {
+      "date": "2026-05-27",
+      "account": "us",
+      "action": "buy",
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "shares": 16,
+      "price": 895.88
     }
   ]
 }
