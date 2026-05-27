@@ -163,6 +163,9 @@ def get_live_portfolio():
 
         nav = calc_nav(acct, price_overrides=price_overrides)
         total_assets = nav["total_assets"]
+        long_mv = nav.get("long_mv", 0)
+        short_pnl = nav.get("short_pnl", 0)
+        short_margin = nav.get("short_margin", 0)
         cash = nav["cash"]
         return_pct = ((total_assets - initial) / initial * 100)
 
@@ -507,7 +510,7 @@ details.section[open] summary::before{{transform:rotate(90deg)}}
 </div>
 
 <div class="section">
-<h2>A股持仓 (初始 ¥1,000,000)</h2>
+<h2>A股持仓 (初始 ¥{a_initial:,.0f})</h2>
 <div class="table-wrap"><table>
 <tr><th>代码</th><th>名称</th><th>股数</th><th>成本</th><th>现价</th><th>涨跌</th><th>盈亏</th><th>占比</th></tr>
 {a_rows}
@@ -515,7 +518,7 @@ details.section[open] summary::before{{transform:rotate(90deg)}}
 </div>
 
 <div class="section">
-<h2>美股持仓 (初始 $150,000)</h2>
+<h2>美股持仓 (初始 ${us_initial:,.0f})</h2>
 <div class="table-wrap"><table>
 <tr><th>代码</th><th>名称</th><th>股数</th><th>成本</th><th>现价</th><th>涨跌</th><th>盈亏</th><th>占比</th></tr>
 {us_rows}

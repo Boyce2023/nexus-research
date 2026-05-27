@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""
-SSOT Sync: portfolio_state.json → sim-portfolio.json
+"""SSOT Sync: portfolio_state.json → sim-portfolio.json
 
-Reads the single source of truth and generates a clean, validated
-public-facing portfolio file. All calculations done from raw position data.
+Uses core/compute.full_snapshot() as the single computation source.
+All NAV, return_pct, portfolio_pct, and combined_return logic lives there.
 
 Usage:
   python sync_portfolio.py              # sync + validate
@@ -12,125 +11,25 @@ Usage:
 
 import json, sys
 from pathlib import Path
-from datetime import datetime
 
-SSOT = Path(__file__).parent.parent.parent / "sim-portfolio" / "portfolio_state.json"
+# Add sim-portfolio/scripts to path so we can import core
+SIM_PORTFOLIO = Path(__file__).parent.parent.parent / "sim-portfolio"
+sys.path.insert(0, str(SIM_PORTFOLIO / "scripts"))
+
+from core.compute import full_snapshot  # noqa: E402
+from nav_calc import calc_nav           # noqa: E402
+
+SSOT = SIM_PORTFOLIO / "portfolio_state.json"
 OUTPUT = Path(__file__).parent.parent / "output-buffer" / "sim-portfolio.json"
 
 
-def calculate_account(acct_data, acct_key):
-    """Calculate account totals from raw position data. Never trust pre-computed values."""
-    cash = acct_data.get("cash", 0)
-    initial = acct_data.get("initial_capital", 0)
-
-    long_mv = 0
-    short_pnl = 0
-    pub_positions = []
-
-    for pos in acct_data.get("positions", []):
-        shares = pos.get("shares", 0)
-        avg_cost = pos.get("avg_cost", 0)
-        current_price = pos.get("current_price", avg_cost)
-        mv = shares * current_price
-        pnl_pct = (current_price - avg_cost) / avg_cost * 100 if avg_cost else 0
-        long_mv += mv
-
-        ticker = pos.get("ticker", "")
-        if acct_key == "a_share" and "." not in ticker:
-            ticker = f"{ticker}.SS" if ticker.startswith("6") else f"{ticker}.SZ"
-
-        pub_positions.append({
-            "ticker": ticker,
-            "name": pos.get("name", ""),
-            "shares": shares,
-            "avg_cost": round(avg_cost, 4),
-            "current_price": round(current_price, 4),
-            "market_value": round(mv, 2),
-            "unrealized_pnl_pct": round(pnl_pct, 2),
-            "portfolio_pct": 0,
-            "entry_date": pos.get("entry_date", ""),
-            "type": pos.get("type", ""),
-            "sector": pos.get("sector", ""),
-        })
-
-    for pos in acct_data.get("short_positions", []):
-        shares = pos.get("shares", 0)
-        entry_price = pos.get("entry_price", pos.get("avg_cost", 0))
-        current_price = pos.get("current_price", entry_price)
-        pnl = (entry_price - current_price) * shares
-        pnl_pct = (entry_price - current_price) / entry_price * 100 if entry_price else 0
-        short_pnl += pnl
-
-        pub_positions.append({
-            "ticker": pos.get("ticker", ""),
-            "name": pos.get("name", ""),
-            "shares": -shares,
-            "avg_cost": round(entry_price, 4),
-            "current_price": round(current_price, 4),
-            "market_value": round(-(shares * current_price), 2),
-            "unrealized_pnl_pct": round(pnl_pct, 2),
-            "portfolio_pct": 0,
-            "entry_date": pos.get("entry_date", ""),
-            "type": "short",
-            "sector": pos.get("sector", ""),
-        })
-
-    total_assets = cash + long_mv + short_pnl
-    return_pct = ((total_assets - initial) / initial * 100) if initial else 0
-
-    for p in pub_positions:
-        abs_mv = abs(p["market_value"])
-        p["portfolio_pct"] = round(abs_mv / total_assets, 3) if total_assets else 0
-
-    return {
-        "currency": acct_data.get("currency", ""),
-        "initial_capital": initial,
-        "total_assets": round(total_assets, 2),
-        "cash": round(cash, 2),
-        "realized_pnl": round(acct_data.get("realized_pnl", 0), 2),
-        "return_pct": round(return_pct, 2),
-        "positions": pub_positions,
-    }, long_mv, short_pnl
-
-
-def build_snapshots(ssot):
-    snapshots = []
-    daily = ssot.get("performance", {}).get("daily_snapshots", [])
-    for s in daily:
-        snapshots.append({
-            "date": s["date"],
-            "a_share": {
-                "total_assets": s.get("a_share_nav", 0),
-                "return_pct": s.get("a_share_return_pct", 0),
-            },
-            "us": {
-                "total_assets": s.get("us_nav", 0),
-                "return_pct": s.get("us_return_pct", 0),
-            },
-            "combined_return_pct": 0,  # filled below
-        })
-    return snapshots
-
-
-def build_trade_log(ssot):
-    trades = []
-    for t in ssot.get("trade_log", []):
-        entry = {
-            "date": t.get("date", t.get("timestamp", "")[:10]),
-            "account": t.get("account", ""),
-            "action": t.get("action", ""),
-            "ticker": t.get("ticker", ""),
-            "name": t.get("name", ""),
-            "shares": t.get("shares", 0),
-            "price": t.get("price", 0),
-        }
-        if "realized_pnl" in t:
-            entry["realized_pnl"] = t["realized_pnl"]
-        trades.append(entry)
-    return trades
-
-
 def validate(output_data):
+    """Independent cross-check of the generated output.
+
+    NAV formula: total_assets = cash + long_mv + short_margin + short_pnl
+    short_margin = sum(entry_price × shares) for each short position,
+    which is money held as collateral and still belongs to the portfolio.
+    """
     errors = []
     for acct_key in ["a_share", "us"]:
         acct = output_data["accounts"][acct_key]
@@ -140,16 +39,22 @@ def validate(output_data):
         positions = acct["positions"]
 
         long_mv = sum(p["market_value"] for p in positions if p["shares"] > 0)
+        # short_margin = entry_price × abs(shares) (collateral, always positive)
+        short_margin = sum(
+            p["avg_cost"] * abs(p["shares"])
+            for p in positions if p["shares"] < 0
+        )
         short_pnl = sum(
             (p["avg_cost"] - p["current_price"]) * abs(p["shares"])
             for p in positions if p["shares"] < 0
         )
-        expected_total = cash + long_mv + short_pnl
+        expected_total = cash + long_mv + short_margin + short_pnl
 
         if abs(expected_total - total) > 1.0:
             errors.append(
                 f"{acct_key}: total_assets={total} != cash({cash}) + "
-                f"long_mv({long_mv:.2f}) + short_pnl({short_pnl:.2f}) = {expected_total:.2f}"
+                f"long_mv({long_mv:.2f}) + short_margin({short_margin:.2f}) + "
+                f"short_pnl({short_pnl:.2f}) = {expected_total:.2f}"
             )
 
         expected_return = ((total - initial) / initial * 100) if initial else 0
@@ -182,41 +87,10 @@ def main():
     with open(SSOT) as f:
         ssot = json.load(f)
 
-    a_acct, a_long_mv, a_short_pnl = calculate_account(
-        ssot["accounts"]["a_share"], "a_share"
-    )
-    us_acct, us_long_mv, us_short_pnl = calculate_account(
-        ssot["accounts"]["us"], "us"
-    )
+    # All computation delegated to the unified engine
+    output = full_snapshot(ssot)
 
-    snapshots = build_snapshots(ssot)
-
-    a_initial_usd = a_acct["initial_capital"] / 7.2
-    us_initial_usd = us_acct["initial_capital"]
-    total_initial = a_initial_usd + us_initial_usd
-
-    for snap in snapshots:
-        a_nav = snap["a_share"]["total_assets"]
-        us_nav = snap["us"]["total_assets"]
-        combined = ((a_nav / 7.2 + us_nav) / total_initial - 1) * 100
-        snap["combined_return_pct"] = round(combined, 2)
-
-    output = {
-        "meta": {
-            "type": "sim_portfolio",
-            "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
-            "start_date": ssot.get("_meta", {}).get("start_date", "2026-05-18"),
-            "end_date": ssot.get("_meta", {}).get("end_date", "2026-06-18"),
-            "last_updated": datetime.now().astimezone().isoformat(),
-            "synced_from": "portfolio_state.json",
-            "benchmark": {"a_share": "CSI300", "us": "SPY"},
-            "disclaimer": "模拟盘，非真实交易。仅供研究参考。",
-        },
-        "accounts": {"a_share": a_acct, "us": us_acct},
-        "daily_snapshots": snapshots,
-        "trade_log": build_trade_log(ssot),
-    }
-
+    # Independent validation cross-check
     errors = validate(output)
     if errors:
         print("VALIDATION ERRORS:")
@@ -224,19 +98,24 @@ def main():
             print(f"  ✗ {e}")
         sys.exit(1)
 
-    a_ret = a_acct["return_pct"]
-    us_ret = us_acct["return_pct"]
-    combined = ((a_acct["total_assets"] / 7.2 + us_acct["total_assets"]) / total_initial - 1) * 100
+    a_acct = output["accounts"]["a_share"]
+    us_acct = output["accounts"]["us"]
+    a_initial = a_acct["initial_capital"]
+    us_initial = us_acct["initial_capital"]
+    a_total = a_acct["total_assets"]
+    us_total = us_acct["total_assets"]
+    combined = ((a_total / 7.2 + us_total) / (a_initial / 7.2 + us_initial) - 1) * 100
 
-    print(f"✓ Validation passed")
-    print(f"  A股: ¥{a_acct['total_assets']:,.0f} ({a_ret:+.2f}%) | {len(a_acct['positions'])} positions")
-    print(f"  美股: ${us_acct['total_assets']:,.0f} ({us_ret:+.2f}%) | {len(us_acct['positions'])} positions")
+    print("✓ Validation passed")
+    print(f"  A股: ¥{a_total:,.0f} ({a_acct['return_pct']:+.2f}%) | {len(a_acct['positions'])} positions")
+    print(f"  美股: ${us_total:,.0f} ({us_acct['return_pct']:+.2f}%) | {len(us_acct['positions'])} positions")
     print(f"  综合: {combined:+.2f}%")
     print(f"  交易: {len(output['trade_log'])} trades")
 
     if dry_run:
         print(f"\n[dry-run] Would write to {OUTPUT}")
     else:
+        OUTPUT.parent.mkdir(parents=True, exist_ok=True)
         with open(OUTPUT, "w") as f:
             json.dump(output, f, ensure_ascii=False, indent=2)
         print(f"\n✓ Written to {OUTPUT}")
