@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-27T15:26:37.429320+08:00",
+    "last_updated": "2026-05-27T15:57:05.535851+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -14,10 +14,10 @@
   "accounts": {
     "a_share": {
       "currency": "CNY",
-      "initial_capital": 1000000,
-      "total_assets": 1061209.65,
-      "cash": 331862.15,
-      "realized_pnl": 49708.55,
+      "initial_capital": 10000000,
+      "total_assets": 10612096.5,
+      "cash": 3318621.5,
+      "realized_pnl": 497085.5,
       "return_pct": 6.12,
       "positions": [
         {
@@ -98,7 +98,9 @@
           "type": "catalyst_position",
           "sector": "光模块/AI物理层"
         }
-      ]
+      ],
+      "total_invested": 7293475.0,
+      "unrealized_pnl": 115011.0
     },
     "us": {
       "currency": "USD",
@@ -239,7 +241,8 @@
         "total_assets": 149701,
         "return_pct": -0.2
       },
-      "combined_return_pct": 1.36
+      "combined_return_pct": 1.36,
+      "a_share_nav": 10158820
     },
     {
       "date": "2026-05-19",
@@ -251,7 +254,9 @@
         "total_assets": 149260.77,
         "return_pct": -0.49
       },
-      "combined_return_pct": 1.31
+      "combined_return_pct": 1.31,
+      "a_share_nav": 10157630.0,
+      "a_share_daily_pnl": 3140.0
     },
     {
       "date": "2026-05-20",
@@ -263,7 +268,9 @@
         "total_assets": 148189.71,
         "return_pct": -1.21
       },
-      "combined_return_pct": 1.78
+      "combined_return_pct": 1.78,
+      "a_share_nav": 10222900.0,
+      "a_share_daily_pnl": 0.0
     },
     {
       "date": "2026-05-21",
@@ -275,7 +282,9 @@
         "total_assets": 148498.38,
         "return_pct": -1.0
       },
-      "combined_return_pct": 2.24
+      "combined_return_pct": 2.24,
+      "a_share_nav": 10271810.0,
+      "a_share_daily_pnl": 48910.0
     },
     {
       "date": "2026-05-22",
@@ -287,7 +296,9 @@
         "total_assets": 148719.87,
         "return_pct": -0.85
       },
-      "combined_return_pct": 3.36
+      "combined_return_pct": 3.36,
+      "a_share_nav": 10399130.0,
+      "a_share_daily_pnl": -51130.0
     },
     {
       "date": "2026-05-25",
@@ -299,7 +310,9 @@
         "total_assets": 148719.87,
         "return_pct": -0.85
       },
-      "combined_return_pct": 5.47
+      "combined_return_pct": 5.47,
+      "a_share_nav": 10640790.0,
+      "a_share_daily_pnl": 241660.0
     },
     {
       "date": "2026-05-26",
@@ -311,7 +324,9 @@
         "total_assets": 148591.39,
         "return_pct": -0.94
       },
-      "combined_return_pct": 6.66
+      "combined_return_pct": 6.66,
+      "a_share_nav": 10779620.0,
+      "a_share_daily_pnl": 138830.0
     },
     {
       "date": "2026-05-27",
@@ -323,7 +338,9 @@
         "total_assets": 149161.3,
         "return_pct": -0.56
       },
-      "combined_return_pct": 5.28
+      "combined_return_pct": 5.28,
+      "a_share_nav": 10615066.0,
+      "a_share_daily_pnl": -164554.0
     }
   ],
   "trade_log": [
