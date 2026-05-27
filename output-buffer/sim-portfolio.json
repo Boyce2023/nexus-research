@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-27T20:34:11+08:00",
+    "last_updated": "2026-05-27T20:34:50+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -104,23 +104,10 @@
       "currency": "USD",
       "initial_capital": 150000,
       "total_assets": 149161.3,
-      "cash": 75258.29,
-      "realized_pnl": -1563.71,
+      "cash": 87292.13,
+      "realized_pnl": -1514.99,
       "return_pct": -0.56,
       "positions": [
-        {
-          "ticker": "SPUT",
-          "name": "Sprott Uranium Trust (SRUUF)",
-          "shares": 609,
-          "avg_cost": 19.68,
-          "current_price": 19.76,
-          "market_value": 12033.84,
-          "unrealized_pnl_pct": 0.41,
-          "portfolio_pct": 0.081,
-          "entry_date": "2026-05-18",
-          "type": "trading_position",
-          "sector": "铀/核能"
-        },
         {
           "ticker": "GEV",
           "name": "GE Vernova",
@@ -877,6 +864,16 @@
       "shares": 95,
       "price": 164.56,
       "realized_pnl": 243.2
+    },
+    {
+      "date": "2026-05-27",
+      "account": "us",
+      "action": "sell",
+      "ticker": "SPUT",
+      "name": "Sprott Physical Uranium Trust",
+      "shares": 609,
+      "price": 19.76,
+      "realized_pnl": 48.72
     }
   ]
 }
