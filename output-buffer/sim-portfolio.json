@@ -316,14 +316,14 @@
     {
       "date": "2026-05-27",
       "a_share": {
-        "total_assets": 1080102.0,
-        "return_pct": 8.01
+        "total_assets": 1087647.3,
+        "return_pct": 8.76
       },
       "us": {
-        "total_assets": 140788.69,
-        "return_pct": -6.14
+        "total_assets": 149161.3,
+        "return_pct": -0.56
       },
-      "combined_return_pct": 6.17
+      "combined_return_pct": 7.55
     }
   ],
   "trade_log": [
