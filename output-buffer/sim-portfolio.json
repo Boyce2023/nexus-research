@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-27T15:57:05.535851+08:00",
+    "last_updated": "2026-05-27T20:33:32+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -23,10 +23,10 @@
         {
           "ticker": "002028.SZ",
           "name": "思源电气",
-          "shares": 800,
+          "shares": 8000,
           "avg_cost": 194.203,
           "current_price": 197.82,
-          "market_value": 158256.0,
+          "market_value": 1582560.0,
           "unrealized_pnl_pct": 1.86,
           "portfolio_pct": 0.149,
           "entry_date": "2026-05-18",
@@ -36,10 +36,10 @@
         {
           "ticker": "002938.SZ",
           "name": "鹏鼎控股",
-          "shares": 850,
+          "shares": 8500,
           "avg_cost": 98.3194,
           "current_price": 105.91,
-          "market_value": 90023.5,
+          "market_value": 900235.0,
           "unrealized_pnl_pct": 7.72,
           "portfolio_pct": 0.085,
           "entry_date": "2026-05-20",
@@ -49,10 +49,10 @@
         {
           "ticker": "688019.SS",
           "name": "安集科技",
-          "shares": 500,
+          "shares": 5000,
           "avg_cost": 313.99,
           "current_price": 312.88,
-          "market_value": 156440.0,
+          "market_value": 1564400.0,
           "unrealized_pnl_pct": -0.35,
           "portfolio_pct": 0.147,
           "entry_date": "2026-05-21T13:10:15+08:00",
@@ -62,10 +62,10 @@
         {
           "ticker": "600276.SS",
           "name": "恒瑞医药",
-          "shares": 1600,
+          "shares": 16000,
           "avg_cost": 51.02,
           "current_price": 50.37,
-          "market_value": 80592.0,
+          "market_value": 805920.0,
           "unrealized_pnl_pct": -1.27,
           "portfolio_pct": 0.076,
           "entry_date": "2026-05-22T09:50:29+08:00",
@@ -75,10 +75,10 @@
         {
           "ticker": "002463.SZ",
           "name": "沪电股份",
-          "shares": 900,
+          "shares": 9000,
           "avg_cost": 124.76,
           "current_price": 128.29,
-          "market_value": 115461.0,
+          "market_value": 1154610.0,
           "unrealized_pnl_pct": 2.83,
           "portfolio_pct": 0.109,
           "entry_date": "2026-05-25T10:27:14+08:00",
@@ -88,41 +88,26 @@
         {
           "ticker": "300502.SZ",
           "name": "新易盛",
-          "shares": 185,
+          "shares": 1850,
           "avg_cost": 691.9,
           "current_price": 695.0,
-          "market_value": 128575.0,
+          "market_value": 1285750.0,
           "unrealized_pnl_pct": 0.45,
           "portfolio_pct": 0.121,
           "entry_date": "2026-05-26T10:02:34+08:00",
           "type": "catalyst_position",
           "sector": "光模块/AI物理层"
         }
-      ],
-      "total_invested": 7293475.0,
-      "unrealized_pnl": 115011.0
+      ]
     },
     "us": {
       "currency": "USD",
       "initial_capital": 150000,
       "total_assets": 149161.3,
-      "cash": 27096.23,
-      "realized_pnl": -2162.88,
+      "cash": 42512.73,
+      "realized_pnl": -1741.38,
       "return_pct": -0.56,
       "positions": [
-        {
-          "ticker": "AAPL",
-          "name": "Apple Inc.",
-          "shares": 50,
-          "avg_cost": 299.9,
-          "current_price": 308.33,
-          "market_value": 15416.5,
-          "unrealized_pnl_pct": 2.81,
-          "portfolio_pct": 0.103,
-          "entry_date": "2026-05-18",
-          "type": "base_position",
-          "sector": "消费科技/硬件"
-        },
         {
           "ticker": "SPUT",
           "name": "Sprott Uranium Trust (SRUUF)",
@@ -234,113 +219,98 @@
     {
       "date": "2026-05-18",
       "a_share": {
-        "total_assets": 1015882,
+        "total_assets": 10158820,
         "return_pct": 1.59
       },
       "us": {
         "total_assets": 149701,
         "return_pct": -0.2
       },
-      "combined_return_pct": 1.36,
-      "a_share_nav": 10158820
+      "combined_return_pct": 1.36
     },
     {
       "date": "2026-05-19",
       "a_share": {
-        "total_assets": 1015763.0,
+        "total_assets": 10157630.0,
         "return_pct": 1.58
       },
       "us": {
         "total_assets": 149260.77,
         "return_pct": -0.49
       },
-      "combined_return_pct": 1.31,
-      "a_share_nav": 10157630.0,
-      "a_share_daily_pnl": 3140.0
+      "combined_return_pct": 1.31
     },
     {
       "date": "2026-05-20",
       "a_share": {
-        "total_assets": 1022290.0,
+        "total_assets": 10222900.0,
         "return_pct": 2.23
       },
       "us": {
         "total_assets": 148189.71,
         "return_pct": -1.21
       },
-      "combined_return_pct": 1.78,
-      "a_share_nav": 10222900.0,
-      "a_share_daily_pnl": 0.0
+      "combined_return_pct": 1.78
     },
     {
       "date": "2026-05-21",
       "a_share": {
-        "total_assets": 1027181.0,
+        "total_assets": 10271810.0,
         "return_pct": 2.72
       },
       "us": {
         "total_assets": 148498.38,
         "return_pct": -1.0
       },
-      "combined_return_pct": 2.24,
-      "a_share_nav": 10271810.0,
-      "a_share_daily_pnl": 48910.0
+      "combined_return_pct": 2.24
     },
     {
       "date": "2026-05-22",
       "a_share": {
-        "total_assets": 1039913.0,
+        "total_assets": 10399130.0,
         "return_pct": 3.99
       },
       "us": {
         "total_assets": 148719.87,
         "return_pct": -0.85
       },
-      "combined_return_pct": 3.36,
-      "a_share_nav": 10399130.0,
-      "a_share_daily_pnl": -51130.0
+      "combined_return_pct": 3.36
     },
     {
       "date": "2026-05-25",
       "a_share": {
-        "total_assets": 1064079.0,
+        "total_assets": 10640790.0,
         "return_pct": 6.41
       },
       "us": {
         "total_assets": 148719.87,
         "return_pct": -0.85
       },
-      "combined_return_pct": 5.47,
-      "a_share_nav": 10640790.0,
-      "a_share_daily_pnl": 241660.0
+      "combined_return_pct": 5.47
     },
     {
       "date": "2026-05-26",
       "a_share": {
-        "total_assets": 1077962.0,
+        "total_assets": 10779620.0,
         "return_pct": 7.8
       },
       "us": {
         "total_assets": 148591.39,
         "return_pct": -0.94
       },
-      "combined_return_pct": 6.66,
-      "a_share_nav": 10779620.0,
-      "a_share_daily_pnl": 138830.0
+      "combined_return_pct": 6.66
     },
     {
       "date": "2026-05-27",
       "a_share": {
-        "total_assets": 1061506.6,
+        "total_assets": 10615066.0,
         "return_pct": 6.15
       },
       "us": {
         "total_assets": 149161.3,
         "return_pct": -0.56
       },
-      "combined_return_pct": 5.28,
-      "a_share_nav": 10615066.0,
-      "a_share_daily_pnl": -164554.0
+      "combined_return_pct": 5.28
     }
   ],
   "trade_log": [
@@ -417,6 +387,33 @@
       "price": 182.6
     },
     {
+      "date": "2026-05-18",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "002028",
+      "name": "思源电气",
+      "shares": 7000,
+      "price": 190.0
+    },
+    {
+      "date": "2026-05-18",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "300433",
+      "name": "蓝思科技",
+      "shares": 30000,
+      "price": 34.21
+    },
+    {
+      "date": "2026-05-18",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "603005",
+      "name": "晶方科技",
+      "shares": 20000,
+      "price": 32.94
+    },
+    {
       "date": "2026-05-20",
       "account": "us",
       "action": "sell",
@@ -432,9 +429,9 @@
       "action": "sell",
       "ticker": "300433",
       "name": "蓝思科技",
-      "shares": 3000,
+      "shares": 30000,
       "price": 36.5,
-      "realized_pnl": 6870.0
+      "realized_pnl": 68700.0
     },
     {
       "date": "2026-05-20",
@@ -442,7 +439,7 @@
       "action": "buy",
       "ticker": "002938",
       "name": "鹏鼎控股",
-      "shares": 900,
+      "shares": 9000,
       "price": 87.75
     },
     {
@@ -451,7 +448,7 @@
       "action": "buy",
       "ticker": "002472",
       "name": "双环传动",
-      "shares": 1800,
+      "shares": 18000,
       "price": 43.27
     },
     {
@@ -478,9 +475,9 @@
       "action": "sell",
       "ticker": "002472",
       "name": "双环传动",
-      "shares": 1800,
+      "shares": 18000,
       "price": 44.85,
-      "realized_pnl": 2844.0
+      "realized_pnl": 28440.0
     },
     {
       "date": "2026-05-21",
@@ -488,7 +485,7 @@
       "action": "buy",
       "ticker": "688019",
       "name": "安集科技",
-      "shares": 500,
+      "shares": 5000,
       "price": 313.99
     },
     {
@@ -497,7 +494,7 @@
       "action": "buy",
       "ticker": "002028",
       "name": "思源电气",
-      "shares": 300,
+      "shares": 3000,
       "price": 204.01
     },
     {
@@ -506,7 +503,7 @@
       "action": "buy",
       "ticker": "600276",
       "name": "恒瑞医药",
-      "shares": 1600,
+      "shares": 16000,
       "price": 51.02
     },
     {
@@ -515,7 +512,7 @@
       "action": "buy",
       "ticker": "002920",
       "name": "德赛西威",
-      "shares": 600,
+      "shares": 6000,
       "price": 106.2
     },
     {
@@ -655,7 +652,7 @@
       "action": "buy",
       "ticker": "601138",
       "name": "工业富联",
-      "shares": 1000,
+      "shares": 10000,
       "price": 68.88
     },
     {
@@ -664,7 +661,7 @@
       "action": "buy",
       "ticker": "002463",
       "name": "沪电股份",
-      "shares": 600,
+      "shares": 6000,
       "price": 120.18
     },
     {
@@ -673,9 +670,9 @@
       "action": "sell",
       "ticker": "601138",
       "name": "工业富联",
-      "shares": 1000,
+      "shares": 10000,
       "price": 69.06,
-      "realized_pnl": 180.0
+      "realized_pnl": 1800.0
     },
     {
       "date": "2026-05-26",
@@ -683,9 +680,9 @@
       "action": "sell",
       "ticker": "002938",
       "name": "鹏鼎控股",
-      "shares": 450,
+      "shares": 4500,
       "price": 114.66,
-      "realized_pnl": 12109.5
+      "realized_pnl": 121095.0
     },
     {
       "date": "2026-05-26",
@@ -693,7 +690,7 @@
       "action": "buy",
       "ticker": "300502",
       "name": "新易盛",
-      "shares": 100,
+      "shares": 1000,
       "price": 682.32
     },
     {
@@ -702,9 +699,9 @@
       "action": "sell",
       "ticker": "603005",
       "name": "晶方科技",
-      "shares": 2000,
+      "shares": 20000,
       "price": 45.05,
-      "realized_pnl": 24220.0
+      "realized_pnl": 242200.0
     },
     {
       "date": "2026-05-26",
@@ -712,9 +709,9 @@
       "action": "sell",
       "ticker": "002028",
       "name": "思源电气",
-      "shares": 200,
+      "shares": 2000,
       "price": 194.46,
-      "realized_pnl": 51.4
+      "realized_pnl": 514.0
     },
     {
       "date": "2026-05-26",
@@ -722,7 +719,7 @@
       "action": "buy",
       "ticker": "002463",
       "name": "沪电股份",
-      "shares": 300,
+      "shares": 3000,
       "price": 133.92
     },
     {
@@ -731,7 +728,7 @@
       "action": "buy",
       "ticker": "300502",
       "name": "新易盛",
-      "shares": 100,
+      "shares": 1000,
       "price": 701.48
     },
     {
@@ -740,7 +737,7 @@
       "action": "buy",
       "ticker": "002156",
       "name": "通富微电",
-      "shares": 1100,
+      "shares": 11000,
       "price": 75.39
     },
     {
@@ -749,7 +746,7 @@
       "action": "sell",
       "ticker": "002156",
       "name": "通富微电",
-      "shares": 1100,
+      "shares": 11000,
       "price": 75.39,
       "realized_pnl": 0.0
     },
@@ -844,9 +841,9 @@
       "action": "sell",
       "ticker": "002920",
       "name": "德赛西威",
-      "shares": 600,
+      "shares": 6000,
       "price": 112.0,
-      "realized_pnl": 3480.0
+      "realized_pnl": 34800.0
     },
     {
       "date": "2026-05-27",
@@ -854,9 +851,9 @@
       "action": "sell",
       "ticker": "300502",
       "name": "新易盛",
-      "shares": 15,
+      "shares": 150,
       "price": 688.81,
-      "realized_pnl": -46.35
+      "realized_pnl": -463.5
     },
     {
       "date": "2026-05-27",
@@ -864,8 +861,18 @@
       "action": "buy",
       "ticker": "002938",
       "name": "鹏鼎控股",
-      "shares": 400,
+      "shares": 4000,
       "price": 110.21
+    },
+    {
+      "date": "2026-05-27",
+      "account": "us",
+      "action": "sell",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "shares": 50,
+      "price": 308.33,
+      "realized_pnl": 421.5
     }
   ]
 }
