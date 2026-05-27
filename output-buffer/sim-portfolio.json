@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-27T20:33:41+08:00",
+    "last_updated": "2026-05-27T20:33:49+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -104,8 +104,8 @@
       "currency": "USD",
       "initial_capital": 150000,
       "total_assets": 149161.3,
-      "cash": 50034.09,
-      "realized_pnl": -1723.41,
+      "cash": 59625.09,
+      "realized_pnl": -1806.91,
       "return_pct": -0.56,
       "positions": [
         {
@@ -172,19 +172,6 @@
           "entry_date": "2026-05-26T21:37:20+08:00",
           "type": "trading_position",
           "sector": "AI制造/EMS"
-        },
-        {
-          "ticker": "INOD",
-          "name": "Innodata Inc",
-          "shares": 100,
-          "avg_cost": 96.745,
-          "current_price": 95.91,
-          "market_value": 9591.0,
-          "unrealized_pnl_pct": -0.86,
-          "portfolio_pct": 0.064,
-          "entry_date": "2026-05-26T21:42:08+08:00",
-          "type": "trading_position",
-          "sector": "AI数据服务"
         },
         {
           "ticker": "MSTR",
@@ -870,6 +857,16 @@
       "shares": 42,
       "price": 179.08,
       "realized_pnl": 17.965
+    },
+    {
+      "date": "2026-05-27",
+      "account": "us",
+      "action": "sell",
+      "ticker": "INOD",
+      "name": "Innodata Inc",
+      "shares": 100,
+      "price": 95.91,
+      "realized_pnl": -83.5
     }
   ]
 }
