@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-27T10:06:37.416388+08:00",
+    "last_updated": "2026-05-27T10:10:19+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -15,10 +15,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 1000000,
-      "total_assets": 1085770.4,
-      "cash": 375946.15,
+      "total_assets": 1085414.9,
+      "cash": 331862.15,
       "realized_pnl": 49708.55,
-      "return_pct": 8.58,
+      "return_pct": 8.54,
       "positions": [
         {
           "ticker": "002028.SZ",
@@ -36,11 +36,11 @@
         {
           "ticker": "002938.SZ",
           "name": "鹏鼎控股",
-          "shares": 450,
-          "avg_cost": 87.75,
-          "current_price": 111.0,
-          "market_value": 49950.0,
-          "unrealized_pnl_pct": 26.5,
+          "shares": 850,
+          "avg_cost": 98.3194,
+          "current_price": 110.21,
+          "market_value": 93678.5,
+          "unrealized_pnl_pct": 12.09,
           "portfolio_pct": 0.046,
           "entry_date": "2026-05-20",
           "type": "catalyst_position",
@@ -840,6 +840,15 @@
       "shares": 15,
       "price": 688.81,
       "realized_pnl": -46.35
+    },
+    {
+      "date": "2026-05-27",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "002938",
+      "name": "鹏鼎控股",
+      "shares": 400,
+      "price": 110.21
     }
   ]
 }
