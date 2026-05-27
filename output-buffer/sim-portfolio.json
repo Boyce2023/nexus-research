@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥1M A股 + $150K 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-27T20:34:50+08:00",
+    "last_updated": "2026-05-27T20:35:24+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -104,18 +104,18 @@
       "currency": "USD",
       "initial_capital": 150000,
       "total_assets": 149161.3,
-      "cash": 87292.13,
+      "cash": 80869.31,
       "realized_pnl": -1514.99,
       "return_pct": -0.56,
       "positions": [
         {
           "ticker": "GEV",
           "name": "GE Vernova",
-          "shares": 8,
-          "avg_cost": 1049.0,
+          "shares": 14,
+          "avg_cost": 1058.2014,
           "current_price": 1070.47,
-          "market_value": 8563.76,
-          "unrealized_pnl_pct": 2.05,
+          "market_value": 14986.58,
+          "unrealized_pnl_pct": 1.16,
           "portfolio_pct": 0.057,
           "entry_date": "2026-05-18",
           "type": "trading_position",
@@ -874,6 +874,15 @@
       "shares": 609,
       "price": 19.76,
       "realized_pnl": 48.72
+    },
+    {
+      "date": "2026-05-27",
+      "account": "us",
+      "action": "buy",
+      "ticker": "GEV",
+      "name": "GE Vernova",
+      "shares": 6,
+      "price": 1070.47
     }
   ]
 }
