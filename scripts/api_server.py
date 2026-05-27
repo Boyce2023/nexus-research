@@ -110,6 +110,8 @@ def get_live_portfolio():
     if not HAS_YF:
         return {"error": "yfinance not available, using static data"}
 
+    from nav_calc import calc_nav
+
     accounts = {}
     total_initial = 0
     total_current = 0
@@ -120,34 +122,30 @@ def get_live_portfolio():
         currency = acct["currency"]
         initial = acct["initial_capital"]
         positions = []
-        long_mv = 0
-        short_margin = 0
-        short_pnl = 0
 
+        price_overrides = {}
         for pos in acct["positions"]:
             ticker = pos["ticker"]
+            yf_ticker = YF_TICKER_MAP.get(ticker, ticker)
+            live_price = get_price(yf_ticker)
+            if live_price is None:
+                live_price = pos.get("current_price", pos["avg_cost"])
+                price_failures += 1
+            price_overrides[ticker] = live_price
+
             shares = pos["shares"]
             avg_cost = pos["avg_cost"]
             abs_shares = abs(shares)
             is_short = shares < 0
 
-            yf_ticker = YF_TICKER_MAP.get(ticker, ticker)
-            live_price = get_price(yf_ticker)
-            if live_price is None:
-                live_price = pos.get("current_price", avg_cost)
-                price_failures += 1
-
             if is_short:
                 market_value = -(abs_shares * live_price)
                 pnl = (avg_cost - live_price) * abs_shares
                 pnl_pct = (avg_cost - live_price) / avg_cost * 100 if avg_cost else 0
-                short_margin += avg_cost * abs_shares
-                short_pnl += pnl
             else:
                 market_value = shares * live_price
                 pnl = (live_price - avg_cost) * shares
                 pnl_pct = (live_price - avg_cost) / avg_cost * 100 if avg_cost else 0
-                long_mv += market_value
 
             positions.append({
                 "ticker": ticker,
@@ -163,8 +161,9 @@ def get_live_portfolio():
                 "entry_date": pos["entry_date"]
             })
 
-        cash = acct.get("cash", initial)
-        total_assets = cash + long_mv + short_margin + short_pnl
+        nav = calc_nav(acct, price_overrides=price_overrides)
+        total_assets = nav["total_assets"]
+        cash = nav["cash"]
         return_pct = ((total_assets - initial) / initial * 100)
 
         unrealized_pnl = sum(p["pnl"] for p in positions)
