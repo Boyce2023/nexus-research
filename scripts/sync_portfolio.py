@@ -22,35 +22,22 @@ def calculate_account(acct_data, acct_key):
     """Calculate account totals from raw position data. Never trust pre-computed values."""
     cash = acct_data.get("cash", 0)
     initial = acct_data.get("initial_capital", 0)
-    positions = acct_data.get("positions", [])
 
     long_mv = 0
     short_pnl = 0
     pub_positions = []
 
-    for pos in positions:
+    for pos in acct_data.get("positions", []):
         shares = pos.get("shares", 0)
         avg_cost = pos.get("avg_cost", 0)
         current_price = pos.get("current_price", avg_cost)
-        abs_shares = abs(shares)
-        is_short = shares < 0
-
-        if is_short:
-            mv = -(abs_shares * current_price)
-            pnl = (avg_cost - current_price) * abs_shares
-            pnl_pct = (avg_cost - current_price) / avg_cost * 100 if avg_cost else 0
-            short_pnl += pnl
-        else:
-            mv = shares * current_price
-            pnl_pct = (current_price - avg_cost) / avg_cost * 100 if avg_cost else 0
-            long_mv += mv
+        mv = shares * current_price
+        pnl_pct = (current_price - avg_cost) / avg_cost * 100 if avg_cost else 0
+        long_mv += mv
 
         ticker = pos.get("ticker", "")
         if acct_key == "a_share" and "." not in ticker:
-            if ticker.startswith("6"):
-                ticker = f"{ticker}.SS"
-            else:
-                ticker = f"{ticker}.SZ"
+            ticker = f"{ticker}.SS" if ticker.startswith("6") else f"{ticker}.SZ"
 
         pub_positions.append({
             "ticker": ticker,
@@ -60,9 +47,31 @@ def calculate_account(acct_data, acct_key):
             "current_price": round(current_price, 4),
             "market_value": round(mv, 2),
             "unrealized_pnl_pct": round(pnl_pct, 2),
-            "portfolio_pct": 0,  # filled below
+            "portfolio_pct": 0,
             "entry_date": pos.get("entry_date", ""),
             "type": pos.get("type", ""),
+            "sector": pos.get("sector", ""),
+        })
+
+    for pos in acct_data.get("short_positions", []):
+        shares = pos.get("shares", 0)
+        entry_price = pos.get("entry_price", pos.get("avg_cost", 0))
+        current_price = pos.get("current_price", entry_price)
+        pnl = (entry_price - current_price) * shares
+        pnl_pct = (entry_price - current_price) / entry_price * 100 if entry_price else 0
+        short_pnl += pnl
+
+        pub_positions.append({
+            "ticker": pos.get("ticker", ""),
+            "name": pos.get("name", ""),
+            "shares": -shares,
+            "avg_cost": round(entry_price, 4),
+            "current_price": round(current_price, 4),
+            "market_value": round(-(shares * current_price), 2),
+            "unrealized_pnl_pct": round(pnl_pct, 2),
+            "portfolio_pct": 0,
+            "entry_date": pos.get("entry_date", ""),
+            "type": "short",
             "sector": pos.get("sector", ""),
         })
 
