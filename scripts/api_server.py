@@ -16,7 +16,7 @@ Endpoints:
 """
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
-import json, os, sys, threading, time
+import json, math, os, sys, threading, time
 from pathlib import Path
 from datetime import datetime
 import urllib.parse
@@ -52,12 +52,15 @@ def get_benchmark_returns(yf_ticker, snapshot_dates):
         hist = t.history(start=snapshot_dates[0])
         if hist.empty:
             return [0] * len(snapshot_dates)
-        base_price = float(hist['Close'].iloc[0])
+        valid_close = hist['Close'].dropna()
+        if valid_close.empty:
+            return [0] * len(snapshot_dates)
+        base_price = float(valid_close.iloc[0])
         results = []
         for d in snapshot_dates:
-            filtered = hist[hist.index.strftime('%Y-%m-%d') <= d]
+            filtered = valid_close[valid_close.index.strftime('%Y-%m-%d') <= d]
             if len(filtered) > 0:
-                price = float(filtered['Close'].iloc[-1])
+                price = float(filtered.iloc[-1])
                 results.append(round((price / base_price - 1) * 100, 2))
             else:
                 results.append(0)
@@ -338,13 +341,21 @@ def make_performance_widget():
     snapshot_dates = json.dumps(dates_list)
     a_ret_list = [s.get("a_share", {}).get("return_pct", 0) for s in snapshots]
     us_ret_list = [s.get("us", {}).get("return_pct", 0) for s in snapshots]
-    csi300_list = get_benchmark_returns("000300.SS", dates_list)
-    spy_list = get_benchmark_returns("SPY", dates_list)
+    # yfinance as primary; stored benchmark returns patch NaN gaps
+    stored_csi = [s.get("sse_return_pct") for s in snapshots]
+    stored_spy = [s.get("spy_return_pct") for s in snapshots]
+    yf_csi = get_benchmark_returns("000300.SS", dates_list)
+    yf_spy = get_benchmark_returns("SPY", dates_list)
+
+    csi300_list = [y if not (y is None or (isinstance(y, float) and math.isnan(y))) else (s if s is not None else 0)
+                   for y, s in zip(yf_csi, stored_csi)]
+    spy_list = [y if not (y is None or (isinstance(y, float) and math.isnan(y))) else (s if s is not None else 0)
+                for y, s in zip(yf_spy, stored_spy)]
     snapshot_a = json.dumps(a_ret_list)
     snapshot_us = json.dumps(us_ret_list)
     snapshot_csi300 = json.dumps(csi300_list)
     snapshot_spy = json.dumps(spy_list)
-    import math
+
     all_rets = [v for v in a_ret_list + us_ret_list + csi300_list + spy_list if v is not None]
     y_min = math.floor(min(all_rets) - 1) if all_rets else -5
     y_max = math.ceil(max(all_rets) + 1) if all_rets else 10
