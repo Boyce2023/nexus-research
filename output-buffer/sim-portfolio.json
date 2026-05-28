@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-29T00:37:50.398339+08:00",
+    "last_updated": "2026-05-29T01:13:11.455795+08:00",
     "benchmark": {
       "a_share": "CSI300",
       "us": "SPY"
@@ -348,6 +348,18 @@
         "return_pct": -1.63
       },
       "combined_return_pct": 2.1
+    },
+    {
+      "date": "2026-05-29",
+      "a_share": {
+        "total_assets": 10668290.5,
+        "return_pct": 6.68
+      },
+      "us": {
+        "total_assets": 1493746.78,
+        "return_pct": -0.42
+      },
+      "combined_return_pct": 2.99
     }
   ],
   "trade_log": [
