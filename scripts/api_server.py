@@ -356,9 +356,12 @@ def make_performance_widget():
     snapshot_csi300 = json.dumps(csi300_list)
     snapshot_spy = json.dumps(spy_list)
 
-    all_rets = [v for v in a_ret_list + us_ret_list + csi300_list + spy_list if v is not None]
-    y_min = math.floor(min(all_rets) - 1) if all_rets else -5
-    y_max = math.ceil(max(all_rets) + 1) if all_rets else 10
+    a_all = [v for v in a_ret_list + csi300_list if v is not None]
+    a_y_min = math.floor(min(a_all) - 1) if a_all else -5
+    a_y_max = math.ceil(max(a_all) + 1) if a_all else 10
+    us_all = [v for v in us_ret_list + spy_list if v is not None]
+    us_y_min = math.floor(min(us_all) - 1) if us_all else -5
+    us_y_max = math.ceil(max(us_all) + 1) if us_all else 10
 
     a_positions = a_acct.get("positions", [])
     us_positions = us_acct.get("positions", [])
@@ -557,43 +560,48 @@ details.section[open] summary::before{{transform:rotate(90deg)}}
 
 <script>
 const dates = {snapshot_dates};
+dates.push('');
 const aReturns = {snapshot_a};
+aReturns.push(null);
 const usReturns = {snapshot_us};
+usReturns.push(null);
 const csi300Returns = {snapshot_csi300};
+csi300Returns.push(null);
 const spyReturns = {snapshot_spy};
-function mkOpts() {{
+spyReturns.push(null);
+function mkOpts(yMin, yMax) {{
     return {{
         responsive: true,
         maintainAspectRatio: false,
         plugins: {{legend: {{labels: {{color: '#c9d1d9', font: {{size: 11}}}}}}}},
         scales: {{
             x: {{ticks: {{color: '#8b949e', font: {{size: 10}}}}, grid: {{color: '#21262d'}}}},
-            y: {{min: {y_min}, max: {y_max}, ticks: {{color: '#8b949e', font: {{size: 10}}, callback: v => parseFloat(v.toFixed(2))+'%'}}, grid: {{color: '#21262d'}}}}
+            y: {{min: yMin, max: yMax, ticks: {{color: '#8b949e', font: {{size: 10}}, callback: v => parseFloat(v.toFixed(2))+'%'}}, grid: {{color: '#21262d'}}}}
         }}
     }};
 }}
-if (dates.length > 0) {{
+if (dates.length > 1) {{
     new Chart(document.getElementById('aChart'), {{
         type: 'line',
         data: {{
             labels: dates,
             datasets: [
-                {{label: 'A股组合', data: aReturns, borderColor: '#f97316', borderWidth: 2, pointRadius: 3, tension: 0.3}},
-                {{label: '沪深300', data: csi300Returns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3]}}
+                {{label: 'A股组合', data: aReturns, borderColor: '#f97316', borderWidth: 2, pointRadius: 3, tension: 0.3, spanGaps: false}},
+                {{label: '沪深300', data: csi300Returns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3], spanGaps: false}}
             ]
         }},
-        options: mkOpts()
+        options: mkOpts({a_y_min}, {a_y_max})
     }});
     new Chart(document.getElementById('usChart'), {{
         type: 'line',
         data: {{
             labels: dates,
             datasets: [
-                {{label: '美股组合', data: usReturns, borderColor: '#3b82f6', borderWidth: 2, pointRadius: 3, tension: 0.3}},
-                {{label: 'SPY', data: spyReturns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3]}}
+                {{label: '美股组合', data: usReturns, borderColor: '#3b82f6', borderWidth: 2, pointRadius: 3, tension: 0.3, spanGaps: false}},
+                {{label: 'SPY', data: spyReturns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3], spanGaps: false}}
             ]
         }},
-        options: mkOpts()
+        options: mkOpts({us_y_min}, {us_y_max})
     }});
 }} else {{
     document.querySelectorAll('.chart-box').forEach(el => {{
