@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-28T07:16:27.071522+00:00",
+    "last_updated": "2026-05-28T07:16:44.225284+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -105,7 +105,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1475129.05,
-      "cash": 632690.85,
+      "cash": 629890.85,
       "realized_pnl": -14888.75,
       "return_pct": -1.66,
       "positions": [
@@ -973,6 +973,15 @@
       "action": "option",
       "ticker": "SPY",
       "name": "State Street SPDR S&P 500 ETF T",
+      "shares": 0,
+      "price": 0
+    },
+    {
+      "date": "2026-05-28",
+      "account": "us",
+      "action": "option",
+      "ticker": "VIX",
+      "name": "VIX",
       "shares": 0,
       "price": 0
     }
