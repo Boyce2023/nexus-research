@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-28T07:25:01.203161+00:00",
+    "last_updated": "2026-05-28T07:25:06.994447+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -104,10 +104,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1471929.05,
+      "total_assets": 1469129.05,
       "cash": 181418.85,
-      "realized_pnl": -18088.75,
-      "return_pct": -1.87,
+      "realized_pnl": -20888.75,
+      "return_pct": -2.06,
       "positions": [
         {
           "ticker": "GEV",
@@ -208,7 +208,7 @@
           "current_price": 421.86,
           "market_value": 147651.0,
           "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.1,
+          "portfolio_pct": 0.101,
           "entry_date": "2026-05-28T15:17:17+08:00",
           "type": "core_position",
           "sector": "Custom ASIC/AI芯片"
@@ -1092,6 +1092,16 @@
       "shares": 0,
       "price": 0,
       "realized_pnl": -3200.0
+    },
+    {
+      "date": "2026-05-28",
+      "account": "us",
+      "action": "close_option",
+      "ticker": "VIX",
+      "name": "VIX",
+      "shares": 0,
+      "price": 0,
+      "realized_pnl": -2800.0
     }
   ]
 }
