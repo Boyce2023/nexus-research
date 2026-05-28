@@ -336,10 +336,18 @@ def make_performance_widget():
 
     dates_list = [s["date"] for s in snapshots]
     snapshot_dates = json.dumps(dates_list)
-    snapshot_a = json.dumps([s.get("a_share", {}).get("return_pct", 0) for s in snapshots])
-    snapshot_us = json.dumps([s.get("us", {}).get("return_pct", 0) for s in snapshots])
-    snapshot_csi300 = json.dumps(get_benchmark_returns("000300.SS", dates_list))
-    snapshot_spy = json.dumps(get_benchmark_returns("SPY", dates_list))
+    a_ret_list = [s.get("a_share", {}).get("return_pct", 0) for s in snapshots]
+    us_ret_list = [s.get("us", {}).get("return_pct", 0) for s in snapshots]
+    csi300_list = get_benchmark_returns("000300.SS", dates_list)
+    spy_list = get_benchmark_returns("SPY", dates_list)
+    snapshot_a = json.dumps(a_ret_list)
+    snapshot_us = json.dumps(us_ret_list)
+    snapshot_csi300 = json.dumps(csi300_list)
+    snapshot_spy = json.dumps(spy_list)
+    import math
+    all_rets = [v for v in a_ret_list + us_ret_list + csi300_list + spy_list if v is not None]
+    y_min = math.floor(min(all_rets) - 1) if all_rets else -5
+    y_max = math.ceil(max(all_rets) + 1) if all_rets else 10
 
     a_positions = a_acct.get("positions", [])
     us_positions = us_acct.get("positions", [])
@@ -542,18 +550,17 @@ const aReturns = {snapshot_a};
 const usReturns = {snapshot_us};
 const csi300Returns = {snapshot_csi300};
 const spyReturns = {snapshot_spy};
-const allValues = [...aReturns, ...usReturns, ...csi300Returns, ...spyReturns].filter(v => v !== null && v !== undefined);
-const globalMin = Math.floor(Math.min(...allValues) - 1);
-const globalMax = Math.ceil(Math.max(...allValues) + 1);
-const chartOpts = {{
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {{legend: {{labels: {{color: '#c9d1d9', font: {{size: 11}}}}}}}},
-    scales: {{
-        x: {{ticks: {{color: '#8b949e', font: {{size: 10}}}}, grid: {{color: '#21262d'}}}},
-        y: {{min: globalMin, max: globalMax, ticks: {{color: '#8b949e', font: {{size: 10}}, callback: v => parseFloat(v.toFixed(2))+'%'}}, grid: {{color: '#21262d'}}}}
-    }}
-}};
+function mkOpts() {{
+    return {{
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {{legend: {{labels: {{color: '#c9d1d9', font: {{size: 11}}}}}}}},
+        scales: {{
+            x: {{ticks: {{color: '#8b949e', font: {{size: 10}}}}, grid: {{color: '#21262d'}}}},
+            y: {{min: {y_min}, max: {y_max}, ticks: {{color: '#8b949e', font: {{size: 10}}, callback: v => parseFloat(v.toFixed(2))+'%'}}, grid: {{color: '#21262d'}}}}
+        }}
+    }};
+}}
 if (dates.length > 0) {{
     new Chart(document.getElementById('aChart'), {{
         type: 'line',
@@ -564,7 +571,7 @@ if (dates.length > 0) {{
                 {{label: '沪深300', data: csi300Returns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3]}}
             ]
         }},
-        options: chartOpts
+        options: mkOpts()
     }});
     new Chart(document.getElementById('usChart'), {{
         type: 'line',
@@ -575,7 +582,7 @@ if (dates.length > 0) {{
                 {{label: 'SPY', data: spyReturns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3]}}
             ]
         }},
-        options: chartOpts
+        options: mkOpts()
     }});
 }} else {{
     document.querySelectorAll('.chart-box').forEach(el => {{
