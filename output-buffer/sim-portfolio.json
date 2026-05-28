@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-28T13:49:37.623606+00:00",
+    "last_updated": "2026-05-28T13:49:52.843662+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -105,7 +105,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1455115.73,
-      "cash": 203349.25,
+      "cash": 57849.25,
       "realized_pnl": -10976.35,
       "return_pct": -2.99,
       "positions": [
@@ -210,6 +210,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-05-28T21:49:21+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "FSLR",
+          "name": "",
+          "shares": 500,
+          "avg_cost": 291.0,
+          "current_price": 291.0,
+          "market_value": 145500.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-05-28T21:49:51+08:00",
           "type": "",
           "sector": ""
         },
@@ -1022,6 +1035,15 @@
       "name": "Micron Technology",
       "shares": 100,
       "price": 907.27
+    },
+    {
+      "date": "2026-05-28",
+      "account": "us",
+      "action": "buy",
+      "ticker": "FSLR",
+      "name": "First Solar, Inc.",
+      "shares": 500,
+      "price": 291.0
     }
   ]
 }
