@@ -560,15 +560,10 @@ details.section[open] summary::before{{transform:rotate(90deg)}}
 
 <script>
 const dates = {snapshot_dates};
-dates.push('');
 const aReturns = {snapshot_a};
-aReturns.push(null);
 const usReturns = {snapshot_us};
-usReturns.push(null);
 const csi300Returns = {snapshot_csi300};
-csi300Returns.push(null);
 const spyReturns = {snapshot_spy};
-spyReturns.push(null);
 function mkOpts(yMin, yMax) {{
     return {{
         responsive: true,
@@ -580,14 +575,14 @@ function mkOpts(yMin, yMax) {{
         }}
     }};
 }}
-if (dates.length > 1) {{
+if (dates.length > 0) {{
     new Chart(document.getElementById('aChart'), {{
         type: 'line',
         data: {{
             labels: dates,
             datasets: [
-                {{label: 'A股组合', data: aReturns, borderColor: '#f97316', borderWidth: 2, pointRadius: 3, tension: 0.3, spanGaps: false}},
-                {{label: '沪深300', data: csi300Returns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3], spanGaps: false}}
+                {{label: 'A股组合', data: aReturns, borderColor: '#f97316', borderWidth: 2, pointRadius: 3, tension: 0.3}},
+                {{label: '沪深300', data: csi300Returns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3]}}
             ]
         }},
         options: mkOpts({a_y_min}, {a_y_max})
@@ -597,8 +592,8 @@ if (dates.length > 1) {{
         data: {{
             labels: dates,
             datasets: [
-                {{label: '美股组合', data: usReturns, borderColor: '#3b82f6', borderWidth: 2, pointRadius: 3, tension: 0.3, spanGaps: false}},
-                {{label: 'SPY', data: spyReturns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3], spanGaps: false}}
+                {{label: '美股组合', data: usReturns, borderColor: '#3b82f6', borderWidth: 2, pointRadius: 3, tension: 0.3}},
+                {{label: 'SPY', data: spyReturns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3]}}
             ]
         }},
         options: mkOpts({us_y_min}, {us_y_max})
