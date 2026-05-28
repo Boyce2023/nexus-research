@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-28T14:14:23.145901+00:00",
+    "last_updated": "2026-05-28T14:22:29.566826+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10612096.5,
-      "cash": 3318621.5,
-      "realized_pnl": 497085.5,
-      "return_pct": 6.12,
+      "total_assets": 10612861.5,
+      "cash": 4219621.5,
+      "realized_pnl": 562370.5,
+      "return_pct": 6.13,
       "positions": [
         {
           "ticker": "002028.SZ",
@@ -33,19 +33,6 @@
           "entry_date": "2026-05-18",
           "type": "core_position",
           "sector": "电力设备"
-        },
-        {
-          "ticker": "002938.SZ",
-          "name": "鹏鼎控股",
-          "shares": 8500,
-          "avg_cost": 98.3194,
-          "current_price": 105.91,
-          "market_value": 900235.0,
-          "unrealized_pnl_pct": 7.72,
-          "portfolio_pct": 0.085,
-          "entry_date": "2026-05-20",
-          "type": "catalyst_position",
-          "sector": "PCB/苹果链"
         },
         {
           "ticker": "688019.SS",
@@ -1044,6 +1031,16 @@
       "name": "First Solar, Inc.",
       "shares": 500,
       "price": 291.0
+    },
+    {
+      "date": "2026-05-28",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "002938",
+      "name": "鹏鼎控股",
+      "shares": 8500,
+      "price": 106.0,
+      "realized_pnl": 65284.998
     }
   ]
 }
