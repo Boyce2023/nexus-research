@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-28T19:47:56.045031+00:00",
+    "last_updated": "2026-05-28T20:00:12.246439+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -119,7 +119,7 @@
           "unrealized_pnl_pct": -1.06,
           "portfolio_pct": 0.086,
           "entry_date": "2026-05-26",
-          "type": "",
+          "type": "core_position",
           "sector": "DC电力/独立发电"
         },
         {
@@ -132,7 +132,7 @@
           "unrealized_pnl_pct": -3.74,
           "portfolio_pct": 0.142,
           "entry_date": "2026-05-26",
-          "type": "",
+          "type": "core_position",
           "sector": "AI制造/EMS"
         },
         {
@@ -145,7 +145,7 @@
           "unrealized_pnl_pct": 0.27,
           "portfolio_pct": 0.162,
           "entry_date": "2026-05-26",
-          "type": "",
+          "type": "core_position",
           "sector": "Memory/HBM"
         },
         {
@@ -171,7 +171,7 @@
           "unrealized_pnl_pct": 1.1,
           "portfolio_pct": 0.207,
           "entry_date": "2026-05-28T21:49:21+08:00",
-          "type": "",
+          "type": "core_position",
           "sector": "网络芯片/定制ASIC"
         },
         {
@@ -189,7 +189,7 @@
         },
         {
           "ticker": "AMD",
-          "name": "",
+          "name": "Advanced Micro Devices",
           "shares": 1000,
           "avg_cost": 518.54,
           "current_price": 520.01,
@@ -197,12 +197,12 @@
           "unrealized_pnl_pct": 0.28,
           "portfolio_pct": 0.351,
           "entry_date": "2026-05-29T03:33:50+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "AI GPU/数据中心"
         },
         {
           "ticker": "DELL",
-          "name": "",
+          "name": "Dell Technologies",
           "shares": 1000,
           "avg_cost": 319.37,
           "current_price": 319.25,
@@ -210,8 +210,8 @@
           "unrealized_pnl_pct": -0.04,
           "portfolio_pct": 0.215,
           "entry_date": "2026-05-29T03:33:56+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "AI服务器/基础设施"
         },
         {
           "ticker": "MSTR",
