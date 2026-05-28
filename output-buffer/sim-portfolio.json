@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-28T13:46:46.918347+00:00",
+    "last_updated": "2026-05-28T13:47:35.245446+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -104,10 +104,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1457214.93,
-      "cash": 604690.85,
-      "realized_pnl": -10262.35,
-      "return_pct": -2.85,
+      "total_assets": 1456787.73,
+      "cash": 639803.25,
+      "realized_pnl": -10976.35,
+      "return_pct": -2.88,
       "positions": [
         {
           "ticker": "GEV",
@@ -177,12 +177,12 @@
         {
           "ticker": "AMAT",
           "name": "Applied Materials",
-          "shares": 320,
+          "shares": 240,
           "avg_cost": 447.83,
-          "current_price": 440.24,
-          "market_value": 140876.8,
-          "unrealized_pnl_pct": -1.69,
-          "portfolio_pct": 0.097,
+          "current_price": 438.905,
+          "market_value": 105337.2,
+          "unrealized_pnl_pct": -1.99,
+          "portfolio_pct": 0.072,
           "entry_date": "2026-05-26",
           "type": "",
           "sector": "半导体设备"
@@ -937,6 +937,16 @@
       "shares": 500,
       "price": 144.88,
       "realized_pnl": 9405.55
+    },
+    {
+      "date": "2026-05-28",
+      "account": "us",
+      "action": "sell",
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "shares": 80,
+      "price": 438.905,
+      "realized_pnl": -714.0
     }
   ]
 }
