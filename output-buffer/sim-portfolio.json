@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-28T02:11:06.609735+00:00",
+    "last_updated": "2026-05-28T02:13:33.652748+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10511921.5,
-      "cash": 4200411.5,
+      "cash": 2632926.5,
       "realized_pnl": 543160.5,
       "return_pct": 5.12,
       "positions": [
@@ -85,6 +85,19 @@
           "entry_date": "2026-05-26T10:02:34+08:00",
           "type": "catalyst_position",
           "sector": "光模块/AI物理层"
+        },
+        {
+          "ticker": "600160.SS",
+          "name": "巨化股份",
+          "shares": 45900,
+          "avg_cost": 34.15,
+          "current_price": 34.15,
+          "market_value": 1567485.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.149,
+          "entry_date": "2026-05-28T10:13:33+08:00",
+          "type": "catalyst_play",
+          "sector": "化工/制冷剂"
         }
       ]
     },
@@ -937,6 +950,15 @@
       "shares": 8500,
       "price": 103.74,
       "realized_pnl": 46074.998
+    },
+    {
+      "date": "2026-05-28",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600160",
+      "name": "巨化股份",
+      "shares": 45900,
+      "price": 34.15
     }
   ]
 }
