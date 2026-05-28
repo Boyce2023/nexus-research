@@ -80,8 +80,8 @@ def get_price(ticker):
         return None
     try:
         t = yf.Ticker(ticker)
-        info = t.fast_info
-        price = info.last_price
+        info = t.info
+        price = info.get("postMarketPrice") or info.get("preMarketPrice") or info.get("regularMarketPrice") or t.fast_info.last_price
         with _cache_lock:
             _price_cache[ticker] = {"p": price, "t": now}
         return price
