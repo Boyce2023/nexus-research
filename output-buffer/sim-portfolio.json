@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-28T07:18:56.034003+00:00",
+    "last_updated": "2026-05-28T07:25:01.203161+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -104,10 +104,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1475129.05,
+      "total_assets": 1471929.05,
       "cash": 181418.85,
-      "realized_pnl": -14888.75,
-      "return_pct": -1.66,
+      "realized_pnl": -18088.75,
+      "return_pct": -1.87,
       "positions": [
         {
           "ticker": "GEV",
@@ -195,14 +195,14 @@
           "current_price": 212.6,
           "market_value": 170080.0,
           "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.115,
+          "portfolio_pct": 0.116,
           "entry_date": "2026-05-28T15:17:01+08:00",
           "type": "core_position",
           "sector": "AI芯片"
         },
         {
           "ticker": "AVGO",
-          "name": "",
+          "name": "Broadcom Inc",
           "shares": 350,
           "avg_cost": 421.86,
           "current_price": 421.86,
@@ -210,8 +210,8 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-05-28T15:17:17+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "Custom ASIC/AI芯片"
         }
       ]
     }
@@ -1082,6 +1082,16 @@
       "name": "Micro E-mini S&P 500",
       "shares": 0,
       "price": 7533.0
+    },
+    {
+      "date": "2026-05-28",
+      "account": "us",
+      "action": "close_option",
+      "ticker": "SPY",
+      "name": "State Street SPDR S&P 500 ETF T",
+      "shares": 0,
+      "price": 0,
+      "realized_pnl": -3200.0
     }
   ]
 }
