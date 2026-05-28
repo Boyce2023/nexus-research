@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-28T07:17:27.016757+00:00",
+    "last_updated": "2026-05-28T07:18:00.045569+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -105,7 +105,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1475129.05,
-      "cash": 219318.85,
+      "cash": 221118.85,
       "realized_pnl": -14888.75,
       "return_pct": -1.66,
       "positions": [
@@ -1037,6 +1037,15 @@
       "name": "Micron Technology",
       "shares": 100,
       "price": 928.41
+    },
+    {
+      "date": "2026-05-28",
+      "account": "us",
+      "action": "option",
+      "ticker": "VST",
+      "name": "Vistra Corp",
+      "shares": 0,
+      "price": 0
     }
   ]
 }
