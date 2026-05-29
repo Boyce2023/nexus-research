@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-28T20:35:52.536736+00:00",
+    "last_updated": "2026-05-29T01:39:49.390792+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10668290.5,
-      "cash": 2249131.5,
+      "cash": 1258306.5,
       "realized_pnl": 562370.5,
       "return_pct": 6.68,
       "positions": [
@@ -98,6 +98,19 @@
           "entry_date": "2026-05-28T22:23:21+08:00",
           "type": "catalyst_play",
           "sector": "化工/制冷剂"
+        },
+        {
+          "ticker": "300408.SZ",
+          "name": "三环集团",
+          "shares": 7500,
+          "avg_cost": 132.11,
+          "current_price": 132.11,
+          "market_value": 990825.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.093,
+          "entry_date": "2026-05-29T09:39:49+08:00",
+          "type": "catalyst_position",
+          "sector": "电子陶瓷/MLCC"
         }
       ]
     },
@@ -1214,6 +1227,15 @@
       "name": "NVIDIA Corporation",
       "shares": 200,
       "price": 213.895
+    },
+    {
+      "date": "2026-05-29",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "300408",
+      "name": "三环集团",
+      "shares": 7500,
+      "price": 132.11
     }
   ]
 }
