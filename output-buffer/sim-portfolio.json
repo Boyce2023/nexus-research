@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-29T05:14:29.003182+00:00",
+    "last_updated": "2026-05-29T06:57:27.842587+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,19 +16,19 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10567343.5,
-      "cash": 1372167.5,
+      "total_assets": 10541903.5,
+      "cash": 1351963.5,
       "realized_pnl": 490520.5,
-      "return_pct": 5.67,
+      "return_pct": 5.42,
       "positions": [
         {
           "ticker": "002028.SZ",
           "name": "思源电气",
-          "shares": 8000,
-          "avg_cost": 194.203,
-          "current_price": 205.22,
-          "market_value": 1641760.0,
-          "unrealized_pnl_pct": 5.67,
+          "shares": 8100,
+          "avg_cost": 194.2998,
+          "current_price": 202.04,
+          "market_value": 1636524.0,
+          "unrealized_pnl_pct": 3.98,
           "portfolio_pct": 0.155,
           "entry_date": "2026-05-18",
           "type": "core_position",
@@ -42,7 +42,7 @@
           "current_price": 285.25,
           "market_value": 713125.0,
           "unrealized_pnl_pct": -9.15,
-          "portfolio_pct": 0.067,
+          "portfolio_pct": 0.068,
           "entry_date": "2026-05-21T13:10:15+08:00",
           "type": "core_position",
           "sector": "半导体材料"
@@ -68,7 +68,7 @@
           "current_price": 134.21,
           "market_value": 1207890.0,
           "unrealized_pnl_pct": 7.57,
-          "portfolio_pct": 0.114,
+          "portfolio_pct": 0.115,
           "entry_date": "2026-05-25T10:27:14+08:00",
           "type": "catalyst_position",
           "sector": "PCB/AI服务器"
@@ -94,7 +94,7 @@
           "current_price": 33.63,
           "market_value": 1916910.0,
           "unrealized_pnl_pct": -2.72,
-          "portfolio_pct": 0.181,
+          "portfolio_pct": 0.182,
           "entry_date": "2026-05-28T22:23:21+08:00",
           "type": "catalyst_play",
           "sector": "化工/制冷剂"
@@ -384,14 +384,14 @@
     {
       "date": "2026-05-29",
       "a_share": {
-        "total_assets": 10567343.5,
-        "return_pct": 5.67
+        "total_assets": 10541903.5,
+        "return_pct": 5.42
       },
       "us": {
         "total_assets": 1614737.47,
         "return_pct": 7.65
       },
-      "combined_return_pct": 6.7,
+      "combined_return_pct": 6.58,
       "sse_return_pct": 2.14,
       "spy_return_pct": 2.16
     }
@@ -1276,6 +1276,15 @@
       "shares": 2500,
       "price": 285.25,
       "realized_pnl": -71850.0
+    },
+    {
+      "date": "2026-05-29",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "002028",
+      "name": "思源电气",
+      "shares": 100,
+      "price": 202.04
     }
   ]
 }
