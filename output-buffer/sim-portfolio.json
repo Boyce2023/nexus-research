@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-29T07:00:25.960673+00:00",
+    "last_updated": "2026-05-29T07:02:35.866363+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10554683.5,
-      "cash": 1372147.5,
+      "total_assets": 10514205.5,
+      "cash": 1301697.5,
       "realized_pnl": 491196.01,
-      "return_pct": 5.55,
+      "return_pct": 5.14,
       "positions": [
         {
           "ticker": "002028.SZ",
@@ -29,7 +29,7 @@
           "current_price": 201.84,
           "market_value": 1614720.0,
           "unrealized_pnl_pct": 3.88,
-          "portfolio_pct": 0.153,
+          "portfolio_pct": 0.154,
           "entry_date": "2026-05-18",
           "type": "core_position",
           "sector": "电力设备"
@@ -68,7 +68,7 @@
           "current_price": 134.21,
           "market_value": 1207890.0,
           "unrealized_pnl_pct": 7.57,
-          "portfolio_pct": 0.114,
+          "portfolio_pct": 0.115,
           "entry_date": "2026-05-25T10:27:14+08:00",
           "type": "catalyst_position",
           "sector": "PCB/AI服务器"
@@ -76,12 +76,12 @@
         {
           "ticker": "300502.SZ",
           "name": "新易盛",
-          "shares": 1850,
-          "avg_cost": 691.9,
-          "current_price": 726.38,
-          "market_value": 1343803.0,
-          "unrealized_pnl_pct": 4.98,
-          "portfolio_pct": 0.127,
+          "shares": 1950,
+          "avg_cost": 692.5462,
+          "current_price": 704.5,
+          "market_value": 1373775.0,
+          "unrealized_pnl_pct": 1.73,
+          "portfolio_pct": 0.131,
           "entry_date": "2026-05-26T10:02:34+08:00",
           "type": "catalyst_position",
           "sector": "光模块/AI物理层"
@@ -384,14 +384,14 @@
     {
       "date": "2026-05-29",
       "a_share": {
-        "total_assets": 10554683.5,
-        "return_pct": 5.55
+        "total_assets": 10514205.5,
+        "return_pct": 5.14
       },
       "us": {
         "total_assets": 1614737.47,
         "return_pct": 7.65
       },
-      "combined_return_pct": 6.64,
+      "combined_return_pct": 6.44,
       "sse_return_pct": 2.14,
       "spy_return_pct": 2.16
     }
@@ -1314,6 +1314,15 @@
       "shares": 100,
       "price": 50.23,
       "realized_pnl": -78.5093
+    },
+    {
+      "date": "2026-05-29",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "300502",
+      "name": "新易盛",
+      "shares": 100,
+      "price": 704.5
     }
   ]
 }
