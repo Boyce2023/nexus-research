@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-29T01:39:49.390792+00:00",
+    "last_updated": "2026-05-29T01:39:59.971784+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10668290.5,
-      "cash": 1258306.5,
+      "cash": 659042.5,
       "realized_pnl": 562370.5,
       "return_pct": 6.68,
       "positions": [
@@ -111,6 +111,19 @@
           "entry_date": "2026-05-29T09:39:49+08:00",
           "type": "catalyst_position",
           "sector": "电子陶瓷/MLCC"
+        },
+        {
+          "ticker": "000519.SZ",
+          "name": "中兵红箭",
+          "shares": 30700,
+          "avg_cost": 19.52,
+          "current_price": 19.52,
+          "market_value": 599264.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.056,
+          "entry_date": "2026-05-29T09:39:59+08:00",
+          "type": "catalyst_position",
+          "sector": "超硬材料/军工"
         }
       ]
     },
@@ -1236,6 +1249,15 @@
       "name": "三环集团",
       "shares": 7500,
       "price": 132.11
+    },
+    {
+      "date": "2026-05-29",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "000519",
+      "name": "中兵红箭",
+      "shares": 30700,
+      "price": 19.52
     }
   ]
 }
