@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-05-29T01:46:55.753875+00:00",
+    "last_updated": "2026-05-29T01:55:36.546571+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -130,7 +130,7 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1614822.47,
+      "total_assets": 1614737.47,
       "cash": -902471.73,
       "realized_pnl": -10608.83,
       "return_pct": 7.65,
@@ -156,7 +156,7 @@
           "current_price": 353.9,
           "market_value": 212340.0,
           "unrealized_pnl_pct": -3.19,
-          "portfolio_pct": 0.131,
+          "portfolio_pct": 0.132,
           "entry_date": "2026-05-26",
           "type": "core_position",
           "sector": "AI制造/EMS"
@@ -244,9 +244,9 @@
           "name": "Strategy Inc (BTC)",
           "shares": -500,
           "avg_cost": 144.93,
-          "current_price": 151.68,
-          "market_value": -75840.0,
-          "unrealized_pnl_pct": -4.66,
+          "current_price": 151.85,
+          "market_value": -75925.0,
+          "unrealized_pnl_pct": -4.77,
           "portfolio_pct": 0.047,
           "entry_date": "2026-05-28T21:48:48+08:00",
           "type": "short",
@@ -266,7 +266,9 @@
         "total_assets": 1497010,
         "return_pct": -0.2
       },
-      "combined_return_pct": 0.66
+      "combined_return_pct": 0.66,
+      "sse_return_pct": 0.0,
+      "spy_return_pct": 0.0
     },
     {
       "date": "2026-05-19",
@@ -280,7 +282,7 @@
       },
       "combined_return_pct": 0.5,
       "sse_return_pct": 0.4,
-      "spy_return_pct": 0.0
+      "spy_return_pct": -0.67
     },
     {
       "date": "2026-05-20",
@@ -293,7 +295,8 @@
         "return_pct": -1.21
       },
       "combined_return_pct": 0.44,
-      "spy_return_pct": -0.46
+      "sse_return_pct": 0.36,
+      "spy_return_pct": 0.35
     },
     {
       "date": "2026-05-21",
@@ -306,8 +309,8 @@
         "return_pct": -1.0
       },
       "combined_return_pct": 0.79,
-      "sse_return_pct": 0.36,
-      "spy_return_pct": 0.21
+      "sse_return_pct": -1.04,
+      "spy_return_pct": 0.55
     },
     {
       "date": "2026-05-22",
@@ -320,8 +323,8 @@
         "return_pct": -0.85
       },
       "combined_return_pct": 1.48,
-      "sse_return_pct": -1.04,
-      "spy_return_pct": 0.13
+      "sse_return_pct": 0.24,
+      "spy_return_pct": 0.95
     },
     {
       "date": "2026-05-25",
@@ -333,7 +336,8 @@
         "total_assets": 1487198.7,
         "return_pct": -0.85
       },
-      "combined_return_pct": 2.64
+      "combined_return_pct": 2.64,
+      "sse_return_pct": 1.82
     },
     {
       "date": "2026-05-26",
@@ -346,7 +350,8 @@
         "return_pct": -0.94
       },
       "combined_return_pct": 3.26,
-      "spy_return_pct": 0.95
+      "sse_return_pct": 2.37,
+      "spy_return_pct": 1.62
     },
     {
       "date": "2026-05-27",
@@ -359,7 +364,8 @@
         "return_pct": -0.56
       },
       "combined_return_pct": 2.67,
-      "spy_return_pct": 1.62
+      "sse_return_pct": 1.54,
+      "spy_return_pct": 1.6
     },
     {
       "date": "2026-05-28",
@@ -372,8 +378,8 @@
         "return_pct": -1.63
       },
       "combined_return_pct": 2.1,
-      "sse_return_pct": 1.54,
-      "spy_return_pct": 1.43
+      "sse_return_pct": 1.67,
+      "spy_return_pct": 2.16
     },
     {
       "date": "2026-05-29",
@@ -382,10 +388,12 @@
         "return_pct": 6.68
       },
       "us": {
-        "total_assets": 1531174.47,
-        "return_pct": 2.08
+        "total_assets": 1614737.47,
+        "return_pct": 7.65
       },
-      "combined_return_pct": 4.29
+      "combined_return_pct": 7.18,
+      "sse_return_pct": 2.14,
+      "spy_return_pct": 2.16
     }
   ],
   "trade_log": [

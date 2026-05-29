@@ -337,20 +337,47 @@ def make_performance_widget():
     total_curr_usd = a_total / 7.2 + us_total
     combined_return = round((total_curr_usd / total_init_usd - 1) * 100, 2) if total_init_usd else 0
 
-    dates_list = [s["date"] for s in snapshots]
-    snapshot_dates = json.dumps(dates_list)
-    a_ret_list = [s.get("a_share", {}).get("return_pct", 0) for s in snapshots]
-    us_ret_list = [s.get("us", {}).get("return_pct", 0) for s in snapshots]
-    # yfinance as primary; stored benchmark returns patch NaN gaps
-    stored_csi = [s.get("sse_return_pct") for s in snapshots]
-    stored_spy = [s.get("spy_return_pct") for s in snapshots]
-    yf_csi = get_benchmark_returns("000300.SS", dates_list)
-    yf_spy = get_benchmark_returns("SPY", dates_list)
+    # --- Independent chart data: A-share and US have separate date arrays ---
+    # A-share trading days: dates where CSI300 benchmark exists
+    a_dates, a_ret_list, csi300_list = [], [], []
+    us_dates, us_ret_list, spy_list = [], [], []
 
-    csi300_list = [y if not (y is None or (isinstance(y, float) and math.isnan(y))) else (s if s is not None else 0)
-                   for y, s in zip(yf_csi, stored_csi)]
-    spy_list = [y if not (y is None or (isinstance(y, float) and math.isnan(y))) else (s if s is not None else 0)
-                for y, s in zip(yf_spy, stored_spy)]
+    for s in snapshots:
+        a_ret = s.get("a_share", {}).get("return_pct", 0)
+        us_ret = s.get("us", {}).get("return_pct", 0)
+        csi_val = s.get("sse_return_pct")
+        spy_val = s.get("spy_return_pct")
+
+        # A-share chart: include if CSI300 has data for this date
+        if csi_val is not None:
+            a_dates.append(s["date"])
+            a_ret_list.append(a_ret)
+            csi300_list.append(csi_val)
+
+        # US chart: include if SPY has data for this date
+        if spy_val is not None:
+            us_dates.append(s["date"])
+            us_ret_list.append(us_ret)
+            spy_list.append(spy_val)
+
+    # Ensure last point matches current account return (chart = stats bar)
+    if a_dates and abs(a_ret_list[-1] - a_return) > 0.01:
+        if a_dates[-1] == snapshots[-1]["date"]:
+            a_ret_list[-1] = a_return
+        else:
+            a_dates.append(snapshots[-1]["date"])
+            a_ret_list.append(a_return)
+            csi300_list.append(csi300_list[-1] if csi300_list else 0)
+    if us_dates and abs(us_ret_list[-1] - us_return) > 0.01:
+        if us_dates[-1] == snapshots[-1]["date"]:
+            us_ret_list[-1] = us_return
+        else:
+            us_dates.append(snapshots[-1]["date"])
+            us_ret_list.append(us_return)
+            spy_list.append(spy_list[-1] if spy_list else 0)
+
+    snapshot_a_dates = json.dumps(a_dates)
+    snapshot_us_dates = json.dumps(us_dates)
     snapshot_a = json.dumps(a_ret_list)
     snapshot_us = json.dumps(us_ret_list)
     snapshot_csi300 = json.dumps(csi300_list)
@@ -559,7 +586,8 @@ details.section[open] summary::before{{transform:rotate(90deg)}}
 </div>
 
 <script>
-const dates = {snapshot_dates};
+const aDates = {snapshot_a_dates};
+const usDates = {snapshot_us_dates};
 const aReturns = {snapshot_a};
 const usReturns = {snapshot_us};
 const csi300Returns = {snapshot_csi300};
@@ -575,11 +603,11 @@ function mkOpts(yMin, yMax) {{
         }}
     }};
 }}
-if (dates.length > 0) {{
+if (aDates.length > 0) {{
     new Chart(document.getElementById('aChart'), {{
         type: 'line',
         data: {{
-            labels: dates,
+            labels: aDates,
             datasets: [
                 {{label: 'A股组合', data: aReturns, borderColor: '#f97316', borderWidth: 2, pointRadius: 3, tension: 0.3}},
                 {{label: '沪深300', data: csi300Returns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3]}}
@@ -587,20 +615,18 @@ if (dates.length > 0) {{
         }},
         options: mkOpts({a_y_min}, {a_y_max})
     }});
+}}
+if (usDates.length > 0) {{
     new Chart(document.getElementById('usChart'), {{
         type: 'line',
         data: {{
-            labels: dates,
+            labels: usDates,
             datasets: [
                 {{label: '美股组合', data: usReturns, borderColor: '#3b82f6', borderWidth: 2, pointRadius: 3, tension: 0.3}},
                 {{label: 'SPY', data: spyReturns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3]}}
             ]
         }},
         options: mkOpts({us_y_min}, {us_y_max})
-    }});
-}} else {{
-    document.querySelectorAll('.chart-box').forEach(el => {{
-        el.innerHTML = '<h3>' + el.querySelector('h3').textContent + '</h3><p style="color:#8b949e;text-align:center;padding:40px">数据积累中...</p>';
     }});
 }}
 </script>
