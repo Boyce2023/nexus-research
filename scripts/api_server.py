@@ -609,8 +609,8 @@ if (aDates.length > 0) {{
         data: {{
             labels: aDates,
             datasets: [
-                {{label: 'A股组合', data: aReturns, borderColor: '#f97316', borderWidth: 2, pointRadius: 3, tension: 0.3}},
-                {{label: '沪深300', data: csi300Returns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3]}}
+                {{label: 'A股组合', data: aReturns, borderColor: '#f97316', borderWidth: 2, pointRadius: 3, tension: 0}},
+                {{label: '沪深300', data: csi300Returns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0, borderDash: [5,3]}}
             ]
         }},
         options: mkOpts({a_y_min}, {a_y_max})
@@ -622,8 +622,8 @@ if (usDates.length > 0) {{
         data: {{
             labels: usDates,
             datasets: [
-                {{label: '美股组合', data: usReturns, borderColor: '#3b82f6', borderWidth: 2, pointRadius: 3, tension: 0.3}},
-                {{label: 'SPY', data: spyReturns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0.3, borderDash: [5,3]}}
+                {{label: '美股组合', data: usReturns, borderColor: '#3b82f6', borderWidth: 2, pointRadius: 3, tension: 0}},
+                {{label: 'SPY', data: spyReturns, borderColor: '#8b949e', borderWidth: 1.5, pointRadius: 2, tension: 0, borderDash: [5,3]}}
             ]
         }},
         options: mkOpts({us_y_min}, {us_y_max})
