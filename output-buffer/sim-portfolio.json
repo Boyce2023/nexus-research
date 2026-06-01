@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-01T03:35:38.058904+00:00",
+    "last_updated": "2026-06-01T03:35:45.169501+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10572430.5,
-      "cash": 2888919.5,
-      "realized_pnl": 389907.77,
-      "return_pct": 5.72,
+      "total_assets": 10559920.5,
+      "cash": 3448944.5,
+      "realized_pnl": 388512.77,
+      "return_pct": 5.6,
       "positions": [
         {
           "ticker": "002028.SZ",
@@ -50,12 +50,12 @@
         {
           "ticker": "002463.SZ",
           "name": "沪电股份",
-          "shares": 9000,
+          "shares": 4500,
           "avg_cost": 124.76,
-          "current_price": 125.84,
-          "market_value": 1132560.0,
-          "unrealized_pnl_pct": 0.87,
-          "portfolio_pct": 0.107,
+          "current_price": 124.45,
+          "market_value": 560025.0,
+          "unrealized_pnl_pct": -0.25,
+          "portfolio_pct": 0.053,
           "entry_date": "2026-05-25T10:27:14+08:00",
           "type": "catalyst_position",
           "sector": "PCB/AI服务器"
@@ -371,14 +371,14 @@
     {
       "date": "2026-05-29",
       "a_share": {
-        "total_assets": 10572430.5,
-        "return_pct": 5.72
+        "total_assets": 10559920.5,
+        "return_pct": 5.6
       },
       "us": {
         "total_assets": 1622216.27,
         "return_pct": 8.15
       },
-      "combined_return_pct": 6.98,
+      "combined_return_pct": 6.92,
       "sse_return_pct": 1.21,
       "spy_return_pct": 2.41
     }
@@ -1371,6 +1371,16 @@
       "shares": 3750,
       "price": 128.62,
       "realized_pnl": -13087.5
+    },
+    {
+      "date": "2026-06-01",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "002463",
+      "name": "沪电股份",
+      "shares": 4500,
+      "price": 124.45,
+      "realized_pnl": -1395.0
     }
   ]
 }
