@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-01T14:38:36.643292+00:00",
+    "last_updated": "2026-06-01T14:38:43.766731+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,8 +17,8 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10512515.0,
-      "cash": 4000239.5,
-      "realized_pnl": 378387.77,
+      "cash": 4393599.5,
+      "realized_pnl": 363627.03,
       "return_pct": 5.13,
       "positions": [
         {
@@ -33,19 +33,6 @@
           "entry_date": "2026-05-18",
           "type": "core_position",
           "sector": "电力设备"
-        },
-        {
-          "ticker": "600276.SS",
-          "name": "恒瑞医药",
-          "shares": 8000,
-          "avg_cost": 51.0151,
-          "current_price": 49.17,
-          "market_value": 393360.0,
-          "unrealized_pnl_pct": -3.62,
-          "portfolio_pct": 0.037,
-          "entry_date": "2026-05-22T09:50:29+08:00",
-          "type": "catalyst_position",
-          "sector": "创新药"
         },
         {
           "ticker": "300502.SZ",
@@ -1310,6 +1297,16 @@
       "shares": 4500,
       "price": 122.51,
       "realized_pnl": -10125.0
+    },
+    {
+      "date": "2026-06-01",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "600276",
+      "name": "恒瑞医药",
+      "shares": 8000,
+      "price": 49.17,
+      "realized_pnl": -14760.744
     }
   ]
 }
