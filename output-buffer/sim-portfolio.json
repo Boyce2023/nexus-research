@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-02T07:42:40.280733+00:00",
+    "last_updated": "2026-06-02T07:46:10.382010+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10671338.0,
-      "cash": 5654103.0,
+      "cash": 4056903.0,
       "realized_pnl": 382926.53,
       "return_pct": 6.71,
       "positions": [
@@ -59,6 +59,19 @@
           "entry_date": "2026-05-28",
           "type": "supply_thesis",
           "sector": "化工/制冷剂"
+        },
+        {
+          "ticker": "600301.SS",
+          "name": "华锡有色",
+          "shares": 24000,
+          "avg_cost": 66.55,
+          "current_price": 66.55,
+          "market_value": 1597200.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.15,
+          "entry_date": "2026-06-02T15:46:10+08:00",
+          "type": "catalyst_position",
+          "sector": "小金属/锡"
         }
       ]
     },
@@ -1320,6 +1333,15 @@
       "shares": 925,
       "price": 747.0,
       "realized_pnl": 50967.5
+    },
+    {
+      "date": "2026-06-02",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600301",
+      "name": "华锡有色",
+      "shares": 24000,
+      "price": 66.55
     }
   ]
 }
