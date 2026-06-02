@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-02T02:50:02.166032+00:00",
+    "last_updated": "2026-06-02T07:42:40.280733+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,20 +16,20 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10622828.0,
-      "cash": 4963128.0,
-      "realized_pnl": 331959.03,
-      "return_pct": 6.23,
+      "total_assets": 10671338.0,
+      "cash": 5654103.0,
+      "realized_pnl": 382926.53,
+      "return_pct": 6.71,
       "positions": [
         {
           "ticker": "002028.SZ",
           "name": "思源电气",
           "shares": 8000,
           "avg_cost": 194.2998,
-          "current_price": 208.35,
-          "market_value": 1666800.0,
-          "unrealized_pnl_pct": 7.23,
-          "portfolio_pct": 0.157,
+          "current_price": 206.27,
+          "market_value": 1650160.0,
+          "unrealized_pnl_pct": 6.16,
+          "portfolio_pct": 0.155,
           "entry_date": "2026-05-18",
           "type": "core_position",
           "sector": "电力设备"
@@ -37,12 +37,12 @@
         {
           "ticker": "300502.SZ",
           "name": "新易盛",
-          "shares": 1850,
+          "shares": 925,
           "avg_cost": 691.9,
-          "current_price": 722.0,
-          "market_value": 1335700.0,
-          "unrealized_pnl_pct": 4.35,
-          "portfolio_pct": 0.126,
+          "current_price": 747.0,
+          "market_value": 690975.0,
+          "unrealized_pnl_pct": 7.96,
+          "portfolio_pct": 0.065,
           "entry_date": "2026-05-26T10:02:34+08:00",
           "type": "catalyst_position",
           "sector": "光模块/AI物理层"
@@ -52,10 +52,10 @@
           "name": "巨化股份",
           "shares": 70000,
           "avg_cost": 35.1996,
-          "current_price": 37.96,
-          "market_value": 2657200.0,
-          "unrealized_pnl_pct": 7.84,
-          "portfolio_pct": 0.25,
+          "current_price": 38.23,
+          "market_value": 2676100.0,
+          "unrealized_pnl_pct": 8.61,
+          "portfolio_pct": 0.251,
           "entry_date": "2026-05-28",
           "type": "supply_thesis",
           "sector": "化工/制冷剂"
@@ -320,14 +320,14 @@
     {
       "date": "2026-06-01",
       "a_share": {
-        "total_assets": 10622828.0,
-        "return_pct": 6.23
+        "total_assets": 10671338.0,
+        "return_pct": 6.71
       },
       "us": {
         "total_assets": 1700146.04,
         "return_pct": 13.34
       },
-      "combined_return_pct": 9.92
+      "combined_return_pct": 10.16
     }
   ],
   "trade_log": [
@@ -1310,6 +1310,16 @@
       "name": "巨化股份",
       "shares": 13000,
       "price": 37.96
+    },
+    {
+      "date": "2026-06-02",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "300502",
+      "name": "新易盛",
+      "shares": 925,
+      "price": 747.0,
+      "realized_pnl": 50967.5
     }
   ]
 }
