@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-02T07:46:25.124678+00:00",
+    "last_updated": "2026-06-02T12:17:13.915046+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10671338.0,
-      "cash": 2995143.0,
+      "cash": 5654103.0,
       "realized_pnl": 382926.53,
       "return_pct": 6.71,
       "positions": [
@@ -59,32 +59,6 @@
           "entry_date": "2026-05-28",
           "type": "supply_thesis",
           "sector": "化工/制冷剂"
-        },
-        {
-          "ticker": "600301.SS",
-          "name": "华锡有色",
-          "shares": 24000,
-          "avg_cost": 66.55,
-          "current_price": 66.55,
-          "market_value": 1597200.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.15,
-          "entry_date": "2026-06-02T15:46:10+08:00",
-          "type": "catalyst_position",
-          "sector": "小金属/锡"
-        },
-        {
-          "ticker": "600869.SS",
-          "name": "远东股份",
-          "shares": 42000,
-          "avg_cost": 25.28,
-          "current_price": 25.28,
-          "market_value": 1061760.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.099,
-          "entry_date": "2026-06-02T15:46:24+08:00",
-          "type": "catalyst_position",
-          "sector": "电网设备/电缆"
         }
       ]
     },
@@ -1346,24 +1320,6 @@
       "shares": 925,
       "price": 747.0,
       "realized_pnl": 50967.5
-    },
-    {
-      "date": "2026-06-02",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "600301",
-      "name": "华锡有色",
-      "shares": 24000,
-      "price": 66.55
-    },
-    {
-      "date": "2026-06-02",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "600869",
-      "name": "远东股份",
-      "shares": 42000,
-      "price": 25.28
     }
   ]
 }
