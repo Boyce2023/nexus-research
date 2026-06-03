@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T05:33:45.920233+00:00",
+    "last_updated": "2026-06-03T05:34:53.359924+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -202,7 +202,7 @@
         },
         {
           "ticker": "TSM",
-          "name": "",
+          "name": "Taiwan Semiconductor",
           "shares": 393,
           "avg_cost": 446.69,
           "current_price": 446.69,
@@ -210,12 +210,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-06-03T13:32:54+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "Semiconductor Foundry"
         },
         {
           "ticker": "NOW",
-          "name": "",
+          "name": "ServiceNow",
           "shares": 1376,
           "avg_cost": 127.65,
           "current_price": 127.65,
@@ -223,12 +223,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-06-03T13:33:23+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "Enterprise SaaS/AI"
         },
         {
           "ticker": "ABBV",
-          "name": "",
+          "name": "AbbVie Inc",
           "shares": 820,
           "avg_cost": 215.4,
           "current_price": 215.4,
@@ -236,8 +236,8 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.101,
           "entry_date": "2026-06-03T13:33:42+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "Pharma/Biotech"
         }
       ]
     }
