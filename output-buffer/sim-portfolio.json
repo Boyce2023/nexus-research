@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T02:19:09.126445+00:00",
+    "last_updated": "2026-06-03T02:37:40.854800+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10651817.75,
-      "cash": 3098496.0,
+      "total_assets": 10651293.75,
+      "cash": 5654103.0,
       "realized_pnl": 382926.53,
-      "return_pct": 6.52,
+      "return_pct": 6.51,
       "positions": [
         {
           "ticker": "002028.SZ",
@@ -59,45 +59,6 @@
           "entry_date": "2026-05-28",
           "type": "supply_thesis",
           "sector": "化工/制冷剂"
-        },
-        {
-          "ticker": "688515.SS",
-          "name": "裕太微-U",
-          "shares": 3200,
-          "avg_cost": 252.51,
-          "current_price": 250.0,
-          "market_value": 800000.0,
-          "unrealized_pnl_pct": -0.99,
-          "portfolio_pct": 0.075,
-          "entry_date": "2026-06-03T09:55:59+08:00",
-          "type": "track_b_to_a",
-          "sector": "半导体/车载以太网PHY"
-        },
-        {
-          "ticker": "000100.SZ",
-          "name": "TCL科技",
-          "shares": 179700,
-          "avg_cost": 4.83,
-          "current_price": 4.87,
-          "market_value": 875139.0,
-          "unrealized_pnl_pct": 0.83,
-          "portfolio_pct": 0.082,
-          "entry_date": "2026-06-03T09:56:29+08:00",
-          "type": "track_b_to_a",
-          "sector": "光学光电/面板"
-        },
-        {
-          "ticker": "688097.SS",
-          "name": "博众精工",
-          "shares": 11400,
-          "avg_cost": 77.16,
-          "current_price": 77.28,
-          "market_value": 880992.0,
-          "unrealized_pnl_pct": 0.16,
-          "portfolio_pct": 0.083,
-          "entry_date": "2026-06-03T10:00:06+08:00",
-          "type": "track_b_to_a",
-          "sector": "自动化设备/精密装配"
         }
       ]
     },
@@ -372,14 +333,14 @@
     {
       "date": "2026-06-01",
       "a_share": {
-        "total_assets": 10651817.75,
-        "return_pct": 6.52
+        "total_assets": 10651293.75,
+        "return_pct": 6.51
       },
       "us": {
         "total_assets": 1755456.61,
         "return_pct": 17.03
       },
-      "combined_return_pct": 11.98
+      "combined_return_pct": 11.97
     }
   ],
   "trade_log": [
@@ -1372,33 +1333,6 @@
       "shares": 925,
       "price": 747.0,
       "realized_pnl": 50967.5
-    },
-    {
-      "date": "2026-06-03",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "688515",
-      "name": "裕太微-U",
-      "shares": 3200,
-      "price": 252.51
-    },
-    {
-      "date": "2026-06-03",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "000100",
-      "name": "TCL科技",
-      "shares": 179700,
-      "price": 4.83
-    },
-    {
-      "date": "2026-06-03",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "688097",
-      "name": "博众精工",
-      "shares": 11400,
-      "price": 77.16
     },
     {
       "date": "2026-06-03",
