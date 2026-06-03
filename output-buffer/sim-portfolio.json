@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T02:03:51.676436+00:00",
+    "last_updated": "2026-06-03T02:04:42.006445+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -105,8 +105,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1755524.61,
-      "cash": -483651.53,
-      "realized_pnl": 35651.07,
+      "cash": -259803.53,
+      "realized_pnl": 38870.07,
       "return_pct": 17.03,
       "positions": [
         {
@@ -173,19 +173,6 @@
           "entry_date": "2026-05-28T21:49:21+08:00",
           "type": "core_position",
           "sector": "网络芯片/定制ASIC"
-        },
-        {
-          "ticker": "QQQ",
-          "name": "Invesco QQQ Trust (Nasdaq-100)",
-          "shares": 300,
-          "avg_cost": 735.43,
-          "current_price": 746.16,
-          "market_value": 223848.0,
-          "unrealized_pnl_pct": 1.46,
-          "portfolio_pct": 0.128,
-          "entry_date": "2026-05-29T00:31:55+08:00",
-          "type": "index_beta",
-          "sector": "指数ETF/Beta填仓"
         },
         {
           "ticker": "AMD",
@@ -1418,6 +1405,16 @@
       "name": "Salesforce",
       "shares": 750,
       "price": 200.84
+    },
+    {
+      "date": "2026-06-03",
+      "account": "us",
+      "action": "sell",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust (Nasdaq-100)",
+      "shares": 300,
+      "price": 746.16,
+      "realized_pnl": 3219.0
     }
   ]
 }
