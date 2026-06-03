@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T08:52:46.819866+00:00",
+    "last_updated": "2026-06-03T08:53:02.112124+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10646024.25,
-      "cash": 4854759.0,
+      "cash": 4255386.0,
       "realized_pnl": 382926.53,
       "return_pct": 6.46,
       "positions": [
@@ -72,6 +72,19 @@
           "entry_date": "2026-06-03T16:52:46+08:00",
           "type": "trackb_momentum",
           "sector": "专用设备"
+        },
+        {
+          "ticker": "600982.SS",
+          "name": "宁波能源",
+          "shares": 84300,
+          "avg_cost": 7.11,
+          "current_price": 7.11,
+          "market_value": 599373.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.056,
+          "entry_date": "2026-06-03T16:53:02+08:00",
+          "type": "trackb_momentum",
+          "sector": "电力"
         }
       ]
     },
@@ -1625,6 +1638,15 @@
       "name": "南风股份",
       "shares": 54900,
       "price": 14.56
+    },
+    {
+      "date": "2026-06-03",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600982",
+      "name": "宁波能源",
+      "shares": 84300,
+      "price": 7.11
     }
   ]
 }
