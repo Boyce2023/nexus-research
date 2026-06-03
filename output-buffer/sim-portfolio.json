@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T08:03:13.308015+00:00",
+    "last_updated": "2026-06-03T08:13:45.959901+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -66,7 +66,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1755648.67,
-      "cash": -1559071.9,
+      "cash": -1700842.3,
       "realized_pnl": 67697.57,
       "return_pct": 17.04,
       "positions": [
@@ -190,12 +190,12 @@
         {
           "ticker": "QQQ",
           "name": "Invesco QQQ Trust (Nasdaq-100)",
-          "shares": 755,
+          "shares": 945,
           "avg_cost": 746.16,
           "current_price": 746.16,
-          "market_value": 563350.8,
+          "market_value": 705121.2,
           "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.321,
+          "portfolio_pct": 0.402,
           "entry_date": "2026-06-03T11:03:54+08:00",
           "type": "index_beta",
           "sector": "指数ETF"
@@ -1562,6 +1562,15 @@
       "shares": 300,
       "price": 472.4,
       "realized_pnl": 32051.4999
+    },
+    {
+      "date": "2026-06-03",
+      "account": "us",
+      "action": "buy",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust (Nasdaq-100)",
+      "shares": 190,
+      "price": 746.16
     }
   ]
 }
