@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T16:04:01.080462+00:00",
+    "last_updated": "2026-06-03T16:05:23.230149+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,7 +92,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1721629.37,
-      "cash": -1648132.52,
+      "cash": -1739046.87,
       "realized_pnl": 64459.04,
       "return_pct": 14.78,
       "positions": [
@@ -288,6 +288,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.101,
           "entry_date": "2026-06-04T00:03:48+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "IBIT",
+          "name": "",
+          "shares": 2426,
+          "avg_cost": 37.475,
+          "current_price": 37.475,
+          "market_value": 90914.35,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.053,
+          "entry_date": "2026-06-04T00:05:11+08:00",
           "type": "",
           "sector": ""
         }
@@ -1772,6 +1785,15 @@
       "name": "iShares MSCI South Korea ETF",
       "shares": 820,
       "price": 211.08
+    },
+    {
+      "date": "2026-06-04",
+      "account": "us",
+      "action": "buy",
+      "ticker": "IBIT",
+      "name": "iShares Bitcoin Trust ETF",
+      "shares": 2426,
+      "price": 37.475
     }
   ]
 }
