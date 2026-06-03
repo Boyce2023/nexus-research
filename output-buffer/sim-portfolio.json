@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T08:22:31.370157+00:00",
+    "last_updated": "2026-06-03T08:22:47.979668+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -66,7 +66,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1755648.67,
-      "cash": -1559071.9,
+      "cash": -1700804.4,
       "realized_pnl": 67697.57,
       "return_pct": 17.04,
       "positions": [
@@ -238,6 +238,19 @@
           "entry_date": "2026-06-03T13:33:42+08:00",
           "type": "core_position",
           "sector": "Pharma/Biotech"
+        },
+        {
+          "ticker": "TQQQ",
+          "name": "",
+          "shares": 1625,
+          "avg_cost": 87.22,
+          "current_price": 87.22,
+          "market_value": 141732.5,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.081,
+          "entry_date": "2026-06-03T16:22:46+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -1581,6 +1594,15 @@
       "shares": 190,
       "price": 746.16,
       "realized_pnl": 0.0
+    },
+    {
+      "date": "2026-06-03",
+      "account": "us",
+      "action": "buy",
+      "ticker": "TQQQ",
+      "name": "ProShares UltraPro QQQ",
+      "shares": 1625,
+      "price": 87.22
     }
   ]
 }
