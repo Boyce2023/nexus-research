@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T01:55:59.207206+00:00",
+    "last_updated": "2026-06-03T01:56:29.879714+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10673919.25,
-      "cash": 4846071.0,
+      "cash": 3978120.0,
       "realized_pnl": 382926.53,
       "return_pct": 6.74,
       "positions": [
@@ -72,6 +72,19 @@
           "entry_date": "2026-06-03T09:55:59+08:00",
           "type": "track_b_to_a",
           "sector": "半导体/车载以太网PHY"
+        },
+        {
+          "ticker": "000100.SZ",
+          "name": "TCL科技",
+          "shares": 179700,
+          "avg_cost": 4.83,
+          "current_price": 4.83,
+          "market_value": 867951.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.081,
+          "entry_date": "2026-06-03T09:56:29+08:00",
+          "type": "track_b_to_a",
+          "sector": "光学光电/面板"
         }
       ]
     },
@@ -1342,6 +1355,15 @@
       "name": "裕太微-U",
       "shares": 3200,
       "price": 252.51
+    },
+    {
+      "date": "2026-06-03",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "000100",
+      "name": "TCL科技",
+      "shares": 179700,
+      "price": 4.83
     }
   ]
 }
