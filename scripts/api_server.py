@@ -342,23 +342,26 @@ def make_performance_widget():
     a_dates, a_ret_list, csi300_list = [], [], []
     us_dates, us_ret_list, spy_list = [], [], []
 
+    last_csi = 0
+    last_spy = 0
     for s in snapshots:
         a_ret = s.get("a_share", {}).get("return_pct", 0)
         us_ret = s.get("us", {}).get("return_pct", 0)
         csi_val = s.get("sse_return_pct")
         spy_val = s.get("spy_return_pct")
 
-        # A-share chart: include if CSI300 has data for this date
         if csi_val is not None:
-            a_dates.append(s["date"])
-            a_ret_list.append(a_ret)
-            csi300_list.append(csi_val)
-
-        # US chart: include if SPY has data for this date
+            last_csi = csi_val
         if spy_val is not None:
-            us_dates.append(s["date"])
-            us_ret_list.append(us_ret)
-            spy_list.append(spy_val)
+            last_spy = spy_val
+
+        a_dates.append(s["date"])
+        a_ret_list.append(a_ret)
+        csi300_list.append(csi_val if csi_val is not None else last_csi)
+
+        us_dates.append(s["date"])
+        us_ret_list.append(us_ret)
+        spy_list.append(spy_val if spy_val is not None else last_spy)
 
     # Ensure last point matches current account return (chart = stats bar)
     if a_dates and abs(a_ret_list[-1] - a_return) > 0.01:
