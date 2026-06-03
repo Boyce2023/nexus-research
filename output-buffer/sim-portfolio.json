@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T05:33:24.566882+00:00",
+    "last_updated": "2026-06-03T05:33:45.920233+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -66,7 +66,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1755456.61,
-      "cash": -1524163.9,
+      "cash": -1700791.9,
       "realized_pnl": 35646.07,
       "return_pct": 17.03,
       "positions": [
@@ -223,6 +223,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-06-03T13:33:23+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "ABBV",
+          "name": "",
+          "shares": 820,
+          "avg_cost": 215.4,
+          "current_price": 215.4,
+          "market_value": 176628.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.101,
+          "entry_date": "2026-06-03T13:33:42+08:00",
           "type": "",
           "sector": ""
         }
@@ -1530,6 +1543,15 @@
       "name": "ServiceNow, Inc.",
       "shares": 1376,
       "price": 127.65
+    },
+    {
+      "date": "2026-06-03",
+      "account": "us",
+      "action": "buy",
+      "ticker": "ABBV",
+      "name": "AbbVie Inc.",
+      "shares": 820,
+      "price": 215.4
     }
   ]
 }
