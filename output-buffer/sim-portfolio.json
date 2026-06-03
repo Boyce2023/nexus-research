@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T02:18:52.791000+00:00",
+    "last_updated": "2026-06-03T02:19:09.126445+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -105,7 +105,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1755456.61,
-      "cash": -541604.6,
+      "cash": -541616.53,
       "realized_pnl": 35646.07,
       "return_pct": 17.03,
       "positions": [
@@ -216,10 +216,10 @@
         {
           "ticker": "NU",
           "name": "Nu Holdings",
-          "shares": 8999,
+          "shares": 9000,
           "avg_cost": 11.93,
           "current_price": 11.93,
-          "market_value": 107358.07,
+          "market_value": 107370.0,
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.061,
           "entry_date": "2026-06-03T10:05:12+08:00",
@@ -1493,6 +1493,15 @@
       "shares": 1,
       "price": 11.93,
       "realized_pnl": 0.0
+    },
+    {
+      "date": "2026-06-03",
+      "account": "us",
+      "action": "buy",
+      "ticker": "NU",
+      "name": "Nu Holdings",
+      "shares": 1,
+      "price": 11.93
     }
   ]
 }
