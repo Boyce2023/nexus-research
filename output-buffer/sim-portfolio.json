@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T02:08:30.182437+00:00",
+    "last_updated": "2026-06-03T02:08:36.605707+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -105,7 +105,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1755456.61,
-      "cash": -481966.53,
+      "cash": -541616.53,
       "realized_pnl": 35646.07,
       "return_pct": 17.03,
       "positions": [
@@ -216,12 +216,12 @@
         {
           "ticker": "NU",
           "name": "Nu Holdings",
-          "shares": 4000,
+          "shares": 9000,
           "avg_cost": 11.93,
           "current_price": 11.93,
-          "market_value": 47720.0,
+          "market_value": 107370.0,
           "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.027,
+          "portfolio_pct": 0.061,
           "entry_date": "2026-06-03T10:05:12+08:00",
           "type": "core_position",
           "sector": "LatAm Fintech/数字银行"
@@ -1474,6 +1474,15 @@
       "name": "RTX Corporation",
       "shares": 575,
       "price": 174.26
+    },
+    {
+      "date": "2026-06-03",
+      "account": "us",
+      "action": "buy",
+      "ticker": "NU",
+      "name": "Nu Holdings",
+      "shares": 5000,
+      "price": 11.93
     }
   ]
 }
