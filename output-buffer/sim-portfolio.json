@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T01:56:29.879714+00:00",
+    "last_updated": "2026-06-03T02:00:07.115188+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10673919.25,
-      "cash": 3978120.0,
+      "cash": 3098496.0,
       "realized_pnl": 382926.53,
       "return_pct": 6.74,
       "positions": [
@@ -85,6 +85,19 @@
           "entry_date": "2026-06-03T09:56:29+08:00",
           "type": "track_b_to_a",
           "sector": "光学光电/面板"
+        },
+        {
+          "ticker": "688097.SS",
+          "name": "博众精工",
+          "shares": 11400,
+          "avg_cost": 77.16,
+          "current_price": 77.16,
+          "market_value": 879624.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.082,
+          "entry_date": "2026-06-03T10:00:06+08:00",
+          "type": "track_b_to_a",
+          "sector": "自动化设备/精密装配"
         }
       ]
     },
@@ -1364,6 +1377,15 @@
       "name": "TCL科技",
       "shares": 179700,
       "price": 4.83
+    },
+    {
+      "date": "2026-06-03",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "688097",
+      "name": "博众精工",
+      "shares": 11400,
+      "price": 77.16
     }
   ]
 }
