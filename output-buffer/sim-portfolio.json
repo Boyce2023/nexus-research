@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T02:04:42.006445+00:00",
+    "last_updated": "2026-06-03T02:04:49.746855+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -104,24 +104,11 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1755524.61,
-      "cash": -259803.53,
-      "realized_pnl": 38870.07,
+      "total_assets": 1755456.61,
+      "cash": -133427.53,
+      "realized_pnl": 35646.07,
       "return_pct": 17.03,
       "positions": [
-        {
-          "ticker": "VST",
-          "name": "Vistra Corp",
-          "shares": 800,
-          "avg_cost": 162.0,
-          "current_price": 158.055,
-          "market_value": 126444.0,
-          "unrealized_pnl_pct": -2.44,
-          "portfolio_pct": 0.072,
-          "entry_date": "2026-05-26",
-          "type": "core_position",
-          "sector": "DC电力/独立发电"
-        },
         {
           "ticker": "CLS",
           "name": "Celestica Inc",
@@ -363,7 +350,7 @@
         "return_pct": 6.52
       },
       "us": {
-        "total_assets": 1755524.61,
+        "total_assets": 1755456.61,
         "return_pct": 17.03
       },
       "combined_return_pct": 11.98
@@ -1415,6 +1402,16 @@
       "shares": 300,
       "price": 746.16,
       "realized_pnl": 3219.0
+    },
+    {
+      "date": "2026-06-03",
+      "account": "us",
+      "action": "sell",
+      "ticker": "VST",
+      "name": "Vistra Corp",
+      "shares": 800,
+      "price": 157.97,
+      "realized_pnl": -3224.0
     }
   ]
 }
