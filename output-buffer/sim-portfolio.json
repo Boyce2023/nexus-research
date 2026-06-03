@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T02:04:49.746855+00:00",
+    "last_updated": "2026-06-03T02:05:05.379103+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -105,7 +105,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1755456.61,
-      "cash": -133427.53,
+      "cash": -233627.03,
       "realized_pnl": 35646.07,
       "return_pct": 17.03,
       "positions": [
@@ -199,6 +199,19 @@
           "entry_date": "2026-06-03T10:03:51+08:00",
           "type": "catalyst_position",
           "sector": "SaaS/AI Agent"
+        },
+        {
+          "ticker": "RTX",
+          "name": "",
+          "shares": 575,
+          "avg_cost": 174.26,
+          "current_price": 174.26,
+          "market_value": 100199.5,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.057,
+          "entry_date": "2026-06-03T10:05:03+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -1412,6 +1425,15 @@
       "shares": 800,
       "price": 157.97,
       "realized_pnl": -3224.0
+    },
+    {
+      "date": "2026-06-03",
+      "account": "us",
+      "action": "buy",
+      "ticker": "RTX",
+      "name": "RTX Corporation",
+      "shares": 575,
+      "price": 174.26
     }
   ]
 }
