@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T03:02:56.450656+00:00",
+    "last_updated": "2026-06-03T03:03:54.922850+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -66,7 +66,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1755456.61,
-      "cash": -609617.53,
+      "cash": -702887.53,
       "realized_pnl": 35646.07,
       "return_pct": 17.03,
       "positions": [
@@ -186,6 +186,19 @@
           "entry_date": "2026-06-03T10:05:12+08:00",
           "type": "core_position",
           "sector": "LatAm Fintech/数字银行"
+        },
+        {
+          "ticker": "QQQ",
+          "name": "Invesco QQQ Trust (Nasdaq-100)",
+          "shares": 125,
+          "avg_cost": 746.16,
+          "current_price": 746.16,
+          "market_value": 93270.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.053,
+          "entry_date": "2026-06-03T11:03:54+08:00",
+          "type": "index_beta",
+          "sector": "指数ETF"
         }
       ]
     }
@@ -1445,6 +1458,15 @@
       "name": "Nu Holdings",
       "shares": 5700,
       "price": 11.93
+    },
+    {
+      "date": "2026-06-03",
+      "account": "us",
+      "action": "buy",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust (Nasdaq-100)",
+      "shares": 125,
+      "price": 746.16
     }
   ]
 }
