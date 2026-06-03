@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T07:46:24.203917+00:00",
+    "last_updated": "2026-06-03T08:02:57.316036+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,20 +16,20 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10718161.5,
+      "total_assets": 10646024.25,
       "cash": 5654103.0,
       "realized_pnl": 382926.53,
-      "return_pct": 7.18,
+      "return_pct": 6.46,
       "positions": [
         {
           "ticker": "002028.SZ",
           "name": "思源电气",
           "shares": 8000,
           "avg_cost": 194.2998,
-          "current_price": 198.38,
-          "market_value": 1587040.0,
-          "unrealized_pnl_pct": 2.1,
-          "portfolio_pct": 0.148,
+          "current_price": 194.13,
+          "market_value": 1553040.0,
+          "unrealized_pnl_pct": -0.09,
+          "portfolio_pct": 0.146,
           "entry_date": "2026-05-18",
           "type": "core_position",
           "sector": "电力设备"
@@ -39,10 +39,10 @@
           "name": "新易盛",
           "shares": 925,
           "avg_cost": 691.9,
-          "current_price": 800.02,
-          "market_value": 740018.5,
-          "unrealized_pnl_pct": 15.63,
-          "portfolio_pct": 0.069,
+          "current_price": 782.25,
+          "market_value": 723581.25,
+          "unrealized_pnl_pct": 13.06,
+          "portfolio_pct": 0.068,
           "entry_date": "2026-05-26T10:02:34+08:00",
           "type": "catalyst_position",
           "sector": "光模块/AI物理层"
@@ -52,9 +52,9 @@
           "name": "巨化股份",
           "shares": 70000,
           "avg_cost": 35.1996,
-          "current_price": 39.1,
-          "market_value": 2737000.0,
-          "unrealized_pnl_pct": 11.08,
+          "current_price": 38.79,
+          "market_value": 2715300.0,
+          "unrealized_pnl_pct": 10.2,
           "portfolio_pct": 0.255,
           "entry_date": "2026-05-28",
           "type": "supply_thesis",
@@ -65,20 +65,20 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1755456.61,
-      "cash": -1700791.9,
-      "realized_pnl": 35646.07,
-      "return_pct": 17.03,
+      "total_assets": 1755648.67,
+      "cash": -1559071.9,
+      "realized_pnl": 67697.57,
+      "return_pct": 17.04,
       "positions": [
         {
           "ticker": "CLS",
           "name": "Celestica Inc",
-          "shares": 600,
+          "shares": 300,
           "avg_cost": 365.5617,
-          "current_price": 472.0799,
-          "market_value": 283247.94,
-          "unrealized_pnl_pct": 29.14,
-          "portfolio_pct": 0.161,
+          "current_price": 472.4,
+          "market_value": 141720.0,
+          "unrealized_pnl_pct": 29.23,
+          "portfolio_pct": 0.081,
           "entry_date": "2026-05-26",
           "type": "core_position",
           "sector": "AI制造/EMS"
@@ -385,14 +385,14 @@
     {
       "date": "2026-06-01",
       "a_share": {
-        "total_assets": 10718161.5,
-        "return_pct": 7.18
+        "total_assets": 10646024.25,
+        "return_pct": 6.46
       },
       "us": {
-        "total_assets": 1755456.61,
-        "return_pct": 17.03
+        "total_assets": 1755648.67,
+        "return_pct": 17.04
       },
-      "combined_return_pct": 12.3
+      "combined_return_pct": 11.96
     }
   ],
   "trade_log": [
@@ -1552,6 +1552,16 @@
       "name": "AbbVie Inc.",
       "shares": 820,
       "price": 215.4
+    },
+    {
+      "date": "2026-06-03",
+      "account": "us",
+      "action": "sell",
+      "ticker": "CLS",
+      "name": "Celestica Inc",
+      "shares": 300,
+      "price": 472.4,
+      "realized_pnl": 32051.4999
     }
   ]
 }
