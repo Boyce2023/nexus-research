@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T16:01:09.955315+00:00",
+    "last_updated": "2026-06-03T16:02:02.803799+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,7 +92,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1721629.37,
-      "cash": -998959.62,
+      "cash": -1284744.89,
       "realized_pnl": 64459.04,
       "return_pct": 14.78,
       "positions": [
@@ -251,6 +251,19 @@
           "entry_date": "2026-06-03T13:33:42+08:00",
           "type": "core_position",
           "sector": "Pharma/Biotech"
+        },
+        {
+          "ticker": "SOXL",
+          "name": "",
+          "shares": 1036,
+          "avg_cost": 275.8545,
+          "current_price": 275.8545,
+          "market_value": 285785.26,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.166,
+          "entry_date": "2026-06-04T00:01:45+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -1706,6 +1719,15 @@
       "shares": 1625,
       "price": 86.33,
       "realized_pnl": -1446.25
+    },
+    {
+      "date": "2026-06-04",
+      "account": "us",
+      "action": "buy",
+      "ticker": "SOXL",
+      "name": "Direxion Daily Semiconductor Bu",
+      "shares": 1036,
+      "price": 275.8545
     }
   ]
 }
