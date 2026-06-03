@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T08:22:47.979668+00:00",
+    "last_updated": "2026-06-03T08:23:09.553683+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -241,7 +241,7 @@
         },
         {
           "ticker": "TQQQ",
-          "name": "",
+          "name": "ProShares UltraPro QQQ (3x Nasdaq)",
           "shares": 1625,
           "avg_cost": 87.22,
           "current_price": 87.22,
@@ -249,8 +249,8 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.081,
           "entry_date": "2026-06-03T16:22:46+08:00",
-          "type": "",
-          "sector": ""
+          "type": "leveraged_beta",
+          "sector": "3x指数ETF"
         }
       ]
     }
