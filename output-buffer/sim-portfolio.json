@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T05:32:23.895249+00:00",
+    "last_updated": "2026-06-03T05:32:55.877254+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -66,7 +66,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1755456.61,
-      "cash": -1172968.33,
+      "cash": -1348517.5,
       "realized_pnl": 35646.07,
       "return_pct": 17.03,
       "positions": [
@@ -199,6 +199,19 @@
           "entry_date": "2026-06-03T11:03:54+08:00",
           "type": "index_beta",
           "sector": "指数ETF"
+        },
+        {
+          "ticker": "TSM",
+          "name": "",
+          "shares": 393,
+          "avg_cost": 446.69,
+          "current_price": 446.69,
+          "market_value": 175549.17,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-06-03T13:32:54+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -1486,6 +1499,15 @@
       "shares": 710,
       "price": 746.16,
       "realized_pnl": 0.0
+    },
+    {
+      "date": "2026-06-03",
+      "account": "us",
+      "action": "buy",
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor Manufactur",
+      "shares": 393,
+      "price": 446.69
     }
   ]
 }
