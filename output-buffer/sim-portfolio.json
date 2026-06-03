@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-03T16:05:23.230149+00:00",
+    "last_updated": "2026-06-03T16:07:00.636854+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -254,7 +254,7 @@
         },
         {
           "ticker": "SOXL",
-          "name": "",
+          "name": "Direxion 3x Semiconductor Bull",
           "shares": 1036,
           "avg_cost": 275.8545,
           "current_price": 275.8545,
@@ -262,12 +262,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.166,
           "entry_date": "2026-06-04T00:01:45+08:00",
-          "type": "",
-          "sector": ""
+          "type": "etf_leveraged",
+          "sector": "Semiconductor"
         },
         {
           "ticker": "FAS",
-          "name": "",
+          "name": "Direxion 3x Financial Bull",
           "shares": 1524,
           "avg_cost": 124.8701,
           "current_price": 124.8701,
@@ -275,12 +275,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.111,
           "entry_date": "2026-06-04T00:02:26+08:00",
-          "type": "",
-          "sector": ""
+          "type": "etf_leveraged",
+          "sector": "Financials"
         },
         {
           "ticker": "EWY",
-          "name": "",
+          "name": "iShares MSCI South Korea",
           "shares": 820,
           "avg_cost": 211.08,
           "current_price": 211.08,
@@ -288,12 +288,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.101,
           "entry_date": "2026-06-04T00:03:48+08:00",
-          "type": "",
-          "sector": ""
+          "type": "etf",
+          "sector": "Country/Korea"
         },
         {
           "ticker": "IBIT",
-          "name": "",
+          "name": "iShares Bitcoin Trust",
           "shares": 2426,
           "avg_cost": 37.475,
           "current_price": 37.475,
@@ -301,8 +301,8 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.053,
           "entry_date": "2026-06-04T00:05:11+08:00",
-          "type": "",
-          "sector": ""
+          "type": "etf",
+          "sector": "Crypto/Bitcoin"
         }
       ]
     }
