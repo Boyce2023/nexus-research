@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-04T05:08:11.332807+00:00",
+    "last_updated": "2026-06-04T05:09:51.458912+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10556832.3,
-      "cash": 5385858.26,
+      "cash": 4558458.26,
       "realized_pnl": 434539.09,
       "return_pct": 5.57,
       "positions": [
@@ -72,6 +72,19 @@
           "entry_date": "2026-06-03T16:52:46+08:00",
           "type": "trackb_momentum",
           "sector": "专用设备"
+        },
+        {
+          "ticker": "300820.SZ",
+          "name": "英杰电气",
+          "shares": 12000,
+          "avg_cost": 68.95,
+          "current_price": 68.95,
+          "market_value": 827400.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.078,
+          "entry_date": "2026-06-04T13:09:51+08:00",
+          "type": "trackb_momentum",
+          "sector": "电力设备/核电设备"
         }
       ]
     },
@@ -1801,6 +1814,15 @@
       "shares": 233,
       "price": 771.22,
       "realized_pnl": 18481.56
+    },
+    {
+      "date": "2026-06-04",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "300820",
+      "name": "英杰电气",
+      "shares": 12000,
+      "price": 68.95
     }
   ]
 }
