@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-04T05:09:51.458912+00:00",
+    "last_updated": "2026-06-04T19:35:34.676934+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -91,24 +91,11 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1730502.79,
-      "cash": -1739046.87,
-      "realized_pnl": 64459.04,
-      "return_pct": 15.37,
+      "total_assets": 1719503.29,
+      "cash": -1612604.37,
+      "realized_pnl": 81233.04,
+      "return_pct": 14.63,
       "positions": [
-        {
-          "ticker": "CLS",
-          "name": "Celestica Inc",
-          "shares": 300,
-          "avg_cost": 365.5617,
-          "current_price": 458.14,
-          "market_value": 137442.0,
-          "unrealized_pnl_pct": 25.32,
-          "portfolio_pct": 0.079,
-          "entry_date": "2026-05-26",
-          "type": "core_position",
-          "sector": "AI制造/EMS"
-        },
         {
           "ticker": "MU",
           "name": "Micron Technology",
@@ -117,7 +104,7 @@
           "current_price": 1079.5699,
           "market_value": 280688.17,
           "unrealized_pnl_pct": 17.03,
-          "portfolio_pct": 0.162,
+          "portfolio_pct": 0.163,
           "entry_date": "2026-05-26",
           "type": "core_position",
           "sector": "Memory/HBM"
@@ -130,7 +117,7 @@
           "current_price": 214.75,
           "market_value": 223340.0,
           "unrealized_pnl_pct": 1.03,
-          "portfolio_pct": 0.129,
+          "portfolio_pct": 0.13,
           "entry_date": "2026-05-28T21:49:08+08:00",
           "type": "core_position",
           "sector": "AI芯片"
@@ -143,7 +130,7 @@
           "current_price": 479.23,
           "market_value": 345045.6,
           "unrealized_pnl_pct": 13.53,
-          "portfolio_pct": 0.199,
+          "portfolio_pct": 0.201,
           "entry_date": "2026-05-28T21:49:21+08:00",
           "type": "core_position",
           "sector": "网络芯片/定制ASIC"
@@ -156,7 +143,7 @@
           "current_price": 542.52,
           "market_value": 341787.6,
           "unrealized_pnl_pct": 4.62,
-          "portfolio_pct": 0.198,
+          "portfolio_pct": 0.199,
           "entry_date": "2026-05-29T03:33:50+08:00",
           "type": "core_position",
           "sector": "AI GPU/数据中心"
@@ -169,7 +156,7 @@
           "current_price": 421.08,
           "market_value": 273702.0,
           "unrealized_pnl_pct": 31.85,
-          "portfolio_pct": 0.158,
+          "portfolio_pct": 0.159,
           "entry_date": "2026-05-29T03:33:56+08:00",
           "type": "core_position",
           "sector": "AI服务器/基础设施"
@@ -182,7 +169,7 @@
           "current_price": 190.61,
           "market_value": 238262.5,
           "unrealized_pnl_pct": -5.09,
-          "portfolio_pct": 0.138,
+          "portfolio_pct": 0.139,
           "entry_date": "2026-06-03T10:03:51+08:00",
           "type": "catalyst_position",
           "sector": "SaaS/AI Agent"
@@ -208,7 +195,7 @@
           "current_price": 11.64,
           "market_value": 171108.0,
           "unrealized_pnl_pct": -2.43,
-          "portfolio_pct": 0.099,
+          "portfolio_pct": 0.1,
           "entry_date": "2026-06-03T10:05:12+08:00",
           "type": "core_position",
           "sector": "LatAm Fintech/数字银行"
@@ -221,7 +208,7 @@
           "current_price": 436.69,
           "market_value": 171619.17,
           "unrealized_pnl_pct": -2.24,
-          "portfolio_pct": 0.099,
+          "portfolio_pct": 0.1,
           "entry_date": "2026-06-03T13:32:54+08:00",
           "type": "core_position",
           "sector": "Semiconductor Foundry"
@@ -247,7 +234,7 @@
           "current_price": 217.13,
           "market_value": 178046.6,
           "unrealized_pnl_pct": 0.8,
-          "portfolio_pct": 0.103,
+          "portfolio_pct": 0.104,
           "entry_date": "2026-06-03T13:33:42+08:00",
           "type": "core_position",
           "sector": "Pharma/Biotech"
@@ -260,7 +247,7 @@
           "current_price": 280.54,
           "market_value": 290639.44,
           "unrealized_pnl_pct": 1.7,
-          "portfolio_pct": 0.168,
+          "portfolio_pct": 0.169,
           "entry_date": "2026-06-04T00:01:45+08:00",
           "type": "etf_leveraged",
           "sector": "Semiconductor"
@@ -273,7 +260,7 @@
           "current_price": 126.52,
           "market_value": 192816.48,
           "unrealized_pnl_pct": 1.32,
-          "portfolio_pct": 0.111,
+          "portfolio_pct": 0.112,
           "entry_date": "2026-06-04T00:02:26+08:00",
           "type": "etf_leveraged",
           "sector": "Financials"
@@ -286,7 +273,7 @@
           "current_price": 212.96,
           "market_value": 174627.2,
           "unrealized_pnl_pct": 0.89,
-          "portfolio_pct": 0.101,
+          "portfolio_pct": 0.102,
           "entry_date": "2026-06-04T00:03:48+08:00",
           "type": "etf",
           "sector": "Country/Korea"
@@ -493,7 +480,7 @@
     {
       "date": "2026-06-04",
       "a_share": {
-        "total_assets": 10556832.3,
+        "total_assets": 10557195.0,
         "return_pct": 5.57
       },
       "us": {
@@ -501,6 +488,20 @@
         "return_pct": 15.37
       },
       "combined_return_pct": 10.66,
+      "sse_return_pct": 1.59,
+      "spy_return_pct": 2.11
+    },
+    {
+      "date": "2026-06-05",
+      "a_share": {
+        "total_assets": 10556832.3,
+        "return_pct": 5.57
+      },
+      "us": {
+        "total_assets": 1719503.29,
+        "return_pct": 14.63
+      },
+      "combined_return_pct": 10.28,
       "sse_return_pct": 1.59,
       "spy_return_pct": 2.11
     }
@@ -1823,6 +1824,16 @@
       "name": "英杰电气",
       "shares": 12000,
       "price": 68.95
+    },
+    {
+      "date": "2026-06-05",
+      "account": "us",
+      "action": "sell",
+      "ticker": "CLS",
+      "name": "Celestica Inc",
+      "shares": 300,
+      "price": 421.475,
+      "realized_pnl": 16773.9999
     }
   ]
 }
