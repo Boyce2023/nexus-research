@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-05T07:48:47.594198+00:00",
+    "last_updated": "2026-06-05T07:49:08.117752+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10413579.02,
-      "cash": 5299059.26,
-      "realized_pnl": 375796.09,
-      "return_pct": 4.14,
+      "total_assets": 10416699.02,
+      "cash": 6091899.26,
+      "realized_pnl": 341236.09,
+      "return_pct": 4.17,
       "positions": [
         {
           "ticker": "002028.SZ",
@@ -55,23 +55,10 @@
           "current_price": 39.06,
           "market_value": 2734200.0,
           "unrealized_pnl_pct": 10.97,
-          "portfolio_pct": 0.263,
+          "portfolio_pct": 0.262,
           "entry_date": "2026-05-28",
           "type": "supply_thesis",
           "sector": "化工/制冷剂"
-        },
-        {
-          "ticker": "300820.SZ",
-          "name": "英杰电气",
-          "shares": 12000,
-          "avg_cost": 68.95,
-          "current_price": 65.81,
-          "market_value": 789720.0,
-          "unrealized_pnl_pct": -4.55,
-          "portfolio_pct": 0.076,
-          "entry_date": "2026-06-04T13:09:51+08:00",
-          "type": "trackb_momentum",
-          "sector": "电力设备/核电设备"
         }
       ]
     },
@@ -481,14 +468,14 @@
     {
       "date": "2026-06-05",
       "a_share": {
-        "total_assets": 10413579.02,
-        "return_pct": 4.14
+        "total_assets": 10416699.02,
+        "return_pct": 4.17
       },
       "us": {
         "total_assets": 1657886.97,
         "return_pct": 10.53
       },
-      "combined_return_pct": 7.45,
+      "combined_return_pct": 7.47,
       "sse_return_pct": -0.24,
       "spy_return_pct": 2.5
     }
@@ -1831,6 +1818,16 @@
       "shares": 54900,
       "price": 13.49,
       "realized_pnl": -58743.0
+    },
+    {
+      "date": "2026-06-05",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "300820",
+      "name": "英杰电气",
+      "shares": 12000,
+      "price": 66.07,
+      "realized_pnl": -34560.0
     }
   ]
 }
