@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-05T07:52:21.200477+00:00",
+    "last_updated": "2026-06-05T07:52:49.874785+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10418379.02,
-      "cash": 2841171.26,
+      "cash": 1793031.26,
       "realized_pnl": 206758.06,
       "return_pct": 4.18,
       "positions": [
@@ -72,6 +72,19 @@
           "entry_date": "2026-06-05T15:52:21+08:00",
           "type": "scout_position",
           "sector": "CXO/医药外包"
+        },
+        {
+          "ticker": "688072.SS",
+          "name": "拓荆科技",
+          "shares": 1800,
+          "avg_cost": 582.3,
+          "current_price": 582.3,
+          "market_value": 1048140.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.101,
+          "entry_date": "2026-06-05T15:52:49+08:00",
+          "type": "core_position",
+          "sector": "半导体设备/薄膜沉积"
         }
       ]
     },
@@ -1869,6 +1882,15 @@
       "name": "药明康德",
       "shares": 21500,
       "price": 96.56
+    },
+    {
+      "date": "2026-06-05",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "688072",
+      "name": "拓荆科技",
+      "shares": 1800,
+      "price": 582.3
     }
   ]
 }
