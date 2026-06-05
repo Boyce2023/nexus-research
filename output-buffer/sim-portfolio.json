@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-05T07:49:08.117752+00:00",
+    "last_updated": "2026-06-05T07:49:22.287178+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,24 +16,11 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10416699.02,
-      "cash": 6091899.26,
-      "realized_pnl": 341236.09,
-      "return_pct": 4.17,
+      "total_assets": 10418379.02,
+      "cash": 7511819.26,
+      "realized_pnl": 206758.06,
+      "return_pct": 4.18,
       "positions": [
-        {
-          "ticker": "002028.SZ",
-          "name": "思源电气",
-          "shares": 8000,
-          "avg_cost": 194.2998,
-          "current_price": 177.28,
-          "market_value": 1418240.0,
-          "unrealized_pnl_pct": -8.76,
-          "portfolio_pct": 0.136,
-          "entry_date": "2026-05-18",
-          "type": "core_position",
-          "sector": "电力设备"
-        },
         {
           "ticker": "300502.SZ",
           "name": "新易盛",
@@ -468,14 +455,14 @@
     {
       "date": "2026-06-05",
       "a_share": {
-        "total_assets": 10416699.02,
-        "return_pct": 4.17
+        "total_assets": 10418379.02,
+        "return_pct": 4.18
       },
       "us": {
         "total_assets": 1657886.97,
         "return_pct": 10.53
       },
-      "combined_return_pct": 7.47,
+      "combined_return_pct": 7.48,
       "sse_return_pct": -0.24,
       "spy_return_pct": 2.5
     }
@@ -1828,6 +1815,16 @@
       "shares": 12000,
       "price": 66.07,
       "realized_pnl": -34560.0
+    },
+    {
+      "date": "2026-06-05",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "002028",
+      "name": "思源电气",
+      "shares": 8000,
+      "price": 177.49,
+      "realized_pnl": -134478.024
     }
   ]
 }
