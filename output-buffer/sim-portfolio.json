@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T12:41:14.158918+00:00",
+    "last_updated": "2026-06-09T12:41:30.000696+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,7 +92,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -551286.94,
+      "cash": -751250.32,
       "realized_pnl": -13760.76,
       "return_pct": -1.25,
       "positions": [
@@ -184,6 +184,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.135,
           "entry_date": "2026-06-09T20:41:12+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "AMDL",
+          "name": "",
+          "shares": 3243,
+          "avg_cost": 61.66,
+          "current_price": 61.66,
+          "market_value": 199963.38,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.135,
+          "entry_date": "2026-06-09T20:41:28+08:00",
           "type": "",
           "sector": ""
         }
@@ -2083,6 +2096,15 @@
       "name": "GraniteShares 2x Long NVDA Dail",
       "shares": 2017,
       "price": 99.15
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "buy",
+      "ticker": "AMDL",
+      "name": "GraniteShares 2x Long AMD Daily",
+      "shares": 3243,
+      "price": 61.66
     }
   ]
 }
