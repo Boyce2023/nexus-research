@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T12:57:16.731336+00:00",
+    "last_updated": "2026-06-09T12:58:18.425725+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,7 +92,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -1359425.8,
+      "cash": -1482639.8,
       "realized_pnl": -16014.8,
       "return_pct": -1.25,
       "positions": [
@@ -190,12 +190,12 @@
         {
           "ticker": "DLLL",
           "name": "",
-          "shares": 1136,
+          "shares": 1836,
           "avg_cost": 176.02,
           "current_price": 176.02,
-          "market_value": 199958.72,
+          "market_value": 323172.72,
           "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.135,
+          "portfolio_pct": 0.218,
           "entry_date": "2026-06-09T20:41:43+08:00",
           "type": "",
           "sector": ""
@@ -2218,6 +2218,15 @@
       "name": "Marvell Technology, Inc.",
       "shares": 513,
       "price": 288.85
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "buy",
+      "ticker": "DLLL",
+      "name": "GraniteShares 2x Long DELL Dail",
+      "shares": 700,
+      "price": 176.02
     }
   ]
 }
