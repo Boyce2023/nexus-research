@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T06:24:13.175489+00:00",
+    "last_updated": "2026-06-09T07:09:03.602404+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,8 +92,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -1341544.91,
-      "realized_pnl": -51380.85,
+      "cash": -1136673.59,
+      "realized_pnl": -36811.56,
       "return_pct": -1.25,
       "positions": [
         {
@@ -188,21 +188,8 @@
           "sector": "Pharma/Biotech"
         },
         {
-          "ticker": "FAS",
-          "name": "Direxion 3x Financial Bull",
-          "shares": 1524,
-          "avg_cost": 124.8701,
-          "current_price": 134.43,
-          "market_value": 204871.32,
-          "unrealized_pnl_pct": 7.66,
-          "portfolio_pct": 0.138,
-          "entry_date": "2026-06-04T00:02:26+08:00",
-          "type": "etf_leveraged",
-          "sector": "Financials"
-        },
-        {
           "ticker": "LNG",
-          "name": "",
+          "name": "Cheniere Energy",
           "shares": 634,
           "avg_cost": 236.61,
           "current_price": 236.61,
@@ -210,12 +197,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.101,
           "entry_date": "2026-06-09T14:22:40+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "LNG Export/Energy"
         },
         {
           "ticker": "APH",
-          "name": "",
+          "name": "Amphenol Corporation",
           "shares": 1035,
           "avg_cost": 143.6,
           "current_price": 143.6,
@@ -223,8 +210,8 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-06-09T14:23:05+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "Connectors/AI Infrastructure"
         }
       ]
     }
@@ -1969,6 +1956,16 @@
       "shares": 2426,
       "price": 35.89,
       "realized_pnl": -3845.21
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "FAS",
+      "name": "Direxion Financial Bull 3X ETF",
+      "shares": 1524,
+      "price": 134.43,
+      "realized_pnl": 14569.2876
     }
   ]
 }
