@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T12:39:52.730251+00:00",
+    "last_updated": "2026-06-09T12:40:06.818160+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,8 +92,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -897353.89,
-      "realized_pnl": -48294.46,
+      "cash": -611801.89,
+      "realized_pnl": -66670.76,
       "return_pct": -1.25,
       "positions": [
         {
@@ -121,19 +121,6 @@
           "entry_date": "2026-05-28T21:49:08+08:00",
           "type": "core_position",
           "sector": "AI芯片"
-        },
-        {
-          "ticker": "AVGO",
-          "name": "Broadcom Inc",
-          "shares": 720,
-          "avg_cost": 422.1226,
-          "current_price": 396.6,
-          "market_value": 285552.0,
-          "unrealized_pnl_pct": -6.05,
-          "portfolio_pct": 0.193,
-          "entry_date": "2026-05-28T21:49:21+08:00",
-          "type": "core_position",
-          "sector": "网络芯片/定制ASIC"
         },
         {
           "ticker": "DELL",
@@ -2067,6 +2054,16 @@
       "shares": 630,
       "price": 490.33,
       "realized_pnl": -17772.3
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "AVGO",
+      "name": "Broadcom Inc",
+      "shares": 720,
+      "price": 396.6,
+      "realized_pnl": -18376.3001
     }
   ]
 }
