@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T12:41:45.509615+00:00",
+    "last_updated": "2026-06-09T12:42:01.507311+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,7 +92,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -951209.04,
+      "cash": -1101245.94,
       "realized_pnl": -13760.76,
       "return_pct": -1.25,
       "positions": [
@@ -210,6 +210,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.135,
           "entry_date": "2026-06-09T20:41:43+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "AVGX",
+          "name": "",
+          "shares": 2847,
+          "avg_cost": 52.7,
+          "current_price": 52.7,
+          "market_value": 150036.9,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.101,
+          "entry_date": "2026-06-09T20:42:00+08:00",
           "type": "",
           "sector": ""
         }
@@ -2127,6 +2140,15 @@
       "name": "GraniteShares 2x Long DELL Dail",
       "shares": 1136,
       "price": 176.02
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "buy",
+      "ticker": "AVGX",
+      "name": "Defiance Daily Target 2X Long A",
+      "shares": 2847,
+      "price": 52.7
     }
   ]
 }
