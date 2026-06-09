@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T05:16:52.882194+00:00",
+    "last_updated": "2026-06-09T06:21:07.874683+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,20 +16,20 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10182194.1,
+      "total_assets": 10233749.58,
       "cash": 1793031.26,
       "realized_pnl": 206758.06,
-      "return_pct": 1.82,
+      "return_pct": 2.34,
       "positions": [
         {
           "ticker": "300502.SZ",
           "name": "新易盛",
           "shares": 232,
           "avg_cost": 691.9,
-          "current_price": 767.12,
-          "market_value": 177971.84,
-          "unrealized_pnl_pct": 10.87,
-          "portfolio_pct": 0.017,
+          "current_price": 785.01,
+          "market_value": 182122.32,
+          "unrealized_pnl_pct": 13.46,
+          "portfolio_pct": 0.018,
           "entry_date": "2026-05-26T10:02:34+08:00",
           "type": "catalyst_position",
           "sector": "光模块/AI物理层"
@@ -39,10 +39,10 @@
           "name": "巨化股份",
           "shares": 70000,
           "avg_cost": 35.1996,
-          "current_price": 37.52,
-          "market_value": 2626400.0,
-          "unrealized_pnl_pct": 6.59,
-          "portfolio_pct": 0.258,
+          "current_price": 37.64,
+          "market_value": 2634800.0,
+          "unrealized_pnl_pct": 6.93,
+          "portfolio_pct": 0.257,
           "entry_date": "2026-05-28",
           "type": "supply_thesis",
           "sector": "化工/制冷剂"
@@ -52,10 +52,10 @@
           "name": "韦尔股份",
           "shares": 27200,
           "avg_cost": 95.39,
-          "current_price": 93.36,
-          "market_value": 2539392.0,
-          "unrealized_pnl_pct": -2.13,
-          "portfolio_pct": 0.249,
+          "current_price": 93.3,
+          "market_value": 2537760.0,
+          "unrealized_pnl_pct": -2.19,
+          "portfolio_pct": 0.248,
           "entry_date": "2026-06-05T15:51:59+08:00",
           "type": "core_position",
           "sector": "CIS/半导体设计"
@@ -65,10 +65,10 @@
           "name": "药明康德",
           "shares": 21500,
           "avg_cost": 96.56,
-          "current_price": 91.47,
-          "market_value": 1966605.0,
-          "unrealized_pnl_pct": -5.27,
-          "portfolio_pct": 0.193,
+          "current_price": 93.52,
+          "market_value": 2010680.0,
+          "unrealized_pnl_pct": -3.15,
+          "portfolio_pct": 0.196,
           "entry_date": "2026-06-05T15:52:21+08:00",
           "type": "scout_position",
           "sector": "CXO/医药外包"
@@ -78,10 +78,10 @@
           "name": "拓荆科技",
           "shares": 1800,
           "avg_cost": 582.3,
-          "current_price": 599.33,
-          "market_value": 1078794.0,
-          "unrealized_pnl_pct": 2.92,
-          "portfolio_pct": 0.106,
+          "current_price": 597.42,
+          "market_value": 1075356.0,
+          "unrealized_pnl_pct": 2.6,
+          "portfolio_pct": 0.105,
           "entry_date": "2026-06-05T15:52:49+08:00",
           "type": "core_position",
           "sector": "半导体设备/薄膜沉积"
@@ -92,8 +92,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -1241327.73,
-      "realized_pnl": -6361.18,
+      "cash": -1035868.73,
+      "realized_pnl": -1301.18,
       "return_pct": -1.25,
       "positions": [
         {
@@ -173,19 +173,6 @@
           "entry_date": "2026-06-03T10:03:51+08:00",
           "type": "catalyst_position",
           "sector": "SaaS/AI Agent"
-        },
-        {
-          "ticker": "RTX",
-          "name": "RTX Corporation",
-          "shares": 1150,
-          "avg_cost": 174.26,
-          "current_price": 178.66,
-          "market_value": 205459.0,
-          "unrealized_pnl_pct": 2.52,
-          "portfolio_pct": 0.139,
-          "entry_date": "2026-06-03T10:05:03+08:00",
-          "type": "core_position",
-          "sector": "军工/航空发动机"
         },
         {
           "ticker": "NU",
@@ -496,15 +483,15 @@
     {
       "date": "2026-06-09",
       "a_share": {
-        "total_assets": 10182194.1,
-        "return_pct": 1.82
+        "total_assets": 10233749.58,
+        "return_pct": 2.34
       },
       "us": {
         "total_assets": 1481313.27,
         "return_pct": -1.25
       },
-      "combined_return_pct": 0.23,
-      "sse_return_pct": -1.54,
+      "combined_return_pct": 0.48,
+      "sse_return_pct": -0.91,
       "spy_return_pct": 0.08
     }
   ],
@@ -1913,6 +1900,16 @@
       "shares": 820,
       "price": 185.64,
       "realized_pnl": -20860.8
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "RTX",
+      "name": "RTX Corporation",
+      "shares": 1150,
+      "price": 178.66,
+      "realized_pnl": 5060.0
     }
   ]
 }
