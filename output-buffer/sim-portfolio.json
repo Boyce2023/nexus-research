@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T07:52:52.773989+00:00",
+    "last_updated": "2026-06-09T12:22:47.847776+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,19 +16,19 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10220224.46,
+      "total_assets": 10238444.62,
       "cash": 1793031.26,
       "realized_pnl": 206758.06,
-      "return_pct": 2.2,
+      "return_pct": 2.38,
       "positions": [
         {
           "ticker": "300502.SZ",
           "name": "新易盛",
           "shares": 232,
           "avg_cost": 691.9,
-          "current_price": 785.1,
-          "market_value": 182143.2,
-          "unrealized_pnl_pct": 13.47,
+          "current_price": 785.73,
+          "market_value": 182289.36,
+          "unrealized_pnl_pct": 13.56,
           "portfolio_pct": 0.018,
           "entry_date": "2026-05-26T10:02:34+08:00",
           "type": "catalyst_position",
@@ -39,10 +39,10 @@
           "name": "巨化股份",
           "shares": 70000,
           "avg_cost": 35.1996,
-          "current_price": 37.55,
-          "market_value": 2628500.0,
-          "unrealized_pnl_pct": 6.68,
-          "portfolio_pct": 0.257,
+          "current_price": 37.72,
+          "market_value": 2640400.0,
+          "unrealized_pnl_pct": 7.16,
+          "portfolio_pct": 0.258,
           "entry_date": "2026-05-28",
           "type": "supply_thesis",
           "sector": "化工/制冷剂"
@@ -52,9 +52,9 @@
           "name": "韦尔股份",
           "shares": 27200,
           "avg_cost": 95.39,
-          "current_price": 93.2,
-          "market_value": 2535040.0,
-          "unrealized_pnl_pct": -2.3,
+          "current_price": 93.32,
+          "market_value": 2538304.0,
+          "unrealized_pnl_pct": -2.17,
           "portfolio_pct": 0.248,
           "entry_date": "2026-06-05T15:51:59+08:00",
           "type": "core_position",
@@ -65,10 +65,10 @@
           "name": "药明康德",
           "shares": 21500,
           "avg_cost": 96.56,
-          "current_price": 93.42,
-          "market_value": 2008530.0,
-          "unrealized_pnl_pct": -3.25,
-          "portfolio_pct": 0.197,
+          "current_price": 93.48,
+          "market_value": 2009820.0,
+          "unrealized_pnl_pct": -3.19,
+          "portfolio_pct": 0.196,
           "entry_date": "2026-06-05T15:52:21+08:00",
           "type": "scout_position",
           "sector": "CXO/医药外包"
@@ -78,9 +78,9 @@
           "name": "拓荆科技",
           "shares": 1800,
           "avg_cost": 582.3,
-          "current_price": 596.1,
-          "market_value": 1072980.0,
-          "unrealized_pnl_pct": 2.37,
+          "current_price": 597.0,
+          "market_value": 1074600.0,
+          "unrealized_pnl_pct": 2.52,
           "portfolio_pct": 0.105,
           "entry_date": "2026-06-05T15:52:49+08:00",
           "type": "core_position",
@@ -92,7 +92,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -1433033.58,
+      "cash": -1581701.98,
       "realized_pnl": -36811.56,
       "return_pct": -1.25,
       "positions": [
@@ -238,6 +238,19 @@
           "entry_date": "2026-06-09T15:10:02+08:00",
           "type": "core_position",
           "sector": "Oil Sands/Integrated Energy"
+        },
+        {
+          "ticker": "ASML",
+          "name": "",
+          "shares": 85,
+          "avg_cost": 1749.04,
+          "current_price": 1749.04,
+          "market_value": 148668.4,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-06-09T20:22:46+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -470,15 +483,15 @@
     {
       "date": "2026-06-09",
       "a_share": {
-        "total_assets": 10220224.46,
-        "return_pct": 2.2
+        "total_assets": 10238444.62,
+        "return_pct": 2.38
       },
       "us": {
         "total_assets": 1481313.27,
         "return_pct": -1.25
       },
-      "combined_return_pct": 0.41,
-      "sse_return_pct": -0.94,
+      "combined_return_pct": 0.5,
+      "sse_return_pct": -0.66,
       "spy_return_pct": 0.08
     }
   ],
@@ -2010,6 +2023,15 @@
       "name": "Suncor Energy  Inc.",
       "shares": 2343,
       "price": 63.25
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "buy",
+      "ticker": "ASML",
+      "name": "ASML Holding N.V. - New York Re",
+      "shares": 85,
+      "price": 1749.04
     }
   ]
 }
