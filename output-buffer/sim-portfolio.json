@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T12:42:24.600609+00:00",
+    "last_updated": "2026-06-09T12:55:56.553991+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,8 +92,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -1481203.62,
-      "realized_pnl": -13760.76,
+      "cash": -1109824.42,
+      "realized_pnl": -16014.8,
       "return_pct": -1.25,
       "positions": [
         {
@@ -112,12 +112,12 @@
         {
           "ticker": "NVDA",
           "name": "NVIDIA Corporation",
-          "shares": 3218,
+          "shares": 1438,
           "avg_cost": 209.9063,
           "current_price": 208.64,
-          "market_value": 671403.52,
+          "market_value": 300024.32,
           "unrealized_pnl_pct": -0.6,
-          "portfolio_pct": 0.453,
+          "portfolio_pct": 0.203,
           "entry_date": "2026-05-28T21:49:08+08:00",
           "type": "core_position",
           "sector": "AI芯片"
@@ -2171,6 +2171,16 @@
       "name": "Direxion Daily Semiconductor Bu",
       "shares": 1797,
       "price": 211.44
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "shares": 1780,
+      "price": 208.64,
+      "realized_pnl": -2254.0389
     }
   ]
 }
