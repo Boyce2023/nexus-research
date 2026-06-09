@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T07:09:03.602404+00:00",
+    "last_updated": "2026-06-09T07:09:53.794713+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,7 +92,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -1136673.59,
+      "cash": -1284838.83,
       "realized_pnl": -36811.56,
       "return_pct": -1.25,
       "positions": [
@@ -212,6 +212,19 @@
           "entry_date": "2026-06-09T14:23:05+08:00",
           "type": "core_position",
           "sector": "Connectors/AI Infrastructure"
+        },
+        {
+          "ticker": "RIO",
+          "name": "",
+          "shares": 1468,
+          "avg_cost": 100.93,
+          "current_price": 100.93,
+          "market_value": 148165.24,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-06-09T15:09:52+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -1966,6 +1979,15 @@
       "shares": 1524,
       "price": 134.43,
       "realized_pnl": 14569.2876
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "buy",
+      "ticker": "RIO",
+      "name": "Rio Tinto Plc",
+      "shares": 1468,
+      "price": 100.93
     }
   ]
 }
