@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T06:23:06.512077+00:00",
+    "last_updated": "2026-06-09T06:24:13.175489+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,8 +92,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -1428614.05,
-      "realized_pnl": -47535.64,
+      "cash": -1341544.91,
+      "realized_pnl": -51380.85,
       "return_pct": -1.25,
       "positions": [
         {
@@ -199,19 +199,6 @@
           "entry_date": "2026-06-04T00:02:26+08:00",
           "type": "etf_leveraged",
           "sector": "Financials"
-        },
-        {
-          "ticker": "IBIT",
-          "name": "iShares Bitcoin Trust",
-          "shares": 2426,
-          "avg_cost": 37.475,
-          "current_price": 35.89,
-          "market_value": 87069.14,
-          "unrealized_pnl_pct": -4.23,
-          "portfolio_pct": 0.059,
-          "entry_date": "2026-06-04T00:05:11+08:00",
-          "type": "etf",
-          "sector": "Crypto/Bitcoin"
         },
         {
           "ticker": "LNG",
@@ -1972,6 +1959,16 @@
       "name": "Amphenol Corporation",
       "shares": 1035,
       "price": 143.6
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "IBIT",
+      "name": "iShares Bitcoin Trust ETF",
+      "shares": 2426,
+      "price": 35.89,
+      "realized_pnl": -3845.21
     }
   ]
 }
