@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T13:06:25.662594+00:00",
+    "last_updated": "2026-06-09T13:08:15.180698+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10238444.62,
-      "cash": 1177910.62,
+      "cash": 580852.62,
       "realized_pnl": 228526.62,
       "return_pct": 2.38,
       "positions": [
@@ -85,6 +85,19 @@
           "entry_date": "2026-06-09T21:06:25+08:00",
           "type": "catalyst_position",
           "sector": "苹果链/汽车电子"
+        },
+        {
+          "ticker": "688692.SS",
+          "name": "达梦数据",
+          "shares": 2200,
+          "avg_cost": 271.39,
+          "current_price": 271.39,
+          "market_value": 597058.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.058,
+          "entry_date": "2026-06-09T21:08:14+08:00",
+          "type": "core_position",
+          "sector": "国产数据库/信创"
         }
       ]
     },
@@ -2246,6 +2259,15 @@
       "name": "立讯精密",
       "shares": 11500,
       "price": 69.34
+    },
+    {
+      "date": "2026-06-09",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "688692",
+      "name": "达梦数据",
+      "shares": 2200,
+      "price": 271.39
     }
   ]
 }
