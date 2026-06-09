@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T06:21:26.306080+00:00",
+    "last_updated": "2026-06-09T06:21:35.359123+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,8 +92,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -637161.23,
-      "realized_pnl": -29014.68,
+      "cash": -480035.79,
+      "realized_pnl": -47535.64,
       "return_pct": -1.25,
       "positions": [
         {
@@ -173,19 +173,6 @@
           "entry_date": "2026-06-03T13:32:54+08:00",
           "type": "core_position",
           "sector": "Semiconductor Foundry"
-        },
-        {
-          "ticker": "NOW",
-          "name": "ServiceNow",
-          "shares": 1376,
-          "avg_cost": 127.65,
-          "current_price": 114.19,
-          "market_value": 157125.44,
-          "unrealized_pnl_pct": -10.54,
-          "portfolio_pct": 0.106,
-          "entry_date": "2026-06-03T13:33:23+08:00",
-          "type": "core_position",
-          "sector": "Enterprise SaaS/AI"
         },
         {
           "ticker": "ABBV",
@@ -1904,6 +1891,16 @@
       "shares": 14700,
       "price": 11.6,
       "realized_pnl": -4851.0
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "shares": 1376,
+      "price": 114.19,
+      "realized_pnl": -18520.96
     }
   ]
 }
