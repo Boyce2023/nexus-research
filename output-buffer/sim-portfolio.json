@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T12:39:06.148638+00:00",
+    "last_updated": "2026-06-09T12:39:22.407522+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,7 +92,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -1503152.59,
+      "cash": -1354887.79,
       "realized_pnl": -30522.16,
       "return_pct": -1.25,
       "positions": [
@@ -210,19 +210,6 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-06-09T20:22:46+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "SAP",
-          "name": "",
-          "shares": 815,
-          "avg_cost": 181.92,
-          "current_price": 181.92,
-          "market_value": 148264.8,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.1,
-          "entry_date": "2026-06-09T20:23:43+08:00",
           "type": "",
           "sector": ""
         },
@@ -2075,6 +2062,16 @@
       "name": "Suncor Energy  Inc.",
       "shares": 2343,
       "price": 63.25,
+      "realized_pnl": 0.0
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "SAP",
+      "name": "SAP  SE",
+      "shares": 815,
+      "price": 181.92,
       "realized_pnl": 0.0
     }
   ]
