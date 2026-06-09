@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T07:10:04.221275+00:00",
+    "last_updated": "2026-06-09T07:48:38.405708+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -215,7 +215,7 @@
         },
         {
           "ticker": "RIO",
-          "name": "",
+          "name": "Rio Tinto Plc",
           "shares": 1468,
           "avg_cost": 100.93,
           "current_price": 100.93,
@@ -223,12 +223,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-06-09T15:09:52+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "Mining/Copper/Iron Ore"
         },
         {
           "ticker": "SU",
-          "name": "",
+          "name": "Suncor Energy Inc",
           "shares": 2343,
           "avg_cost": 63.25,
           "current_price": 63.25,
@@ -236,8 +236,8 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-06-09T15:10:02+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "Oil Sands/Integrated Energy"
         }
       ]
     }
