@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T12:41:30.000696+00:00",
+    "last_updated": "2026-06-09T12:41:45.509615+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,7 +92,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -751250.32,
+      "cash": -951209.04,
       "realized_pnl": -13760.76,
       "return_pct": -1.25,
       "positions": [
@@ -197,6 +197,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.135,
           "entry_date": "2026-06-09T20:41:28+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "DLLL",
+          "name": "",
+          "shares": 1136,
+          "avg_cost": 176.02,
+          "current_price": 176.02,
+          "market_value": 199958.72,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.135,
+          "entry_date": "2026-06-09T20:41:43+08:00",
           "type": "",
           "sector": ""
         }
@@ -2105,6 +2118,15 @@
       "name": "GraniteShares 2x Long AMD Daily",
       "shares": 3243,
       "price": 61.66
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "buy",
+      "ticker": "DLLL",
+      "name": "GraniteShares 2x Long DELL Dail",
+      "shares": 1136,
+      "price": 176.02
     }
   ]
 }
