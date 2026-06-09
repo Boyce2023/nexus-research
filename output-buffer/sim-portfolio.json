@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T14:06:07.846487+00:00",
+    "last_updated": "2026-06-09T14:06:27.140642+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10238444.62,
-      "cash": 812886.62,
+      "cash": 13866.62,
       "realized_pnl": 162306.62,
       "return_pct": 2.38,
       "positions": [
@@ -111,6 +111,19 @@
           "entry_date": "2026-06-09T22:06:07+08:00",
           "type": "core_position",
           "sector": "电感/被动元件"
+        },
+        {
+          "ticker": "688187.SS",
+          "name": "时代电气",
+          "shares": 13800,
+          "avg_cost": 57.9,
+          "current_price": 57.9,
+          "market_value": 799020.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.078,
+          "entry_date": "2026-06-09T22:06:27+08:00",
+          "type": "core_position",
+          "sector": "IGBT/功率半导体"
         }
       ]
     },
@@ -2309,6 +2322,15 @@
       "name": "顺络电子",
       "shares": 12800,
       "price": 61.23
+    },
+    {
+      "date": "2026-06-09",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "688187",
+      "name": "时代电气",
+      "shares": 13800,
+      "price": 57.9
     }
   ]
 }
