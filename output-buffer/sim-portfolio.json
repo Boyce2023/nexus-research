@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T12:56:28.446543+00:00",
+    "last_updated": "2026-06-09T12:56:44.180684+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,7 +92,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -1079495.75,
+      "cash": -1211245.75,
       "realized_pnl": -16014.8,
       "return_pct": -1.25,
       "positions": [
@@ -203,12 +203,12 @@
         {
           "ticker": "AVGX",
           "name": "",
-          "shares": 2847,
+          "shares": 5347,
           "avg_cost": 52.7,
           "current_price": 52.7,
-          "market_value": 150036.9,
+          "market_value": 281786.9,
           "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.101,
+          "portfolio_pct": 0.19,
           "entry_date": "2026-06-09T20:42:00+08:00",
           "type": "",
           "sector": ""
@@ -2187,6 +2187,15 @@
       "name": "ASML Holding N.V. - New York Re",
       "shares": 97,
       "price": 1749.04
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "buy",
+      "ticker": "AVGX",
+      "name": "Defiance Daily Target 2X Long A",
+      "shares": 2500,
+      "price": 52.7
     }
   ]
 }
