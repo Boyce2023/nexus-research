@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T12:38:16.134026+00:00",
+    "last_updated": "2026-06-09T12:38:35.633437+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,8 +92,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1481313.27,
-      "cash": -1982429.98,
-      "realized_pnl": -36811.56,
+      "cash": -1799512.58,
+      "realized_pnl": -30522.16,
       "return_pct": -1.25,
       "positions": [
         {
@@ -173,19 +173,6 @@
           "entry_date": "2026-06-03T13:32:54+08:00",
           "type": "core_position",
           "sector": "Semiconductor Foundry"
-        },
-        {
-          "ticker": "ABBV",
-          "name": "AbbVie Inc",
-          "shares": 820,
-          "avg_cost": 215.4,
-          "current_price": 223.07,
-          "market_value": 182917.4,
-          "unrealized_pnl_pct": 3.56,
-          "portfolio_pct": 0.123,
-          "entry_date": "2026-06-03T13:33:42+08:00",
-          "type": "core_position",
-          "sector": "Pharma/Biotech"
         },
         {
           "ticker": "LNG",
@@ -2085,6 +2072,16 @@
       "name": "NVIDIA Corporation",
       "shares": 500,
       "price": 208.64
+    },
+    {
+      "date": "2026-06-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "ABBV",
+      "name": "AbbVie Inc",
+      "shares": 820,
+      "price": 223.07,
+      "realized_pnl": 6289.4
     }
   ]
 }
