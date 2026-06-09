@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-09T12:58:18.425725+00:00",
+    "last_updated": "2026-06-09T13:02:03.019273+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -150,7 +150,7 @@
         },
         {
           "ticker": "ASML",
-          "name": "",
+          "name": "ASML Holding N.V.",
           "shares": 182,
           "avg_cost": 1749.04,
           "current_price": 1749.04,
@@ -158,12 +158,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.215,
           "entry_date": "2026-06-09T20:22:46+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "EUV Lithography"
         },
         {
           "ticker": "CCJ",
-          "name": "",
+          "name": "Cameco Corporation",
           "shares": 1405,
           "avg_cost": 105.44,
           "current_price": 105.44,
@@ -171,12 +171,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-06-09T20:24:00+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "Uranium/Nuclear"
         },
         {
           "ticker": "AMDL",
-          "name": "",
+          "name": "GraniteShares 2x Long AMD Daily ETF",
           "shares": 3243,
           "avg_cost": 61.66,
           "current_price": 61.66,
@@ -184,12 +184,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.135,
           "entry_date": "2026-06-09T20:41:28+08:00",
-          "type": "",
-          "sector": ""
+          "type": "leveraged_position",
+          "sector": "2x AMD (GPU/AI芯片)"
         },
         {
           "ticker": "DLLL",
-          "name": "",
+          "name": "GraniteShares 2x Long DELL Daily ETF",
           "shares": 1836,
           "avg_cost": 176.02,
           "current_price": 176.02,
@@ -197,12 +197,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.218,
           "entry_date": "2026-06-09T20:41:43+08:00",
-          "type": "",
-          "sector": ""
+          "type": "leveraged_position",
+          "sector": "2x DELL (AI服务器)"
         },
         {
           "ticker": "AVGX",
-          "name": "",
+          "name": "Defiance Daily Target 2x Long AVGO ETF",
           "shares": 5347,
           "avg_cost": 52.7,
           "current_price": 52.7,
@@ -210,12 +210,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.19,
           "entry_date": "2026-06-09T20:42:00+08:00",
-          "type": "",
-          "sector": ""
+          "type": "leveraged_position",
+          "sector": "2x AVGO (Custom ASIC/网络)"
         },
         {
           "ticker": "SOXL",
-          "name": "",
+          "name": "Direxion Daily Semiconductor Bull 3x Shares",
           "shares": 1797,
           "avg_cost": 211.44,
           "current_price": 211.44,
@@ -223,12 +223,12 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.257,
           "entry_date": "2026-06-09T20:42:23+08:00",
-          "type": "",
-          "sector": ""
+          "type": "leveraged_position",
+          "sector": "3x SOX半导体指数"
         },
         {
           "ticker": "MRVL",
-          "name": "",
+          "name": "Marvell Technology",
           "shares": 513,
           "avg_cost": 288.85,
           "current_price": 288.85,
@@ -236,8 +236,8 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-06-09T20:57:14+08:00",
-          "type": "",
-          "sector": ""
+          "type": "core_position",
+          "sector": "Custom Silicon/网络"
         }
       ]
     }
