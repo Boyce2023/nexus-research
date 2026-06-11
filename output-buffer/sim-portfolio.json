@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-11T03:12:59.590902+00:00",
+    "last_updated": "2026-06-11T04:49:22.395130+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,8 +131,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1209156.39,
-      "cash": -1177560.63,
-      "realized_pnl": -50457.03,
+      "cash": -930956.99,
+      "realized_pnl": -85640.29,
       "return_pct": -19.39,
       "positions": [
         {
@@ -225,19 +225,6 @@
           "entry_date": "2026-06-09T20:41:43+08:00",
           "type": "leveraged_position",
           "sector": "2x DELL (AI服务器)"
-        },
-        {
-          "ticker": "AVGX",
-          "name": "Defiance Daily Target 2x Long AVGO ETF",
-          "shares": 5347,
-          "avg_cost": 52.7,
-          "current_price": 46.12,
-          "market_value": 246603.64,
-          "unrealized_pnl_pct": -12.49,
-          "portfolio_pct": 0.204,
-          "entry_date": "2026-06-09T20:42:00+08:00",
-          "type": "leveraged_position",
-          "sector": "2x AVGO (Custom ASIC/网络)"
         },
         {
           "ticker": "SOXL",
@@ -2423,6 +2410,16 @@
       "name": "海大集团",
       "shares": 18000,
       "price": 44.15
+    },
+    {
+      "date": "2026-06-11",
+      "account": "us",
+      "action": "sell",
+      "ticker": "AVGX",
+      "name": "Defiance Daily Target 2X Long A",
+      "shares": 5347,
+      "price": 46.12,
+      "realized_pnl": -35183.26
     }
   ]
 }
