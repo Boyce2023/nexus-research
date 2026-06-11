@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-11T02:19:32.695493+00:00",
+    "last_updated": "2026-06-11T02:58:06.127859+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10227091.62,
-      "cash": 13866.62,
-      "realized_pnl": 162306.62,
-      "return_pct": 2.27,
+      "total_assets": 10199353.62,
+      "cash": 762378.62,
+      "realized_pnl": 111798.62,
+      "return_pct": 1.99,
       "positions": [
         {
           "ticker": "600160.SS",
@@ -42,7 +42,7 @@
           "current_price": 92.11,
           "market_value": 2505392.0,
           "unrealized_pnl_pct": -3.44,
-          "portfolio_pct": 0.245,
+          "portfolio_pct": 0.246,
           "entry_date": "2026-06-05T15:51:59+08:00",
           "type": "core_position",
           "sector": "CIS/半导体设计"
@@ -94,7 +94,7 @@
           "current_price": 73.34,
           "market_value": 975422.0,
           "unrealized_pnl_pct": -1.87,
-          "portfolio_pct": 0.095,
+          "portfolio_pct": 0.096,
           "entry_date": "2026-06-09T22:05:49+08:00",
           "type": "core_position",
           "sector": "AI服务器/电子制造"
@@ -111,19 +111,6 @@
           "entry_date": "2026-06-09T22:06:07+08:00",
           "type": "core_position",
           "sector": "电感/被动元件"
-        },
-        {
-          "ticker": "688187.SS",
-          "name": "时代电气",
-          "shares": 13800,
-          "avg_cost": 57.9,
-          "current_price": 56.25,
-          "market_value": 776250.0,
-          "unrealized_pnl_pct": -2.85,
-          "portfolio_pct": 0.076,
-          "entry_date": "2026-06-09T22:06:27+08:00",
-          "type": "core_position",
-          "sector": "IGBT/功率半导体"
         }
       ]
     },
@@ -524,14 +511,14 @@
     {
       "date": "2026-06-11",
       "a_share": {
-        "total_assets": 10227091.62,
-        "return_pct": 2.27
+        "total_assets": 10199353.62,
+        "return_pct": 1.99
       },
       "us": {
         "total_assets": 1209156.39,
         "return_pct": -19.39
       },
-      "combined_return_pct": -8.98,
+      "combined_return_pct": -9.11,
       "sse_return_pct": -2.09,
       "spy_return_pct": -1.79
     }
@@ -2356,6 +2343,16 @@
       "shares": 365,
       "price": 867.774,
       "realized_pnl": -22783.8902
+    },
+    {
+      "date": "2026-06-11",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "688187",
+      "name": "时代电气",
+      "shares": 13800,
+      "price": 54.24,
+      "realized_pnl": -50508.0
     }
   ]
 }
