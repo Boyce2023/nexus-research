@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-12T03:17:36.822250+00:00",
+    "last_updated": "2026-06-12T03:17:57.919027+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,7 +131,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1380543.23,
-      "cash": -806222.69,
+      "cash": -1006299.17,
       "realized_pnl": -134698.21,
       "return_pct": -7.96,
       "positions": [
@@ -251,6 +251,19 @@
           "entry_date": "2026-06-12T11:17:36+08:00",
           "type": "core_position",
           "sector": "Memory/HBM"
+        },
+        {
+          "ticker": "QQQ",
+          "name": "Invesco QQQ Trust (Nasdaq-100)",
+          "shares": 279,
+          "avg_cost": 717.12,
+          "current_price": 717.12,
+          "market_value": 200076.48,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.145,
+          "entry_date": "2026-06-12T11:17:57+08:00",
+          "type": "index_beta",
+          "sector": "指数ETF"
         }
       ]
     }
@@ -2453,6 +2466,15 @@
       "name": "Micron Technology",
       "shares": 150,
       "price": 995.87
+    },
+    {
+      "date": "2026-06-12",
+      "account": "us",
+      "action": "buy",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust (Nasdaq-100)",
+      "shares": 279,
+      "price": 717.12
     }
   ]
 }
