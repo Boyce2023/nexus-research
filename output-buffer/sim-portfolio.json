@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-11T04:49:47.414646+00:00",
+    "last_updated": "2026-06-12T01:00:50.463391+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -130,20 +130,20 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1209156.39,
+      "total_assets": 1365619.99,
       "cash": -656842.19,
       "realized_pnl": -134698.21,
-      "return_pct": -19.39,
+      "return_pct": -8.96,
       "positions": [
         {
           "ticker": "NVDA",
           "name": "NVIDIA Corporation",
           "shares": 1438,
           "avg_cost": 209.9063,
-          "current_price": 200.42,
-          "market_value": 288203.96,
-          "unrealized_pnl_pct": -4.52,
-          "portfolio_pct": 0.238,
+          "current_price": 203.925,
+          "market_value": 293244.15,
+          "unrealized_pnl_pct": -2.85,
+          "portfolio_pct": 0.215,
           "entry_date": "2026-05-28T21:49:08+08:00",
           "type": "core_position",
           "sector": "AI芯片"
@@ -153,10 +153,10 @@
           "name": "Taiwan Semiconductor",
           "shares": 862,
           "avg_cost": 435.8682,
-          "current_price": 408.75,
-          "market_value": 352342.5,
-          "unrealized_pnl_pct": -6.22,
-          "portfolio_pct": 0.291,
+          "current_price": 419.6,
+          "market_value": 361695.2,
+          "unrealized_pnl_pct": -3.73,
+          "portfolio_pct": 0.265,
           "entry_date": "2026-06-03T13:32:54+08:00",
           "type": "core_position",
           "sector": "Semiconductor Foundry"
@@ -166,10 +166,10 @@
           "name": "Cheniere Energy",
           "shares": 634,
           "avg_cost": 236.61,
-          "current_price": 241.81,
-          "market_value": 153307.54,
-          "unrealized_pnl_pct": 2.2,
-          "portfolio_pct": 0.127,
+          "current_price": 241.05,
+          "market_value": 152825.7,
+          "unrealized_pnl_pct": 1.88,
+          "portfolio_pct": 0.112,
           "entry_date": "2026-06-09T14:22:40+08:00",
           "type": "core_position",
           "sector": "LNG Export/Energy"
@@ -179,10 +179,10 @@
           "name": "ASML Holding N.V.",
           "shares": 182,
           "avg_cost": 1749.04,
-          "current_price": 1734.1899,
-          "market_value": 315622.56,
-          "unrealized_pnl_pct": -0.85,
-          "portfolio_pct": 0.261,
+          "current_price": 1880.0,
+          "market_value": 342160.0,
+          "unrealized_pnl_pct": 7.49,
+          "portfolio_pct": 0.251,
           "entry_date": "2026-06-09T20:22:46+08:00",
           "type": "core_position",
           "sector": "EUV Lithography"
@@ -192,10 +192,10 @@
           "name": "Cameco Corporation",
           "shares": 1405,
           "avg_cost": 105.44,
-          "current_price": 95.03,
-          "market_value": 133517.15,
-          "unrealized_pnl_pct": -9.87,
-          "portfolio_pct": 0.11,
+          "current_price": 99.195,
+          "market_value": 139368.97,
+          "unrealized_pnl_pct": -5.92,
+          "portfolio_pct": 0.102,
           "entry_date": "2026-06-09T20:24:00+08:00",
           "type": "core_position",
           "sector": "Uranium/Nuclear"
@@ -205,10 +205,10 @@
           "name": "GraniteShares 2x Long AMD Daily ETF",
           "shares": 3243,
           "avg_cost": 61.66,
-          "current_price": 52.05,
-          "market_value": 168798.15,
-          "unrealized_pnl_pct": -15.59,
-          "portfolio_pct": 0.14,
+          "current_price": 59.8501,
+          "market_value": 194093.87,
+          "unrealized_pnl_pct": -2.94,
+          "portfolio_pct": 0.142,
           "entry_date": "2026-06-09T20:41:28+08:00",
           "type": "leveraged_position",
           "sector": "2x AMD (GPU/AI芯片)"
@@ -218,10 +218,10 @@
           "name": "Direxion Daily Semiconductor Bull 3x Shares",
           "shares": 1797,
           "avg_cost": 211.44,
-          "current_price": 180.65,
-          "market_value": 324628.05,
-          "unrealized_pnl_pct": -14.56,
-          "portfolio_pct": 0.268,
+          "current_price": 220.4525,
+          "market_value": 396153.14,
+          "unrealized_pnl_pct": 4.26,
+          "portfolio_pct": 0.29,
           "entry_date": "2026-06-09T20:42:23+08:00",
           "type": "leveraged_position",
           "sector": "3x SOX半导体指数"
@@ -231,10 +231,10 @@
           "name": "Marvell Technology",
           "shares": 513,
           "avg_cost": 288.85,
-          "current_price": 252.59,
-          "market_value": 129578.67,
-          "unrealized_pnl_pct": -12.55,
-          "portfolio_pct": 0.107,
+          "current_price": 278.5987,
+          "market_value": 142921.13,
+          "unrealized_pnl_pct": -3.55,
+          "portfolio_pct": 0.105,
           "entry_date": "2026-06-09T20:57:14+08:00",
           "type": "core_position",
           "sector": "Custom Silicon/网络"
@@ -498,16 +498,30 @@
     {
       "date": "2026-06-11",
       "a_share": {
-        "total_assets": 9956802.62,
-        "return_pct": -0.43
+        "total_assets": 10227091.62,
+        "return_pct": 2.27
       },
       "us": {
         "total_assets": 1209156.39,
         "return_pct": -19.39
       },
-      "combined_return_pct": -10.28,
+      "combined_return_pct": -8.98,
       "sse_return_pct": -2.09,
       "spy_return_pct": -1.79
+    },
+    {
+      "date": "2026-06-12",
+      "a_share": {
+        "total_assets": 9956802.62,
+        "return_pct": -0.43
+      },
+      "us": {
+        "total_assets": 1365619.99,
+        "return_pct": -8.96
+      },
+      "combined_return_pct": -4.86,
+      "sse_return_pct": -2.09,
+      "spy_return_pct": -0.2
     }
   ],
   "trade_log": [
