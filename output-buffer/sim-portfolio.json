@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-14T12:48:59.630479+00:00",
+    "last_updated": "2026-06-14T12:50:32.405427+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,7 +131,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1416371.57,
-      "cash": -855917.74,
+      "cash": -1005473.74,
       "realized_pnl": -110333.8,
       "return_pct": -5.58,
       "positions": [
@@ -277,6 +277,19 @@
           "entry_date": "2026-06-14T20:48:44+08:00",
           "type": "trading_position",
           "sector": "DC电力/独立发电"
+        },
+        {
+          "ticker": "LLY",
+          "name": "",
+          "shares": 132,
+          "avg_cost": 1133.0,
+          "current_price": 1133.0,
+          "market_value": 149556.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.106,
+          "entry_date": "2026-06-14T20:50:14+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -2545,6 +2558,15 @@
       "name": "Vistra Corp",
       "shares": 1081,
       "price": 148.02
+    },
+    {
+      "date": "2026-06-14",
+      "account": "us",
+      "action": "buy",
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "shares": 132,
+      "price": 1133.0
     }
   ]
 }
