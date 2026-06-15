@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-15T05:20:12.831100+00:00",
+    "last_updated": "2026-06-15T05:42:55.838203+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,20 +16,20 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10806064.62,
-      "cash": 1433256.62,
-      "realized_pnl": -227067.38,
-      "return_pct": 8.06,
+      "total_assets": 10814929.62,
+      "cash": 3064956.62,
+      "realized_pnl": 172647.64,
+      "return_pct": 8.15,
       "positions": [
         {
           "ticker": "600160.SS",
           "name": "巨化股份",
-          "shares": 70000,
+          "shares": 35000,
           "avg_cost": 35.1996,
-          "current_price": 46.58,
-          "market_value": 3260600.0,
-          "unrealized_pnl_pct": 32.33,
-          "portfolio_pct": 0.302,
+          "current_price": 46.62,
+          "market_value": 1631700.0,
+          "unrealized_pnl_pct": 32.44,
+          "portfolio_pct": 0.151,
           "entry_date": "2026-05-28",
           "type": "supply_thesis",
           "sector": "化工/制冷剂"
@@ -39,10 +39,10 @@
           "name": "拓荆科技",
           "shares": 1800,
           "avg_cost": 582.3,
-          "current_price": 664.49,
-          "market_value": 1196082.0,
-          "unrealized_pnl_pct": 14.11,
-          "portfolio_pct": 0.111,
+          "current_price": 660.21,
+          "market_value": 1188378.0,
+          "unrealized_pnl_pct": 13.38,
+          "portfolio_pct": 0.11,
           "entry_date": "2026-06-05T15:52:49+08:00",
           "type": "core_position",
           "sector": "半导体设备/薄膜沉积"
@@ -52,9 +52,9 @@
           "name": "万华化学",
           "shares": 15000,
           "avg_cost": 66.1,
-          "current_price": 72.98,
-          "market_value": 1094700.0,
-          "unrealized_pnl_pct": 10.41,
+          "current_price": 72.99,
+          "market_value": 1094850.0,
+          "unrealized_pnl_pct": 10.42,
           "portfolio_pct": 0.101,
           "entry_date": "2026-06-11T11:02:49+08:00",
           "type": "",
@@ -65,9 +65,9 @@
           "name": "紫光国微",
           "shares": 14000,
           "avg_cost": 71.33,
-          "current_price": 73.97,
-          "market_value": 1035580.0,
-          "unrealized_pnl_pct": 3.7,
+          "current_price": 74.12,
+          "market_value": 1037680.0,
+          "unrealized_pnl_pct": 3.91,
           "portfolio_pct": 0.096,
           "entry_date": "2026-06-11T11:03:45+08:00",
           "type": "",
@@ -78,9 +78,9 @@
           "name": "中际旭创",
           "shares": 900,
           "avg_cost": 1205.01,
-          "current_price": 1216.25,
-          "market_value": 1094625.0,
-          "unrealized_pnl_pct": 0.93,
+          "current_price": 1216.05,
+          "market_value": 1094445.0,
+          "unrealized_pnl_pct": 0.92,
           "portfolio_pct": 0.101,
           "entry_date": "2026-06-15T12:12:07+08:00",
           "type": "",
@@ -91,10 +91,10 @@
           "name": "紫金矿业",
           "shares": 34000,
           "avg_cost": 30.49,
-          "current_price": 30.72,
-          "market_value": 1044480.0,
-          "unrealized_pnl_pct": 0.75,
-          "portfolio_pct": 0.097,
+          "current_price": 31.03,
+          "market_value": 1055020.0,
+          "unrealized_pnl_pct": 1.77,
+          "portfolio_pct": 0.098,
           "entry_date": "2026-06-15T12:12:33+08:00",
           "type": "",
           "sector": "有色"
@@ -104,9 +104,9 @@
           "name": "胜宏科技",
           "shares": 1900,
           "avg_cost": 339.91,
-          "current_price": 340.39,
-          "market_value": 646741.0,
-          "unrealized_pnl_pct": 0.14,
+          "current_price": 341.0,
+          "market_value": 647900.0,
+          "unrealized_pnl_pct": 0.32,
           "portfolio_pct": 0.06,
           "entry_date": "2026-06-15T12:12:59+08:00",
           "type": "",
@@ -593,15 +593,15 @@
     {
       "date": "2026-06-15",
       "a_share": {
-        "total_assets": 10806064.62,
-        "return_pct": 8.06
+        "total_assets": 10814929.62,
+        "return_pct": 8.15
       },
       "us": {
         "total_assets": 1416371.57,
         "return_pct": -5.58
       },
-      "combined_return_pct": 0.98,
-      "sse_return_pct": 0.36,
+      "combined_return_pct": 1.02,
+      "sse_return_pct": 0.55,
       "spy_return_pct": 0.42
     }
   ],
@@ -2635,6 +2635,16 @@
       "name": "胜宏科技",
       "shares": 1900,
       "price": 339.91
+    },
+    {
+      "date": "2026-06-15",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "600160",
+      "name": "巨化股份",
+      "shares": 35000,
+      "price": 46.62,
+      "realized_pnl": 399715.015
     }
   ]
 }
