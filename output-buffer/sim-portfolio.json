@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-15T04:08:15.143566+00:00",
+    "last_updated": "2026-06-15T04:08:39.422731+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10648028.62,
-      "cash": 2403274.62,
-      "realized_pnl": -129685.38,
-      "return_pct": 6.48,
+      "total_assets": 10654692.62,
+      "cash": 3600754.62,
+      "realized_pnl": -229509.38,
+      "return_pct": 6.55,
       "positions": [
         {
           "ticker": "600160.SS",
@@ -29,23 +29,10 @@
           "current_price": 44.66,
           "market_value": 3126200.0,
           "unrealized_pnl_pct": 26.88,
-          "portfolio_pct": 0.294,
+          "portfolio_pct": 0.293,
           "entry_date": "2026-05-28",
           "type": "supply_thesis",
           "sector": "化工/制冷剂"
-        },
-        {
-          "ticker": "603501.SS",
-          "name": "韦尔股份",
-          "shares": 13600,
-          "avg_cost": 95.39,
-          "current_price": 87.56,
-          "market_value": 1190816.0,
-          "unrealized_pnl_pct": -8.21,
-          "portfolio_pct": 0.112,
-          "entry_date": "2026-06-05T15:51:59+08:00",
-          "type": "core_position",
-          "sector": "CIS/半导体设计"
         },
         {
           "ticker": "688072.SS",
@@ -580,14 +567,14 @@
     {
       "date": "2026-06-15",
       "a_share": {
-        "total_assets": 10648028.62,
-        "return_pct": 6.48
+        "total_assets": 10654692.62,
+        "return_pct": 6.55
       },
       "us": {
         "total_assets": 1416371.57,
         "return_pct": -5.58
       },
-      "combined_return_pct": 0.22,
+      "combined_return_pct": 0.25,
       "sse_return_pct": 0.19,
       "spy_return_pct": 0.42
     }
@@ -2575,6 +2562,16 @@
       "shares": 12800,
       "price": 60.89,
       "realized_pnl": -4352.0
+    },
+    {
+      "date": "2026-06-15",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "603501",
+      "name": "韦尔股份",
+      "shares": 13600,
+      "price": 88.05,
+      "realized_pnl": -99824.0
     }
   ]
 }
