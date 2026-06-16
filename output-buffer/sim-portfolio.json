@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-16T11:52:54.094159+00:00",
+    "last_updated": "2026-06-16T11:53:24.060338+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,8 +131,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1566899.48,
-      "cash": -1088638.04,
-      "realized_pnl": -73819.92,
+      "cash": -966576.74,
+      "realized_pnl": -51709.48,
       "return_pct": 4.46,
       "positions": [
         {
@@ -203,12 +203,12 @@
         {
           "ticker": "AMDL",
           "name": "GraniteShares 2x Long AMD Daily ETF",
-          "shares": 3243,
+          "shares": 1622,
           "avg_cost": 61.66,
           "current_price": 75.3,
-          "market_value": 244197.9,
+          "market_value": 122136.6,
           "unrealized_pnl_pct": 22.12,
-          "portfolio_pct": 0.156,
+          "portfolio_pct": 0.078,
           "entry_date": "2026-06-09T20:41:28+08:00",
           "type": "leveraged_position",
           "sector": "2x AMD (GPU/AI芯片)"
@@ -2718,6 +2718,16 @@
       "shares": 598,
       "price": 272.5,
       "realized_pnl": 36513.88
+    },
+    {
+      "date": "2026-06-16",
+      "account": "us",
+      "action": "sell",
+      "ticker": "AMDL",
+      "name": "GraniteShares 2x Long AMD Daily ETF",
+      "shares": 1621,
+      "price": 75.3,
+      "realized_pnl": 22110.44
     }
   ]
 }
