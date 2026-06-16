@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-16T11:14:48.487557+00:00",
+    "last_updated": "2026-06-16T11:52:54.094159+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,8 +131,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1566899.48,
-      "cash": -1251593.04,
-      "realized_pnl": -110333.8,
+      "cash": -1088638.04,
+      "realized_pnl": -73819.92,
       "return_pct": 4.46,
       "positions": [
         {
@@ -216,12 +216,12 @@
         {
           "ticker": "SOXL",
           "name": "Direxion Daily Semiconductor Bull 3x Shares",
-          "shares": 1197,
+          "shares": 599,
           "avg_cost": 211.44,
           "current_price": 272.5,
-          "market_value": 326182.5,
+          "market_value": 163227.5,
           "unrealized_pnl_pct": 28.88,
-          "portfolio_pct": 0.208,
+          "portfolio_pct": 0.104,
           "entry_date": "2026-06-09T20:42:23+08:00",
           "type": "leveraged_position",
           "sector": "3x SOX半导体指数"
@@ -2708,6 +2708,16 @@
       "name": "Micron Technology",
       "shares": 70,
       "price": 1087.99
+    },
+    {
+      "date": "2026-06-16",
+      "account": "us",
+      "action": "sell",
+      "ticker": "SOXL",
+      "name": "Direxion Daily Semiconductor Bull 3x Shares",
+      "shares": 598,
+      "price": 272.5,
+      "realized_pnl": 36513.88
     }
   ]
 }
