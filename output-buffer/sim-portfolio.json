@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-16T05:42:25.730227+00:00",
+    "last_updated": "2026-06-16T05:43:10.714850+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10846441.62,
-      "cash": 2783300.62,
+      "cash": 2586840.62,
       "realized_pnl": 172647.64,
       "return_pct": 8.46,
       "positions": [
@@ -111,6 +111,19 @@
           "entry_date": "2026-06-15T12:12:59+08:00",
           "type": "",
           "sector": "PCB"
+        },
+        {
+          "ticker": "600150.SS",
+          "name": "中国船舶",
+          "shares": 5500,
+          "avg_cost": 35.72,
+          "current_price": 35.72,
+          "market_value": 196460.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.018,
+          "entry_date": "2026-06-16T13:42:59+08:00",
+          "type": "candidate",
+          "sector": "造船/军工"
         }
       ]
     },
@@ -2668,6 +2681,15 @@
       "name": "胜宏科技",
       "shares": 800,
       "price": 352.07
+    },
+    {
+      "date": "2026-06-16",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600150",
+      "name": "中国船舶",
+      "shares": 5500,
+      "price": 35.72
     }
   ]
 }
