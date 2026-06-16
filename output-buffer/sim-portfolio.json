@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-16T05:26:23.044373+00:00",
+    "last_updated": "2026-06-16T05:42:25.730227+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10842128.62,
-      "cash": 3064956.62,
+      "total_assets": 10846441.62,
+      "cash": 2783300.62,
       "realized_pnl": 172647.64,
-      "return_pct": 8.42,
+      "return_pct": 8.46,
       "positions": [
         {
           "ticker": "600160.SS",
@@ -102,12 +102,12 @@
         {
           "ticker": "300476.SZ",
           "name": "胜宏科技",
-          "shares": 1900,
-          "avg_cost": 339.91,
-          "current_price": 349.8,
-          "market_value": 664620.0,
-          "unrealized_pnl_pct": 2.91,
-          "portfolio_pct": 0.061,
+          "shares": 2700,
+          "avg_cost": 343.513,
+          "current_price": 352.07,
+          "market_value": 950589.0,
+          "unrealized_pnl_pct": 2.49,
+          "portfolio_pct": 0.088,
           "entry_date": "2026-06-15T12:12:59+08:00",
           "type": "",
           "sector": "PCB"
@@ -607,14 +607,14 @@
     {
       "date": "2026-06-16",
       "a_share": {
-        "total_assets": 10842128.62,
-        "return_pct": 8.42
+        "total_assets": 10846441.62,
+        "return_pct": 8.46
       },
       "us": {
         "total_assets": 1566899.48,
         "return_pct": 4.46
       },
-      "combined_return_pct": 6.36,
+      "combined_return_pct": 6.39,
       "sse_return_pct": 1.03,
       "spy_return_pct": 2.19
     }
@@ -2659,6 +2659,15 @@
       "shares": 35000,
       "price": 46.62,
       "realized_pnl": 399715.015
+    },
+    {
+      "date": "2026-06-16",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "300476",
+      "name": "胜宏科技",
+      "shares": 800,
+      "price": 352.07
     }
   ]
 }
