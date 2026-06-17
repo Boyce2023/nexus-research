@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-17T00:53:21.578160+00:00",
+    "last_updated": "2026-06-17T01:12:14.421503+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -130,10 +130,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1566899.48,
-      "cash": -966576.74,
+      "total_assets": 1562954.42,
+      "cash": -1253411.72,
       "realized_pnl": -51709.48,
-      "return_pct": 4.46,
+      "return_pct": 4.2,
       "positions": [
         {
           "ticker": "NVDA",
@@ -143,7 +143,7 @@
           "current_price": 212.45,
           "market_value": 475463.1,
           "unrealized_pnl_pct": 0.78,
-          "portfolio_pct": 0.303,
+          "portfolio_pct": 0.304,
           "entry_date": "2026-05-28T21:49:08+08:00",
           "type": "core_position",
           "sector": "AI芯片"
@@ -255,12 +255,12 @@
         {
           "ticker": "QQQ",
           "name": "Invesco QQQ Trust (Nasdaq-100)",
-          "shares": 279,
-          "avg_cost": 717.12,
-          "current_price": 744.0,
-          "market_value": 207576.0,
-          "unrealized_pnl_pct": 3.75,
-          "portfolio_pct": 0.132,
+          "shares": 672,
+          "avg_cost": 724.5706,
+          "current_price": 729.86,
+          "market_value": 490465.92,
+          "unrealized_pnl_pct": 0.73,
+          "portfolio_pct": 0.314,
           "entry_date": "2026-06-12T11:17:57+08:00",
           "type": "index_beta",
           "sector": "指数ETF"
@@ -638,10 +638,10 @@
         "return_pct": 8.38
       },
       "us": {
-        "total_assets": 1566899.48,
-        "return_pct": 4.46
+        "total_assets": 1562954.42,
+        "return_pct": 4.2
       },
-      "combined_return_pct": 6.34,
+      "combined_return_pct": 6.21,
       "sse_return_pct": 1.05,
       "spy_return_pct": 2.19
     }
@@ -2742,6 +2742,15 @@
       "shares": 1621,
       "price": 75.3,
       "realized_pnl": 22110.44
+    },
+    {
+      "date": "2026-06-17",
+      "account": "us",
+      "action": "buy",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust (Nasdaq-100)",
+      "shares": 393,
+      "price": 729.86
     }
   ]
 }
