@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-17T08:01:10.720663+00:00",
+    "last_updated": "2026-06-17T10:30:18.008565+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,8 +17,8 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 11134224.62,
-      "cash": 2586840.62,
-      "realized_pnl": 172647.64,
+      "cash": 3252840.62,
+      "realized_pnl": 314577.64,
       "return_pct": 11.34,
       "positions": [
         {
@@ -37,12 +37,12 @@
         {
           "ticker": "688072.SS",
           "name": "拓荆科技",
-          "shares": 1800,
+          "shares": 900,
           "avg_cost": 582.3,
           "current_price": 740.0,
-          "market_value": 1332000.0,
+          "market_value": 666000.0,
           "unrealized_pnl_pct": 27.08,
-          "portfolio_pct": 0.12,
+          "portfolio_pct": 0.06,
           "entry_date": "2026-06-05T15:52:49+08:00",
           "type": "core_position",
           "sector": "半导体设备/薄膜沉积"
@@ -2751,6 +2751,16 @@
       "name": "Invesco QQQ Trust (Nasdaq-100)",
       "shares": 393,
       "price": 729.86
+    },
+    {
+      "date": "2026-06-17",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "688072",
+      "name": "拓荆科技",
+      "shares": 900,
+      "price": 740.0,
+      "realized_pnl": 141930.0
     }
   ]
 }
