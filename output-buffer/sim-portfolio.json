@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-22T03:31:38.458369+00:00",
+    "last_updated": "2026-06-22T03:32:10.432668+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,9 +16,9 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 11019754.62,
-      "cash": 5922148.62,
-      "realized_pnl": 713896.15,
+      "total_assets": 11019604.62,
+      "cash": 6197286.12,
+      "realized_pnl": 741158.65,
       "return_pct": 10.2,
       "positions": [
         {
@@ -37,12 +37,12 @@
         {
           "ticker": "600309.SS",
           "name": "万华化学",
-          "shares": 7500,
+          "shares": 3750,
           "avg_cost": 66.1,
-          "current_price": 73.39,
-          "market_value": 550425.0,
-          "unrealized_pnl_pct": 11.03,
-          "portfolio_pct": 0.05,
+          "current_price": 73.37,
+          "market_value": 275137.5,
+          "unrealized_pnl_pct": 11.0,
+          "portfolio_pct": 0.025,
           "entry_date": "2026-06-11T11:02:49+08:00",
           "type": "",
           "sector": "化工"
@@ -691,7 +691,7 @@
     {
       "date": "2026-06-22",
       "a_share": {
-        "total_assets": 11019754.62,
+        "total_assets": 11019604.62,
         "return_pct": 10.2
       },
       "us": {
@@ -2858,6 +2858,16 @@
       "shares": 450,
       "price": 1358.24,
       "realized_pnl": 68953.5
+    },
+    {
+      "date": "2026-06-22",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "600309",
+      "name": "万华化学",
+      "shares": 3750,
+      "price": 73.37,
+      "realized_pnl": 27262.5
     }
   ]
 }
