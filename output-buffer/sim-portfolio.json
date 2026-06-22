@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-22T03:32:10.432668+00:00",
+    "last_updated": "2026-06-22T03:33:31.566818+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 11019604.62,
-      "cash": 6197286.12,
-      "realized_pnl": 741158.65,
-      "return_pct": 10.2,
+      "total_assets": 11023357.62,
+      "cash": 6679141.62,
+      "realized_pnl": 759271.65,
+      "return_pct": 10.23,
       "positions": [
         {
           "ticker": "688072.SS",
@@ -29,7 +29,7 @@
           "current_price": 716.4,
           "market_value": 644760.0,
           "unrealized_pnl_pct": 23.03,
-          "portfolio_pct": 0.059,
+          "portfolio_pct": 0.058,
           "entry_date": "2026-06-05T15:52:49+08:00",
           "type": "core_position",
           "sector": "半导体设备/薄膜沉积"
@@ -89,12 +89,12 @@
         {
           "ticker": "300476.SZ",
           "name": "胜宏科技",
-          "shares": 2700,
+          "shares": 1350,
           "avg_cost": 343.513,
-          "current_price": 355.54,
-          "market_value": 959958.0,
-          "unrealized_pnl_pct": 3.5,
-          "portfolio_pct": 0.087,
+          "current_price": 356.93,
+          "market_value": 481855.5,
+          "unrealized_pnl_pct": 3.91,
+          "portfolio_pct": 0.044,
           "entry_date": "2026-06-15T12:12:59+08:00",
           "type": "",
           "sector": "PCB"
@@ -691,14 +691,14 @@
     {
       "date": "2026-06-22",
       "a_share": {
-        "total_assets": 11019604.62,
-        "return_pct": 10.2
+        "total_assets": 11023357.62,
+        "return_pct": 10.23
       },
       "us": {
         "total_assets": 1597930.01,
         "return_pct": 6.53
       },
-      "combined_return_pct": 8.29,
+      "combined_return_pct": 8.31,
       "sse_return_pct": 2.35,
       "spy_return_pct": 1.1
     }
@@ -2868,6 +2868,16 @@
       "shares": 3750,
       "price": 73.37,
       "realized_pnl": 27262.5
+    },
+    {
+      "date": "2026-06-22",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "300476",
+      "name": "胜宏科技",
+      "shares": 1350,
+      "price": 356.93,
+      "realized_pnl": 18112.9999
     }
   ]
 }
