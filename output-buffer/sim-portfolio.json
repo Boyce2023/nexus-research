@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-23T03:33:01.562898+00:00",
+    "last_updated": "2026-06-23T03:33:30.986119+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -118,7 +118,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1638632.39,
-      "cash": -1025913.2,
+      "cash": -1189910.66,
       "realized_pnl": 38197.04,
       "return_pct": 9.24,
       "positions": [
@@ -262,6 +262,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-06-23T11:32:55+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "SCHW",
+          "name": "",
+          "shares": 1782,
+          "avg_cost": 92.03,
+          "current_price": 92.03,
+          "market_value": 163997.46,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-06-23T11:33:23+08:00",
           "type": "",
           "sector": ""
         }
@@ -2918,6 +2931,15 @@
       "name": "Booking Holdings Inc. Common St",
       "shares": 977,
       "price": 167.77
+    },
+    {
+      "date": "2026-06-23",
+      "account": "us",
+      "action": "buy",
+      "ticker": "SCHW",
+      "name": "Charles Schwab Corporation (The",
+      "shares": 1782,
+      "price": 92.03
     }
   ]
 }
