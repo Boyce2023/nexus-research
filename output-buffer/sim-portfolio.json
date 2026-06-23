@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-23T03:33:58.262739+00:00",
+    "last_updated": "2026-06-23T03:34:37.098655+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -118,19 +118,19 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1638632.39,
-      "cash": -1353851.01,
-      "realized_pnl": 38197.04,
+      "cash": -1252655.76,
+      "realized_pnl": 37146.73,
       "return_pct": 9.24,
       "positions": [
         {
           "ticker": "NVDA",
           "name": "NVIDIA Corporation",
-          "shares": 2238,
+          "shares": 1753,
           "avg_cost": 210.8156,
           "current_price": 208.65,
-          "market_value": 466958.7,
+          "market_value": 365763.45,
           "unrealized_pnl_pct": -1.03,
-          "portfolio_pct": 0.285,
+          "portfolio_pct": 0.223,
           "entry_date": "2026-05-28T21:49:08+08:00",
           "type": "core_position",
           "sector": "AI芯片"
@@ -2962,6 +2962,16 @@
       "name": "Constellation Energy Corporatio",
       "shares": 595,
       "price": 275.53
+    },
+    {
+      "date": "2026-06-23",
+      "account": "us",
+      "action": "sell",
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "shares": 485,
+      "price": 208.65,
+      "realized_pnl": -1050.3087
     }
   ]
 }
