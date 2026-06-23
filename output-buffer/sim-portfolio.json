@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-23T03:28:22.400374+00:00",
+    "last_updated": "2026-06-23T03:33:01.562898+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -118,7 +118,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1638632.39,
-      "cash": -862001.91,
+      "cash": -1025913.2,
       "realized_pnl": 38197.04,
       "return_pct": 9.24,
       "positions": [
@@ -249,6 +249,19 @@
           "unrealized_pnl_pct": -2.73,
           "portfolio_pct": 0.089,
           "entry_date": "2026-06-14T20:50:14+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "BKNG",
+          "name": "",
+          "shares": 977,
+          "avg_cost": 167.77,
+          "current_price": 167.77,
+          "market_value": 163911.29,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-06-23T11:32:55+08:00",
           "type": "",
           "sector": ""
         }
@@ -2896,6 +2909,15 @@
       "shares": 73,
       "price": 1211.38,
       "realized_pnl": 13592.5336
+    },
+    {
+      "date": "2026-06-23",
+      "account": "us",
+      "action": "buy",
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc. Common St",
+      "shares": 977,
+      "price": 167.77
     }
   ]
 }
