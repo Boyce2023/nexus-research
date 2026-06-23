@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-23T03:33:30.986119+00:00",
+    "last_updated": "2026-06-23T03:33:58.262739+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -118,7 +118,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1638632.39,
-      "cash": -1189910.66,
+      "cash": -1353851.01,
       "realized_pnl": 38197.04,
       "return_pct": 9.24,
       "positions": [
@@ -275,6 +275,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-06-23T11:33:23+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "CEG",
+          "name": "",
+          "shares": 595,
+          "avg_cost": 275.53,
+          "current_price": 275.53,
+          "market_value": 163940.35,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-06-23T11:33:51+08:00",
           "type": "",
           "sector": ""
         }
@@ -2940,6 +2953,15 @@
       "name": "Charles Schwab Corporation (The",
       "shares": 1782,
       "price": 92.03
+    },
+    {
+      "date": "2026-06-23",
+      "account": "us",
+      "action": "buy",
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporatio",
+      "shares": 595,
+      "price": 275.53
     }
   ]
 }
