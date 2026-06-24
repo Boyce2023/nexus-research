@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-24T06:43:29.070443+00:00",
+    "last_updated": "2026-06-24T06:43:55.889120+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -118,7 +118,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1528405.01,
-      "cash": -1201312.4,
+      "cash": -1231692.71,
       "realized_pnl": 35341.69,
       "return_pct": 1.89,
       "positions": [
@@ -177,12 +177,12 @@
         {
           "ticker": "CCJ",
           "name": "Cameco Corporation",
-          "shares": 1405,
-          "avg_cost": 105.44,
+          "shares": 1684,
+          "avg_cost": 106.0116,
           "current_price": 108.89,
-          "market_value": 152990.45,
-          "unrealized_pnl_pct": 3.27,
-          "portfolio_pct": 0.1,
+          "market_value": 183370.76,
+          "unrealized_pnl_pct": 2.72,
+          "portfolio_pct": 0.12,
           "entry_date": "2026-06-09T20:24:00+08:00",
           "type": "core_position",
           "sector": "Uranium/Nuclear"
@@ -3006,6 +3006,15 @@
       "shares": 184,
       "price": 279.04,
       "realized_pnl": -1805.04
+    },
+    {
+      "date": "2026-06-24",
+      "account": "us",
+      "action": "buy",
+      "ticker": "CCJ",
+      "name": "Cameco Corporation",
+      "shares": 279,
+      "price": 108.89
     }
   ]
 }
