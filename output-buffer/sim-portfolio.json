@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-24T05:44:30.504724+00:00",
+    "last_updated": "2026-06-24T06:43:29.070443+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -118,8 +118,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1528405.01,
-      "cash": -1252655.76,
-      "realized_pnl": 37146.73,
+      "cash": -1201312.4,
+      "realized_pnl": 35341.69,
       "return_pct": 1.89,
       "positions": [
         {
@@ -190,12 +190,12 @@
         {
           "ticker": "MRVL",
           "name": "Marvell Technology",
-          "shares": 513,
+          "shares": 329,
           "avg_cost": 288.85,
           "current_price": 279.04,
-          "market_value": 143147.52,
+          "market_value": 91804.16,
           "unrealized_pnl_pct": -3.4,
-          "portfolio_pct": 0.094,
+          "portfolio_pct": 0.06,
           "entry_date": "2026-06-09T20:57:14+08:00",
           "type": "core_position",
           "sector": "Custom Silicon/网络"
@@ -2996,6 +2996,16 @@
       "shares": 675,
       "price": 341.0,
       "realized_pnl": -1696.25
+    },
+    {
+      "date": "2026-06-24",
+      "account": "us",
+      "action": "sell",
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "shares": 184,
+      "price": 279.04,
+      "realized_pnl": -1805.04
     }
   ]
 }
