@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-25T03:06:47.875382+00:00",
+    "last_updated": "2026-06-25T03:07:28.777343+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -157,7 +157,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1529131.9,
-      "cash": -1082567.08,
+      "cash": -1236159.22,
       "realized_pnl": 43711.11,
       "return_pct": 1.94,
       "positions": [
@@ -329,6 +329,19 @@
           "entry_date": "2026-06-25T11:06:40+08:00",
           "type": "",
           "sector": ""
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom Inc",
+          "shares": 402,
+          "avg_cost": 382.07,
+          "current_price": 382.07,
+          "market_value": 153592.14,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-06-25T11:07:23+08:00",
+          "type": "core_position",
+          "sector": "网络芯片/定制ASIC"
         }
       ]
     }
@@ -3163,6 +3176,15 @@
       "name": "Halozyme Therapeutics, Inc.",
       "shares": 2150,
       "price": 71.15
+    },
+    {
+      "date": "2026-06-25",
+      "account": "us",
+      "action": "buy",
+      "ticker": "AVGO",
+      "name": "Broadcom Inc",
+      "shares": 402,
+      "price": 382.07
     }
   ]
 }
