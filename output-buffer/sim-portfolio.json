@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-25T04:44:22.415368+00:00",
+    "last_updated": "2026-06-25T04:44:41.417455+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,8 +17,8 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 11046841.12,
-      "cash": 5482767.62,
-      "realized_pnl": 617835.4,
+      "cash": 5721434.12,
+      "realized_pnl": 624630.65,
       "return_pct": 10.47,
       "positions": [
         {
@@ -72,19 +72,6 @@
           "entry_date": "2026-06-15T12:12:07+08:00",
           "type": "",
           "sector": "光模块"
-        },
-        {
-          "ticker": "300476.SZ",
-          "name": "胜宏科技",
-          "shares": 675,
-          "avg_cost": 343.513,
-          "current_price": 353.58,
-          "market_value": 238666.5,
-          "unrealized_pnl_pct": 2.93,
-          "portfolio_pct": 0.022,
-          "entry_date": "2026-06-15T12:12:59+08:00",
-          "type": "",
-          "sector": "PCB"
         },
         {
           "ticker": "600150.SS",
@@ -3204,6 +3191,16 @@
       "shares": 17000,
       "price": 26.13,
       "realized_pnl": -74120.0
+    },
+    {
+      "date": "2026-06-25",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "300476",
+      "name": "胜宏科技",
+      "shares": 675,
+      "price": 353.58,
+      "realized_pnl": 6795.25
     }
   ]
 }
