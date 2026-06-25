@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-25T03:07:28.777343+00:00",
+    "last_updated": "2026-06-25T03:08:04.863327+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -157,7 +157,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1529131.9,
-      "cash": -1236159.22,
+      "cash": -1390564.02,
       "realized_pnl": 43711.11,
       "return_pct": 1.94,
       "positions": [
@@ -342,6 +342,19 @@
           "entry_date": "2026-06-25T11:07:23+08:00",
           "type": "core_position",
           "sector": "网络芯片/定制ASIC"
+        },
+        {
+          "ticker": "RMBS",
+          "name": "",
+          "shares": 1240,
+          "avg_cost": 124.52,
+          "current_price": 124.52,
+          "market_value": 154404.8,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.101,
+          "entry_date": "2026-06-25T11:07:57+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -3185,6 +3198,15 @@
       "name": "Broadcom Inc",
       "shares": 402,
       "price": 382.07
+    },
+    {
+      "date": "2026-06-25",
+      "account": "us",
+      "action": "buy",
+      "ticker": "RMBS",
+      "name": "Rambus, Inc.",
+      "shares": 1240,
+      "price": 124.52
     }
   ]
 }
