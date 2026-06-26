@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-26T02:28:54.048624+00:00",
+    "last_updated": "2026-06-26T02:29:18.272694+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,7 +131,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1557885.56,
-      "cash": -1310494.4,
+      "cash": -1359970.4,
       "realized_pnl": 41672.79,
       "return_pct": 3.86,
       "positions": [
@@ -307,12 +307,12 @@
         {
           "ticker": "RMBS",
           "name": "",
-          "shares": 1240,
-          "avg_cost": 124.52,
+          "shares": 1640,
+          "avg_cost": 124.3176,
           "current_price": 123.69,
-          "market_value": 153375.6,
-          "unrealized_pnl_pct": -0.67,
-          "portfolio_pct": 0.098,
+          "market_value": 202851.6,
+          "unrealized_pnl_pct": -0.5,
+          "portfolio_pct": 0.13,
           "entry_date": "2026-06-25T11:07:57+08:00",
           "type": "",
           "sector": ""
@@ -3212,6 +3212,15 @@
       "shares": 298,
       "price": 268.69,
       "realized_pnl": -2038.32
+    },
+    {
+      "date": "2026-06-26",
+      "account": "us",
+      "action": "buy",
+      "ticker": "RMBS",
+      "name": "Rambus, Inc.",
+      "shares": 400,
+      "price": 123.69
     }
   ]
 }
