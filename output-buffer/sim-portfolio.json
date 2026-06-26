@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-26T02:29:18.272694+00:00",
+    "last_updated": "2026-06-26T02:29:55.395941+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,7 +131,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1557885.56,
-      "cash": -1359970.4,
+      "cash": -1391044.4,
       "realized_pnl": 41672.79,
       "return_pct": 3.86,
       "positions": [
@@ -190,12 +190,12 @@
         {
           "ticker": "CCJ",
           "name": "Cameco Corporation",
-          "shares": 1684,
-          "avg_cost": 106.0116,
+          "shares": 1984,
+          "avg_cost": 105.6439,
           "current_price": 103.58,
-          "market_value": 174428.72,
-          "unrealized_pnl_pct": -2.29,
-          "portfolio_pct": 0.112,
+          "market_value": 205502.72,
+          "unrealized_pnl_pct": -1.95,
+          "portfolio_pct": 0.132,
           "entry_date": "2026-06-09T20:24:00+08:00",
           "type": "core_position",
           "sector": "Uranium/Nuclear"
@@ -3221,6 +3221,15 @@
       "name": "Rambus, Inc.",
       "shares": 400,
       "price": 123.69
+    },
+    {
+      "date": "2026-06-26",
+      "account": "us",
+      "action": "buy",
+      "ticker": "CCJ",
+      "name": "Cameco Corporation",
+      "shares": 300,
+      "price": 103.58
     }
   ]
 }
