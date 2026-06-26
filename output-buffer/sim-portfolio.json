@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-26T02:00:14.871905+00:00",
+    "last_updated": "2026-06-26T02:28:54.048624+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,8 +131,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1557885.56,
-      "cash": -1390564.02,
-      "realized_pnl": 43711.11,
+      "cash": -1310494.4,
+      "realized_pnl": 41672.79,
       "return_pct": 3.86,
       "positions": [
         {
@@ -275,19 +275,6 @@
           "unrealized_pnl_pct": -2.81,
           "portfolio_pct": 0.102,
           "entry_date": "2026-06-23T11:33:23+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "CEG",
-          "name": "",
-          "shares": 298,
-          "avg_cost": 275.53,
-          "current_price": 268.69,
-          "market_value": 80069.62,
-          "unrealized_pnl_pct": -2.48,
-          "portfolio_pct": 0.051,
-          "entry_date": "2026-06-23T11:33:51+08:00",
           "type": "",
           "sector": ""
         },
@@ -3215,6 +3202,16 @@
       "shares": 675,
       "price": 353.58,
       "realized_pnl": 6795.25
+    },
+    {
+      "date": "2026-06-26",
+      "account": "us",
+      "action": "sell",
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporatio",
+      "shares": 298,
+      "price": 268.69,
+      "realized_pnl": -2038.32
     }
   ]
 }
