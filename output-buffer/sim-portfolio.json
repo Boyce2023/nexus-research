@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-30T15:25:17.875970+00:00",
+    "last_updated": "2026-06-30T15:25:43.654373+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -117,8 +117,8 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1630894.11,
-      "cash": -1109506.4,
+      "total_assets": 1631006.08,
+      "cash": -1151936.3,
       "realized_pnl": 45031.45,
       "return_pct": 8.73,
       "positions": [
@@ -151,12 +151,12 @@
         {
           "ticker": "LNG",
           "name": "Cheniere Energy",
-          "shares": 634,
-          "avg_cost": 236.61,
-          "current_price": 242.28,
-          "market_value": 153605.52,
-          "unrealized_pnl_pct": 2.4,
-          "portfolio_pct": 0.094,
+          "shares": 809,
+          "avg_cost": 237.8747,
+          "current_price": 242.4566,
+          "market_value": 196147.39,
+          "unrealized_pnl_pct": 1.93,
+          "portfolio_pct": 0.12,
           "entry_date": "2026-06-09T14:22:40+08:00",
           "type": "core_position",
           "sector": "LNG Export/Energy"
@@ -819,10 +819,10 @@
         "return_pct": 9.76
       },
       "us": {
-        "total_assets": 1630894.11,
+        "total_assets": 1631006.08,
         "return_pct": 8.73
       },
-      "combined_return_pct": 9.22,
+      "combined_return_pct": 9.23,
       "sse_return_pct": 3.02,
       "spy_return_pct": 0.74
     }
@@ -3405,6 +3405,15 @@
       "shares": 94,
       "price": 469.25,
       "realized_pnl": 3137.8912
+    },
+    {
+      "date": "2026-06-30",
+      "account": "us",
+      "action": "buy",
+      "ticker": "LNG",
+      "name": "Cheniere Energy",
+      "shares": 175,
+      "price": 242.4566
     }
   ]
 }
