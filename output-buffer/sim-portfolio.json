@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-30T15:24:23.899179+00:00",
+    "last_updated": "2026-06-30T15:24:52.100923+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -117,10 +117,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1630157.87,
-      "cash": -1197588.5,
-      "realized_pnl": 39024.61,
-      "return_pct": 8.68,
+      "total_assets": 1629588.18,
+      "cash": -1153615.9,
+      "realized_pnl": 41893.56,
+      "return_pct": 8.64,
       "positions": [
         {
           "ticker": "NVDA",
@@ -169,7 +169,7 @@
           "current_price": 1978.8051,
           "market_value": 180071.26,
           "unrealized_pnl_pct": 13.14,
-          "portfolio_pct": 0.11,
+          "portfolio_pct": 0.111,
           "entry_date": "2026-06-09T20:22:46+08:00",
           "type": "core_position",
           "sector": "EUV Lithography"
@@ -242,12 +242,12 @@
         {
           "ticker": "BKNG",
           "name": "",
-          "shares": 489,
+          "shares": 244,
           "avg_cost": 167.77,
-          "current_price": 180.645,
-          "market_value": 88335.4,
-          "unrealized_pnl_pct": 7.67,
-          "portfolio_pct": 0.054,
+          "current_price": 179.48,
+          "market_value": 43793.12,
+          "unrealized_pnl_pct": 6.98,
+          "portfolio_pct": 0.027,
           "entry_date": "2026-06-23T11:32:55+08:00",
           "type": "",
           "sector": ""
@@ -819,10 +819,10 @@
         "return_pct": 9.76
       },
       "us": {
-        "total_assets": 1630157.87,
-        "return_pct": 8.68
+        "total_assets": 1629588.18,
+        "return_pct": 8.64
       },
-      "combined_return_pct": 9.2,
+      "combined_return_pct": 9.18,
       "sse_return_pct": 3.02,
       "spy_return_pct": 0.74
     }
@@ -3385,6 +3385,16 @@
       "shares": 530,
       "price": 100.9,
       "realized_pnl": -2514.2707
+    },
+    {
+      "date": "2026-06-30",
+      "account": "us",
+      "action": "sell",
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc. Common St",
+      "shares": 245,
+      "price": 179.48,
+      "realized_pnl": 2868.95
     }
   ]
 }
