@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-30T14:44:05.695022+00:00",
+    "last_updated": "2026-06-30T14:45:48.432573+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10975791.62,
-      "cash": 5727663.62,
+      "cash": 4632295.62,
       "realized_pnl": 599665.65,
       "return_pct": 9.76,
       "positions": [
@@ -85,6 +85,19 @@
           "entry_date": "2026-06-25T09:31:41+08:00",
           "type": "scout_position",
           "sector": "传感器/机器人"
+        },
+        {
+          "ticker": "605020.SS",
+          "name": "永和股份",
+          "shares": 26900,
+          "avg_cost": 40.72,
+          "current_price": 40.72,
+          "market_value": 1095368.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-06-30T22:45:43+08:00",
+          "type": "two_axis_probe",
+          "sector": "制冷剂/氟化工"
         }
       ]
     },
@@ -3311,6 +3324,15 @@
       "name": "金石资源",
       "shares": 33300,
       "price": 20.15
+    },
+    {
+      "date": "2026-06-30",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "605020",
+      "name": "永和股份",
+      "shares": 26900,
+      "price": 40.72
     }
   ]
 }
