@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-30T15:23:57.780901+00:00",
+    "last_updated": "2026-06-30T15:24:23.899179+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -117,10 +117,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1629681.71,
-      "cash": -1251065.5,
-      "realized_pnl": 41538.88,
-      "return_pct": 8.65,
+      "total_assets": 1630157.87,
+      "cash": -1197588.5,
+      "realized_pnl": 39024.61,
+      "return_pct": 8.68,
       "positions": [
         {
           "ticker": "NVDA",
@@ -177,12 +177,12 @@
         {
           "ticker": "CCJ",
           "name": "Cameco Corporation",
-          "shares": 1984,
+          "shares": 1454,
           "avg_cost": 105.6439,
-          "current_price": 100.66,
-          "market_value": 199709.44,
-          "unrealized_pnl_pct": -4.72,
-          "portfolio_pct": 0.123,
+          "current_price": 100.9,
+          "market_value": 146708.6,
+          "unrealized_pnl_pct": -4.49,
+          "portfolio_pct": 0.09,
           "entry_date": "2026-06-09T20:24:00+08:00",
           "type": "core_position",
           "sector": "Uranium/Nuclear"
@@ -819,10 +819,10 @@
         "return_pct": 9.76
       },
       "us": {
-        "total_assets": 1629681.71,
-        "return_pct": 8.65
+        "total_assets": 1630157.87,
+        "return_pct": 8.68
       },
-      "combined_return_pct": 9.18,
+      "combined_return_pct": 9.2,
       "sse_return_pct": 3.02,
       "spy_return_pct": 0.74
     }
@@ -3375,6 +3375,16 @@
       "shares": 48,
       "price": 1144.0,
       "realized_pnl": 5449.8888
+    },
+    {
+      "date": "2026-06-30",
+      "account": "us",
+      "action": "sell",
+      "ticker": "CCJ",
+      "name": "Cameco Corporation",
+      "shares": 530,
+      "price": 100.9,
+      "realized_pnl": -2514.2707
     }
   ]
 }
