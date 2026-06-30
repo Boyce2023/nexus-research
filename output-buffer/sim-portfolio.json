@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-30T14:43:47.777256+00:00",
+    "last_updated": "2026-06-30T14:44:05.695022+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10975791.62,
-      "cash": 6398658.62,
+      "cash": 5727663.62,
       "realized_pnl": 599665.65,
       "return_pct": 9.76,
       "positions": [
@@ -63,12 +63,12 @@
         {
           "ticker": "603505.SS",
           "name": "金石资源",
-          "shares": 32000,
-          "avg_cost": 20.48,
+          "shares": 65300,
+          "avg_cost": 20.3117,
           "current_price": 20.15,
-          "market_value": 644800.0,
-          "unrealized_pnl_pct": -1.61,
-          "portfolio_pct": 0.059,
+          "market_value": 1315795.0,
+          "unrealized_pnl_pct": -0.8,
+          "portfolio_pct": 0.12,
           "entry_date": "2026-06-25T09:31:14+08:00",
           "type": "core_position",
           "sector": "萤石资源"
@@ -3302,6 +3302,15 @@
       "name": "紫光国微",
       "shares": 10700,
       "price": 88.75
+    },
+    {
+      "date": "2026-06-30",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "603505",
+      "name": "金石资源",
+      "shares": 33300,
+      "price": 20.15
     }
   ]
 }
