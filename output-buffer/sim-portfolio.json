@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-30T15:24:52.100923+00:00",
+    "last_updated": "2026-06-30T15:25:17.875970+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -117,10 +117,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1629588.18,
-      "cash": -1153615.9,
-      "realized_pnl": 41893.56,
-      "return_pct": 8.64,
+      "total_assets": 1630894.11,
+      "cash": -1109506.4,
+      "realized_pnl": 45031.45,
+      "return_pct": 8.73,
       "positions": [
         {
           "ticker": "NVDA",
@@ -130,7 +130,7 @@
           "current_price": 197.83,
           "market_value": 261729.09,
           "unrealized_pnl_pct": -6.16,
-          "portfolio_pct": 0.161,
+          "portfolio_pct": 0.16,
           "entry_date": "2026-05-28T21:49:08+08:00",
           "type": "core_position",
           "sector": "AI芯片"
@@ -138,12 +138,12 @@
         {
           "ticker": "TSM",
           "name": "Taiwan Semiconductor",
-          "shares": 862,
+          "shares": 768,
           "avg_cost": 435.8682,
-          "current_price": 467.735,
-          "market_value": 403187.57,
-          "unrealized_pnl_pct": 7.31,
-          "portfolio_pct": 0.247,
+          "current_price": 469.25,
+          "market_value": 360384.0,
+          "unrealized_pnl_pct": 7.66,
+          "portfolio_pct": 0.221,
           "entry_date": "2026-06-03T13:32:54+08:00",
           "type": "core_position",
           "sector": "Semiconductor Foundry"
@@ -169,7 +169,7 @@
           "current_price": 1978.8051,
           "market_value": 180071.26,
           "unrealized_pnl_pct": 13.14,
-          "portfolio_pct": 0.111,
+          "portfolio_pct": 0.11,
           "entry_date": "2026-06-09T20:22:46+08:00",
           "type": "core_position",
           "sector": "EUV Lithography"
@@ -286,7 +286,7 @@
           "current_price": 375.13,
           "market_value": 150802.26,
           "unrealized_pnl_pct": -1.82,
-          "portfolio_pct": 0.093,
+          "portfolio_pct": 0.092,
           "entry_date": "2026-06-25T11:07:23+08:00",
           "type": "core_position",
           "sector": "网络芯片/定制ASIC"
@@ -819,10 +819,10 @@
         "return_pct": 9.76
       },
       "us": {
-        "total_assets": 1629588.18,
-        "return_pct": 8.64
+        "total_assets": 1630894.11,
+        "return_pct": 8.73
       },
-      "combined_return_pct": 9.18,
+      "combined_return_pct": 9.22,
       "sse_return_pct": 3.02,
       "spy_return_pct": 0.74
     }
@@ -3395,6 +3395,16 @@
       "shares": 245,
       "price": 179.48,
       "realized_pnl": 2868.95
+    },
+    {
+      "date": "2026-06-30",
+      "account": "us",
+      "action": "sell",
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "shares": 94,
+      "price": 469.25,
+      "realized_pnl": 3137.8912
     }
   ]
 }
