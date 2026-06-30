@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-30T15:06:00.663744+00:00",
+    "last_updated": "2026-06-30T15:23:24.336283+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -117,20 +117,20 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1629535.81,
-      "cash": -1391044.4,
-      "realized_pnl": 41672.79,
-      "return_pct": 8.64,
+      "total_assets": 1630061.71,
+      "cash": -1305977.5,
+      "realized_pnl": 36088.99,
+      "return_pct": 8.67,
       "positions": [
         {
           "ticker": "NVDA",
           "name": "NVIDIA Corporation",
-          "shares": 1753,
+          "shares": 1323,
           "avg_cost": 210.8156,
-          "current_price": 197.53,
-          "market_value": 346270.09,
-          "unrealized_pnl_pct": -6.3,
-          "portfolio_pct": 0.212,
+          "current_price": 197.83,
+          "market_value": 261729.09,
+          "unrealized_pnl_pct": -6.16,
+          "portfolio_pct": 0.161,
           "entry_date": "2026-05-28T21:49:08+08:00",
           "type": "core_position",
           "sector": "AI芯片"
@@ -169,7 +169,7 @@
           "current_price": 1978.8051,
           "market_value": 180071.26,
           "unrealized_pnl_pct": 13.14,
-          "portfolio_pct": 0.111,
+          "portfolio_pct": 0.11,
           "entry_date": "2026-06-09T20:22:46+08:00",
           "type": "core_position",
           "sector": "EUV Lithography"
@@ -819,10 +819,10 @@
         "return_pct": 9.76
       },
       "us": {
-        "total_assets": 1629535.81,
-        "return_pct": 8.64
+        "total_assets": 1630061.71,
+        "return_pct": 8.67
       },
-      "combined_return_pct": 9.18,
+      "combined_return_pct": 9.19,
       "sse_return_pct": 3.02,
       "spy_return_pct": 0.74
     }
@@ -3355,6 +3355,16 @@
       "name": "北方华创",
       "shares": 900,
       "price": 884.56
+    },
+    {
+      "date": "2026-06-30",
+      "account": "us",
+      "action": "sell",
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "shares": 430,
+      "price": 197.83,
+      "realized_pnl": -5583.8015
     }
   ]
 }
