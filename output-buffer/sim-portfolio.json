@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-06-30T08:37:08.772534+00:00",
+    "last_updated": "2026-06-30T14:43:47.777256+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10975791.62,
-      "cash": 7348283.62,
+      "cash": 6398658.62,
       "realized_pnl": 599665.65,
       "return_pct": 9.76,
       "positions": [
@@ -37,12 +37,12 @@
         {
           "ticker": "002049.SZ",
           "name": "紫光国微",
-          "shares": 14000,
-          "avg_cost": 71.33,
+          "shares": 24700,
+          "avg_cost": 78.8763,
           "current_price": 88.75,
-          "market_value": 1242500.0,
-          "unrealized_pnl_pct": 24.42,
-          "portfolio_pct": 0.113,
+          "market_value": 2192125.0,
+          "unrealized_pnl_pct": 12.52,
+          "portfolio_pct": 0.2,
           "entry_date": "2026-06-11T11:03:45+08:00",
           "type": "",
           "sector": "半导体"
@@ -798,7 +798,7 @@
       },
       "combined_return_pct": 6.7,
       "sse_return_pct": 3.02,
-      "spy_return_pct": 0.58
+      "spy_return_pct": 1.03
     }
   ],
   "trade_log": [
@@ -3293,6 +3293,15 @@
       "shares": 1950,
       "price": 68.41,
       "realized_pnl": 4504.5
+    },
+    {
+      "date": "2026-06-30",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "002049",
+      "name": "紫光国微",
+      "shares": 10700,
+      "price": 88.75
     }
   ]
 }
