@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-02T07:05:05.496742+00:00",
+    "last_updated": "2026-07-02T07:05:42.641140+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 11482814.62,
-      "cash": 3142909.62,
+      "cash": 2572486.62,
       "realized_pnl": 774051.96,
       "return_pct": 14.83,
       "positions": [
@@ -137,6 +137,19 @@
           "entry_date": "2026-07-01T10:43:39+08:00",
           "type": "core_position",
           "sector": "半导体材料/CMP"
+        },
+        {
+          "ticker": "002378.SZ",
+          "name": "章源钨业",
+          "shares": 16100,
+          "avg_cost": 35.43,
+          "current_price": 35.43,
+          "market_value": 570423.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.05,
+          "entry_date": "2026-07-02T15:05:37+08:00",
+          "type": "two_axis_probe",
+          "sector": "钨矿"
         }
       ]
     },
@@ -3524,6 +3537,15 @@
       "shares": 11600,
       "price": 48.39,
       "realized_pnl": 85887.5252
+    },
+    {
+      "date": "2026-07-02",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "002378",
+      "name": "章源钨业",
+      "shares": 16100,
+      "price": 35.43
     }
   ]
 }
