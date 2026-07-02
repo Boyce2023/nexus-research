@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-02T03:11:34.553533+00:00",
+    "last_updated": "2026-07-02T03:12:17.872133+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -267,7 +267,7 @@
         },
         {
           "ticker": "BKNG",
-          "name": "Booking Holdings Inc. Common St",
+          "name": "Booking Holdings",
           "shares": 244,
           "avg_cost": 167.77,
           "current_price": 182.64,
@@ -280,7 +280,7 @@
         },
         {
           "ticker": "SCHW",
-          "name": "Charles Schwab Corporation (The",
+          "name": "Charles Schwab",
           "shares": 1782,
           "avg_cost": 92.03,
           "current_price": 95.78,
