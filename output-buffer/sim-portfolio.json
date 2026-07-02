@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-02T05:05:27.792420+00:00",
+    "last_updated": "2026-07-02T07:04:50.096814+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,8 +17,8 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 11482814.62,
-      "cash": 2052322.62,
-      "realized_pnl": 599665.65,
+      "cash": 2581585.62,
+      "realized_pnl": 688164.44,
       "return_pct": 14.83,
       "positions": [
         {
@@ -63,12 +63,12 @@
         {
           "ticker": "603505.SS",
           "name": "金石资源",
-          "shares": 65300,
+          "shares": 43600,
           "avg_cost": 20.3117,
           "current_price": 24.39,
-          "market_value": 1592667.0,
+          "market_value": 1063404.0,
           "unrealized_pnl_pct": 20.08,
-          "portfolio_pct": 0.139,
+          "portfolio_pct": 0.093,
           "entry_date": "2026-06-25T09:31:14+08:00",
           "type": "core_position",
           "sector": "萤石资源"
@@ -3504,6 +3504,16 @@
       "name": "永和股份",
       "shares": 8000,
       "price": 41.88
+    },
+    {
+      "date": "2026-07-02",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "603505",
+      "name": "金石资源",
+      "shares": 21700,
+      "price": 24.39,
+      "realized_pnl": 88498.7845
     }
   ]
 }
