@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-03T02:47:58.244866+00:00",
+    "last_updated": "2026-07-03T02:48:37.608108+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,8 +16,8 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10958083.62,
-      "cash": 4220225.62,
+      "total_assets": 10957887.62,
+      "cash": 3874445.62,
       "realized_pnl": 675025.27,
       "return_pct": 9.58,
       "positions": [
@@ -76,12 +76,12 @@
         {
           "ticker": "603662.SS",
           "name": "柯力传感",
-          "shares": 4900,
-          "avg_cost": 68.91,
-          "current_price": 76.88,
-          "market_value": 376712.0,
-          "unrealized_pnl_pct": 11.57,
-          "portfolio_pct": 0.034,
+          "shares": 9400,
+          "avg_cost": 72.7063,
+          "current_price": 76.84,
+          "market_value": 722296.0,
+          "unrealized_pnl_pct": 5.69,
+          "portfolio_pct": 0.066,
           "entry_date": "2026-06-25T09:31:41+08:00",
           "type": "scout_position",
           "sector": "传感器/机器人"
@@ -883,7 +883,7 @@
     {
       "date": "2026-07-03",
       "a_share": {
-        "total_assets": 10958083.62,
+        "total_assets": 10957887.62,
         "return_pct": 9.58
       },
       "us": {
@@ -3586,6 +3586,15 @@
       "shares": 1600,
       "price": 289.05,
       "realized_pnl": -90480.0
+    },
+    {
+      "date": "2026-07-03",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "603662",
+      "name": "柯力传感",
+      "shares": 4500,
+      "price": 76.84
     }
   ]
 }
