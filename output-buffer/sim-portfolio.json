@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-03T02:47:46.543021+00:00",
+    "last_updated": "2026-07-03T02:47:58.244866+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10952803.62,
-      "cash": 3757745.62,
-      "realized_pnl": 765505.27,
-      "return_pct": 9.53,
+      "total_assets": 10958083.62,
+      "cash": 4220225.62,
+      "realized_pnl": 675025.27,
+      "return_pct": 9.58,
       "positions": [
         {
           "ticker": "688072.SS",
@@ -111,19 +111,6 @@
           "entry_date": "2026-07-01T10:43:26+08:00",
           "type": "catalyst_play",
           "sector": "化工/制冷剂"
-        },
-        {
-          "ticker": "688019.SS",
-          "name": "安集科技",
-          "shares": 1600,
-          "avg_cost": 345.6,
-          "current_price": 285.75,
-          "market_value": 457200.0,
-          "unrealized_pnl_pct": -17.32,
-          "portfolio_pct": 0.042,
-          "entry_date": "2026-07-01T10:43:39+08:00",
-          "type": "core_position",
-          "sector": "半导体材料/CMP"
         },
         {
           "ticker": "002378.SZ",
@@ -896,14 +883,14 @@
     {
       "date": "2026-07-03",
       "a_share": {
-        "total_assets": 10952803.62,
-        "return_pct": 9.53
+        "total_assets": 10958083.62,
+        "return_pct": 9.58
       },
       "us": {
         "total_assets": 1518005.6,
         "return_pct": 1.2
       },
-      "combined_return_pct": 5.2,
+      "combined_return_pct": 5.23,
       "sse_return_pct": 0.17,
       "spy_return_pct": 0.83
     }
@@ -3589,6 +3576,16 @@
       "shares": 12300,
       "price": 83.13,
       "realized_pnl": 52320.3132
+    },
+    {
+      "date": "2026-07-03",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "688019",
+      "name": "安集科技",
+      "shares": 1600,
+      "price": 289.05,
+      "realized_pnl": -90480.0
     }
   ]
 }
