@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-03T02:48:37.608108+00:00",
+    "last_updated": "2026-07-03T02:48:49.200338+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10957887.62,
-      "cash": 3874445.62,
+      "cash": 3261245.62,
       "realized_pnl": 675025.27,
       "return_pct": 9.58,
       "positions": [
@@ -137,6 +137,19 @@
           "entry_date": "2026-07-02T15:05:50+08:00",
           "type": "two_axis_probe",
           "sector": "钨/硬质合金"
+        },
+        {
+          "ticker": "002025.SZ",
+          "name": "航天电器",
+          "shares": 7300,
+          "avg_cost": 84.0,
+          "current_price": 84.0,
+          "market_value": 613200.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.056,
+          "entry_date": "2026-07-03T10:48:45+08:00",
+          "type": "two_axis_probe",
+          "sector": "军工/弹载连接器"
         }
       ]
     },
@@ -3595,6 +3608,15 @@
       "name": "柯力传感",
       "shares": 4500,
       "price": 76.84
+    },
+    {
+      "date": "2026-07-03",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "002025",
+      "name": "航天电器",
+      "shares": 7300,
+      "price": 84.0
     }
   ]
 }
