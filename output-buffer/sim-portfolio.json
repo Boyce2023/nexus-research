@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-03T08:24:03.977162+00:00",
+    "last_updated": "2026-07-03T08:24:31.526997+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -209,7 +209,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1518005.6,
-      "cash": -1030192.45,
+      "cash": -1182821.57,
       "realized_pnl": 39919.99,
       "return_pct": 1.2,
       "positions": [
@@ -407,6 +407,19 @@
           "entry_date": "2026-07-03T16:23:59+08:00",
           "type": "u4_tracking",
           "sector": "SPX期权垄断"
+        },
+        {
+          "ticker": "AEM",
+          "name": "Agnico Eagle Mines Limited",
+          "shares": 992,
+          "avg_cost": 153.86,
+          "current_price": 153.86,
+          "market_value": 152629.12,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.101,
+          "entry_date": "2026-07-03T16:24:26+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -3737,6 +3750,15 @@
       "name": "Cboe",
       "shares": 615,
       "price": 248.99
+    },
+    {
+      "date": "2026-07-03",
+      "account": "us",
+      "action": "buy",
+      "ticker": "AEM",
+      "name": "Agnico Eagle Mines Limited",
+      "shares": 992,
+      "price": 153.86
     }
   ]
 }
