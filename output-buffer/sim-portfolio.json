@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-03T08:03:40.370615+00:00",
+    "last_updated": "2026-07-03T08:03:52.050336+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10977147.62,
-      "cash": 1907682.62,
+      "cash": 1286952.62,
       "realized_pnl": 675025.27,
       "return_pct": 9.77,
       "positions": [
@@ -189,6 +189,19 @@
           "entry_date": "2026-07-03T16:03:35+08:00",
           "type": "two_axis_probe",
           "sector": "商业航天/星载时频"
+        },
+        {
+          "ticker": "000831.SZ",
+          "name": "中国稀土",
+          "shares": 11400,
+          "avg_cost": 54.45,
+          "current_price": 54.45,
+          "market_value": 620730.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.057,
+          "entry_date": "2026-07-03T16:03:47+08:00",
+          "type": "two_axis_probe",
+          "sector": "中重稀土矿"
         }
       ]
     },
@@ -3683,6 +3696,15 @@
       "name": "天奥电子",
       "shares": 8600,
       "price": 23.2
+    },
+    {
+      "date": "2026-07-03",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "000831",
+      "name": "中国稀土",
+      "shares": 11400,
+      "price": 54.45
     }
   ]
 }
