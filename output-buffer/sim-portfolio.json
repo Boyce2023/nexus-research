@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-06T02:18:16.810414+00:00",
+    "last_updated": "2026-07-06T03:00:36.911153+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10741936.62,
-      "cash": 2734510.62,
+      "cash": 2185540.62,
       "realized_pnl": 631874.41,
       "return_pct": 7.42,
       "positions": [
@@ -189,6 +189,19 @@
           "entry_date": "2026-07-03T16:03:47+08:00",
           "type": "two_axis_probe",
           "sector": "中重稀土矿"
+        },
+        {
+          "ticker": "688131.SS",
+          "name": "皓元医药",
+          "shares": 5800,
+          "avg_cost": 94.65,
+          "current_price": 94.65,
+          "market_value": 548970.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.051,
+          "entry_date": "2026-07-06T11:00:31+08:00",
+          "type": "two_axis_probe",
+          "sector": "创新药CDMO/毒素"
         }
       ]
     },
@@ -3804,6 +3817,15 @@
       "shares": 5900,
       "price": 83.2,
       "realized_pnl": -81597.0
+    },
+    {
+      "date": "2026-07-06",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "688131",
+      "name": "皓元医药",
+      "shares": 5800,
+      "price": 94.65
     }
   ]
 }
