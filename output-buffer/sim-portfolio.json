@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-06T03:17:10.846959+00:00",
+    "last_updated": "2026-07-06T03:17:22.545725+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10708252.62,
-      "cash": 1730188.62,
-      "realized_pnl": 560775.06,
-      "return_pct": 7.08,
+      "total_assets": 10707433.62,
+      "cash": 1895899.62,
+      "realized_pnl": 566641.04,
+      "return_pct": 7.07,
       "positions": [
         {
           "ticker": "688072.SS",
@@ -89,12 +89,12 @@
         {
           "ticker": "605020.SS",
           "name": "永和股份",
-          "shares": 11700,
+          "shares": 7800,
           "avg_cost": 40.9859,
-          "current_price": 42.56,
-          "market_value": 497952.0,
-          "unrealized_pnl_pct": 3.84,
-          "portfolio_pct": 0.047,
+          "current_price": 42.49,
+          "market_value": 331422.0,
+          "unrealized_pnl_pct": 3.67,
+          "portfolio_pct": 0.031,
           "entry_date": "2026-06-30T22:45:43+08:00",
           "type": "two_axis_probe",
           "sector": "制冷剂/氟化工"
@@ -1015,14 +1015,14 @@
     {
       "date": "2026-07-06",
       "a_share": {
-        "total_assets": 10708252.62,
-        "return_pct": 7.08
+        "total_assets": 10707433.62,
+        "return_pct": 7.07
       },
       "us": {
         "total_assets": 1518005.6,
         "return_pct": 1.2
       },
-      "combined_return_pct": 4.03,
+      "combined_return_pct": 4.02,
       "sse_return_pct": 0.13,
       "spy_return_pct": 0.83
     }
@@ -3877,6 +3877,16 @@
       "shares": 7200,
       "price": 20.79,
       "realized_pnl": 3443.652
+    },
+    {
+      "date": "2026-07-06",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "605020",
+      "name": "永和股份",
+      "shares": 3900,
+      "price": 42.49,
+      "realized_pnl": 5865.9783
     }
   ]
 }
