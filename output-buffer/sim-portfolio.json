@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-06T03:00:36.911153+00:00",
+    "last_updated": "2026-07-06T03:00:48.923097+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10741936.62,
-      "cash": 2185540.62,
+      "cash": 1603290.62,
       "realized_pnl": 631874.41,
       "return_pct": 7.42,
       "positions": [
@@ -202,6 +202,19 @@
           "entry_date": "2026-07-06T11:00:31+08:00",
           "type": "two_axis_probe",
           "sector": "创新药CDMO/毒素"
+        },
+        {
+          "ticker": "688293.SS",
+          "name": "奥浦迈",
+          "shares": 12500,
+          "avg_cost": 46.58,
+          "current_price": 46.58,
+          "market_value": 582250.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.054,
+          "entry_date": "2026-07-06T11:00:44+08:00",
+          "type": "two_axis_probe",
+          "sector": "创新药上游培养基"
         }
       ]
     },
@@ -3826,6 +3839,15 @@
       "name": "皓元医药",
       "shares": 5800,
       "price": 94.65
+    },
+    {
+      "date": "2026-07-06",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "688293",
+      "name": "奥浦迈",
+      "shares": 12500,
+      "price": 46.58
     }
   ]
 }
