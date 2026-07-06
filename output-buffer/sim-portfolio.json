@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-06T02:18:04.385090+00:00",
+    "last_updated": "2026-07-06T02:18:16.810414+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10744886.62,
-      "cash": 2243630.62,
-      "realized_pnl": 713471.41,
-      "return_pct": 7.45,
+      "total_assets": 10741936.62,
+      "cash": 2734510.62,
+      "realized_pnl": 631874.41,
+      "return_pct": 7.42,
       "positions": [
         {
           "ticker": "688072.SS",
@@ -124,19 +124,6 @@
           "entry_date": "2026-07-02T15:05:37+08:00",
           "type": "two_axis_probe",
           "sector": "钨矿"
-        },
-        {
-          "ticker": "000657.SZ",
-          "name": "中钨高新",
-          "shares": 5900,
-          "avg_cost": 97.03,
-          "current_price": 83.7,
-          "market_value": 493830.0,
-          "unrealized_pnl_pct": -13.74,
-          "portfolio_pct": 0.046,
-          "entry_date": "2026-07-02T15:05:50+08:00",
-          "type": "two_axis_probe",
-          "sector": "钨/硬质合金"
         },
         {
           "ticker": "002025.SZ",
@@ -1002,14 +989,14 @@
     {
       "date": "2026-07-06",
       "a_share": {
-        "total_assets": 10744886.62,
-        "return_pct": 7.45
+        "total_assets": 10741936.62,
+        "return_pct": 7.42
       },
       "us": {
         "total_assets": 1518005.6,
         "return_pct": 1.2
       },
-      "combined_return_pct": 4.2,
+      "combined_return_pct": 4.19,
       "sse_return_pct": 0.28,
       "spy_return_pct": 0.83
     }
@@ -3807,6 +3794,16 @@
       "shares": 11600,
       "price": 42.8,
       "realized_pnl": 21043.5252
+    },
+    {
+      "date": "2026-07-06",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "000657",
+      "name": "中钨高新",
+      "shares": 5900,
+      "price": 83.2,
+      "realized_pnl": -81597.0
     }
   ]
 }
