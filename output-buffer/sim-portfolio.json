@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-06T03:15:40.765877+00:00",
+    "last_updated": "2026-07-06T03:16:58.470831+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10712042.62,
-      "cash": 1084620.62,
-      "realized_pnl": 631874.41,
-      "return_pct": 7.12,
+      "total_assets": 10710432.62,
+      "cash": 1580500.62,
+      "realized_pnl": 557331.41,
+      "return_pct": 7.1,
       "positions": [
         {
           "ticker": "688072.SS",
@@ -111,19 +111,6 @@
           "entry_date": "2026-07-01T10:43:26+08:00",
           "type": "catalyst_play",
           "sector": "化工/制冷剂"
-        },
-        {
-          "ticker": "002378.SZ",
-          "name": "章源钨业",
-          "shares": 16100,
-          "avg_cost": 35.43,
-          "current_price": 30.9,
-          "market_value": 497490.0,
-          "unrealized_pnl_pct": -12.79,
-          "portfolio_pct": 0.046,
-          "entry_date": "2026-07-02T15:05:37+08:00",
-          "type": "two_axis_probe",
-          "sector": "钨矿"
         },
         {
           "ticker": "002025.SZ",
@@ -1028,14 +1015,14 @@
     {
       "date": "2026-07-06",
       "a_share": {
-        "total_assets": 10712042.62,
-        "return_pct": 7.12
+        "total_assets": 10710432.62,
+        "return_pct": 7.1
       },
       "us": {
         "total_assets": 1518005.6,
         "return_pct": 1.2
       },
-      "combined_return_pct": 4.05,
+      "combined_return_pct": 4.04,
       "sse_return_pct": 0.13,
       "spy_return_pct": 0.83
     }
@@ -3870,6 +3857,16 @@
       "name": "药石科技",
       "shares": 13500,
       "price": 38.42
+    },
+    {
+      "date": "2026-07-06",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "002378",
+      "name": "章源钨业",
+      "shares": 16100,
+      "price": 30.8,
+      "realized_pnl": -74543.0
     }
   ]
 }
