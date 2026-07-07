@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-07T05:42:28.073867+00:00",
+    "last_updated": "2026-07-07T05:42:40.257476+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10415631.62,
-      "cash": 2626051.62,
-      "realized_pnl": 506468.04,
-      "return_pct": 4.16,
+      "total_assets": 10413485.62,
+      "cash": 3129665.62,
+      "realized_pnl": 461112.04,
+      "return_pct": 4.13,
       "positions": [
         {
           "ticker": "688072.SS",
@@ -150,19 +150,6 @@
           "entry_date": "2026-07-03T16:03:47+08:00",
           "type": "two_axis_probe",
           "sector": "中重稀土矿"
-        },
-        {
-          "ticker": "688131.SS",
-          "name": "皓元医药",
-          "shares": 5800,
-          "avg_cost": 94.65,
-          "current_price": 87.2,
-          "market_value": 505760.0,
-          "unrealized_pnl_pct": -7.87,
-          "portfolio_pct": 0.049,
-          "entry_date": "2026-07-06T11:00:31+08:00",
-          "type": "two_axis_probe",
-          "sector": "创新药CDMO/毒素"
         },
         {
           "ticker": "688293.SS",
@@ -990,14 +977,14 @@
     {
       "date": "2026-07-07",
       "a_share": {
-        "total_assets": 10415631.62,
-        "return_pct": 4.16
+        "total_assets": 10413485.62,
+        "return_pct": 4.13
       },
       "us": {
         "total_assets": 1557939.24,
         "return_pct": 3.86
       },
-      "combined_return_pct": 4.0,
+      "combined_return_pct": 3.99,
       "sse_return_pct": -0.98,
       "spy_return_pct": 1.71
     }
@@ -3892,6 +3879,16 @@
       "shares": 8600,
       "price": 21.87,
       "realized_pnl": -11438.0
+    },
+    {
+      "date": "2026-07-07",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "688131",
+      "name": "皓元医药",
+      "shares": 5800,
+      "price": 86.83,
+      "realized_pnl": -45356.0
     }
   ]
 }
