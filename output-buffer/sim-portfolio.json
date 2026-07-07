@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-07T05:48:54.901909+00:00",
+    "last_updated": "2026-07-07T05:49:08.640067+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,9 +16,9 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10408125.62,
-      "cash": 4678996.62,
-      "realized_pnl": 346285.04,
+      "total_assets": 10407783.62,
+      "cash": 5257318.62,
+      "realized_pnl": 303877.04,
       "return_pct": 4.08,
       "positions": [
         {
@@ -124,19 +124,6 @@
           "entry_date": "2026-07-03T10:48:45+08:00",
           "type": "two_axis_probe",
           "sector": "军工/弹载连接器"
-        },
-        {
-          "ticker": "000831.SZ",
-          "name": "中国稀土",
-          "shares": 11400,
-          "avg_cost": 54.45,
-          "current_price": 50.76,
-          "market_value": 578664.0,
-          "unrealized_pnl_pct": -6.78,
-          "portfolio_pct": 0.056,
-          "entry_date": "2026-07-03T16:03:47+08:00",
-          "type": "two_axis_probe",
-          "sector": "中重稀土矿"
         }
       ]
     },
@@ -938,7 +925,7 @@
     {
       "date": "2026-07-07",
       "a_share": {
-        "total_assets": 10408125.62,
+        "total_assets": 10407783.62,
         "return_pct": 4.08
       },
       "us": {
@@ -3880,6 +3867,16 @@
       "shares": 16600,
       "price": 31.86,
       "realized_pnl": -34362.0
+    },
+    {
+      "date": "2026-07-07",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "000831",
+      "name": "中国稀土",
+      "shares": 11400,
+      "price": 50.73,
+      "realized_pnl": -42408.0
     }
   ]
 }
