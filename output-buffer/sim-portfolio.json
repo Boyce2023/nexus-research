@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-09T08:00:16.080956+00:00",
+    "last_updated": "2026-07-09T08:54:49.625054+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,8 +17,8 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10278506.62,
-      "cash": 5257318.62,
-      "realized_pnl": 303877.04,
+      "cash": 5507270.62,
+      "realized_pnl": 257278.0,
       "return_pct": 2.79,
       "positions": [
         {
@@ -59,19 +59,6 @@
           "entry_date": "2026-06-25T09:30:38+08:00",
           "type": "core_position",
           "sector": "消费电子-快充/电池"
-        },
-        {
-          "ticker": "603505.SS",
-          "name": "金石资源",
-          "shares": 14600,
-          "avg_cost": 20.3117,
-          "current_price": 17.12,
-          "market_value": 249952.0,
-          "unrealized_pnl_pct": -15.71,
-          "portfolio_pct": 0.024,
-          "entry_date": "2026-06-25T09:31:14+08:00",
-          "type": "core_position",
-          "sector": "萤石资源"
         },
         {
           "ticker": "603662.SS",
@@ -3947,6 +3934,16 @@
       "name": "RTX Corporation",
       "shares": 810,
       "price": 194.91
+    },
+    {
+      "date": "2026-07-09",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "603505",
+      "name": "金石资源",
+      "shares": 14600,
+      "price": 17.12,
+      "realized_pnl": -46599.039
     }
   ]
 }
