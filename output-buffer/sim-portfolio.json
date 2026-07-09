@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-09T05:00:44.606501+00:00",
+    "last_updated": "2026-07-09T05:01:02.770006+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,8 +131,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1556831.15,
-      "cash": -1066784.81,
-      "realized_pnl": 38706.31,
+      "cash": -1024983.41,
+      "realized_pnl": 40542.31,
       "return_pct": 3.79,
       "positions": [
         {
@@ -229,12 +229,12 @@
         {
           "ticker": "VST",
           "name": "Vistra Corp",
-          "shares": 540,
+          "shares": 270,
           "avg_cost": 148.02,
           "current_price": 154.82,
-          "market_value": 83602.8,
+          "market_value": 41801.4,
           "unrealized_pnl_pct": 4.59,
-          "portfolio_pct": 0.054,
+          "portfolio_pct": 0.027,
           "entry_date": "2026-06-14T20:48:44+08:00",
           "type": "trading_position",
           "sector": "DC电力/独立发电"
@@ -3915,6 +3915,16 @@
       "shares": 496,
       "price": 144.89,
       "realized_pnl": -4449.12
+    },
+    {
+      "date": "2026-07-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "VST",
+      "name": "Vistra Corp",
+      "shares": 270,
+      "price": 154.82,
+      "realized_pnl": 1836.0
     }
   ]
 }
