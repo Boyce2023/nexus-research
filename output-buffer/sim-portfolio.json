@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-15T12:29:41.352921+00:00",
+    "last_updated": "2026-07-15T15:50:50.930776+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -130,220 +130,11 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1536481.9,
-      "cash": -1182860.51,
-      "realized_pnl": 40542.31,
-      "return_pct": 2.43,
-      "positions": [
-        {
-          "ticker": "NVDA",
-          "name": "NVIDIA Corporation",
-          "shares": 1323,
-          "avg_cost": 210.8156,
-          "current_price": 211.8,
-          "market_value": 280211.4,
-          "unrealized_pnl_pct": 0.47,
-          "portfolio_pct": 0.182,
-          "entry_date": "2026-05-28T21:49:08+08:00",
-          "type": "core_position",
-          "sector": "AI芯片"
-        },
-        {
-          "ticker": "TSM",
-          "name": "Taiwan Semiconductor",
-          "shares": 768,
-          "avg_cost": 435.8682,
-          "current_price": 420.39,
-          "market_value": 322859.52,
-          "unrealized_pnl_pct": -3.55,
-          "portfolio_pct": 0.21,
-          "entry_date": "2026-06-03T13:32:54+08:00",
-          "type": "core_position",
-          "sector": "Semiconductor Foundry"
-        },
-        {
-          "ticker": "LNG",
-          "name": "Cheniere Energy",
-          "shares": 809,
-          "avg_cost": 237.8747,
-          "current_price": 265.03,
-          "market_value": 214409.27,
-          "unrealized_pnl_pct": 11.42,
-          "portfolio_pct": 0.14,
-          "entry_date": "2026-06-09T14:22:40+08:00",
-          "type": "core_position",
-          "sector": "LNG Export/Energy"
-        },
-        {
-          "ticker": "ASML",
-          "name": "ASML Holding N.V.",
-          "shares": 91,
-          "avg_cost": 1749.04,
-          "current_price": 1775.64,
-          "market_value": 161583.24,
-          "unrealized_pnl_pct": 1.52,
-          "portfolio_pct": 0.105,
-          "entry_date": "2026-06-09T20:22:46+08:00",
-          "type": "core_position",
-          "sector": "EUV Lithography"
-        },
-        {
-          "ticker": "CCJ",
-          "name": "Cameco Corporation",
-          "shares": 1454,
-          "avg_cost": 105.6439,
-          "current_price": 91.57,
-          "market_value": 133142.78,
-          "unrealized_pnl_pct": -13.32,
-          "portfolio_pct": 0.087,
-          "entry_date": "2026-06-09T20:24:00+08:00",
-          "type": "core_position",
-          "sector": "Uranium/Nuclear"
-        },
-        {
-          "ticker": "MU",
-          "name": "Micron Technology",
-          "shares": 142,
-          "avg_cost": 1030.4607,
-          "current_price": 983.12,
-          "market_value": 139603.04,
-          "unrealized_pnl_pct": -4.59,
-          "portfolio_pct": 0.091,
-          "entry_date": "2026-06-12T11:17:36+08:00",
-          "type": "core_position",
-          "sector": "Memory/HBM"
-        },
-        {
-          "ticker": "QQQ",
-          "name": "Invesco QQQ Trust (Nasdaq-100)",
-          "shares": 245,
-          "avg_cost": 724.5706,
-          "current_price": 719.71,
-          "market_value": 176328.95,
-          "unrealized_pnl_pct": -0.67,
-          "portfolio_pct": 0.115,
-          "entry_date": "2026-06-12T11:17:57+08:00",
-          "type": "index_beta",
-          "sector": "指数ETF"
-        },
-        {
-          "ticker": "VST",
-          "name": "Vistra Corp",
-          "shares": 270,
-          "avg_cost": 148.02,
-          "current_price": 158.43,
-          "market_value": 42776.1,
-          "unrealized_pnl_pct": 7.03,
-          "portfolio_pct": 0.028,
-          "entry_date": "2026-06-14T20:48:44+08:00",
-          "type": "trading_position",
-          "sector": "DC电力/独立发电"
-        },
-        {
-          "ticker": "LLY",
-          "name": "Eli Lilly and Company",
-          "shares": 132,
-          "avg_cost": 1133.0,
-          "current_price": 1152.54,
-          "market_value": 152135.28,
-          "unrealized_pnl_pct": 1.72,
-          "portfolio_pct": 0.099,
-          "entry_date": "2026-06-14T20:50:14+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "SCHW",
-          "name": "Charles Schwab",
-          "shares": 1782,
-          "avg_cost": 92.03,
-          "current_price": 101.1,
-          "market_value": 180160.2,
-          "unrealized_pnl_pct": 9.86,
-          "portfolio_pct": 0.117,
-          "entry_date": "2026-06-23T11:33:23+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "HALO",
-          "name": "Halozyme Therapeutics, Inc.",
-          "shares": 2525,
-          "avg_cost": 72.2297,
-          "current_price": 75.05,
-          "market_value": 189501.25,
-          "unrealized_pnl_pct": 3.9,
-          "portfolio_pct": 0.123,
-          "entry_date": "2026-06-25T11:06:40+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "AVGO",
-          "name": "Broadcom Inc",
-          "shares": 402,
-          "avg_cost": 382.07,
-          "current_price": 389.11,
-          "market_value": 156422.22,
-          "unrealized_pnl_pct": 1.84,
-          "portfolio_pct": 0.102,
-          "entry_date": "2026-06-25T11:07:23+08:00",
-          "type": "core_position",
-          "sector": "网络芯片/定制ASIC"
-        },
-        {
-          "ticker": "RMBS",
-          "name": "Rambus, Inc.",
-          "shares": 1640,
-          "avg_cost": 124.3176,
-          "current_price": 105.38,
-          "market_value": 172823.2,
-          "unrealized_pnl_pct": -15.23,
-          "portfolio_pct": 0.112,
-          "entry_date": "2026-06-25T11:07:57+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "CBOE",
-          "name": "Cboe",
-          "shares": 615,
-          "avg_cost": 248.99,
-          "current_price": 274.98,
-          "market_value": 169112.7,
-          "unrealized_pnl_pct": 10.44,
-          "portfolio_pct": 0.11,
-          "entry_date": "2026-07-03T16:23:59+08:00",
-          "type": "u4_tracking",
-          "sector": "SPX期权垄断"
-        },
-        {
-          "ticker": "AEM",
-          "name": "Agnico Eagle Mines Limited",
-          "shares": 496,
-          "avg_cost": 153.86,
-          "current_price": 144.41,
-          "market_value": 71627.36,
-          "unrealized_pnl_pct": -6.14,
-          "portfolio_pct": 0.047,
-          "entry_date": "2026-07-03T16:24:26+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "RTX",
-          "name": "RTX Corporation",
-          "shares": 810,
-          "avg_cost": 194.91,
-          "current_price": 193.39,
-          "market_value": 156645.9,
-          "unrealized_pnl_pct": -0.78,
-          "portfolio_pct": 0.102,
-          "entry_date": "2026-07-09T13:04:53+08:00",
-          "type": "core_position",
-          "sector": "Defense/Aerospace"
-        }
-      ]
+      "total_assets": 1575807.35,
+      "cash": 1575807.35,
+      "realized_pnl": 75807.34,
+      "return_pct": 5.05,
+      "positions": []
     }
   },
   "daily_snapshots": [
@@ -1026,10 +817,10 @@
         "return_pct": 0.06
       },
       "us": {
-        "total_assets": 1536481.9,
-        "return_pct": 2.43
+        "total_assets": 1575807.35,
+        "return_pct": 5.05
       },
-      "combined_return_pct": 1.29,
+      "combined_return_pct": 2.65,
       "sse_return_pct": -0.97,
       "spy_return_pct": 1.78
     }
