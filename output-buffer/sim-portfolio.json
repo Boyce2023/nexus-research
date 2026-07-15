@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-15T17:30:06.055446+00:00",
+    "last_updated": "2026-07-15T17:30:22.222609+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10224116.62,
-      "cash": 7011822.62,
+      "cash": 6554822.62,
       "realized_pnl": 260748.36,
       "return_pct": 2.24,
       "positions": [
@@ -72,6 +72,19 @@
           "entry_date": "2026-07-16T01:30:00+08:00",
           "type": "深研埋伏仓",
           "sector": "磷化工/氟化工"
+        },
+        {
+          "ticker": "688131.SS",
+          "name": "皓元医药",
+          "shares": 5000,
+          "avg_cost": 91.4,
+          "current_price": 91.4,
+          "market_value": 457000.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.045,
+          "entry_date": "2026-07-16T01:30:17+08:00",
+          "type": "two_axis_probe",
+          "sector": "创新药CDMO/毒素"
         }
       ]
     },
@@ -4093,6 +4106,15 @@
       "name": "川恒股份",
       "shares": 14800,
       "price": 31.11
+    },
+    {
+      "date": "2026-07-16",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "688131",
+      "name": "皓元医药",
+      "shares": 5000,
+      "price": 91.4
     }
   ]
 }
