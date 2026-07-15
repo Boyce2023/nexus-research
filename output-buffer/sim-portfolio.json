@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-15T16:46:57.703758+00:00",
+    "last_updated": "2026-07-15T16:50:54.293995+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,10 +17,24 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10224116.62,
-      "cash": 10224116.62,
+      "cash": 9308060.62,
       "realized_pnl": 260748.36,
       "return_pct": 2.24,
-      "positions": []
+      "positions": [
+        {
+          "ticker": "688356.SS",
+          "name": "键凯科技",
+          "shares": 10800,
+          "avg_cost": 84.82,
+          "current_price": 84.82,
+          "market_value": 916056.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.09,
+          "entry_date": "2026-07-16T00:50:50+08:00",
+          "type": "深研埋伏仓",
+          "sector": "创新药/PEG衍生物"
+        }
+      ]
     },
     "us": {
       "currency": "USD",
@@ -3990,6 +4004,15 @@
       "shares": 25400,
       "price": 38.28,
       "realized_pnl": 50292.0
+    },
+    {
+      "date": "2026-07-16",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "688356",
+      "name": "键凯科技",
+      "shares": 10800,
+      "price": 84.82
     }
   ]
 }
