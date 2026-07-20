@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-17T03:30:21.497470+00:00",
+    "last_updated": "2026-07-20T01:26:02.460289+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,20 +16,20 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10128867.62,
+      "total_assets": 9970691.62,
       "cash": 6096247.62,
       "realized_pnl": 260748.36,
-      "return_pct": 1.29,
+      "return_pct": -0.29,
       "positions": [
         {
           "ticker": "688356.SS",
           "name": "键凯科技",
           "shares": 10800,
           "avg_cost": 84.82,
-          "current_price": 81.6,
-          "market_value": 881280.0,
-          "unrealized_pnl_pct": -3.8,
-          "portfolio_pct": 0.087,
+          "current_price": 78.5,
+          "market_value": 847800.0,
+          "unrealized_pnl_pct": -7.45,
+          "portfolio_pct": 0.085,
           "entry_date": "2026-07-16T00:50:50+08:00",
           "type": "深研埋伏仓",
           "sector": "创新药/PEG衍生物"
@@ -39,10 +39,10 @@
           "name": "惠泰医疗",
           "shares": 4300,
           "avg_cost": 213.0,
-          "current_price": 210.0,
-          "market_value": 903000.0,
-          "unrealized_pnl_pct": -1.41,
-          "portfolio_pct": 0.089,
+          "current_price": 204.0,
+          "market_value": 877200.0,
+          "unrealized_pnl_pct": -4.23,
+          "portfolio_pct": 0.088,
           "entry_date": "2026-07-16T01:04:37+08:00",
           "type": "深研埋伏仓",
           "sector": "医疗器械/电生理"
@@ -52,10 +52,10 @@
           "name": "中信特钢",
           "shares": 67000,
           "avg_cost": 13.73,
-          "current_price": 13.56,
-          "market_value": 908520.0,
-          "unrealized_pnl_pct": -1.24,
-          "portfolio_pct": 0.09,
+          "current_price": 13.48,
+          "market_value": 903160.0,
+          "unrealized_pnl_pct": -1.82,
+          "portfolio_pct": 0.091,
           "entry_date": "2026-07-16T01:04:46+08:00",
           "type": "深研埋伏仓",
           "sector": "特钢/轴承钢"
@@ -65,10 +65,10 @@
           "name": "川恒股份",
           "shares": 14800,
           "avg_cost": 31.11,
-          "current_price": 30.4,
-          "market_value": 449920.0,
-          "unrealized_pnl_pct": -2.28,
-          "portfolio_pct": 0.044,
+          "current_price": 30.58,
+          "market_value": 452584.0,
+          "unrealized_pnl_pct": -1.7,
+          "portfolio_pct": 0.045,
           "entry_date": "2026-07-16T01:30:00+08:00",
           "type": "深研埋伏仓",
           "sector": "磷化工/氟化工"
@@ -78,10 +78,10 @@
           "name": "皓元医药",
           "shares": 5000,
           "avg_cost": 91.4,
-          "current_price": 85.5,
-          "market_value": 427500.0,
-          "unrealized_pnl_pct": -6.46,
-          "portfolio_pct": 0.042,
+          "current_price": 71.7,
+          "market_value": 358500.0,
+          "unrealized_pnl_pct": -21.55,
+          "portfolio_pct": 0.036,
           "entry_date": "2026-07-16T01:30:17+08:00",
           "type": "two_axis_probe",
           "sector": "创新药CDMO/毒素"
@@ -91,10 +91,10 @@
           "name": "奥浦迈",
           "shares": 8500,
           "avg_cost": 53.95,
-          "current_price": 54.4,
-          "market_value": 462400.0,
-          "unrealized_pnl_pct": 0.83,
-          "portfolio_pct": 0.046,
+          "current_price": 51.2,
+          "market_value": 435200.0,
+          "unrealized_pnl_pct": -5.1,
+          "portfolio_pct": 0.044,
           "entry_date": "2026-07-16T01:30:31+08:00",
           "type": "two_axis_probe",
           "sector": "创新药上游培养基"
@@ -984,21 +984,7 @@
     {
       "date": "2026-07-16",
       "a_share": {
-        "total_assets": 10224116.62,
-        "return_pct": 2.24
-      },
-      "us": {
-        "total_assets": 1572619.35,
-        "return_pct": 4.84
-      },
-      "combined_return_pct": 3.59,
-      "sse_return_pct": -0.97,
-      "spy_return_pct": 1.95
-    },
-    {
-      "date": "2026-07-17",
-      "a_share": {
-        "total_assets": 10128867.62,
+        "total_assets": 10128868,
         "return_pct": 1.29
       },
       "us": {
@@ -1006,8 +992,36 @@
         "return_pct": 4.84
       },
       "combined_return_pct": 3.13,
-      "sse_return_pct": -2.79,
+      "sse_return_pct": -2.8,
       "spy_return_pct": 1.95
+    },
+    {
+      "date": "2026-07-17",
+      "a_share": {
+        "total_assets": 9961572,
+        "return_pct": -0.38
+      },
+      "us": {
+        "total_assets": 1572619.35,
+        "return_pct": 4.84
+      },
+      "combined_return_pct": 2.33,
+      "sse_return_pct": -6.31,
+      "spy_return_pct": 0.89
+    },
+    {
+      "date": "2026-07-20",
+      "a_share": {
+        "total_assets": 9970691.62,
+        "return_pct": -0.29
+      },
+      "us": {
+        "total_assets": 1572619.35,
+        "return_pct": 4.84
+      },
+      "combined_return_pct": 2.37,
+      "sse_return_pct": -6.31,
+      "spy_return_pct": 0.89
     }
   ],
   "trade_log": [
