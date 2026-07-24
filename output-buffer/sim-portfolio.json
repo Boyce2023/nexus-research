@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-24T07:55:53.278791+00:00",
+    "last_updated": "2026-07-24T08:00:19.494902+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,20 +16,20 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10045881.62,
+      "total_assets": 10033152.62,
       "cash": 7240879.62,
       "realized_pnl": 32324.36,
-      "return_pct": 0.46,
+      "return_pct": 0.33,
       "positions": [
         {
           "ticker": "688617.SS",
           "name": "惠泰医疗",
           "shares": 4300,
           "avg_cost": 213.0,
-          "current_price": 209.19,
-          "market_value": 899517.0,
-          "unrealized_pnl_pct": -1.79,
-          "portfolio_pct": 0.09,
+          "current_price": 207.5,
+          "market_value": 892250.0,
+          "unrealized_pnl_pct": -2.58,
+          "portfolio_pct": 0.089,
           "entry_date": "2026-07-16T01:04:37+08:00",
           "type": "深研埋伏仓",
           "sector": "医疗器械/电生理"
@@ -52,9 +52,9 @@
           "name": "川恒股份",
           "shares": 14800,
           "avg_cost": 31.11,
-          "current_price": 33.45,
-          "market_value": 495060.0,
-          "unrealized_pnl_pct": 7.52,
+          "current_price": 33.46,
+          "market_value": 495208.0,
+          "unrealized_pnl_pct": 7.55,
           "portfolio_pct": 0.049,
           "entry_date": "2026-07-16T01:30:00+08:00",
           "type": "深研埋伏仓",
@@ -65,9 +65,9 @@
           "name": "奥浦迈",
           "shares": 8500,
           "avg_cost": 53.95,
-          "current_price": 53.53,
-          "market_value": 455005.0,
-          "unrealized_pnl_pct": -0.78,
+          "current_price": 52.87,
+          "market_value": 449395.0,
+          "unrealized_pnl_pct": -2.0,
           "portfolio_pct": 0.045,
           "entry_date": "2026-07-16T01:30:31+08:00",
           "type": "two_axis_probe",
@@ -1055,15 +1055,15 @@
     {
       "date": "2026-07-24",
       "a_share": {
-        "total_assets": 10045881.62,
-        "return_pct": 0.46
+        "total_assets": 10033152.62,
+        "return_pct": 0.33
       },
       "us": {
         "total_assets": 1492778.64,
         "return_pct": -0.48
       },
-      "combined_return_pct": -0.03,
-      "sse_return_pct": -3.33,
+      "combined_return_pct": -0.09,
+      "sse_return_pct": -3.81,
       "spy_return_pct": -0.06
     }
   ],
