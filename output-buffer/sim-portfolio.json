@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-24T04:50:09.919608+00:00",
+    "last_updated": "2026-07-24T07:55:53.278791+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,24 +16,11 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10068021.62,
-      "cash": 6454747.62,
-      "realized_pnl": 162248.36,
-      "return_pct": 0.68,
+      "total_assets": 10045881.62,
+      "cash": 7240879.62,
+      "realized_pnl": 32324.36,
+      "return_pct": 0.46,
       "positions": [
-        {
-          "ticker": "688356.SS",
-          "name": "键凯科技",
-          "shares": 10800,
-          "avg_cost": 84.82,
-          "current_price": 74.84,
-          "market_value": 808272.0,
-          "unrealized_pnl_pct": -11.77,
-          "portfolio_pct": 0.08,
-          "entry_date": "2026-07-16T00:50:50+08:00",
-          "type": "深研埋伏仓",
-          "sector": "创新药/PEG衍生物"
-        },
         {
           "ticker": "688617.SS",
           "name": "惠泰医疗",
@@ -42,7 +29,7 @@
           "current_price": 209.19,
           "market_value": 899517.0,
           "unrealized_pnl_pct": -1.79,
-          "portfolio_pct": 0.089,
+          "portfolio_pct": 0.09,
           "entry_date": "2026-07-16T01:04:37+08:00",
           "type": "深研埋伏仓",
           "sector": "医疗器械/电生理"
@@ -1068,14 +1055,14 @@
     {
       "date": "2026-07-24",
       "a_share": {
-        "total_assets": 10068021.62,
-        "return_pct": 0.68
+        "total_assets": 10045881.62,
+        "return_pct": 0.46
       },
       "us": {
         "total_assets": 1492778.64,
         "return_pct": -0.48
       },
-      "combined_return_pct": 0.08,
+      "combined_return_pct": -0.03,
       "sse_return_pct": -3.33,
       "spy_return_pct": -0.06
     }
@@ -4269,6 +4256,16 @@
       "name": "Micron Technology",
       "shares": 152,
       "price": 990.21
+    },
+    {
+      "date": "2026-07-24",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "688356",
+      "name": "键凯科技",
+      "shares": 10800,
+      "price": 72.79,
+      "realized_pnl": -129924.0
     }
   ]
 }
