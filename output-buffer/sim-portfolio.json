@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-24T04:49:54.644752+00:00",
+    "last_updated": "2026-07-24T04:50:09.919608+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -92,7 +92,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1492778.64,
-      "cash": -1141548.18,
+      "cash": -1292060.1,
       "realized_pnl": 59616.15,
       "return_pct": -0.48,
       "positions": [
@@ -277,6 +277,19 @@
           "entry_date": "2026-07-23T11:12:25+08:00",
           "type": "u4_tracking",
           "sector": "SPX期权垄断"
+        },
+        {
+          "ticker": "MU",
+          "name": "Micron Technology",
+          "shares": 152,
+          "avg_cost": 990.21,
+          "current_price": 990.21,
+          "market_value": 150511.92,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.101,
+          "entry_date": "2026-07-24T12:50:05+08:00",
+          "type": "core_position",
+          "sector": "Memory/HBM"
         }
       ]
     }
@@ -4247,6 +4260,15 @@
       "shares": 126,
       "price": 552.51,
       "realized_pnl": -9284.94
+    },
+    {
+      "date": "2026-07-24",
+      "account": "us",
+      "action": "buy",
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "shares": 152,
+      "price": 990.21
     }
   ]
 }
