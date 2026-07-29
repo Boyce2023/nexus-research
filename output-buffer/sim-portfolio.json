@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-29T08:13:27.244535+00:00",
+    "last_updated": "2026-07-29T08:29:35.114067+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,10 +17,24 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 10033152.62,
-      "cash": 10033152.62,
+      "cash": 9492477.62,
       "realized_pnl": 69784.36,
       "return_pct": 0.33,
-      "positions": []
+      "positions": [
+        {
+          "ticker": "600298.SS",
+          "name": "安琪酵母",
+          "shares": 13500,
+          "avg_cost": 40.05,
+          "current_price": 40.05,
+          "market_value": 540675.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.054,
+          "entry_date": "2026-07-29T16:29:29+08:00",
+          "type": "cross_sector_probe",
+          "sector": "食品配料/酵母"
+        }
+      ]
     },
     "us": {
       "currency": "USD",
@@ -4389,6 +4403,15 @@
       "shares": 1136,
       "price": 153.11,
       "realized_pnl": 0.0
+    },
+    {
+      "date": "2026-07-29",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600298",
+      "name": "安琪酵母",
+      "shares": 13500,
+      "price": 40.05
     }
   ]
 }
