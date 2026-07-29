@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-29T02:00:12.884735+00:00",
+    "last_updated": "2026-07-29T07:09:12.082937+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,64 +16,11 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10095540.62,
-      "cash": 7240879.62,
-      "realized_pnl": 32324.36,
-      "return_pct": 0.96,
-      "positions": [
-        {
-          "ticker": "688617.SS",
-          "name": "惠泰医疗",
-          "shares": 4300,
-          "avg_cost": 213.0,
-          "current_price": 213.39,
-          "market_value": 917577.0,
-          "unrealized_pnl_pct": 0.18,
-          "portfolio_pct": 0.091,
-          "entry_date": "2026-07-16T01:04:37+08:00",
-          "type": "深研埋伏仓",
-          "sector": "医疗器械/电生理"
-        },
-        {
-          "ticker": "000708.SZ",
-          "name": "中信特钢",
-          "shares": 67000,
-          "avg_cost": 13.73,
-          "current_price": 14.7,
-          "market_value": 984900.0,
-          "unrealized_pnl_pct": 7.06,
-          "portfolio_pct": 0.098,
-          "entry_date": "2026-07-16T01:04:46+08:00",
-          "type": "深研埋伏仓",
-          "sector": "特钢/轴承钢"
-        },
-        {
-          "ticker": "002895.SZ",
-          "name": "川恒股份",
-          "shares": 14800,
-          "avg_cost": 31.11,
-          "current_price": 34.38,
-          "market_value": 508824.0,
-          "unrealized_pnl_pct": 10.51,
-          "portfolio_pct": 0.05,
-          "entry_date": "2026-07-16T01:30:00+08:00",
-          "type": "深研埋伏仓",
-          "sector": "磷化工/氟化工"
-        },
-        {
-          "ticker": "688293.SS",
-          "name": "奥浦迈",
-          "shares": 8500,
-          "avg_cost": 53.95,
-          "current_price": 52.16,
-          "market_value": 443360.0,
-          "unrealized_pnl_pct": -3.32,
-          "portfolio_pct": 0.044,
-          "entry_date": "2026-07-16T01:30:31+08:00",
-          "type": "two_axis_probe",
-          "sector": "创新药上游培养基"
-        }
-      ]
+      "total_assets": 10033152.62,
+      "cash": 10033152.62,
+      "realized_pnl": 69784.36,
+      "return_pct": 0.33,
+      "positions": []
     },
     "us": {
       "currency": "USD",
@@ -1125,14 +1072,14 @@
     {
       "date": "2026-07-29",
       "a_share": {
-        "total_assets": 10095540.62,
-        "return_pct": 0.96
+        "total_assets": 10033152.62,
+        "return_pct": 0.33
       },
       "us": {
         "total_assets": 1492778.64,
         "return_pct": -0.48
       },
-      "combined_return_pct": 0.21,
+      "combined_return_pct": -0.09,
       "sse_return_pct": -6.25,
       "spy_return_pct": 0.56
     }
@@ -4336,6 +4283,46 @@
       "shares": 10800,
       "price": 72.79,
       "realized_pnl": -129924.0
+    },
+    {
+      "date": "2026-07-29",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "688617",
+      "name": "惠泰医疗",
+      "shares": 4300,
+      "price": 207.5,
+      "realized_pnl": -23650.0
+    },
+    {
+      "date": "2026-07-29",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "000708",
+      "name": "中信特钢",
+      "shares": 67000,
+      "price": 14.26,
+      "realized_pnl": 35510.0
+    },
+    {
+      "date": "2026-07-29",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "002895",
+      "name": "川恒股份",
+      "shares": 14800,
+      "price": 33.46,
+      "realized_pnl": 34780.0
+    },
+    {
+      "date": "2026-07-29",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "688293",
+      "name": "奥浦迈",
+      "shares": 8500,
+      "price": 52.87,
+      "realized_pnl": -9180.0
     }
   ]
 }
