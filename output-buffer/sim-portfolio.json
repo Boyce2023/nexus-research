@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-29T07:09:12.082937+00:00",
+    "last_updated": "2026-07-29T07:18:11.843309+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -25,207 +25,11 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1492778.64,
-      "cash": -1292060.1,
-      "realized_pnl": 59616.15,
-      "return_pct": -0.48,
-      "positions": [
-        {
-          "ticker": "REGN",
-          "name": "Regeneron Pharmaceuticals",
-          "shares": 377,
-          "avg_cost": 667.21,
-          "current_price": 651.91,
-          "market_value": 245770.07,
-          "unrealized_pnl_pct": -2.29,
-          "portfolio_pct": 0.165,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "生物医药/免疫"
-        },
-        {
-          "ticker": "META",
-          "name": "Meta Platforms",
-          "shares": 346,
-          "avg_cost": 682.48,
-          "current_price": 606.1,
-          "market_value": 209710.6,
-          "unrealized_pnl_pct": -11.19,
-          "portfolio_pct": 0.14,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "互联网平台"
-        },
-        {
-          "ticker": "TLN",
-          "name": "Talen Energy",
-          "shares": 555,
-          "avg_cost": 396.86,
-          "current_price": 379.27,
-          "market_value": 210494.85,
-          "unrealized_pnl_pct": -4.43,
-          "portfolio_pct": 0.141,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "DC电力/核电"
-        },
-        {
-          "ticker": "ATI",
-          "name": "ATI Inc",
-          "shares": 1161,
-          "avg_cost": 190.0,
-          "current_price": 199.84,
-          "market_value": 232014.24,
-          "unrealized_pnl_pct": 5.18,
-          "portfolio_pct": 0.155,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "国防/特材"
-        },
-        {
-          "ticker": "PANW",
-          "name": "Palo Alto Networks",
-          "shares": 572,
-          "avg_cost": 357.58,
-          "current_price": 325.63,
-          "market_value": 186260.36,
-          "unrealized_pnl_pct": -8.94,
-          "portfolio_pct": 0.125,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "网络安全"
-        },
-        {
-          "ticker": "FSLR",
-          "name": "First Solar",
-          "shares": 925,
-          "avg_cost": 221.38,
-          "current_price": 205.92,
-          "market_value": 190476.0,
-          "unrealized_pnl_pct": -6.98,
-          "portfolio_pct": 0.128,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "太阳能/储能"
-        },
-        {
-          "ticker": "ONTO",
-          "name": "Onto Innovation",
-          "shares": 628,
-          "avg_cost": 300.76,
-          "current_price": 291.27,
-          "market_value": 182917.56,
-          "unrealized_pnl_pct": -3.16,
-          "portfolio_pct": 0.123,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "半导体/先进封装"
-        },
-        {
-          "ticker": "V",
-          "name": "Visa Inc",
-          "shares": 527,
-          "avg_cost": 358.74,
-          "current_price": 351.6,
-          "market_value": 185293.2,
-          "unrealized_pnl_pct": -1.99,
-          "portfolio_pct": 0.124,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "支付/fintech"
-        },
-        {
-          "ticker": "ETN",
-          "name": "Eaton Corporation",
-          "shares": 429,
-          "avg_cost": 403.9,
-          "current_price": 415.13,
-          "market_value": 178090.77,
-          "unrealized_pnl_pct": 2.78,
-          "portfolio_pct": 0.119,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "电网设备"
-        },
-        {
-          "ticker": "EW",
-          "name": "Edwards Lifesciences",
-          "shares": 1956,
-          "avg_cost": 88.59,
-          "current_price": 83.82,
-          "market_value": 163951.92,
-          "unrealized_pnl_pct": -5.38,
-          "portfolio_pct": 0.11,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "医疗器械"
-        },
-        {
-          "ticker": "ABBV",
-          "name": "AbbVie Inc",
-          "shares": 700,
-          "avg_cost": 247.5,
-          "current_price": 256.92,
-          "market_value": 179844.0,
-          "unrealized_pnl_pct": 3.81,
-          "portfolio_pct": 0.12,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "生物医药/免疫"
-        },
-        {
-          "ticker": "SO",
-          "name": "Southern Company",
-          "shares": 1647,
-          "avg_cost": 95.67,
-          "current_price": 96.6,
-          "market_value": 159100.2,
-          "unrealized_pnl_pct": 0.97,
-          "portfolio_pct": 0.107,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "电力公用"
-        },
-        {
-          "ticker": "ROK",
-          "name": "Rockwell Automation",
-          "shares": 343,
-          "avg_cost": 458.48,
-          "current_price": 460.65,
-          "market_value": 158002.95,
-          "unrealized_pnl_pct": 0.47,
-          "portfolio_pct": 0.106,
-          "entry_date": "2026-07-16T00:10:29.599944+08:00",
-          "type": "core_position",
-          "sector": "工业自动化"
-        },
-        {
-          "ticker": "CBOE",
-          "name": "Cboe",
-          "shares": 535,
-          "avg_cost": 281.8,
-          "current_price": 284.86,
-          "market_value": 152400.1,
-          "unrealized_pnl_pct": 1.09,
-          "portfolio_pct": 0.102,
-          "entry_date": "2026-07-23T11:12:25+08:00",
-          "type": "u4_tracking",
-          "sector": "SPX期权垄断"
-        },
-        {
-          "ticker": "MU",
-          "name": "Micron Technology",
-          "shares": 152,
-          "avg_cost": 990.21,
-          "current_price": 990.21,
-          "market_value": 150511.92,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.101,
-          "entry_date": "2026-07-24T12:50:05+08:00",
-          "type": "core_position",
-          "sector": "Memory/HBM"
-        }
-      ]
+      "total_assets": 1449789.22,
+      "cash": 1449789.22,
+      "realized_pnl": -50210.79,
+      "return_pct": -3.35,
+      "positions": []
     }
   },
   "daily_snapshots": [
@@ -1076,10 +880,10 @@
         "return_pct": 0.33
       },
       "us": {
-        "total_assets": 1492778.64,
-        "return_pct": -0.48
+        "total_assets": 1449789.22,
+        "return_pct": -3.35
       },
-      "combined_return_pct": -0.09,
+      "combined_return_pct": -1.58,
       "sse_return_pct": -6.25,
       "spy_return_pct": 0.56
     }
