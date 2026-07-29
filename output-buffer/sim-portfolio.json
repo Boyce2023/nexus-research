@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-29T08:06:28.442038+00:00",
+    "last_updated": "2026-07-29T08:06:42.939416+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -26,7 +26,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1449789.22,
-      "cash": 320157.59,
+      "cash": 146224.63,
       "realized_pnl": -50210.79,
       "return_pct": -3.35,
       "positions": [
@@ -105,6 +105,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.12,
           "entry_date": "2026-07-29T16:06:21+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "ABNB",
+          "name": "Airbnb, Inc.",
+          "shares": 1136,
+          "avg_cost": 153.11,
+          "current_price": 153.11,
+          "market_value": 173932.96,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.12,
+          "entry_date": "2026-07-29T16:06:38+08:00",
           "type": "",
           "sector": ""
         }
@@ -4260,6 +4273,15 @@
       "name": "Halozyme Therapeutics, Inc.",
       "shares": 2084,
       "price": 83.445
+    },
+    {
+      "date": "2026-07-29",
+      "account": "us",
+      "action": "buy",
+      "ticker": "ABNB",
+      "name": "Airbnb, Inc.",
+      "shares": 1136,
+      "price": 153.11
     }
   ]
 }
