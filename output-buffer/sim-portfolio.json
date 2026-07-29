@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-29T08:09:48.600611+00:00",
+    "last_updated": "2026-07-29T08:10:09.043858+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -26,7 +26,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1449789.22,
-      "cash": -332173.54,
+      "cash": -477195.82,
       "realized_pnl": -50210.79,
       "return_pct": -3.35,
       "positions": [
@@ -144,6 +144,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-07-29T16:09:42+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "HWM",
+          "name": "Howmet Aerospace Inc.",
+          "shares": 507,
+          "avg_cost": 286.04,
+          "current_price": 286.04,
+          "market_value": 145022.28,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-07-29T16:10:01+08:00",
           "type": "",
           "sector": ""
         }
@@ -4335,6 +4348,15 @@
       "name": "Rockwell Automation, Inc.",
       "shares": 308,
       "price": 471.17
+    },
+    {
+      "date": "2026-07-29",
+      "account": "us",
+      "action": "buy",
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "shares": 507,
+      "price": 286.04
     }
   ]
 }
