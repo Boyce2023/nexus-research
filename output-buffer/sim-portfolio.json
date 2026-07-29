@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-29T08:05:48.496081+00:00",
+    "last_updated": "2026-07-29T08:06:08.714854+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -26,7 +26,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1449789.22,
-      "cash": 667809.97,
+      "cash": 494056.97,
       "realized_pnl": -50210.79,
       "return_pct": -3.35,
       "positions": [
@@ -79,6 +79,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.12,
           "entry_date": "2026-07-29T16:05:42+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "CB",
+          "name": "Chubb Limited",
+          "shares": 478,
+          "avg_cost": 363.5,
+          "current_price": 363.5,
+          "market_value": 173753.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.12,
+          "entry_date": "2026-07-29T16:06:02+08:00",
           "type": "",
           "sector": ""
         }
@@ -4216,6 +4229,15 @@
       "name": "Charles Schwab Corporation (The",
       "shares": 1641,
       "price": 105.97
+    },
+    {
+      "date": "2026-07-29",
+      "account": "us",
+      "action": "buy",
+      "ticker": "CB",
+      "name": "Chubb Limited",
+      "shares": 478,
+      "price": 363.5
     }
   ]
 }
