@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-30T02:15:31.481490+00:00",
+    "last_updated": "2026-07-30T02:18:27.798829+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,19 +16,19 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 10066658.62,
+      "total_assets": 10059260.62,
       "cash": 8472491.62,
       "realized_pnl": 69784.36,
-      "return_pct": 0.67,
+      "return_pct": 0.59,
       "positions": [
         {
           "ticker": "600298.SS",
           "name": "安琪酵母",
           "shares": 13500,
           "avg_cost": 40.05,
-          "current_price": 42.01,
-          "market_value": 567135.0,
-          "unrealized_pnl_pct": 4.89,
+          "current_price": 41.7,
+          "market_value": 562950.0,
+          "unrealized_pnl_pct": 4.12,
           "portfolio_pct": 0.056,
           "entry_date": "2026-07-29T16:29:29+08:00",
           "type": "cross_sector_probe",
@@ -39,9 +39,9 @@
           "name": "美的集团",
           "shares": 8600,
           "avg_cost": 87.01,
-          "current_price": 87.52,
-          "market_value": 752672.0,
-          "unrealized_pnl_pct": 0.59,
+          "current_price": 87.29,
+          "market_value": 750694.0,
+          "unrealized_pnl_pct": 0.32,
           "portfolio_pct": 0.075,
           "entry_date": "2026-07-29T16:30:00+08:00",
           "type": "cross_sector_probe",
@@ -52,9 +52,9 @@
           "name": "华测导航",
           "shares": 9500,
           "avg_cost": 28.6,
-          "current_price": 28.88,
-          "market_value": 274360.0,
-          "unrealized_pnl_pct": 0.98,
+          "current_price": 28.75,
+          "market_value": 273125.0,
+          "unrealized_pnl_pct": 0.52,
           "portfolio_pct": 0.027,
           "entry_date": "2026-07-29T19:30:52+08:00",
           "type": "cross_sector_probe",
@@ -1126,15 +1126,15 @@
     {
       "date": "2026-07-30",
       "a_share": {
-        "total_assets": 10066658.62,
-        "return_pct": 0.67
+        "total_assets": 10059260.62,
+        "return_pct": 0.59
       },
       "us": {
         "total_assets": 1432235.36,
         "return_pct": -4.52
       },
-      "combined_return_pct": -2.03,
-      "sse_return_pct": -6.06,
+      "combined_return_pct": -2.06,
+      "sse_return_pct": -6.08,
       "spy_return_pct": -1.24
     }
   ],
