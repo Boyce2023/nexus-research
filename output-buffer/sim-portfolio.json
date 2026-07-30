@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-30T02:12:03.463226+00:00",
+    "last_updated": "2026-07-30T02:12:15.894478+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -66,7 +66,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1432235.36,
-      "cash": -521009.06,
+      "cash": -592041.56,
       "realized_pnl": -50210.79,
       "return_pct": -4.52,
       "positions": [
@@ -99,12 +99,12 @@
         {
           "ticker": "RTX",
           "name": "RTX Corporation",
-          "shares": 862,
-          "avg_cost": 218.58,
+          "shares": 1192,
+          "avg_cost": 217.6581,
           "current_price": 215.25,
-          "market_value": 185545.5,
-          "unrealized_pnl_pct": -1.52,
-          "portfolio_pct": 0.13,
+          "market_value": 256578.0,
+          "unrealized_pnl_pct": -1.11,
+          "portfolio_pct": 0.179,
           "entry_date": "2026-07-29T16:05:26+08:00",
           "type": "core_position",
           "sector": "Defense/Aerospace"
@@ -4479,6 +4479,15 @@
       "name": "Eli Lilly and Company",
       "shares": 60,
       "price": 1210.02
+    },
+    {
+      "date": "2026-07-30",
+      "account": "us",
+      "action": "buy",
+      "ticker": "RTX",
+      "name": "RTX Corporation",
+      "shares": 330,
+      "price": 215.25
     }
   ]
 }
