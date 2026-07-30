@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-07-30T02:12:57.537923+00:00",
+    "last_updated": "2026-07-30T02:13:14.537612+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -66,7 +66,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1432235.36,
-      "cash": -809061.86,
+      "cash": -986773.86,
       "realized_pnl": -50210.79,
       "return_pct": -4.52,
       "positions": [
@@ -223,6 +223,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.101,
           "entry_date": "2026-07-30T10:12:53+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "MCK",
+          "name": "McKesson Corporation",
+          "shares": 200,
+          "avg_cost": 888.56,
+          "current_price": 888.56,
+          "market_value": 177712.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.124,
+          "entry_date": "2026-07-30T10:13:10+08:00",
           "type": "",
           "sector": ""
         }
@@ -4519,6 +4532,15 @@
       "name": "Booking Holdings Inc. Common St",
       "shares": 720,
       "price": 201.3
+    },
+    {
+      "date": "2026-07-30",
+      "account": "us",
+      "action": "buy",
+      "ticker": "MCK",
+      "name": "McKesson Corporation",
+      "shares": 200,
+      "price": 888.56
     }
   ]
 }
