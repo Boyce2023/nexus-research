@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-03T08:00:35.623351+00:00",
+    "last_updated": "2026-08-04T01:08:39.342040+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -91,10 +91,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1432235.36,
-      "cash": -1277387.46,
-      "realized_pnl": -50210.79,
-      "return_pct": -4.52,
+      "total_assets": 1419951.36,
+      "cash": -1111959.46,
+      "realized_pnl": -62494.79,
+      "return_pct": -5.34,
       "positions": [
         {
           "ticker": "V",
@@ -104,7 +104,7 @@
           "current_price": 368.73,
           "market_value": 233037.36,
           "unrealized_pnl_pct": 0.58,
-          "portfolio_pct": 0.163,
+          "portfolio_pct": 0.164,
           "entry_date": "2026-07-29T16:04:52+08:00",
           "type": "",
           "sector": ""
@@ -117,7 +117,7 @@
           "current_price": 1210.02,
           "market_value": 258944.28,
           "unrealized_pnl_pct": -0.63,
-          "portfolio_pct": 0.181,
+          "portfolio_pct": 0.182,
           "entry_date": "2026-07-29T16:05:10+08:00",
           "type": "",
           "sector": ""
@@ -130,7 +130,7 @@
           "current_price": 215.25,
           "market_value": 256578.0,
           "unrealized_pnl_pct": -1.11,
-          "portfolio_pct": 0.179,
+          "portfolio_pct": 0.181,
           "entry_date": "2026-07-29T16:05:26+08:00",
           "type": "core_position",
           "sector": "Defense/Aerospace"
@@ -143,7 +143,7 @@
           "current_price": 104.47,
           "market_value": 243519.57,
           "unrealized_pnl_pct": -1.0,
-          "portfolio_pct": 0.17,
+          "portfolio_pct": 0.171,
           "entry_date": "2026-07-29T16:05:42+08:00",
           "type": "",
           "sector": ""
@@ -156,7 +156,7 @@
           "current_price": 361.9,
           "market_value": 172988.2,
           "unrealized_pnl_pct": -0.44,
-          "portfolio_pct": 0.121,
+          "portfolio_pct": 0.122,
           "entry_date": "2026-07-29T16:06:02+08:00",
           "type": "",
           "sector": ""
@@ -169,7 +169,7 @@
           "current_price": 83.28,
           "market_value": 173555.52,
           "unrealized_pnl_pct": -0.2,
-          "portfolio_pct": 0.121,
+          "portfolio_pct": 0.122,
           "entry_date": "2026-07-29T16:06:21+08:00",
           "type": "",
           "sector": ""
@@ -182,7 +182,7 @@
           "current_price": 153.01,
           "market_value": 173819.36,
           "unrealized_pnl_pct": -0.07,
-          "portfolio_pct": 0.121,
+          "portfolio_pct": 0.122,
           "entry_date": "2026-07-29T16:06:38+08:00",
           "type": "",
           "sector": ""
@@ -195,7 +195,7 @@
           "current_price": 264.67,
           "market_value": 161184.03,
           "unrealized_pnl_pct": 1.15,
-          "portfolio_pct": 0.113,
+          "portfolio_pct": 0.114,
           "entry_date": "2026-07-29T16:07:56+08:00",
           "type": "",
           "sector": ""
@@ -208,7 +208,7 @@
           "current_price": 459.39,
           "market_value": 141492.12,
           "unrealized_pnl_pct": -2.5,
-          "portfolio_pct": 0.099,
+          "portfolio_pct": 0.1,
           "entry_date": "2026-07-29T16:09:42+08:00",
           "type": "",
           "sector": ""
@@ -234,7 +234,7 @@
           "current_price": 314.15,
           "market_value": 142938.25,
           "unrealized_pnl_pct": -1.52,
-          "portfolio_pct": 0.1,
+          "portfolio_pct": 0.101,
           "entry_date": "2026-07-29T16:10:22+08:00",
           "type": "",
           "sector": ""
@@ -247,21 +247,8 @@
           "current_price": 201.3,
           "market_value": 144936.0,
           "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.101,
+          "portfolio_pct": 0.102,
           "entry_date": "2026-07-30T10:12:53+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "MCK",
-          "name": "McKesson Corporation",
-          "shares": 200,
-          "avg_cost": 888.56,
-          "current_price": 888.56,
-          "market_value": 177712.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.124,
-          "entry_date": "2026-07-30T10:13:10+08:00",
           "type": "",
           "sector": ""
         },
@@ -273,7 +260,7 @@
           "current_price": 85.76,
           "market_value": 145792.0,
           "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.102,
+          "portfolio_pct": 0.103,
           "entry_date": "2026-07-30T10:13:23+08:00",
           "type": "",
           "sector": ""
@@ -286,7 +273,7 @@
           "current_price": 258.61,
           "market_value": 144821.6,
           "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.101,
+          "portfolio_pct": 0.102,
           "entry_date": "2026-07-30T10:14:26+08:00",
           "type": "",
           "sector": ""
@@ -1217,7 +1204,21 @@
       },
       "combined_return_pct": -2.08,
       "sse_return_pct": -6.01,
-      "spy_return_pct": 1.4
+      "spy_return_pct": 2.84
+    },
+    {
+      "date": "2026-08-04",
+      "a_share": {
+        "total_assets": 10055183.62,
+        "return_pct": 0.55
+      },
+      "us": {
+        "total_assets": 1419951.36,
+        "return_pct": -5.34
+      },
+      "combined_return_pct": -2.51,
+      "sse_return_pct": -6.01,
+      "spy_return_pct": 2.84
     }
   ],
   "trade_log": [
@@ -4685,6 +4686,16 @@
       "name": "水井坊",
       "shares": 15500,
       "price": 28.95
+    },
+    {
+      "date": "2026-08-04",
+      "account": "us",
+      "action": "sell",
+      "ticker": "MCK",
+      "name": "McKesson Corporation",
+      "shares": 200,
+      "price": 827.14,
+      "realized_pnl": -12284.0
     }
   ]
 }
