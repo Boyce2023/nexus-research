@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-06T05:18:49.997130+00:00",
+    "last_updated": "2026-08-06T07:34:05.142409+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9921572.62,
-      "cash": 3953054.62,
+      "cash": 2160054.62,
       "realized_pnl": 69784.36,
       "return_pct": -0.78,
       "positions": [
@@ -124,6 +124,19 @@
           "entry_date": "2026-08-06T10:49:39+08:00",
           "type": "regime_shift_probe",
           "sector": "炼化/石化"
+        },
+        {
+          "ticker": "603596.SS",
+          "name": "伯特利",
+          "shares": 65200,
+          "avg_cost": 27.5,
+          "current_price": 27.5,
+          "market_value": 1793000.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.181,
+          "entry_date": "2026-08-06T15:33:59+08:00",
+          "type": "深研埋伏仓",
+          "sector": "智能驾驶/机器人执行层"
         }
       ]
     },
@@ -4834,6 +4847,15 @@
       "name": "Freeport-McMoRan, Inc.",
       "shares": 2100,
       "price": 69.39
+    },
+    {
+      "date": "2026-08-06",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "603596",
+      "name": "伯特利",
+      "shares": 65200,
+      "price": 27.5
     }
   ]
 }
