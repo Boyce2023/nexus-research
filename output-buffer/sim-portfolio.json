@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-06T02:49:29.968784+00:00",
+    "last_updated": "2026-08-06T02:49:45.120435+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9978496.62,
-      "cash": 4944094.62,
+      "cash": 3953054.62,
       "realized_pnl": 69784.36,
       "return_pct": -0.22,
       "positions": [
@@ -111,6 +111,19 @@
           "entry_date": "2026-08-06T10:49:26+08:00",
           "type": "regime_shift_probe",
           "sector": "白银/锡/有色"
+        },
+        {
+          "ticker": "002493.SZ",
+          "name": "荣盛石化",
+          "shares": 76000,
+          "avg_cost": 13.04,
+          "current_price": 13.04,
+          "market_value": 991040.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.099,
+          "entry_date": "2026-08-06T10:49:39+08:00",
+          "type": "regime_shift_probe",
+          "sector": "炼化/石化"
         }
       ]
     },
@@ -4790,6 +4803,15 @@
       "name": "兴业银锡",
       "shares": 26000,
       "price": 38.1
+    },
+    {
+      "date": "2026-08-06",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "002493",
+      "name": "荣盛石化",
+      "shares": 76000,
+      "price": 13.04
     }
   ]
 }
