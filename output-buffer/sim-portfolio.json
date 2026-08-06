@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-06T02:47:00.694093+00:00",
+    "last_updated": "2026-08-06T02:48:35.335255+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9978496.62,
-      "cash": 7129094.62,
+      "cash": 5934694.62,
       "realized_pnl": 69784.36,
       "return_pct": -0.22,
       "positions": [
@@ -85,6 +85,19 @@
           "entry_date": "2026-07-30T14:30:25+08:00",
           "type": "cross_sector_probe",
           "sector": "高端白酒"
+        },
+        {
+          "ticker": "600547.SS",
+          "name": "山东黄金",
+          "shares": 40000,
+          "avg_cost": 29.86,
+          "current_price": 29.86,
+          "market_value": 1194400.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.12,
+          "entry_date": "2026-08-06T10:48:31+08:00",
+          "type": "regime_shift_probe",
+          "sector": "黄金/贵金属"
         }
       ]
     },
@@ -4746,6 +4759,15 @@
       "name": "Eaton Corporation, PLC",
       "shares": 391,
       "price": 447.28
+    },
+    {
+      "date": "2026-08-06",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600547",
+      "name": "山东黄金",
+      "shares": 40000,
+      "price": 29.86
     }
   ]
 }
