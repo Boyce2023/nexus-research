@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-07T03:09:12.503716+00:00",
+    "last_updated": "2026-08-07T03:09:28.396579+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,24 +16,11 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 9927720.62,
-      "cash": 6292902.62,
-      "realized_pnl": 10964.36,
-      "return_pct": -0.72,
+      "total_assets": 9919360.62,
+      "cash": 7305982.62,
+      "realized_pnl": 33004.36,
+      "return_pct": -0.81,
       "positions": [
-        {
-          "ticker": "002493.SZ",
-          "name": "荣盛石化",
-          "shares": 76000,
-          "avg_cost": 13.04,
-          "current_price": 13.44,
-          "market_value": 1021440.0,
-          "unrealized_pnl_pct": 3.07,
-          "portfolio_pct": 0.103,
-          "entry_date": "2026-08-06T10:49:39+08:00",
-          "type": "regime_shift_probe",
-          "sector": "炼化/石化"
-        },
         {
           "ticker": "603596.SS",
           "name": "伯特利",
@@ -55,7 +42,7 @@
           "current_price": 5.79,
           "market_value": 888186.0,
           "unrealized_pnl_pct": -1.03,
-          "portfolio_pct": 0.089,
+          "portfolio_pct": 0.09,
           "entry_date": "2026-08-06T15:34:26+08:00",
           "type": "深研埋伏仓",
           "sector": "AI供电/取向硅钢"
@@ -1238,14 +1225,14 @@
     {
       "date": "2026-08-07",
       "a_share": {
-        "total_assets": 9927720.62,
-        "return_pct": -0.72
+        "total_assets": 9919360.62,
+        "return_pct": -0.81
       },
       "us": {
         "total_assets": 1472228.67,
         "return_pct": -1.85
       },
-      "combined_return_pct": -1.31,
+      "combined_return_pct": -1.35,
       "sse_return_pct": -3.36,
       "spy_return_pct": 4.05
     }
@@ -4868,6 +4855,16 @@
       "shares": 26000,
       "price": 38.61,
       "realized_pnl": 13260.0
+    },
+    {
+      "date": "2026-08-07",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "002493",
+      "name": "荣盛石化",
+      "shares": 76000,
+      "price": 13.33,
+      "realized_pnl": 22040.0
     }
   ]
 }
