@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-07T02:51:38.679535+00:00",
+    "last_updated": "2026-08-07T02:52:15.893329+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,9 +16,9 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 9938012.62,
-      "cash": 2107860.62,
-      "realized_pnl": 20308.36,
+      "total_assets": 9937727.62,
+      "cash": 2372625.62,
+      "realized_pnl": 13373.36,
       "return_pct": -0.62,
       "positions": [
         {
@@ -46,19 +46,6 @@
           "entry_date": "2026-07-29T16:30:00+08:00",
           "type": "cross_sector_probe",
           "sector": "大家电"
-        },
-        {
-          "ticker": "300627.SZ",
-          "name": "华测导航",
-          "shares": 9500,
-          "avg_cost": 28.6,
-          "current_price": 27.9,
-          "market_value": 265050.0,
-          "unrealized_pnl_pct": -2.45,
-          "portfolio_pct": 0.027,
-          "entry_date": "2026-07-29T19:30:52+08:00",
-          "type": "cross_sector_probe",
-          "sector": "GNSS/北斗高精定位"
         },
         {
           "ticker": "600779.SS",
@@ -1316,7 +1303,7 @@
     {
       "date": "2026-08-07",
       "a_share": {
-        "total_assets": 9938012.62,
+        "total_assets": 9937727.62,
         "return_pct": -0.62
       },
       "us": {
@@ -4886,6 +4873,16 @@
       "shares": 11400,
       "price": 74.14,
       "realized_pnl": -49476.0
+    },
+    {
+      "date": "2026-08-07",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "300627",
+      "name": "华测导航",
+      "shares": 9500,
+      "price": 27.87,
+      "realized_pnl": -6935.0
     }
   ]
 }
