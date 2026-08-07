@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-07T02:52:15.893329+00:00",
+    "last_updated": "2026-08-07T03:07:45.751378+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,24 +16,11 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 9937727.62,
-      "cash": 2372625.62,
-      "realized_pnl": 13373.36,
-      "return_pct": -0.62,
+      "total_assets": 9937457.62,
+      "cash": 2927475.62,
+      "realized_pnl": 27548.36,
+      "return_pct": -0.63,
       "positions": [
-        {
-          "ticker": "600298.SS",
-          "name": "安琪酵母",
-          "shares": 13500,
-          "avg_cost": 40.05,
-          "current_price": 41.12,
-          "market_value": 555120.0,
-          "unrealized_pnl_pct": 2.67,
-          "portfolio_pct": 0.056,
-          "entry_date": "2026-07-29T16:29:29+08:00",
-          "type": "cross_sector_probe",
-          "sector": "食品配料/酵母"
-        },
         {
           "ticker": "000333.SZ",
           "name": "美的集团",
@@ -1303,8 +1290,8 @@
     {
       "date": "2026-08-07",
       "a_share": {
-        "total_assets": 9937727.62,
-        "return_pct": -0.62
+        "total_assets": 9937457.62,
+        "return_pct": -0.63
       },
       "us": {
         "total_assets": 1472228.67,
@@ -4883,6 +4870,16 @@
       "shares": 9500,
       "price": 27.87,
       "realized_pnl": -6935.0
+    },
+    {
+      "date": "2026-08-07",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "600298",
+      "name": "安琪酵母",
+      "shares": 13500,
+      "price": 41.1,
+      "realized_pnl": 14175.0
     }
   ]
 }
