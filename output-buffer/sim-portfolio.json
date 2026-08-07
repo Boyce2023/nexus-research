@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-07T03:09:28.396579+00:00",
+    "last_updated": "2026-08-07T03:09:42.716174+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,24 +16,11 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 9919360.62,
-      "cash": 7305982.62,
-      "realized_pnl": 33004.36,
-      "return_pct": -0.81,
+      "total_assets": 9931096.62,
+      "cash": 9042910.62,
+      "realized_pnl": -23067.64,
+      "return_pct": -0.69,
       "positions": [
-        {
-          "ticker": "603596.SS",
-          "name": "伯特利",
-          "shares": 65200,
-          "avg_cost": 27.5,
-          "current_price": 26.46,
-          "market_value": 1725192.0,
-          "unrealized_pnl_pct": -3.78,
-          "portfolio_pct": 0.174,
-          "entry_date": "2026-08-06T15:33:59+08:00",
-          "type": "深研埋伏仓",
-          "sector": "智能驾驶/机器人执行层"
-        },
         {
           "ticker": "600019.SS",
           "name": "宝钢股份",
@@ -42,7 +29,7 @@
           "current_price": 5.79,
           "market_value": 888186.0,
           "unrealized_pnl_pct": -1.03,
-          "portfolio_pct": 0.09,
+          "portfolio_pct": 0.089,
           "entry_date": "2026-08-06T15:34:26+08:00",
           "type": "深研埋伏仓",
           "sector": "AI供电/取向硅钢"
@@ -1225,14 +1212,14 @@
     {
       "date": "2026-08-07",
       "a_share": {
-        "total_assets": 9919360.62,
-        "return_pct": -0.81
+        "total_assets": 9931096.62,
+        "return_pct": -0.69
       },
       "us": {
         "total_assets": 1472228.67,
         "return_pct": -1.85
       },
-      "combined_return_pct": -1.35,
+      "combined_return_pct": -1.29,
       "sse_return_pct": -3.36,
       "spy_return_pct": 4.05
     }
@@ -4865,6 +4852,16 @@
       "shares": 76000,
       "price": 13.33,
       "realized_pnl": 22040.0
+    },
+    {
+      "date": "2026-08-07",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "603596",
+      "name": "伯特利",
+      "shares": 65200,
+      "price": 26.64,
+      "realized_pnl": -56072.0
     }
   ]
 }
