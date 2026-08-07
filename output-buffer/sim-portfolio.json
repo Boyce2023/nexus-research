@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-07T03:07:59.741207+00:00",
+    "last_updated": "2026-08-07T03:08:21.011795+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,24 +16,11 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 9927825.62,
-      "cash": 3648327.62,
-      "realized_pnl": 114.36,
-      "return_pct": -0.72,
+      "total_assets": 9931080.62,
+      "cash": 4087442.62,
+      "realized_pnl": -9495.64,
+      "return_pct": -0.69,
       "positions": [
-        {
-          "ticker": "600779.SS",
-          "name": "水井坊",
-          "shares": 15500,
-          "avg_cost": 28.95,
-          "current_price": 28.12,
-          "market_value": 435860.0,
-          "unrealized_pnl_pct": -2.87,
-          "portfolio_pct": 0.044,
-          "entry_date": "2026-07-30T14:30:25+08:00",
-          "type": "cross_sector_probe",
-          "sector": "高端白酒"
-        },
         {
           "ticker": "600547.SS",
           "name": "山东黄金",
@@ -1277,14 +1264,14 @@
     {
       "date": "2026-08-07",
       "a_share": {
-        "total_assets": 9927825.62,
-        "return_pct": -0.72
+        "total_assets": 9931080.62,
+        "return_pct": -0.69
       },
       "us": {
         "total_assets": 1472228.67,
         "return_pct": -1.85
       },
-      "combined_return_pct": -1.31,
+      "combined_return_pct": -1.29,
       "sse_return_pct": -3.36,
       "spy_return_pct": 4.05
     }
@@ -4877,6 +4864,16 @@
       "shares": 8600,
       "price": 83.82,
       "realized_pnl": -27434.0
+    },
+    {
+      "date": "2026-08-07",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "600779",
+      "name": "水井坊",
+      "shares": 15500,
+      "price": 28.33,
+      "realized_pnl": -9610.0
     }
   ]
 }
