@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-10T02:30:23.798883+00:00",
+    "last_updated": "2026-08-10T05:05:04.330643+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,141 +17,10 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9928028.62,
-      "cash": 1700995.62,
+      "cash": 9928028.62,
       "realized_pnl": -35339.64,
       "return_pct": -0.72,
-      "positions": [
-        {
-          "ticker": "300363.SZ",
-          "name": "博腾股份",
-          "shares": 54100,
-          "avg_cost": 22.05,
-          "current_price": 22.05,
-          "market_value": 1192905.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.12,
-          "entry_date": "2026-08-10T10:25:03+08:00",
-          "type": "深研埋伏仓",
-          "sector": "CXO/ADC偶联CDMO"
-        },
-        {
-          "ticker": "300725.SZ",
-          "name": "药石科技",
-          "shares": 23800,
-          "avg_cost": 49.94,
-          "current_price": 49.94,
-          "market_value": 1188572.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.12,
-          "entry_date": "2026-08-10T10:25:16+08:00",
-          "type": "深研埋伏仓",
-          "sector": "CXO/CDMO"
-        },
-        {
-          "ticker": "300759.SZ",
-          "name": "康龙化成",
-          "shares": 24900,
-          "avg_cost": 47.99,
-          "current_price": 47.99,
-          "market_value": 1194951.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.12,
-          "entry_date": "2026-08-10T10:25:27+08:00",
-          "type": "深研埋伏仓",
-          "sector": "CRO/CDMO"
-        },
-        {
-          "ticker": "688293.SS",
-          "name": "奥浦迈",
-          "shares": 11500,
-          "avg_cost": 68.66,
-          "current_price": 68.66,
-          "market_value": 789590.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.08,
-          "entry_date": "2026-08-10T10:25:39+08:00",
-          "type": "深研埋伏仓",
-          "sector": "培养基/CDMO"
-        },
-        {
-          "ticker": "600111.SS",
-          "name": "北方稀土",
-          "shares": 18200,
-          "avg_cost": 43.48,
-          "current_price": 43.48,
-          "market_value": 791336.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.08,
-          "entry_date": "2026-08-10T10:29:01+08:00",
-          "type": "深研埋伏仓",
-          "sector": "稀土/战略小金属"
-        },
-        {
-          "ticker": "601168.SS",
-          "name": "西部矿业",
-          "shares": 16500,
-          "avg_cost": 42.02,
-          "current_price": 42.02,
-          "market_value": 693330.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.07,
-          "entry_date": "2026-08-10T10:29:13+08:00",
-          "type": "深研埋伏仓",
-          "sector": "铜矿"
-        },
-        {
-          "ticker": "000426.SZ",
-          "name": "兴业银锡",
-          "shares": 12300,
-          "avg_cost": 40.11,
-          "current_price": 40.11,
-          "market_value": 493353.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.05,
-          "entry_date": "2026-08-10T10:29:24+08:00",
-          "type": "regime_shift_probe",
-          "sector": "白银/锡/有色"
-        },
-        {
-          "ticker": "000568.SZ",
-          "name": "泸州老窖",
-          "shares": 10900,
-          "avg_cost": 90.9,
-          "current_price": 90.9,
-          "market_value": 990810.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.1,
-          "entry_date": "2026-08-10T10:29:35+08:00",
-          "type": "深研埋伏仓",
-          "sector": "高端白酒"
-        },
-        {
-          "ticker": "603456.SS",
-          "name": "九洲药业",
-          "shares": 17900,
-          "avg_cost": 16.58,
-          "current_price": 16.58,
-          "market_value": 296782.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.03,
-          "entry_date": "2026-08-10T10:29:46+08:00",
-          "type": "深研埋伏仓",
-          "sector": "CXO/CDMO"
-        },
-        {
-          "ticker": "688333.SS",
-          "name": "铂力特",
-          "shares": 5400,
-          "avg_cost": 110.26,
-          "current_price": 110.26,
-          "market_value": 595404.0,
-          "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.06,
-          "entry_date": "2026-08-10T10:30:20+08:00",
-          "type": "深研埋伏仓",
-          "sector": "3D打印/航天结构件"
-        }
-      ]
+      "positions": []
     },
     "us": {
       "currency": "USD",
@@ -5031,96 +4900,6 @@
       "shares": 153400,
       "price": 5.77,
       "realized_pnl": -12272.0
-    },
-    {
-      "date": "2026-08-10",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "300363",
-      "name": "博腾股份",
-      "shares": 54100,
-      "price": 22.05
-    },
-    {
-      "date": "2026-08-10",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "300725",
-      "name": "药石科技",
-      "shares": 23800,
-      "price": 49.94
-    },
-    {
-      "date": "2026-08-10",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "300759",
-      "name": "康龙化成",
-      "shares": 24900,
-      "price": 47.99
-    },
-    {
-      "date": "2026-08-10",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "688293",
-      "name": "奥浦迈",
-      "shares": 11500,
-      "price": 68.66
-    },
-    {
-      "date": "2026-08-10",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "600111",
-      "name": "北方稀土",
-      "shares": 18200,
-      "price": 43.48
-    },
-    {
-      "date": "2026-08-10",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "601168",
-      "name": "西部矿业",
-      "shares": 16500,
-      "price": 42.02
-    },
-    {
-      "date": "2026-08-10",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "000426",
-      "name": "兴业银锡",
-      "shares": 12300,
-      "price": 40.11
-    },
-    {
-      "date": "2026-08-10",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "000568",
-      "name": "泸州老窖",
-      "shares": 10900,
-      "price": 90.9
-    },
-    {
-      "date": "2026-08-10",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "603456",
-      "name": "九洲药业",
-      "shares": 17900,
-      "price": 16.58
-    },
-    {
-      "date": "2026-08-10",
-      "account": "a_share",
-      "action": "buy",
-      "ticker": "688333",
-      "name": "铂力特",
-      "shares": 5400,
-      "price": 110.26
     }
   ]
 }
