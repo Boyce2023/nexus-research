@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-10T06:36:58.263917+00:00",
+    "last_updated": "2026-08-10T06:37:10.346056+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9928028.62,
-      "cash": 5003764.62,
+      "cash": 4506738.62,
       "realized_pnl": -35339.64,
       "return_pct": -0.72,
       "positions": [
@@ -111,6 +111,19 @@
           "entry_date": "2026-08-10T14:36:54+08:00",
           "type": "深研埋伏仓",
           "sector": "电网UHV·GIS"
+        },
+        {
+          "ticker": "002978.SZ",
+          "name": "安宁股份",
+          "shares": 18100,
+          "avg_cost": 27.46,
+          "current_price": 27.46,
+          "market_value": 497026.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.05,
+          "entry_date": "2026-08-10T14:37:06+08:00",
+          "type": "深研埋伏仓",
+          "sector": "钛矿"
         }
       ]
     },
@@ -5055,6 +5068,15 @@
       "name": "平高电气",
       "shares": 29300,
       "price": 20.3
+    },
+    {
+      "date": "2026-08-10",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "002978",
+      "name": "安宁股份",
+      "shares": 18100,
+      "price": 27.46
     }
   ]
 }
