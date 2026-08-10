@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-10T06:36:03.129969+00:00",
+    "last_updated": "2026-08-10T06:36:14.162184+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9928028.62,
-      "cash": 8357875.62,
+      "cash": 7569906.62,
       "realized_pnl": -35339.64,
       "return_pct": -0.72,
       "positions": [
@@ -46,6 +46,19 @@
           "entry_date": "2026-08-10T14:35:59+08:00",
           "type": "深研埋伏仓",
           "sector": "稀土/战略小金属"
+        },
+        {
+          "ticker": "603259.SS",
+          "name": "药明康德",
+          "shares": 4900,
+          "avg_cost": 160.81,
+          "current_price": 160.81,
+          "market_value": 787969.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.079,
+          "entry_date": "2026-08-10T14:36:10+08:00",
+          "type": "深研埋伏仓",
+          "sector": "CXO/CDMO"
         }
       ]
     },
@@ -4945,6 +4958,15 @@
       "name": "北方稀土",
       "shares": 18100,
       "price": 43.63
+    },
+    {
+      "date": "2026-08-10",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "603259",
+      "name": "药明康德",
+      "shares": 4900,
+      "price": 160.81
     }
   ]
 }
