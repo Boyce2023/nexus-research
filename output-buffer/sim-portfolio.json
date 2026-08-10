@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-10T02:25:31.420263+00:00",
+    "last_updated": "2026-08-10T02:25:42.764416+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9928028.62,
-      "cash": 6351600.62,
+      "cash": 5562010.62,
       "realized_pnl": -35339.64,
       "return_pct": -0.72,
       "positions": [
@@ -59,6 +59,19 @@
           "entry_date": "2026-08-10T10:25:27+08:00",
           "type": "深研埋伏仓",
           "sector": "CRO/CDMO"
+        },
+        {
+          "ticker": "688293.SS",
+          "name": "奥浦迈",
+          "shares": 11500,
+          "avg_cost": 68.66,
+          "current_price": 68.66,
+          "market_value": 789590.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.08,
+          "entry_date": "2026-08-10T10:25:39+08:00",
+          "type": "深研埋伏仓",
+          "sector": "培养基/CDMO"
         }
       ]
     },
@@ -4967,6 +4980,15 @@
       "name": "康龙化成",
       "shares": 24900,
       "price": 47.99
+    },
+    {
+      "date": "2026-08-10",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "688293",
+      "name": "奥浦迈",
+      "shares": 11500,
+      "price": 68.66
     }
   ]
 }
