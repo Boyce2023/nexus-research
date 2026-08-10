@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-10T06:36:47.248517+00:00",
+    "last_updated": "2026-08-10T06:36:58.263917+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9928028.62,
-      "cash": 5598554.62,
+      "cash": 5003764.62,
       "realized_pnl": -35339.64,
       "return_pct": -0.72,
       "positions": [
@@ -98,6 +98,19 @@
           "entry_date": "2026-08-10T14:36:43+08:00",
           "type": "深研埋伏仓",
           "sector": "先进封装·陶瓷/MLCC"
+        },
+        {
+          "ticker": "600312.SS",
+          "name": "平高电气",
+          "shares": 29300,
+          "avg_cost": 20.3,
+          "current_price": 20.3,
+          "market_value": 594790.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.06,
+          "entry_date": "2026-08-10T14:36:54+08:00",
+          "type": "深研埋伏仓",
+          "sector": "电网UHV·GIS"
         }
       ]
     },
@@ -5033,6 +5046,15 @@
       "name": "三环集团",
       "shares": 4600,
       "price": 127.7
+    },
+    {
+      "date": "2026-08-10",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600312",
+      "name": "平高电气",
+      "shares": 29300,
+      "price": 20.3
     }
   ]
 }
