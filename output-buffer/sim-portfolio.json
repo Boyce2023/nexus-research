@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-10T05:05:04.330643+00:00",
+    "last_updated": "2026-08-10T06:35:05.523851+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,10 +17,24 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9928028.62,
-      "cash": 9928028.62,
+      "cash": 9147578.62,
       "realized_pnl": -35339.64,
       "return_pct": -0.72,
-      "positions": []
+      "positions": [
+        {
+          "ticker": "600549.SS",
+          "name": "厦门钨业",
+          "shares": 12900,
+          "avg_cost": 60.5,
+          "current_price": 60.5,
+          "market_value": 780450.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.079,
+          "entry_date": "2026-08-10T14:35:01+08:00",
+          "type": "深研埋伏仓",
+          "sector": "钨/战略小金属"
+        }
+      ]
     },
     "us": {
       "currency": "USD",
@@ -4900,6 +4914,15 @@
       "shares": 153400,
       "price": 5.77,
       "realized_pnl": -12272.0
+    },
+    {
+      "date": "2026-08-10",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600549",
+      "name": "厦门钨业",
+      "shares": 12900,
+      "price": 60.5
     }
   ]
 }
