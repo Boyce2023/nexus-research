@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-11T06:18:32.356615+00:00",
+    "last_updated": "2026-08-11T06:18:43.255189+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9893432.62,
-      "cash": 1555333.62,
+      "cash": 966286.62,
       "realized_pnl": -35339.64,
       "return_pct": -1.07,
       "positions": [
@@ -189,6 +189,19 @@
           "entry_date": "2026-08-11T14:18:28+08:00",
           "type": "probe_candidate",
           "sector": "消费/家清自有品牌"
+        },
+        {
+          "ticker": "300759.SZ",
+          "name": "康龙化成",
+          "shares": 12300,
+          "avg_cost": 47.89,
+          "current_price": 47.89,
+          "market_value": 589047.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.06,
+          "entry_date": "2026-08-11T14:18:39+08:00",
+          "type": "深研埋伏仓",
+          "sector": "CRO/CDMO"
         }
       ]
     },
@@ -5223,6 +5236,15 @@
       "name": "若羽臣",
       "shares": 20100,
       "price": 29.33
+    },
+    {
+      "date": "2026-08-11",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "300759",
+      "name": "康龙化成",
+      "shares": 12300,
+      "price": 47.89
     }
   ]
 }
