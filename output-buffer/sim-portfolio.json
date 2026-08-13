@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-13T08:00:20.220257+00:00",
+    "last_updated": "2026-08-13T08:32:35.256595+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,8 +17,8 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9656778.62,
-      "cash": 100014.62,
-      "realized_pnl": -35339.64,
+      "cash": 569890.62,
+      "realized_pnl": -62489.64,
       "return_pct": -3.43,
       "positions": [
         {
@@ -111,19 +111,6 @@
           "entry_date": "2026-08-10T14:36:54+08:00",
           "type": "深研埋伏仓",
           "sector": "电网UHV·GIS"
-        },
-        {
-          "ticker": "002978.SZ",
-          "name": "安宁股份",
-          "shares": 18100,
-          "avg_cost": 27.46,
-          "current_price": 25.96,
-          "market_value": 469876.0,
-          "unrealized_pnl_pct": -5.46,
-          "portfolio_pct": 0.049,
-          "entry_date": "2026-08-10T14:37:06+08:00",
-          "type": "深研埋伏仓",
-          "sector": "钛矿"
         },
         {
           "ticker": "002842.SZ",
@@ -5317,6 +5304,16 @@
       "name": "盛美上海",
       "shares": 1500,
       "price": 314.1
+    },
+    {
+      "date": "2026-08-13",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "002978",
+      "name": "安宁股份",
+      "shares": 18100,
+      "price": 25.96,
+      "realized_pnl": -27150.0
     }
   ]
 }
