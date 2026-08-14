@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-14T08:44:30.014545+00:00",
+    "last_updated": "2026-08-14T08:45:05.486543+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -222,7 +222,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1565100.13,
-      "cash": -1288976.54,
+      "cash": -1453276.94,
       "realized_pnl": -80622.75,
       "return_pct": 4.34,
       "positions": [
@@ -420,6 +420,19 @@
           "entry_date": "2026-08-11T13:29:21+08:00",
           "type": "trading_position",
           "sector": "DC电力/独立发电"
+        },
+        {
+          "ticker": "HUBB",
+          "name": "Hubbell Inc",
+          "shares": 324,
+          "avg_cost": 507.1,
+          "current_price": 507.1,
+          "market_value": 164300.4,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.105,
+          "entry_date": "2026-08-14T16:44:58+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -5353,6 +5366,15 @@
       "shares": 478,
       "price": 344.5,
       "realized_pnl": -9082.0
+    },
+    {
+      "date": "2026-08-14",
+      "account": "us",
+      "action": "buy",
+      "ticker": "HUBB",
+      "name": "Hubbell Inc",
+      "shares": 324,
+      "price": 507.1
     }
   ]
 }
