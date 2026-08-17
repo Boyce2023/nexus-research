@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-17T06:31:38.421852+00:00",
+    "last_updated": "2026-08-17T06:33:27.422106+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -222,7 +222,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1563588.32,
-      "cash": -1293700.28,
+      "cash": -1450437.56,
       "realized_pnl": -62083.49,
       "return_pct": 4.24,
       "positions": [
@@ -420,6 +420,19 @@
           "entry_date": "2026-08-17T14:26:50+08:00",
           "type": "catalyst_position",
           "sector": "HALEU/核燃料"
+        },
+        {
+          "ticker": "ATI",
+          "name": "ATI Inc",
+          "shares": 686,
+          "avg_cost": 228.48,
+          "current_price": 228.48,
+          "market_value": 156737.28,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-08-17T14:33:21+08:00",
+          "type": "u4_tracking",
+          "sector": "核锆+航空+Optimus合金"
         }
       ]
     }
@@ -5433,6 +5446,15 @@
       "shares": 1700,
       "price": 91.6,
       "realized_pnl": 9928.0
+    },
+    {
+      "date": "2026-08-17",
+      "account": "us",
+      "action": "buy",
+      "ticker": "ATI",
+      "name": "ATI Inc",
+      "shares": 686,
+      "price": 228.48
     }
   ]
 }
