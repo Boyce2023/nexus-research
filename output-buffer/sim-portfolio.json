@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-17T07:47:59.068907+00:00",
+    "last_updated": "2026-08-17T07:49:02.142046+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,8 +17,8 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9953576.62,
-      "cash": 2019895.62,
-      "realized_pnl": -163208.64,
+      "cash": 2401535.62,
+      "realized_pnl": -176648.64,
       "return_pct": -0.46,
       "positions": [
         {
@@ -115,12 +115,12 @@
         {
           "ticker": "688085.SS",
           "name": "三友医疗",
-          "shares": 56000,
+          "shares": 28000,
           "avg_cost": 14.11,
           "current_price": 13.63,
-          "market_value": 763280.0,
+          "market_value": 381640.0,
           "unrealized_pnl_pct": -3.4,
-          "portfolio_pct": 0.077,
+          "portfolio_pct": 0.038,
           "entry_date": "2026-08-11T14:17:06+08:00",
           "type": "probe_candidate",
           "sector": "医疗器械/脊柱耗材"
@@ -5472,6 +5472,16 @@
       "shares": 15600,
       "price": 40.84,
       "realized_pnl": -53196.0
+    },
+    {
+      "date": "2026-08-17",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "688085",
+      "name": "三友医疗",
+      "shares": 28000,
+      "price": 13.63,
+      "realized_pnl": -13440.0
     }
   ]
 }
