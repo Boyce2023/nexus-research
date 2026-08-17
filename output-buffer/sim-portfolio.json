@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-17T06:27:06.578933+00:00",
+    "last_updated": "2026-08-17T06:31:38.421852+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -222,8 +222,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1563588.32,
-      "cash": -1449420.28,
-      "realized_pnl": -72011.49,
+      "cash": -1293700.28,
+      "realized_pnl": -62083.49,
       "return_pct": 4.24,
       "positions": [
         {
@@ -340,19 +340,6 @@
           "unrealized_pnl_pct": 5.35,
           "portfolio_pct": 0.098,
           "entry_date": "2026-07-30T10:12:53+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "EW",
-          "name": "Edwards Lifesciences Corporatio",
-          "shares": 1700,
-          "avg_cost": 85.76,
-          "current_price": 91.6,
-          "market_value": 155720.0,
-          "unrealized_pnl_pct": 6.81,
-          "portfolio_pct": 0.1,
-          "entry_date": "2026-07-30T10:13:23+08:00",
           "type": "",
           "sector": ""
         },
@@ -5436,6 +5423,16 @@
       "name": "Centrus Energy",
       "shares": 863,
       "price": 190.15
+    },
+    {
+      "date": "2026-08-17",
+      "account": "us",
+      "action": "sell",
+      "ticker": "EW",
+      "name": "Edwards Lifesciences Corporatio",
+      "shares": 1700,
+      "price": 91.6,
+      "realized_pnl": 9928.0
     }
   ]
 }
