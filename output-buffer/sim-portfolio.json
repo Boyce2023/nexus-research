@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-17T07:55:02.198529+00:00",
+    "last_updated": "2026-08-17T07:55:44.071636+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9953576.62,
-      "cash": 2710041.62,
+      "cash": 2330641.62,
       "realized_pnl": -173668.64,
       "return_pct": -0.46,
       "positions": [
@@ -128,12 +128,12 @@
         {
           "ticker": "688627.SS",
           "name": "精智达",
-          "shares": 800,
-          "avg_cost": 482.56,
+          "shares": 1500,
+          "avg_cost": 510.2987,
           "current_price": 542.0,
-          "market_value": 433600.0,
-          "unrealized_pnl_pct": 12.32,
-          "portfolio_pct": 0.044,
+          "market_value": 813000.0,
+          "unrealized_pnl_pct": 6.21,
+          "portfolio_pct": 0.082,
           "entry_date": "2026-08-13T16:48:14+08:00",
           "type": "core_probe",
           "sector": "半导体设备/存储测试"
@@ -5498,6 +5498,15 @@
       "name": "三环集团",
       "shares": 1500,
       "price": 130.15
+    },
+    {
+      "date": "2026-08-17",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "688627",
+      "name": "精智达",
+      "shares": 700,
+      "price": 542.0
     }
   ]
 }
