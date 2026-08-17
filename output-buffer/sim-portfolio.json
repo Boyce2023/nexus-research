@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-17T07:50:36.523893+00:00",
+    "last_updated": "2026-08-17T07:51:16.732177+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,8 +17,8 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9953576.62,
-      "cash": 3884688.62,
-      "realized_pnl": -172982.64,
+      "cash": 3895800.62,
+      "realized_pnl": -173602.64,
       "return_pct": -0.46,
       "positions": [
         {
@@ -124,19 +124,6 @@
           "entry_date": "2026-08-11T14:17:56+08:00",
           "type": "probe_candidate",
           "sector": "温控/液冷"
-        },
-        {
-          "ticker": "003010.SZ",
-          "name": "若羽臣",
-          "shares": 400,
-          "avg_cost": 29.33,
-          "current_price": 27.78,
-          "market_value": 11112.0,
-          "unrealized_pnl_pct": -5.28,
-          "portfolio_pct": 0.001,
-          "entry_date": "2026-08-11T14:18:28+08:00",
-          "type": "probe_candidate",
-          "sector": "消费/家清自有品牌"
         },
         {
           "ticker": "600690.SS",
@@ -5473,6 +5460,16 @@
       "shares": 28000,
       "price": 13.63,
       "realized_pnl": -13440.0
+    },
+    {
+      "date": "2026-08-17",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "003010",
+      "name": "若羽臣",
+      "shares": 400,
+      "price": 27.78,
+      "realized_pnl": -620.0
     }
   ]
 }
