@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-24T01:52:25.932432+00:00",
+    "last_updated": "2026-08-24T01:54:05.459179+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -144,7 +144,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1539568.19,
-      "cash": -1412837.66,
+      "cash": -1462595.86,
       "realized_pnl": -88755.78,
       "return_pct": 2.64,
       "positions": [
@@ -203,12 +203,12 @@
         {
           "ticker": "HALO",
           "name": "Halozyme Therapeutics, Inc.",
-          "shares": 2084,
-          "avg_cost": 83.445,
+          "shares": 2544,
+          "avg_cost": 87.9157,
           "current_price": 108.17,
-          "market_value": 225426.28,
-          "unrealized_pnl_pct": 29.63,
-          "portfolio_pct": 0.146,
+          "market_value": 275184.48,
+          "unrealized_pnl_pct": 23.04,
+          "portfolio_pct": 0.179,
           "entry_date": "2026-07-29T16:06:21+08:00",
           "type": "",
           "sector": ""
@@ -5704,6 +5704,15 @@
       "name": "Adobe",
       "shares": 560,
       "price": 275.3
+    },
+    {
+      "date": "2026-08-24",
+      "account": "us",
+      "action": "buy",
+      "ticker": "HALO",
+      "name": "Halozyme Therapeutics, Inc.",
+      "shares": 460,
+      "price": 108.17
     }
   ]
 }
