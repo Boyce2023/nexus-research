@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-24T01:18:16.672739+00:00",
+    "last_updated": "2026-08-24T01:18:42.283448+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9468701.62,
-      "cash": 2141807.62,
+      "cash": 1923107.62,
       "realized_pnl": -262244.64,
       "return_pct": -5.31,
       "positions": [
@@ -37,12 +37,12 @@
         {
           "ticker": "600111.SS",
           "name": "北方稀土",
-          "shares": 18100,
-          "avg_cost": 43.63,
+          "shares": 23500,
+          "avg_cost": 42.9108,
           "current_price": 40.5,
-          "market_value": 733050.0,
-          "unrealized_pnl_pct": -7.17,
-          "portfolio_pct": 0.077,
+          "market_value": 951750.0,
+          "unrealized_pnl_pct": -5.62,
+          "portfolio_pct": 0.101,
           "entry_date": "2026-08-10T14:35:59+08:00",
           "type": "深研埋伏仓",
           "sector": "稀土/战略小金属"
@@ -5654,6 +5654,15 @@
       "name": "厦门钨业",
       "shares": 3800,
       "price": 56.5
+    },
+    {
+      "date": "2026-08-24",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600111",
+      "name": "北方稀土",
+      "shares": 5400,
+      "price": 40.5
     }
   ]
 }
