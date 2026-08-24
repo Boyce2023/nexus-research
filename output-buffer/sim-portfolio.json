@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-24T08:00:21.803020+00:00",
+    "last_updated": "2026-08-24T08:06:55.650209+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,8 +131,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1539568.19,
-      "cash": -1462595.86,
-      "realized_pnl": -88755.78,
+      "cash": -1310306.14,
+      "realized_pnl": -100766.46,
       "return_pct": 2.64,
       "positions": [
         {
@@ -288,19 +288,6 @@
           "unrealized_pnl_pct": 7.08,
           "portfolio_pct": 0.15,
           "entry_date": "2026-08-06T10:50:55+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "HUBB",
-          "name": "Hubbell Inc",
-          "shares": 324,
-          "avg_cost": 507.1,
-          "current_price": 470.03,
-          "market_value": 152289.72,
-          "unrealized_pnl_pct": -7.31,
-          "portfolio_pct": 0.099,
-          "entry_date": "2026-08-14T16:44:58+08:00",
           "type": "",
           "sector": ""
         },
@@ -5794,6 +5781,16 @@
       "shares": 4350,
       "price": 88.38,
       "realized_pnl": -21351.5009
+    },
+    {
+      "date": "2026-08-24",
+      "account": "us",
+      "action": "sell",
+      "ticker": "HUBB",
+      "name": "Hubbell Inc",
+      "shares": 324,
+      "price": 470.03,
+      "realized_pnl": -12010.68
     }
   ]
 }
