@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-24T08:06:55.650209+00:00",
+    "last_updated": "2026-08-24T08:08:34.617416+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,7 +131,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1539568.19,
-      "cash": -1310306.14,
+      "cash": -1464676.1,
       "realized_pnl": -100766.46,
       "return_pct": 2.64,
       "positions": [
@@ -329,6 +329,19 @@
           "entry_date": "2026-08-24T09:52:20+08:00",
           "type": "catalyst_position",
           "sector": "SaaS/创意工具"
+        },
+        {
+          "ticker": "RGLD",
+          "name": "Royal Gold, Inc.",
+          "shares": 596,
+          "avg_cost": 259.01,
+          "current_price": 259.01,
+          "market_value": 154369.96,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-08-24T16:08:28+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -5791,6 +5804,15 @@
       "shares": 324,
       "price": 470.03,
       "realized_pnl": -12010.68
+    },
+    {
+      "date": "2026-08-24",
+      "account": "us",
+      "action": "buy",
+      "ticker": "RGLD",
+      "name": "Royal Gold, Inc.",
+      "shares": 596,
+      "price": 259.01
     }
   ]
 }
