@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-24T01:20:53.396221+00:00",
+    "last_updated": "2026-08-24T01:24:07.048071+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -144,7 +144,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1539568.19,
-      "cash": -1103405.26,
+      "cash": -1258669.66,
       "realized_pnl": -88755.78,
       "return_pct": 2.64,
       "positions": [
@@ -329,6 +329,19 @@
           "entry_date": "2026-08-17T14:26:50+08:00",
           "type": "catalyst_position",
           "sector": "HALEU/核燃料"
+        },
+        {
+          "ticker": "NEM",
+          "name": "Newmont Corporation",
+          "shares": 1180,
+          "avg_cost": 131.58,
+          "current_price": 131.58,
+          "market_value": 155264.4,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.101,
+          "entry_date": "2026-08-24T09:24:01+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -5660,6 +5673,15 @@
       "shares": 1100,
       "price": 136.21,
       "realized_pnl": -7326.0
+    },
+    {
+      "date": "2026-08-24",
+      "account": "us",
+      "action": "buy",
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "shares": 1180,
+      "price": 131.58
     }
   ]
 }
