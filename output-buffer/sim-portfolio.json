@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-24T02:39:13.552521+00:00",
+    "last_updated": "2026-08-24T02:39:25.442908+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 9315588.62,
-      "cash": 2987856.62,
+      "total_assets": 9316763.62,
+      "cash": 2828697.62,
       "realized_pnl": -492777.64,
-      "return_pct": -6.84,
+      "return_pct": -6.83,
       "positions": [
         {
           "ticker": "600549.SS",
@@ -37,12 +37,12 @@
         {
           "ticker": "600111.SS",
           "name": "北方稀土",
-          "shares": 23500,
-          "avg_cost": 42.9108,
-          "current_price": 40.76,
-          "market_value": 957860.0,
-          "unrealized_pnl_pct": -5.01,
-          "portfolio_pct": 0.103,
+          "shares": 27400,
+          "avg_cost": 42.6118,
+          "current_price": 40.81,
+          "market_value": 1118194.0,
+          "unrealized_pnl_pct": -4.23,
+          "portfolio_pct": 0.12,
           "entry_date": "2026-08-10T14:35:59+08:00",
           "type": "深研埋伏仓",
           "sector": "稀土/战略小金属"
@@ -107,7 +107,7 @@
           "current_price": 475.14,
           "market_value": 712710.0,
           "unrealized_pnl_pct": -6.89,
-          "portfolio_pct": 0.077,
+          "portfolio_pct": 0.076,
           "entry_date": "2026-08-13T16:48:14+08:00",
           "type": "core_probe",
           "sector": "半导体设备/存储测试"
@@ -1554,8 +1554,8 @@
     {
       "date": "2026-08-24",
       "a_share": {
-        "total_assets": 9315588.62,
-        "return_pct": -6.84
+        "total_assets": 9316763.62,
+        "return_pct": -6.83
       },
       "us": {
         "total_assets": 1539568.19,
@@ -5738,6 +5738,15 @@
       "name": "平高电气",
       "shares": 7800,
       "price": 20.28
+    },
+    {
+      "date": "2026-08-24",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600111",
+      "name": "北方稀土",
+      "shares": 3900,
+      "price": 40.81
     }
   ]
 }
