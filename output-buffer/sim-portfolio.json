@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-25T07:31:58.265496+00:00",
+    "last_updated": "2026-08-25T08:00:06.917912+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,8 +131,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1544403.97,
-      "cash": -1336437.1,
-      "realized_pnl": -120155.92,
+      "cash": -1260089.76,
+      "realized_pnl": -125763.23,
       "return_pct": 2.96,
       "positions": [
         {
@@ -268,12 +268,12 @@
         {
           "ticker": "LEU",
           "name": "Centrus Energy",
-          "shares": 863,
+          "shares": 432,
           "avg_cost": 190.15,
           "current_price": 177.14,
-          "market_value": 152871.82,
+          "market_value": 76524.48,
           "unrealized_pnl_pct": -6.84,
-          "portfolio_pct": 0.099,
+          "portfolio_pct": 0.05,
           "entry_date": "2026-08-17T14:26:50+08:00",
           "type": "catalyst_position",
           "sector": "HALEU/核燃料"
@@ -5882,6 +5882,16 @@
       "shares": 800,
       "price": 448.61,
       "realized_pnl": -49350.9336
+    },
+    {
+      "date": "2026-08-25",
+      "account": "us",
+      "action": "sell",
+      "ticker": "LEU",
+      "name": "Centrus Energy",
+      "shares": 431,
+      "price": 177.14,
+      "realized_pnl": -5607.31
     }
   ]
 }
