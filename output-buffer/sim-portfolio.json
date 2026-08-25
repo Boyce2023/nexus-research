@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-25T07:23:37.645847+00:00",
+    "last_updated": "2026-08-25T07:24:04.510610+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,8 +131,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1544403.97,
-      "cash": -1416091.4,
-      "realized_pnl": -127397.22,
+      "cash": -1336437.1,
+      "realized_pnl": -120155.92,
       "return_pct": 2.96,
       "positions": [
         {
@@ -216,12 +216,12 @@
         {
           "ticker": "PANW",
           "name": "Palo Alto Networks, Inc.",
-          "shares": 455,
+          "shares": 228,
           "avg_cost": 319.0,
           "current_price": 350.9,
-          "market_value": 159659.5,
+          "market_value": 80005.2,
           "unrealized_pnl_pct": 10.0,
-          "portfolio_pct": 0.103,
+          "portfolio_pct": 0.052,
           "entry_date": "2026-07-29T16:10:22+08:00",
           "type": "",
           "sector": ""
@@ -5862,6 +5862,16 @@
       "shares": 254,
       "price": 263.29,
       "realized_pnl": -5778.5
+    },
+    {
+      "date": "2026-08-25",
+      "account": "us",
+      "action": "sell",
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "shares": 227,
+      "price": 350.9,
+      "realized_pnl": 7241.3
     }
   ]
 }
