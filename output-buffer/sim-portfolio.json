@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-25T02:00:13.556701+00:00",
+    "last_updated": "2026-08-25T07:23:37.645847+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -131,8 +131,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1544403.97,
-      "cash": -1482967.06,
-      "realized_pnl": -121618.72,
+      "cash": -1416091.4,
+      "realized_pnl": -127397.22,
       "return_pct": 2.96,
       "positions": [
         {
@@ -210,19 +210,6 @@
           "unrealized_pnl_pct": 24.23,
           "portfolio_pct": 0.14,
           "entry_date": "2026-07-29T16:06:38+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "HWM",
-          "name": "Howmet Aerospace Inc.",
-          "shares": 254,
-          "avg_cost": 286.04,
-          "current_price": 263.29,
-          "market_value": 66875.66,
-          "unrealized_pnl_pct": -7.95,
-          "portfolio_pct": 0.043,
-          "entry_date": "2026-07-29T16:10:01+08:00",
           "type": "",
           "sector": ""
         },
@@ -5865,6 +5852,16 @@
       "name": "Cheniere Energy, Inc.",
       "shares": 320,
       "price": 280.79
+    },
+    {
+      "date": "2026-08-25",
+      "account": "us",
+      "action": "sell",
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "shares": 254,
+      "price": 263.29,
+      "realized_pnl": -5778.5
     }
   ]
 }
