@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-26T07:59:09.243137+00:00",
+    "last_updated": "2026-08-26T08:34:39.960532+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,7 +17,7 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9288825.62,
-      "cash": 2539200.62,
+      "cash": 2164968.62,
       "realized_pnl": -526856.21,
       "return_pct": -7.11,
       "positions": [
@@ -141,12 +141,12 @@
         {
           "ticker": "000426.SZ",
           "name": "兴业银锡",
-          "shares": 4500,
+          "shares": 13800,
           "avg_cost": 40.24,
           "current_price": 40.24,
-          "market_value": 181080.0,
+          "market_value": 555312.0,
           "unrealized_pnl_pct": 0.0,
-          "portfolio_pct": 0.019,
+          "portfolio_pct": 0.06,
           "entry_date": "2026-08-26T15:59:06+08:00",
           "type": "core_position",
           "sector": "贵金属/银锡资源"
@@ -5971,6 +5971,15 @@
       "ticker": "000426",
       "name": "兴业银锡",
       "shares": 4500,
+      "price": 40.24
+    },
+    {
+      "date": "2026-08-26",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "000426",
+      "name": "兴业银锡",
+      "shares": 9300,
       "price": 40.24
     }
   ]
