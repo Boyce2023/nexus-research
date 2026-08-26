@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-26T08:38:06.462473+00:00",
+    "last_updated": "2026-08-26T09:01:38.349367+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -157,8 +157,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1556264.85,
-      "cash": -1414943.76,
-      "realized_pnl": -125763.23,
+      "cash": -1336354.76,
+      "realized_pnl": -121042.42,
       "return_pct": 3.75,
       "positions": [
         {
@@ -203,12 +203,12 @@
         {
           "ticker": "SCHW",
           "name": "Charles Schwab Corporation (The",
-          "shares": 2331,
+          "shares": 1631,
           "avg_cost": 105.526,
           "current_price": 112.27,
-          "market_value": 261701.37,
+          "market_value": 183112.37,
           "unrealized_pnl_pct": 6.39,
-          "portfolio_pct": 0.168,
+          "portfolio_pct": 0.118,
           "entry_date": "2026-07-29T16:05:42+08:00",
           "type": "",
           "sector": ""
@@ -6000,6 +6000,16 @@
       "name": "金盘科技",
       "shares": 6400,
       "price": 72.35
+    },
+    {
+      "date": "2026-08-26",
+      "account": "us",
+      "action": "sell",
+      "ticker": "SCHW",
+      "name": "Charles Schwab Corporation (The",
+      "shares": 700,
+      "price": 112.27,
+      "realized_pnl": 4720.8105
     }
   ]
 }
