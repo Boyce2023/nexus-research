@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-27T07:08:13.984562+00:00",
+    "last_updated": "2026-08-27T07:09:06.158351+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -157,8 +157,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1522061.0,
-      "cash": -941383.13,
-      "realized_pnl": -71349.09,
+      "cash": -790982.33,
+      "realized_pnl": -65884.29,
       "return_pct": 1.47,
       "positions": [
         {
@@ -210,19 +210,6 @@
           "unrealized_pnl_pct": 21.78,
           "portfolio_pct": 0.179,
           "entry_date": "2026-07-29T16:06:21+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "BKNG",
-          "name": "Booking Holdings Inc. Common St",
-          "shares": 720,
-          "avg_cost": 201.3,
-          "current_price": 208.89,
-          "market_value": 150400.8,
-          "unrealized_pnl_pct": 3.77,
-          "portfolio_pct": 0.099,
-          "entry_date": "2026-07-30T10:12:53+08:00",
           "type": "",
           "sector": ""
         },
@@ -6044,6 +6031,16 @@
       "shares": 1136,
       "price": 188.07,
       "realized_pnl": 39714.56
+    },
+    {
+      "date": "2026-08-27",
+      "account": "us",
+      "action": "sell",
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc. Common St",
+      "shares": 720,
+      "price": 208.89,
+      "realized_pnl": 5464.8
     }
   ]
 }
