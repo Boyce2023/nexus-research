@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-27T07:11:18.508605+00:00",
+    "last_updated": "2026-08-27T07:12:16.878005+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -157,7 +157,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1522061.0,
-      "cash": -947900.14,
+      "cash": -1101060.14,
       "realized_pnl": -65884.29,
       "return_pct": 1.47,
       "positions": [
@@ -327,6 +327,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.103,
           "entry_date": "2026-08-27T15:11:13+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "BWXT",
+          "name": "BWX Technologies, Inc.",
+          "shares": 1000,
+          "avg_cost": 153.16,
+          "current_price": 153.16,
+          "market_value": 153160.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.101,
+          "entry_date": "2026-08-27T15:12:11+08:00",
           "type": "",
           "sector": ""
         }
@@ -6063,6 +6076,15 @@
       "name": "Transdigm Group Incorporated",
       "shares": 130,
       "price": 1207.0601
+    },
+    {
+      "date": "2026-08-27",
+      "account": "us",
+      "action": "buy",
+      "ticker": "BWXT",
+      "name": "BWX Technologies, Inc.",
+      "shares": 1000,
+      "price": 153.16
     }
   ]
 }
