@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-27T07:06:36.033479+00:00",
+    "last_updated": "2026-08-27T07:08:13.984562+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -157,8 +157,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1522061.0,
-      "cash": -1155030.65,
-      "realized_pnl": -111063.65,
+      "cash": -941383.13,
+      "realized_pnl": -71349.09,
       "return_pct": 1.47,
       "positions": [
         {
@@ -210,19 +210,6 @@
           "unrealized_pnl_pct": 21.78,
           "portfolio_pct": 0.179,
           "entry_date": "2026-07-29T16:06:21+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "ABNB",
-          "name": "Airbnb, Inc.",
-          "shares": 1136,
-          "avg_cost": 153.11,
-          "current_price": 188.07,
-          "market_value": 213647.52,
-          "unrealized_pnl_pct": 22.83,
-          "portfolio_pct": 0.14,
-          "entry_date": "2026-07-29T16:06:38+08:00",
           "type": "",
           "sector": ""
         },
@@ -6047,6 +6034,16 @@
       "shares": 1631,
       "price": 109.39,
       "realized_pnl": 6302.2085
+    },
+    {
+      "date": "2026-08-27",
+      "account": "us",
+      "action": "sell",
+      "ticker": "ABNB",
+      "name": "Airbnb, Inc.",
+      "shares": 1136,
+      "price": 188.07,
+      "realized_pnl": 39714.56
     }
   ]
 }
