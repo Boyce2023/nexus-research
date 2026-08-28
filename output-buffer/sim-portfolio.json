@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-28T01:15:31.915224+00:00",
+    "last_updated": "2026-08-28T01:15:52.703607+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -157,7 +157,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1516380.04,
-      "cash": -990598.1,
+      "cash": -1142594.58,
       "realized_pnl": -61206.69,
       "return_pct": 1.09,
       "positions": [
@@ -340,6 +340,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.101,
           "entry_date": "2026-08-27T15:13:08+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "WM",
+          "name": "Waste Management, Inc.",
+          "shares": 698,
+          "avg_cost": 217.76,
+          "current_price": 217.76,
+          "market_value": 151996.48,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.1,
+          "entry_date": "2026-08-28T09:15:48+08:00",
           "type": "",
           "sector": ""
         }
@@ -6128,6 +6141,15 @@
       "shares": 1462,
       "price": 78.42,
       "realized_pnl": 9983.596
+    },
+    {
+      "date": "2026-08-28",
+      "account": "us",
+      "action": "buy",
+      "ticker": "WM",
+      "name": "Waste Management, Inc.",
+      "shares": 698,
+      "price": 217.76
     }
   ]
 }
