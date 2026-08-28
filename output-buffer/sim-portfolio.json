@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-08-28T01:16:13.309820+00:00",
+    "last_updated": "2026-08-28T01:17:17.814052+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -157,7 +157,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1516453.62,
-      "cash": -1171067.18,
+      "cash": -1214257.02,
       "realized_pnl": -61206.69,
       "return_pct": 1.1,
       "positions": [
@@ -353,6 +353,19 @@
           "unrealized_pnl_pct": 0.0,
           "portfolio_pct": 0.1,
           "entry_date": "2026-08-28T09:15:48+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "NBIX",
+          "name": "Neurocrine Biosciences, Inc.",
+          "shares": 277,
+          "avg_cost": 155.92,
+          "current_price": 155.92,
+          "market_value": 43189.84,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.028,
+          "entry_date": "2026-08-28T09:17:14+08:00",
           "type": "",
           "sector": ""
         }
@@ -6159,6 +6172,15 @@
       "name": "Vertex Pharmaceuticals Incorpor",
       "shares": 52,
       "price": 547.55
+    },
+    {
+      "date": "2026-08-28",
+      "account": "us",
+      "action": "buy",
+      "ticker": "NBIX",
+      "name": "Neurocrine Biosciences, Inc.",
+      "shares": 277,
+      "price": 155.92
     }
   ]
 }
