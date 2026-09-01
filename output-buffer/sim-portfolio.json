@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-09-01T02:00:11.863952+00:00",
+    "last_updated": "2026-09-01T02:26:36.853538+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,24 +16,11 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 9201591.62,
-      "cash": 2831253.62,
-      "realized_pnl": -645642.78,
-      "return_pct": -7.98,
+      "total_assets": 9200541.62,
+      "cash": 3092103.62,
+      "realized_pnl": -681760.28,
+      "return_pct": -7.99,
       "positions": [
-        {
-          "ticker": "600549.SS",
-          "name": "厦门钨业",
-          "shares": 5000,
-          "avg_cost": 59.3935,
-          "current_price": 52.38,
-          "market_value": 261900.0,
-          "unrealized_pnl_pct": -11.81,
-          "portfolio_pct": 0.028,
-          "entry_date": "2026-08-10T14:35:01+08:00",
-          "type": "深研埋伏仓",
-          "sector": "钨/战略小金属"
-        },
         {
           "ticker": "600111.SS",
           "name": "北方稀土",
@@ -1692,14 +1679,14 @@
     {
       "date": "2026-09-01",
       "a_share": {
-        "total_assets": 9201591.62,
-        "return_pct": -7.98
+        "total_assets": 9200541.62,
+        "return_pct": -7.99
       },
       "us": {
         "total_assets": 1513778.21,
         "return_pct": 0.92
       },
-      "combined_return_pct": -3.36,
+      "combined_return_pct": -3.37,
       "sse_return_pct": -4.67,
       "spy_return_pct": 4.11
     }
@@ -6256,6 +6243,16 @@
       "shares": 5000,
       "price": 52.3,
       "realized_pnl": -35467.5
+    },
+    {
+      "date": "2026-09-01",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "600549",
+      "name": "厦门钨业",
+      "shares": 5000,
+      "price": 52.17,
+      "realized_pnl": -36117.5
     }
   ]
 }
