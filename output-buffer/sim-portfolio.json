@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-09-07T08:00:15.537017+00:00",
+    "last_updated": "2026-09-07T08:10:00.306800+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,8 +17,8 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9033256.62,
-      "cash": 5217085.62,
-      "realized_pnl": -874374.95,
+      "cash": 5475352.62,
+      "realized_pnl": -893763.95,
       "return_pct": -9.67,
       "positions": [
         {
@@ -98,19 +98,6 @@
           "entry_date": "2026-08-26T15:57:52+08:00",
           "type": "core_position",
           "sector": "贵金属/黄金矿业"
-        },
-        {
-          "ticker": "000426.SZ",
-          "name": "兴业银锡",
-          "shares": 6900,
-          "avg_cost": 40.24,
-          "current_price": 37.43,
-          "market_value": 258267.0,
-          "unrealized_pnl_pct": -6.98,
-          "portfolio_pct": 0.029,
-          "entry_date": "2026-08-26T15:59:06+08:00",
-          "type": "core_position",
-          "sector": "贵金属/银锡资源"
         },
         {
           "ticker": "688676.SS",
@@ -6490,6 +6477,16 @@
       "name": "北方稀土",
       "shares": 100,
       "price": 38.59
+    },
+    {
+      "date": "2026-09-07",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "000426",
+      "name": "兴业银锡",
+      "shares": 6900,
+      "price": 37.43,
+      "realized_pnl": -19389.0
     }
   ]
 }
