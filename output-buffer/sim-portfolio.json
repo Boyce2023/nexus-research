@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-09-07T08:10:00.306800+00:00",
+    "last_updated": "2026-09-07T09:21:17.355228+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -17,8 +17,8 @@
       "currency": "CNY",
       "initial_capital": 10000000,
       "total_assets": 9033256.62,
-      "cash": 5475352.62,
-      "realized_pnl": -893763.95,
+      "cash": 5751582.62,
+      "realized_pnl": -894993.95,
       "return_pct": -9.67,
       "positions": [
         {
@@ -76,12 +76,12 @@
         {
           "ticker": "000155.SZ",
           "name": "川能动力",
-          "shares": 46000,
+          "shares": 23000,
           "avg_cost": 12.0635,
           "current_price": 12.01,
-          "market_value": 552460.0,
+          "market_value": 276230.0,
           "unrealized_pnl_pct": -0.44,
-          "portfolio_pct": 0.061,
+          "portfolio_pct": 0.031,
           "entry_date": "2026-08-24T10:38:35+08:00",
           "type": "core_probe",
           "sector": "锂矿/锂辉石(新能源资源)"
@@ -6487,6 +6487,16 @@
       "shares": 6900,
       "price": 37.43,
       "realized_pnl": -19389.0
+    },
+    {
+      "date": "2026-09-07",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "000155",
+      "name": "川能动力",
+      "shares": 23000,
+      "price": 12.01,
+      "realized_pnl": -1229.994
     }
   ]
 }
