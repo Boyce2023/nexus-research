@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-09-11T01:15:35.093525+00:00",
+    "last_updated": "2026-09-11T01:18:14.923986+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -156,10 +156,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1451018.78,
-      "cash": -1114704.5,
-      "realized_pnl": -79547.24,
-      "return_pct": -3.27,
+      "total_assets": 1448024.14,
+      "cash": -929896.18,
+      "realized_pnl": -91997.06,
+      "return_pct": -3.47,
       "positions": [
         {
           "ticker": "V",
@@ -221,7 +221,7 @@
           "current_price": 276.02,
           "market_value": 242897.6,
           "unrealized_pnl_pct": 3.5,
-          "portfolio_pct": 0.167,
+          "portfolio_pct": 0.168,
           "entry_date": "2026-07-30T10:14:26+08:00",
           "type": "",
           "sector": ""
@@ -260,7 +260,7 @@
           "current_price": 261.37,
           "market_value": 155776.52,
           "unrealized_pnl_pct": 0.91,
-          "portfolio_pct": 0.107,
+          "portfolio_pct": 0.108,
           "entry_date": "2026-08-24T16:08:28+08:00",
           "type": "",
           "sector": ""
@@ -273,7 +273,7 @@
           "current_price": 157.76,
           "market_value": 149872.0,
           "unrealized_pnl_pct": -3.21,
-          "portfolio_pct": 0.103,
+          "portfolio_pct": 0.104,
           "entry_date": "2026-08-25T09:14:49+08:00",
           "type": "",
           "sector": ""
@@ -288,19 +288,6 @@
           "unrealized_pnl_pct": -3.7,
           "portfolio_pct": 0.154,
           "entry_date": "2026-08-26T22:38:24+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "TDG",
-          "name": "Transdigm Group Incorporated",
-          "shares": 164,
-          "avg_cost": 1202.7935,
-          "current_price": 1145.14,
-          "market_value": 187802.96,
-          "unrealized_pnl_pct": -4.79,
-          "portfolio_pct": 0.129,
-          "entry_date": "2026-08-27T15:11:13+08:00",
           "type": "",
           "sector": ""
         },
@@ -325,7 +312,7 @@
           "current_price": 299.05,
           "market_value": 164477.5,
           "unrealized_pnl_pct": 6.99,
-          "portfolio_pct": 0.113,
+          "portfolio_pct": 0.114,
           "entry_date": "2026-08-27T15:13:08+08:00",
           "type": "",
           "sector": ""
@@ -1823,10 +1810,10 @@
         "return_pct": -10.67
       },
       "us": {
-        "total_assets": 1451018.78,
-        "return_pct": -3.27
+        "total_assets": 1448024.14,
+        "return_pct": -3.47
       },
-      "combined_return_pct": -6.83,
+      "combined_return_pct": -6.93,
       "sse_return_pct": -5.91,
       "spy_return_pct": NaN
     }
@@ -6594,6 +6581,16 @@
       "shares": 560,
       "price": 248.83,
       "realized_pnl": -14823.2
+    },
+    {
+      "date": "2026-09-11",
+      "account": "us",
+      "action": "sell",
+      "ticker": "TDG",
+      "name": "Transdigm Group Incorporated",
+      "shares": 164,
+      "price": 1126.88,
+      "realized_pnl": -12449.813
     }
   ]
 }
