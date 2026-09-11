@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-09-11T01:20:32.410537+00:00",
+    "last_updated": "2026-09-11T01:30:25.866362+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 8932944.91,
-      "cash": 5380076.41,
-      "realized_pnl": -894993.95,
-      "return_pct": -10.67,
+      "total_assets": 8919119.21,
+      "cash": 5552018.21,
+      "realized_pnl": -909383.65,
+      "return_pct": -10.81,
       "positions": [
         {
           "ticker": "600111.SS",
@@ -42,7 +42,7 @@
           "current_price": 19.3,
           "market_value": 441970.0,
           "unrealized_pnl_pct": -4.76,
-          "portfolio_pct": 0.049,
+          "portfolio_pct": 0.05,
           "entry_date": "2026-08-10T14:36:54+08:00",
           "type": "深研埋伏仓",
           "sector": "电网UHV·GIS"
@@ -89,12 +89,12 @@
         {
           "ticker": "600489.SS",
           "name": "中金黄金",
-          "shares": 14100,
+          "shares": 7050,
           "avg_cost": 26.43,
-          "current_price": 25.38,
-          "market_value": 357858.0,
-          "unrealized_pnl_pct": -3.97,
-          "portfolio_pct": 0.04,
+          "current_price": 24.41,
+          "market_value": 172090.5,
+          "unrealized_pnl_pct": -7.64,
+          "portfolio_pct": 0.019,
           "entry_date": "2026-08-26T15:57:52+08:00",
           "type": "core_position",
           "sector": "贵金属/黄金矿业"
@@ -1806,14 +1806,14 @@
     {
       "date": "2026-09-11",
       "a_share": {
-        "total_assets": 8932944.91,
-        "return_pct": -10.67
+        "total_assets": 8919119.21,
+        "return_pct": -10.81
       },
       "us": {
         "total_assets": 1448024.14,
         "return_pct": -3.47
       },
-      "combined_return_pct": -6.93,
+      "combined_return_pct": -7.0,
       "sse_return_pct": -5.91,
       "spy_return_pct": NaN
     }
@@ -6591,6 +6591,16 @@
       "shares": 164,
       "price": 1126.88,
       "realized_pnl": -12449.813
+    },
+    {
+      "date": "2026-09-11",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "600489",
+      "name": "中金黄金",
+      "shares": 7050,
+      "price": 24.41,
+      "realized_pnl": -14389.7
     }
   ]
 }
