@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-09-16T01:18:59.685639+00:00",
+    "last_updated": "2026-09-16T01:30:18.948637+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,20 +16,20 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 8910927.95,
-      "cash": 5753507.95,
-      "realized_pnl": -939413.91,
-      "return_pct": -10.89,
+      "total_assets": 8907832.72,
+      "cash": 6005841.72,
+      "realized_pnl": -976640.43,
+      "return_pct": -10.92,
       "positions": [
         {
           "ticker": "600111.SS",
           "name": "北方稀土",
-          "shares": 13700,
+          "shares": 6900,
           "avg_cost": 42.5824,
-          "current_price": 37.35,
-          "market_value": 511695.0,
-          "unrealized_pnl_pct": -12.29,
-          "portfolio_pct": 0.057,
+          "current_price": 37.14,
+          "market_value": 256266.0,
+          "unrealized_pnl_pct": -12.78,
+          "portfolio_pct": 0.029,
           "entry_date": "2026-08-10T14:35:59+08:00",
           "type": "深研埋伏仓",
           "sector": "稀土/战略小金属"
@@ -120,7 +120,7 @@
           "current_price": 47.85,
           "market_value": 387585.0,
           "unrealized_pnl_pct": 8.45,
-          "portfolio_pct": 0.043,
+          "portfolio_pct": 0.044,
           "entry_date": "2026-09-02T10:32:17+08:00",
           "type": "candidate",
           "sector": "玻纤/电子布"
@@ -1876,14 +1876,14 @@
     {
       "date": "2026-09-16",
       "a_share": {
-        "total_assets": 8910927.95,
-        "return_pct": -10.89
+        "total_assets": 8907832.72,
+        "return_pct": -10.92
       },
       "us": {
         "total_assets": 1448024.14,
         "return_pct": -3.47
       },
-      "combined_return_pct": -7.04,
+      "combined_return_pct": -7.05,
       "sse_return_pct": -7.39,
       "spy_return_pct": NaN
     }
@@ -6681,6 +6681,16 @@
       "shares": 3200,
       "price": 63.02,
       "realized_pnl": -30030.26
+    },
+    {
+      "date": "2026-09-16",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "600111",
+      "name": "北方稀土",
+      "shares": 6800,
+      "price": 37.14,
+      "realized_pnl": -37226.5228
     }
   ]
 }
