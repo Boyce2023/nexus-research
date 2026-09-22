@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-09-22T01:18:01.000770+00:00",
+    "last_updated": "2026-09-22T05:01:08.694956+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,23 +16,36 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 8957451.33,
-      "cash": 6292551.33,
+      "total_assets": 9006858.08,
+      "cash": 4058138.08,
       "realized_pnl": -1021017.31,
-      "return_pct": -10.43,
+      "return_pct": -9.93,
       "positions": [
         {
           "ticker": "688758.SS",
           "name": "赛分科技",
           "shares": 81000,
           "avg_cost": 32.7,
-          "current_price": 32.9,
-          "market_value": 2664900.0,
-          "unrealized_pnl_pct": 0.61,
-          "portfolio_pct": 0.298,
+          "current_price": 33.52,
+          "market_value": 2715120.0,
+          "unrealized_pnl_pct": 2.51,
+          "portfolio_pct": 0.301,
           "entry_date": "2026-09-21T14:37:49+08:00",
           "type": "candidate",
           "sector": "生物药分离纯化/层析填料"
+        },
+        {
+          "ticker": "603997.SS",
+          "name": "继峰股份",
+          "shares": 160000,
+          "avg_cost": 13.96,
+          "current_price": 13.96,
+          "market_value": 2233600.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.248,
+          "entry_date": "2026-09-22T13:01:05+08:00",
+          "type": "candidate",
+          "sector": "汽车座椅/头枕扶手(格拉默)"
         }
       ]
     },
@@ -1830,15 +1843,15 @@
     {
       "date": "2026-09-22",
       "a_share": {
-        "total_assets": 8957451.33,
-        "return_pct": -10.43
+        "total_assets": 9006858.08,
+        "return_pct": -9.93
       },
       "us": {
         "total_assets": 1370543.69,
         "return_pct": -8.63
       },
-      "combined_return_pct": -9.49,
-      "sse_return_pct": -6.09,
+      "combined_return_pct": -9.26,
+      "sse_return_pct": -5.28,
       "spy_return_pct": NaN
     }
   ],
@@ -6764,6 +6777,15 @@
       "name": "赛分科技",
       "shares": 81000,
       "price": 32.7
+    },
+    {
+      "date": "2026-09-22",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "603997",
+      "name": "继峰股份",
+      "shares": 160000,
+      "price": 13.96
     }
   ]
 }
