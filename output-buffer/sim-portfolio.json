@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-09-29T01:22:18.614118+00:00",
+    "last_updated": "2026-09-29T04:29:28.654339+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,20 +16,20 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 8771768.08,
+      "total_assets": 8804798.08,
       "cash": 4058138.08,
       "realized_pnl": -1021017.31,
-      "return_pct": -12.28,
+      "return_pct": -11.95,
       "positions": [
         {
           "ticker": "688758.SS",
           "name": "赛分科技",
           "shares": 81000,
           "avg_cost": 32.7,
-          "current_price": 31.23,
-          "market_value": 2529630.0,
-          "unrealized_pnl_pct": -4.5,
-          "portfolio_pct": 0.288,
+          "current_price": 31.46,
+          "market_value": 2548260.0,
+          "unrealized_pnl_pct": -3.79,
+          "portfolio_pct": 0.289,
           "entry_date": "2026-09-21T14:37:49+08:00",
           "type": "candidate",
           "sector": "生物药分离纯化/层析填料"
@@ -39,10 +39,10 @@
           "name": "继峰股份",
           "shares": 160000,
           "avg_cost": 13.96,
-          "current_price": 13.65,
-          "market_value": 2184000.0,
-          "unrealized_pnl_pct": -2.22,
-          "portfolio_pct": 0.249,
+          "current_price": 13.74,
+          "market_value": 2198400.0,
+          "unrealized_pnl_pct": -1.58,
+          "portfolio_pct": 0.25,
           "entry_date": "2026-09-22T13:01:05+08:00",
           "type": "candidate",
           "sector": "汽车座椅/头枕扶手(格拉默)"
@@ -52,10 +52,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1367057.09,
-      "cash": -775089.21,
-      "realized_pnl": -105605.66,
-      "return_pct": -8.86,
+      "total_assets": 1366067.73,
+      "cash": -719166.53,
+      "realized_pnl": -114545.1,
+      "return_pct": -8.93,
       "positions": [
         {
           "ticker": "V",
@@ -65,7 +65,7 @@
           "current_price": 370.93,
           "market_value": 234427.76,
           "unrealized_pnl_pct": 1.18,
-          "portfolio_pct": 0.171,
+          "portfolio_pct": 0.172,
           "entry_date": "2026-07-29T16:04:52+08:00",
           "type": "",
           "sector": ""
@@ -82,19 +82,6 @@
           "entry_date": "2026-07-29T16:05:10+08:00",
           "type": "",
           "sector": ""
-        },
-        {
-          "ticker": "RTX",
-          "name": "RTX Corporation",
-          "shares": 298,
-          "avg_cost": 217.6581,
-          "current_price": 190.98,
-          "market_value": 56912.04,
-          "unrealized_pnl_pct": -12.26,
-          "portfolio_pct": 0.042,
-          "entry_date": "2026-07-29T16:05:26+08:00",
-          "type": "core_position",
-          "sector": "Defense/Aerospace"
         },
         {
           "ticker": "HALO",
@@ -169,7 +156,7 @@
           "current_price": 513.26,
           "market_value": 216595.72,
           "unrealized_pnl_pct": -6.54,
-          "portfolio_pct": 0.158,
+          "portfolio_pct": 0.159,
           "entry_date": "2026-08-26T22:38:24+08:00",
           "type": "",
           "sector": ""
@@ -1936,21 +1923,21 @@
       },
       "combined_return_pct": -10.22,
       "sse_return_pct": -10.19,
-      "spy_return_pct": 4.96
+      "spy_return_pct": 4.17
     },
     {
       "date": "2026-09-29",
       "a_share": {
-        "total_assets": 8771768.08,
-        "return_pct": -12.28
+        "total_assets": 8804798.08,
+        "return_pct": -11.95
       },
       "us": {
-        "total_assets": 1367057.09,
-        "return_pct": -8.86
+        "total_assets": 1366067.73,
+        "return_pct": -8.93
       },
-      "combined_return_pct": -10.51,
-      "sse_return_pct": -10.2,
-      "spy_return_pct": 4.96
+      "combined_return_pct": -10.38,
+      "sse_return_pct": -10.28,
+      "spy_return_pct": 4.17
     }
   ],
   "trade_log": [
@@ -6894,6 +6881,16 @@
       "shares": 298,
       "price": 190.98,
       "realized_pnl": -7950.075
+    },
+    {
+      "date": "2026-09-29",
+      "account": "us",
+      "action": "sell",
+      "ticker": "RTX",
+      "name": "RTX Corporation",
+      "shares": 298,
+      "price": 187.66,
+      "realized_pnl": -8939.435
     }
   ]
 }
