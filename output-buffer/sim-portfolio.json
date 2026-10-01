@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-09-30T05:30:06.942274+00:00",
+    "last_updated": "2026-10-01T00:48:18.735836+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,20 +16,20 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 8672573.55,
+      "total_assets": 8676623.55,
       "cash": 6364358.55,
       "realized_pnl": -1155946.84,
-      "return_pct": -13.27,
+      "return_pct": -13.23,
       "positions": [
         {
           "ticker": "688758.SS",
           "name": "赛分科技",
           "shares": 40500,
           "avg_cost": 32.7,
-          "current_price": 30.03,
-          "market_value": 1216215.0,
-          "unrealized_pnl_pct": -8.17,
-          "portfolio_pct": 0.14,
+          "current_price": 30.13,
+          "market_value": 1220265.0,
+          "unrealized_pnl_pct": -7.86,
+          "portfolio_pct": 0.141,
           "entry_date": "2026-09-21T14:37:49+08:00",
           "type": "candidate",
           "sector": "生物药分离纯化/层析填料"
@@ -52,10 +52,10 @@
     "us": {
       "currency": "USD",
       "initial_capital": 1500000,
-      "total_assets": 1375055.69,
+      "total_assets": 1372450.03,
       "cash": -1038914.78,
       "realized_pnl": -123950.1,
-      "return_pct": -8.33,
+      "return_pct": -8.5,
       "positions": [
         {
           "ticker": "V",
@@ -78,7 +78,7 @@
           "current_price": 1184.78,
           "market_value": 253542.92,
           "unrealized_pnl_pct": -2.7,
-          "portfolio_pct": 0.184,
+          "portfolio_pct": 0.185,
           "entry_date": "2026-07-29T16:05:10+08:00",
           "type": "",
           "sector": ""
@@ -166,10 +166,10 @@
           "name": "BWX Technologies, Inc.",
           "shares": 500,
           "avg_cost": 153.16,
-          "current_price": 134.35,
-          "market_value": 67175.0,
-          "unrealized_pnl_pct": -12.28,
-          "portfolio_pct": 0.049,
+          "current_price": 137.0,
+          "market_value": 68500.0,
+          "unrealized_pnl_pct": -10.55,
+          "portfolio_pct": 0.05,
           "entry_date": "2026-08-27T15:12:11+08:00",
           "type": "",
           "sector": ""
@@ -179,10 +179,10 @@
           "name": "Constellation Energy Corporatio",
           "shares": 550,
           "avg_cost": 279.52,
-          "current_price": 260.43,
-          "market_value": 143236.5,
-          "unrealized_pnl_pct": -6.83,
-          "portfolio_pct": 0.104,
+          "current_price": 254.02,
+          "market_value": 139711.0,
+          "unrealized_pnl_pct": -9.12,
+          "portfolio_pct": 0.102,
           "entry_date": "2026-08-27T15:13:08+08:00",
           "type": "",
           "sector": ""
@@ -192,10 +192,10 @@
           "name": "Waste Management, Inc.",
           "shares": 698,
           "avg_cost": 217.76,
-          "current_price": 206.44,
-          "market_value": 144095.12,
-          "unrealized_pnl_pct": -5.2,
-          "portfolio_pct": 0.105,
+          "current_price": 203.92,
+          "market_value": 142336.16,
+          "unrealized_pnl_pct": -6.36,
+          "portfolio_pct": 0.104,
           "entry_date": "2026-08-28T09:15:48+08:00",
           "type": "",
           "sector": ""
@@ -205,10 +205,10 @@
           "name": "Neurocrine Biosciences, Inc.",
           "shares": 277,
           "avg_cost": 155.92,
-          "current_price": 140.44,
-          "market_value": 38901.88,
-          "unrealized_pnl_pct": -9.93,
-          "portfolio_pct": 0.028,
+          "current_price": 141.84,
+          "market_value": 39289.68,
+          "unrealized_pnl_pct": -9.03,
+          "portfolio_pct": 0.029,
           "entry_date": "2026-08-28T09:17:14+08:00",
           "type": "",
           "sector": ""
@@ -218,10 +218,10 @@
           "name": "Invesco QQQ Trust (Nasdaq-100)",
           "shares": 525,
           "avg_cost": 736.9967,
-          "current_price": 737.93,
-          "market_value": 387413.25,
-          "unrealized_pnl_pct": 0.13,
-          "portfolio_pct": 0.282,
+          "current_price": 739.77,
+          "market_value": 388379.25,
+          "unrealized_pnl_pct": 0.38,
+          "portfolio_pct": 0.283,
           "entry_date": "2026-09-29T12:38:47+08:00",
           "type": "index_beta",
           "sector": "指数ETF"
@@ -1955,16 +1955,30 @@
     {
       "date": "2026-09-30",
       "a_share": {
-        "total_assets": 8672573.55,
-        "return_pct": -13.27
+        "total_assets": 8676623.55,
+        "return_pct": -13.23
       },
       "us": {
-        "total_assets": 1375055.69,
-        "return_pct": -8.33
+        "total_assets": 1374565.69,
+        "return_pct": -8.36
       },
-      "combined_return_pct": -10.71,
-      "sse_return_pct": -10.1,
+      "combined_return_pct": -10.7,
+      "sse_return_pct": -9.85,
       "spy_return_pct": 3.65
+    },
+    {
+      "date": "2026-10-01",
+      "a_share": {
+        "total_assets": 8676623.55,
+        "return_pct": -13.23
+      },
+      "us": {
+        "total_assets": 1372450.03,
+        "return_pct": -8.5
+      },
+      "combined_return_pct": -10.78,
+      "sse_return_pct": -9.85,
+      "spy_return_pct": 3.25
     }
   ],
   "trade_log": [
