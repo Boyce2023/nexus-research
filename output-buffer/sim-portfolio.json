@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-10-08T00:09:43.926449+00:00",
+    "last_updated": "2026-10-08T00:11:54.282445+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -53,8 +53,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1397804.84,
-      "cash": -1295242.48,
-      "realized_pnl": -123950.1,
+      "cash": -1227331.26,
+      "realized_pnl": -133223.86,
       "return_pct": -6.81,
       "positions": [
         {
@@ -125,12 +125,12 @@
         {
           "ticker": "RGLD",
           "name": "Royal Gold, Inc.",
-          "shares": 596,
+          "shares": 298,
           "avg_cost": 259.01,
           "current_price": 227.89,
-          "market_value": 135822.44,
+          "market_value": 67911.22,
           "unrealized_pnl_pct": -12.01,
-          "portfolio_pct": 0.097,
+          "portfolio_pct": 0.049,
           "entry_date": "2026-08-24T16:08:28+08:00",
           "type": "",
           "sector": ""
@@ -7114,6 +7114,16 @@
       "name": "Invesco QQQ Trust (Nasdaq-100)",
       "shares": 85,
       "price": 757.73
+    },
+    {
+      "date": "2026-10-08",
+      "account": "us",
+      "action": "sell",
+      "ticker": "RGLD",
+      "name": "Royal Gold, Inc.",
+      "shares": 298,
+      "price": 227.89,
+      "realized_pnl": -9273.76
     }
   ]
 }
