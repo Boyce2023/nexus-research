@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-10-08T05:36:12.274489+00:00",
+    "last_updated": "2026-10-08T05:38:28.259870+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,25 +16,11 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 8702034.22,
-      "cash": 7589234.22,
-      "realized_pnl": -1255421.17,
-      "return_pct": -12.98,
-      "positions": [
-        {
-          "ticker": "603997.SS",
-          "name": "继峰股份",
-          "shares": 80000,
-          "avg_cost": 13.96,
-          "current_price": 13.91,
-          "market_value": 1112800.0,
-          "unrealized_pnl_pct": -0.36,
-          "portfolio_pct": 0.128,
-          "entry_date": "2026-09-22T13:01:05+08:00",
-          "type": "candidate",
-          "sector": "汽车座椅/头枕扶手(格拉默)"
-        }
-      ]
+      "total_assets": 8668300.99,
+      "cash": 8668300.99,
+      "realized_pnl": -1293154.4,
+      "return_pct": -13.32,
+      "positions": []
     },
     "us": {
       "currency": "USD",
@@ -2054,14 +2040,14 @@
     {
       "date": "2026-10-08",
       "a_share": {
-        "total_assets": 8702034.22,
-        "return_pct": -12.98
+        "total_assets": 8668300.99,
+        "return_pct": -13.32
       },
       "us": {
         "total_assets": 1397787.54,
         "return_pct": -6.81
       },
-      "combined_return_pct": -9.78,
+      "combined_return_pct": -9.94,
       "sse_return_pct": -9.52,
       "spy_return_pct": 5.22
     }
@@ -7131,6 +7117,16 @@
       "shares": 40500,
       "price": 30.27,
       "realized_pnl": -99474.33
+    },
+    {
+      "date": "2026-10-08",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "603997",
+      "name": "继峰股份",
+      "shares": 80000,
+      "price": 13.5,
+      "realized_pnl": -37733.23
     }
   ]
 }
