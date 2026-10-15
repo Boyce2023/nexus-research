@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-10-15T01:23:44.740268+00:00",
+    "last_updated": "2026-10-15T01:23:56.917552+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -26,8 +26,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1398061.3,
-      "cash": -1088337.2,
-      "realized_pnl": -139114.94,
+      "cash": -1054727.2,
+      "realized_pnl": -143794.94,
       "return_pct": -6.8,
       "positions": [
         {
@@ -137,12 +137,12 @@
         {
           "ticker": "BWXT",
           "name": "BWX Technologies, Inc.",
-          "shares": 500,
+          "shares": 250,
           "avg_cost": 153.16,
           "current_price": 134.44,
-          "market_value": 67220.0,
+          "market_value": 33610.0,
           "unrealized_pnl_pct": -12.22,
-          "portfolio_pct": 0.048,
+          "portfolio_pct": 0.024,
           "entry_date": "2026-08-27T15:12:11+08:00",
           "type": "",
           "sector": ""
@@ -7273,6 +7273,16 @@
       "shares": 149,
       "price": 224.84,
       "realized_pnl": -5091.33
+    },
+    {
+      "date": "2026-10-15",
+      "account": "us",
+      "action": "sell",
+      "ticker": "BWXT",
+      "name": "BWX Technologies, Inc.",
+      "shares": 250,
+      "price": 134.44,
+      "realized_pnl": -4680.0
     }
   ]
 }
