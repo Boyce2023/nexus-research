@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-10-15T01:23:56.917552+00:00",
+    "last_updated": "2026-10-15T01:24:06.950744+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -26,8 +26,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1398061.3,
-      "cash": -1054727.2,
-      "realized_pnl": -143794.94,
+      "cash": -1035835.71,
+      "realized_pnl": -146576.33,
       "return_pct": -6.8,
       "positions": [
         {
@@ -170,19 +170,6 @@
           "unrealized_pnl_pct": -0.92,
           "portfolio_pct": 0.108,
           "entry_date": "2026-08-28T09:15:48+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "NBIX",
-          "name": "Neurocrine Biosciences, Inc.",
-          "shares": 139,
-          "avg_cost": 155.92,
-          "current_price": 135.91,
-          "market_value": 18891.49,
-          "unrealized_pnl_pct": -12.83,
-          "portfolio_pct": 0.014,
-          "entry_date": "2026-08-28T09:17:14+08:00",
           "type": "",
           "sector": ""
         },
@@ -7283,6 +7270,16 @@
       "shares": 250,
       "price": 134.44,
       "realized_pnl": -4680.0
+    },
+    {
+      "date": "2026-10-15",
+      "account": "us",
+      "action": "sell",
+      "ticker": "NBIX",
+      "name": "Neurocrine Biosciences, Inc.",
+      "shares": 139,
+      "price": 135.91,
+      "realized_pnl": -2781.39
     }
   ]
 }
