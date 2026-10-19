@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-10-19T02:24:42.060465+00:00",
+    "last_updated": "2026-10-19T02:25:00.207030+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,8 +16,8 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 8484044.37,
-      "cash": 7225047.37,
+      "total_assets": 8483588.96,
+      "cash": 5973816.96,
       "realized_pnl": -1476165.58,
       "return_pct": -15.16,
       "positions": [
@@ -33,6 +33,19 @@
           "entry_date": "2026-10-19T10:24:39+08:00",
           "type": "candidate",
           "sector": "低空经济/通航运营"
+        },
+        {
+          "ticker": "001696.SZ",
+          "name": "宗申动力",
+          "shares": 76500,
+          "avg_cost": 16.35,
+          "current_price": 16.35,
+          "market_value": 1250775.0,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.147,
+          "entry_date": "2026-10-19T10:24:58+08:00",
+          "type": "candidate",
+          "sector": "低空经济/航空动力"
         }
       ]
     },
@@ -2208,7 +2221,7 @@
     {
       "date": "2026-10-19",
       "a_share": {
-        "total_assets": 8484044.37,
+        "total_assets": 8483588.96,
         "return_pct": -15.16
       },
       "us": {
@@ -7400,6 +7413,15 @@
       "name": "中信海直",
       "shares": 81700,
       "price": 15.41
+    },
+    {
+      "date": "2026-10-19",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "001696",
+      "name": "宗申动力",
+      "shares": 76500,
+      "price": 16.35
     }
   ]
 }
