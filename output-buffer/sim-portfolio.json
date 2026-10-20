@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-10-20T00:10:37.380545+00:00",
+    "last_updated": "2026-10-20T02:00:11.217536+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,20 +16,20 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 8436856.96,
+      "total_assets": 8367567.96,
       "cash": 5973816.96,
       "realized_pnl": -1476165.58,
-      "return_pct": -15.63,
+      "return_pct": -16.32,
       "positions": [
         {
           "ticker": "000099.SZ",
           "name": "中信海直",
           "shares": 81700,
           "avg_cost": 15.41,
-          "current_price": 15.25,
-          "market_value": 1245925.0,
-          "unrealized_pnl_pct": -1.04,
-          "portfolio_pct": 0.148,
+          "current_price": 14.43,
+          "market_value": 1178931.0,
+          "unrealized_pnl_pct": -6.36,
+          "portfolio_pct": 0.141,
           "entry_date": "2026-10-19T10:24:39+08:00",
           "type": "candidate",
           "sector": "低空经济/通航运营"
@@ -39,10 +39,10 @@
           "name": "宗申动力",
           "shares": 76500,
           "avg_cost": 16.35,
-          "current_price": 15.91,
-          "market_value": 1217115.0,
-          "unrealized_pnl_pct": -2.69,
-          "portfolio_pct": 0.144,
+          "current_price": 15.88,
+          "market_value": 1214820.0,
+          "unrealized_pnl_pct": -2.87,
+          "portfolio_pct": 0.145,
           "entry_date": "2026-10-19T10:24:58+08:00",
           "type": "candidate",
           "sector": "低空经济/航空动力"
@@ -2235,15 +2235,15 @@
     {
       "date": "2026-10-20",
       "a_share": {
-        "total_assets": 8436856.96,
-        "return_pct": -15.63
+        "total_assets": 8367567.96,
+        "return_pct": -16.32
       },
       "us": {
         "total_assets": 1429908.6,
         "return_pct": -4.67
       },
-      "combined_return_pct": -9.94,
-      "sse_return_pct": -13.63,
+      "combined_return_pct": -10.27,
+      "sse_return_pct": -14.18,
       "spy_return_pct": 3.77
     }
   ],
