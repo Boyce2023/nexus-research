@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-10-29T06:08:09.987516+00:00",
+    "last_updated": "2026-10-29T06:57:16.562572+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,19 +16,19 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 7944799.69,
+      "total_assets": 7874720.69,
       "cash": 2086541.69,
       "realized_pnl": -1607513.99,
-      "return_pct": -20.55,
+      "return_pct": -21.25,
       "positions": [
         {
           "ticker": "300522.SZ",
           "name": "世名科技",
           "shares": 168900,
           "avg_cost": 12.32,
-          "current_price": 11.33,
-          "market_value": 1913637.0,
-          "unrealized_pnl_pct": -8.04,
+          "current_price": 11.23,
+          "market_value": 1896747.0,
+          "unrealized_pnl_pct": -8.85,
           "portfolio_pct": 0.241,
           "entry_date": "2026-10-26T09:25:05+08:00",
           "type": "",
@@ -39,10 +39,10 @@
           "name": "万里股份",
           "shares": 93700,
           "avg_cost": 11.1,
-          "current_price": 10.61,
-          "market_value": 994157.0,
-          "unrealized_pnl_pct": -4.41,
-          "portfolio_pct": 0.125,
+          "current_price": 10.56,
+          "market_value": 989472.0,
+          "unrealized_pnl_pct": -4.86,
+          "portfolio_pct": 0.126,
           "entry_date": "2026-10-26T09:25:06+08:00",
           "type": "",
           "sector": ""
@@ -52,9 +52,9 @@
           "name": "海正生材",
           "shares": 67400,
           "avg_cost": 15.4,
-          "current_price": 13.08,
-          "market_value": 881592.0,
-          "unrealized_pnl_pct": -15.06,
+          "current_price": 13.02,
+          "market_value": 877548.0,
+          "unrealized_pnl_pct": -15.45,
           "portfolio_pct": 0.111,
           "entry_date": "2026-10-26T09:25:07+08:00",
           "type": "",
@@ -65,10 +65,10 @@
           "name": "上海九百",
           "shares": 148200,
           "avg_cost": 14.2,
-          "current_price": 13.96,
-          "market_value": 2068872.0,
-          "unrealized_pnl_pct": -1.69,
-          "portfolio_pct": 0.26,
+          "current_price": 13.66,
+          "market_value": 2024412.0,
+          "unrealized_pnl_pct": -3.8,
+          "portfolio_pct": 0.257,
           "entry_date": "2026-10-29T09:25:05+08:00",
           "type": "",
           "sector": ""
@@ -2387,15 +2387,15 @@
     {
       "date": "2026-10-29",
       "a_share": {
-        "total_assets": 7944799.69,
-        "return_pct": -20.55
+        "total_assets": 7874720.69,
+        "return_pct": -21.25
       },
       "us": {
         "total_assets": 1475369.17,
         "return_pct": -1.64
       },
-      "combined_return_pct": -10.73,
-      "sse_return_pct": -16.29,
+      "combined_return_pct": -11.07,
+      "sse_return_pct": -16.53,
       "spy_return_pct": 4.56
     }
   ],
