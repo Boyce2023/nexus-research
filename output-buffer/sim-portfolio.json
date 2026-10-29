@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-10-29T02:00:14.213484+00:00",
+    "last_updated": "2026-10-29T06:08:09.987516+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,21 +16,60 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 8361923.38,
-      "cash": 8024673.38,
-      "realized_pnl": -1659290.78,
-      "return_pct": -16.38,
+      "total_assets": 7944799.69,
+      "cash": 2086541.69,
+      "realized_pnl": -1607513.99,
+      "return_pct": -20.55,
       "positions": [
         {
-          "ticker": "603278.SS",
-          "name": "603278",
-          "shares": 19000,
-          "avg_cost": 14.51,
-          "current_price": 17.75,
-          "market_value": 337250.0,
-          "unrealized_pnl_pct": 22.33,
-          "portfolio_pct": 0.04,
-          "entry_date": "2026-10-22T09:33:05+08:00",
+          "ticker": "300522.SZ",
+          "name": "世名科技",
+          "shares": 168900,
+          "avg_cost": 12.32,
+          "current_price": 11.33,
+          "market_value": 1913637.0,
+          "unrealized_pnl_pct": -8.04,
+          "portfolio_pct": 0.241,
+          "entry_date": "2026-10-26T09:25:05+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "600847.SS",
+          "name": "万里股份",
+          "shares": 93700,
+          "avg_cost": 11.1,
+          "current_price": 10.61,
+          "market_value": 994157.0,
+          "unrealized_pnl_pct": -4.41,
+          "portfolio_pct": 0.125,
+          "entry_date": "2026-10-26T09:25:06+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "688203.SS",
+          "name": "海正生材",
+          "shares": 67400,
+          "avg_cost": 15.4,
+          "current_price": 13.08,
+          "market_value": 881592.0,
+          "unrealized_pnl_pct": -15.06,
+          "portfolio_pct": 0.111,
+          "entry_date": "2026-10-26T09:25:07+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "600838.SS",
+          "name": "上海九百",
+          "shares": 148200,
+          "avg_cost": 14.2,
+          "current_price": 13.96,
+          "market_value": 2068872.0,
+          "unrealized_pnl_pct": -1.69,
+          "portfolio_pct": 0.26,
+          "entry_date": "2026-10-29T09:25:05+08:00",
           "type": "",
           "sector": ""
         }
@@ -2306,57 +2345,57 @@
     {
       "date": "2026-10-26",
       "a_share": {
-        "total_assets": 8352423.38,
-        "return_pct": -16.48
+        "total_assets": 8359097.92,
+        "return_pct": -16.41
       },
       "us": {
         "total_assets": 1454456.61,
         "return_pct": -3.04
       },
-      "combined_return_pct": -9.5,
+      "combined_return_pct": -9.47,
       "sse_return_pct": -15.1,
       "spy_return_pct": 2.89
     },
     {
       "date": "2026-10-27",
       "a_share": {
-        "total_assets": 8355273.38,
-        "return_pct": -16.45
+        "total_assets": 8043977.92,
+        "return_pct": -19.56
       },
       "us": {
         "total_assets": 1464804.28,
         "return_pct": -2.35
       },
-      "combined_return_pct": -9.13,
-      "sse_return_pct": -15.39,
+      "combined_return_pct": -10.62,
+      "sse_return_pct": -16.22,
       "spy_return_pct": 3.62
     },
     {
       "date": "2026-10-28",
       "a_share": {
-        "total_assets": 8365153.38,
-        "return_pct": -16.35
+        "total_assets": 8147834.92,
+        "return_pct": -18.52
       },
       "us": {
         "total_assets": 1471325.84,
         "return_pct": -1.91
       },
-      "combined_return_pct": -8.85,
+      "combined_return_pct": -9.9,
       "sse_return_pct": -15.51,
       "spy_return_pct": 4.2
     },
     {
       "date": "2026-10-29",
       "a_share": {
-        "total_assets": 8361923.38,
-        "return_pct": -16.38
+        "total_assets": 7944799.69,
+        "return_pct": -20.55
       },
       "us": {
         "total_assets": 1475369.17,
         "return_pct": -1.64
       },
-      "combined_return_pct": -8.73,
-      "sse_return_pct": -15.51,
+      "combined_return_pct": -10.73,
+      "sse_return_pct": -16.29,
       "spy_return_pct": 4.56
     }
   ],
@@ -7578,6 +7617,52 @@
       "name": "603278",
       "shares": 19000,
       "price": 14.51
+    },
+    {
+      "date": "2026-10-26",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "300522",
+      "name": "世名科技",
+      "shares": 168900,
+      "price": 12.32
+    },
+    {
+      "date": "2026-10-26",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600847",
+      "name": "万里股份",
+      "shares": 93700,
+      "price": 11.1
+    },
+    {
+      "date": "2026-10-26",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "688203",
+      "name": "海正生材",
+      "shares": 67400,
+      "price": 15.4
+    },
+    {
+      "date": "2026-10-26",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "603278",
+      "name": "大业股份",
+      "shares": 19000,
+      "price": 17.25,
+      "realized_pnl": 51776.79
+    },
+    {
+      "date": "2026-10-29",
+      "account": "a_share",
+      "action": "buy",
+      "ticker": "600838",
+      "name": "上海九百",
+      "shares": 148200,
+      "price": 14.2
     }
   ]
 }
