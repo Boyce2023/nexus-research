@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-11-06T02:00:11.792148+00:00",
+    "last_updated": "2026-11-06T02:15:06.828909+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,10 +16,10 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 7697678.02,
-      "cash": 3807420.02,
-      "realized_pnl": -2294889.97,
-      "return_pct": -23.02,
+      "total_assets": 7696750.01,
+      "cash": 4833048.01,
+      "realized_pnl": -2255897.98,
+      "return_pct": -23.03,
       "positions": [
         {
           "ticker": "688152.SS",
@@ -39,24 +39,11 @@
           "name": "尖峰集团",
           "shares": 151800,
           "avg_cost": 6.5,
-          "current_price": 6.6,
-          "market_value": 1001880.0,
-          "unrealized_pnl_pct": 1.54,
+          "current_price": 6.59,
+          "market_value": 1000362.0,
+          "unrealized_pnl_pct": 1.38,
           "portfolio_pct": 0.13,
           "entry_date": "2026-11-03T14:57:18+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "600192.SS",
-          "name": "长城电工",
-          "shares": 147700,
-          "avg_cost": 6.68,
-          "current_price": 6.94,
-          "market_value": 1025038.0,
-          "unrealized_pnl_pct": 3.89,
-          "portfolio_pct": 0.133,
-          "entry_date": "2026-11-04T14:57:25+08:00",
           "type": "",
           "sector": ""
         }
@@ -2486,15 +2473,15 @@
     {
       "date": "2026-11-06",
       "a_share": {
-        "total_assets": 7697678.02,
-        "return_pct": -23.02
+        "total_assets": 7696750.01,
+        "return_pct": -23.03
       },
       "us": {
         "total_assets": 1417920.34,
         "return_pct": -5.47
       },
       "combined_return_pct": -13.91,
-      "sse_return_pct": -16.08,
+      "sse_return_pct": -16.09,
       "spy_return_pct": -0.76
     }
   ],
@@ -7867,6 +7854,16 @@
       "shares": 148200,
       "price": 11.63,
       "realized_pnl": -382363.33
+    },
+    {
+      "date": "2026-11-06",
+      "account": "a_share",
+      "action": "sell",
+      "ticker": "600192",
+      "name": "长城电工",
+      "shares": 147700,
+      "price": 6.95,
+      "realized_pnl": 38991.99
     }
   ]
 }
