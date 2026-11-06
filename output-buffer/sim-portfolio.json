@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-11-06T02:15:06.828909+00:00",
+    "last_updated": "2026-11-06T06:57:14.442653+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,20 +16,20 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 7696750.01,
+      "total_assets": 7688834.01,
       "cash": 4833048.01,
       "realized_pnl": -2255897.98,
-      "return_pct": -23.03,
+      "return_pct": -23.11,
       "positions": [
         {
           "ticker": "688152.SS",
           "name": "麒麟信安",
           "shares": 60400,
           "avg_cost": 31.12,
-          "current_price": 30.85,
-          "market_value": 1863340.0,
-          "unrealized_pnl_pct": -0.87,
-          "portfolio_pct": 0.242,
+          "current_price": 30.92,
+          "market_value": 1867568.0,
+          "unrealized_pnl_pct": -0.64,
+          "portfolio_pct": 0.243,
           "entry_date": "2026-11-02T14:57:10+08:00",
           "type": "",
           "sector": ""
@@ -39,10 +39,10 @@
           "name": "尖峰集团",
           "shares": 151800,
           "avg_cost": 6.5,
-          "current_price": 6.59,
-          "market_value": 1000362.0,
-          "unrealized_pnl_pct": 1.38,
-          "portfolio_pct": 0.13,
+          "current_price": 6.51,
+          "market_value": 988218.0,
+          "unrealized_pnl_pct": 0.15,
+          "portfolio_pct": 0.129,
           "entry_date": "2026-11-03T14:57:18+08:00",
           "type": "",
           "sector": ""
@@ -2473,15 +2473,15 @@
     {
       "date": "2026-11-06",
       "a_share": {
-        "total_assets": 7696750.01,
-        "return_pct": -23.03
+        "total_assets": 7688834.01,
+        "return_pct": -23.11
       },
       "us": {
         "total_assets": 1417920.34,
         "return_pct": -5.47
       },
-      "combined_return_pct": -13.91,
-      "sse_return_pct": -16.09,
+      "combined_return_pct": -13.95,
+      "sse_return_pct": -16.19,
       "spy_return_pct": -0.76
     }
   ],
