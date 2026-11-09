@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-11-09T05:05:54.635682+00:00",
+    "last_updated": "2026-11-09T05:06:05.740079+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -53,8 +53,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1378319.46,
-      "cash": -705572.43,
-      "realized_pnl": -209302.73,
+      "cash": -545279.21,
+      "realized_pnl": -216860.09,
       "return_pct": -8.11,
       "positions": [
         {
@@ -197,19 +197,6 @@
           "unrealized_pnl_pct": 8.5,
           "portfolio_pct": 0.12,
           "entry_date": "2026-08-28T09:15:48+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "SPY",
-          "name": "State Street SPDR S&P 500 ETF T",
-          "shares": 218,
-          "avg_cost": 769.9568,
-          "current_price": 735.29,
-          "market_value": 160293.22,
-          "unrealized_pnl_pct": -4.5,
-          "portfolio_pct": 0.116,
-          "entry_date": "2026-10-15T09:26:18+08:00",
           "type": "",
           "sector": ""
         }
@@ -7903,6 +7890,16 @@
       "shares": 677,
       "price": 656.1,
       "realized_pnl": -59266.041
+    },
+    {
+      "date": "2026-11-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "SPY",
+      "name": "State Street SPDR S&P 500 ETF T",
+      "shares": 218,
+      "price": 735.29,
+      "realized_pnl": -7557.36
     }
   ]
 }
