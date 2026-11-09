@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-11-09T05:08:13.649412+00:00",
+    "last_updated": "2026-11-09T05:08:23.838910+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -53,7 +53,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1378319.46,
-      "cash": -413767.95,
+      "cash": -620543.75,
       "realized_pnl": -200917.41,
       "return_pct": -8.11,
       "positions": [
@@ -147,6 +147,19 @@
           "entry_date": "2026-11-09T13:08:11+08:00",
           "type": "core_position",
           "sector": "Semiconductor Foundry"
+        },
+        {
+          "ticker": "SPCX",
+          "name": "Space Exploration Technologies ",
+          "shares": 1540,
+          "avg_cost": 134.27,
+          "current_price": 134.27,
+          "market_value": 206775.8,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.15,
+          "entry_date": "2026-11-09T13:08:20+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -7955,6 +7968,15 @@
       "name": "Taiwan Semiconductor",
       "shares": 734,
       "price": 375.44
+    },
+    {
+      "date": "2026-11-09",
+      "account": "us",
+      "action": "buy",
+      "ticker": "SPCX",
+      "name": "Space Exploration Technologies ",
+      "shares": 1540,
+      "price": 134.27
     }
   ]
 }
