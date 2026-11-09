@@ -4,7 +4,7 @@
     "description": "美股+A股模拟盘 — ¥10M A股 + $10M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-11-09T06:57:14.843839+00:00",
+    "last_updated": "2026-11-09T07:08:03.502228+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -16,19 +16,19 @@
     "a_share": {
       "currency": "CNY",
       "initial_capital": 10000000,
-      "total_assets": 7682373.81,
+      "total_assets": 7679337.81,
       "cash": 6697191.81,
       "realized_pnl": -2271402.18,
-      "return_pct": -23.18,
+      "return_pct": -23.21,
       "positions": [
         {
           "ticker": "600668.SS",
           "name": "尖峰集团",
           "shares": 151800,
           "avg_cost": 6.5,
-          "current_price": 6.49,
-          "market_value": 985182.0,
-          "unrealized_pnl_pct": -0.15,
+          "current_price": 6.47,
+          "market_value": 982146.0,
+          "unrealized_pnl_pct": -0.46,
           "portfolio_pct": 0.128,
           "entry_date": "2026-11-03T14:57:18+08:00",
           "type": "",
@@ -2476,8 +2476,8 @@
     {
       "date": "2026-11-09",
       "a_share": {
-        "total_assets": 7682373.81,
-        "return_pct": -23.18
+        "total_assets": 7679337.81,
+        "return_pct": -23.21
       },
       "us": {
         "total_assets": 10000000.0,
