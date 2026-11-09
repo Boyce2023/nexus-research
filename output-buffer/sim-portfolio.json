@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-11-09T05:08:23.838910+00:00",
+    "last_updated": "2026-11-09T05:08:33.459450+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -53,7 +53,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1378319.46,
-      "cash": -620543.75,
+      "cash": -746271.88,
       "realized_pnl": -200917.41,
       "return_pct": -8.11,
       "positions": [
@@ -99,12 +99,12 @@
         {
           "ticker": "RGLD",
           "name": "Royal Gold, Inc.",
-          "shares": 149,
-          "avg_cost": 259.01,
+          "shares": 622,
+          "avg_cost": 264.1811,
           "current_price": 265.81,
-          "market_value": 39605.69,
-          "unrealized_pnl_pct": 2.63,
-          "portfolio_pct": 0.029,
+          "market_value": 165333.82,
+          "unrealized_pnl_pct": 0.62,
+          "portfolio_pct": 0.12,
           "entry_date": "2026-08-24T16:08:28+08:00",
           "type": "",
           "sector": ""
@@ -7977,6 +7977,15 @@
       "name": "Space Exploration Technologies ",
       "shares": 1540,
       "price": 134.27
+    },
+    {
+      "date": "2026-11-09",
+      "account": "us",
+      "action": "buy",
+      "ticker": "RGLD",
+      "name": "Royal Gold, Inc.",
+      "shares": 473,
+      "price": 265.81
     }
   ]
 }
