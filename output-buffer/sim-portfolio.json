@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-11-09T05:07:10.651329+00:00",
+    "last_updated": "2026-11-09T05:07:21.478651+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -53,8 +53,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1378319.46,
-      "cash": 418746.05,
-      "realized_pnl": -176855.18,
+      "cash": 510847.05,
+      "realized_pnl": -195720.65,
       "return_pct": -8.11,
       "positions": [
         {
@@ -93,19 +93,6 @@
           "unrealized_pnl_pct": 4.23,
           "portfolio_pct": 0.177,
           "entry_date": "2026-07-30T10:14:26+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "FCX",
-          "name": "Freeport-McMoRan, Inc.",
-          "shares": 1550,
-          "avg_cost": 71.5913,
-          "current_price": 59.42,
-          "market_value": 92101.0,
-          "unrealized_pnl_pct": -17.0,
-          "portfolio_pct": 0.067,
-          "entry_date": "2026-08-06T10:50:55+08:00",
           "type": "",
           "sector": ""
         },
@@ -7885,6 +7872,16 @@
       "shares": 550,
       "price": 249.95,
       "realized_pnl": -16263.5
+    },
+    {
+      "date": "2026-11-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan, Inc.",
+      "shares": 1550,
+      "price": 59.42,
+      "realized_pnl": -18865.4762
     }
   ]
 }
