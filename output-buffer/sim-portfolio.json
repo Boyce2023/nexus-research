@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-11-09T05:08:53.869931+00:00",
+    "last_updated": "2026-11-09T05:09:22.709593+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -53,7 +53,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1378319.46,
-      "cash": -1022205.59,
+      "cash": -1132661.84,
       "realized_pnl": -200917.41,
       "return_pct": -8.11,
       "positions": [
@@ -186,6 +186,19 @@
           "entry_date": "2026-11-09T13:08:51+08:00",
           "type": "core_position",
           "sector": "消费科技"
+        },
+        {
+          "ticker": "NET",
+          "name": "Cloudflare, Inc.",
+          "shares": 411,
+          "avg_cost": 268.75,
+          "current_price": 268.75,
+          "market_value": 110456.25,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.08,
+          "entry_date": "2026-11-09T13:09:18+08:00",
+          "type": "",
+          "sector": ""
         }
       ]
     }
@@ -8030,6 +8043,15 @@
       "name": "Apple Inc.",
       "shares": 403,
       "price": 342.37
+    },
+    {
+      "date": "2026-11-09",
+      "account": "us",
+      "action": "buy",
+      "ticker": "NET",
+      "name": "Cloudflare, Inc.",
+      "shares": 411,
+      "price": 268.75
     }
   ]
 }
