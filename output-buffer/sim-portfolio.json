@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-11-09T05:06:16.328439+00:00",
+    "last_updated": "2026-11-09T05:06:38.681923+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -53,8 +53,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1378319.46,
-      "cash": -278164.41,
-      "realized_pnl": -181430.17,
+      "cash": -47292.43,
+      "realized_pnl": -182320.68,
       "return_pct": -8.11,
       "positions": [
         {
@@ -132,19 +132,6 @@
           "unrealized_pnl_pct": 5.69,
           "portfolio_pct": 0.119,
           "entry_date": "2026-08-25T09:14:49+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "VRTX",
-          "name": "Vertex Pharmaceuticals Incorpor",
-          "shares": 422,
-          "avg_cost": 549.2002,
-          "current_price": 547.09,
-          "market_value": 230871.98,
-          "unrealized_pnl_pct": -0.38,
-          "portfolio_pct": 0.168,
-          "entry_date": "2026-08-26T22:38:24+08:00",
           "type": "",
           "sector": ""
         },
@@ -7897,6 +7884,16 @@
       "shares": 632,
       "price": 422.65,
       "realized_pnl": 35429.92
+    },
+    {
+      "date": "2026-11-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals Incorpor",
+      "shares": 422,
+      "price": 547.09,
+      "realized_pnl": -890.5099
     }
   ]
 }
