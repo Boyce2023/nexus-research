@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-11-09T05:07:42.314995+00:00",
+    "last_updated": "2026-11-09T05:07:53.582048+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -53,7 +53,7 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1378319.46,
-      "cash": 619942.8,
+      "cash": 137472.29,
       "realized_pnl": -200917.41,
       "return_pct": -8.11,
       "positions": [
@@ -106,6 +106,19 @@
           "unrealized_pnl_pct": 2.63,
           "portfolio_pct": 0.029,
           "entry_date": "2026-08-24T16:08:28+08:00",
+          "type": "",
+          "sector": ""
+        },
+        {
+          "ticker": "NTRA",
+          "name": "Natera, Inc.",
+          "shares": 1553,
+          "avg_cost": 310.67,
+          "current_price": 310.67,
+          "market_value": 482470.51,
+          "unrealized_pnl_pct": 0.0,
+          "portfolio_pct": 0.35,
+          "entry_date": "2026-11-09T13:07:49+08:00",
           "type": "",
           "sector": ""
         }
@@ -7889,6 +7902,15 @@
       "shares": 285,
       "price": 277.95,
       "realized_pnl": 3213.2453
+    },
+    {
+      "date": "2026-11-09",
+      "account": "us",
+      "action": "buy",
+      "ticker": "NTRA",
+      "name": "Natera, Inc.",
+      "shares": 1553,
+      "price": 310.67
     }
   ]
 }
