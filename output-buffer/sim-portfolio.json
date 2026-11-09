@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-11-09T05:06:05.740079+00:00",
+    "last_updated": "2026-11-09T05:06:16.328439+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -53,23 +53,10 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1378319.46,
-      "cash": -545279.21,
-      "realized_pnl": -216860.09,
+      "cash": -278164.41,
+      "realized_pnl": -181430.17,
       "return_pct": -8.11,
       "positions": [
-        {
-          "ticker": "V",
-          "name": "Visa Inc.",
-          "shares": 632,
-          "avg_cost": 366.59,
-          "current_price": 422.65,
-          "market_value": 267114.8,
-          "unrealized_pnl_pct": 15.29,
-          "portfolio_pct": 0.194,
-          "entry_date": "2026-07-29T16:04:52+08:00",
-          "type": "",
-          "sector": ""
-        },
         {
           "ticker": "LLY",
           "name": "Eli Lilly and Company",
@@ -7900,6 +7887,16 @@
       "shares": 218,
       "price": 735.29,
       "realized_pnl": -7557.36
+    },
+    {
+      "date": "2026-11-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "V",
+      "name": "Visa Inc.",
+      "shares": 632,
+      "price": 422.65,
+      "realized_pnl": 35429.92
     }
   ]
 }
