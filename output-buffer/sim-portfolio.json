@@ -4,7 +4,7 @@
     "description": "Claude AI模拟盘 — ¥10M A股 + $1.5M 美股",
     "start_date": "2026-05-18",
     "end_date": "2026-06-18",
-    "last_updated": "2026-11-09T05:06:48.391989+00:00",
+    "last_updated": "2026-11-09T05:06:59.098290+00:00",
     "synced_from": "portfolio_state.json",
     "benchmark": {
       "a_share": "CSI300",
@@ -53,8 +53,8 @@
       "currency": "USD",
       "initial_capital": 1500000,
       "total_assets": 1378319.46,
-      "cash": 117617.05,
-      "realized_pnl": -169407.68,
+      "cash": 281273.55,
+      "realized_pnl": -160591.68,
       "return_pct": -8.11,
       "positions": [
         {
@@ -119,19 +119,6 @@
           "unrealized_pnl_pct": 2.63,
           "portfolio_pct": 0.029,
           "entry_date": "2026-08-24T16:08:28+08:00",
-          "type": "",
-          "sector": ""
-        },
-        {
-          "ticker": "ICE",
-          "name": "Intercontinental Exchange Inc.",
-          "shares": 950,
-          "avg_cost": 162.99,
-          "current_price": 172.27,
-          "market_value": 163656.5,
-          "unrealized_pnl_pct": 5.69,
-          "portfolio_pct": 0.119,
-          "entry_date": "2026-08-25T09:14:49+08:00",
           "type": "",
           "sector": ""
         },
@@ -7891,6 +7878,16 @@
       "shares": 698,
       "price": 236.26,
       "realized_pnl": 12913.0
+    },
+    {
+      "date": "2026-11-09",
+      "account": "us",
+      "action": "sell",
+      "ticker": "ICE",
+      "name": "Intercontinental Exchange Inc.",
+      "shares": 950,
+      "price": 172.27,
+      "realized_pnl": 8816.0
     }
   ]
 }
